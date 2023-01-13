@@ -1,0 +1,121 @@
+::selection {
+  background: $doc-default-color;
+  color: #fff;
+}
+
+$doc-title-height: 137px;
+
+#doc {
+  background: #fff;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  //padding-top: $doc-header-height;
+}
+
+.doc {
+  &-title {
+    width: 100%;
+    height: $doc-title-height;
+    z-index: 2;
+    &-position {
+      top: 0px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 40px;
+      // line-height: 56px;
+      border-bottom: 1px solid #eee;
+      background: #fff;
+      visibility: visible;
+      opacity: 1;
+      // transition: opacity 0.8s linear, visibility 0.8s linear;
+      transition: opacity 0.8s;
+      &.fixed {
+        width: calc(100% - 290px);
+        position: fixed;
+        padding: 24px 48px;
+        .title {
+          font-size: 24px;
+          font-weight: bold;
+        }
+      }
+      &.hidden {
+        visibility: hidden;
+        opacity: 0;
+      }
+      .title {
+        font-size: 40px;
+        font-weight: bold;
+      }
+    }
+  }
+  &-content {
+    margin-left: 290px;
+    display: flex;
+    flex-direction: column;
+
+    &-document {
+      min-height: 800px;
+      .markdown-body {
+        min-height: 600px;
+      }
+    }
+    &-tabs {
+      position: absolute;
+      right: 445px;
+      top: 48px;
+      display: flex;
+      height: 50px;
+      align-items: center;
+      margin-bottom: 20px;
+      z-index: 1;
+      .tab-item {
+        position: relative;
+        padding: 10px 25px;
+        height: 100%;
+        cursor: pointer;
+        font-size: 16px;
+        color: #323232;
+        text-align: center;
+        border-radius: 4px;
+        &.cur {
+          color: #fa2c19;
+          &:after {
+            content: ' ';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background-color: #fa2c19;
+          }
+        }
+        &:hover {
+          background-color: #f7f8fa;
+        }
+      }
+    }
+  }
+}
+
+.nutui-react--demo-button {
+  display: none;
+}
+
+.nutui-react--demo-wrapper {
+  .nutui-react--demo-button {
+    display: block;
+  }
+}
+
+.snack-player {
+  border: 1px solid #eee;
+  border-radius: 5px;
+  height: 544px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  overflow: hidden;
+  width: 100%;
+}

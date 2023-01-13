@@ -1,0 +1,76 @@
+{
+  "name": "nutui-rn",
+  "version": "0.0.4",
+  "type": "module",
+  "scripts": {
+    "generate:docs": "node scripts/generate-nutui.js",
+    "generate:jd:docs": "node scripts/generate-jd-nutui.js",
+    "dev": "npm run generate:docs && vite --open --force",
+    "dev:jd": "npm run generate:jd:docs && vite --open --force",
+    "build:docs": "vite build",
+    "preview": "vite preview",
+    "prepack": "bob build"
+  },
+  "author": "jdf2e",
+  "license": "MIT",
+  "main": "lib/commonjs/index.js",
+  "dependencies": {
+    "@bem-react/classname": "^1.5.12",
+    "react-native": "^0.71.0",
+    "react-native-linear-gradient": "^2.6.2",
+    "react-native-root-portal": "^1.0.9"
+  },
+  "devDependencies": {
+    "@types/dedent": "^0.7.0",
+    "@types/node": "^18.11.9",
+    "@types/postcss-import": "^14.0.0",
+    "@types/react": "^18.0.24",
+    "@types/react-dom": "^18.0.8",
+    "@types/react-native": "^0.70.8",
+    "@types/react-router-dom": "^5.3.3",
+    "@types/react-syntax-highlighter": "^13.5.2",
+    "@vitejs/plugin-react": "^2.2.0",
+    "autoprefixer": "^10.4.13",
+    "dedent": "^0.7.0",
+    "fs-extra": "^10.1.0",
+    "glob": "^8.0.3",
+    "lzutf8": "^0.6.2",
+    "markdown-navbar": "^1.4.3",
+    "postcss-import": "^15.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-markdown": "^8.0.3",
+    "react-native-builder-bob": "^0.20.3",
+    "react-router-dom": "^5.3.4",
+    "react-syntax-highlighter": "^15.4.5",
+    "rehype-raw": "^6.1.1",
+    "remark-directive": "^2.0.1",
+    "remark-gfm": "^3.0.1",
+    "sass": "^1.56.0",
+    "typescript": "^4.6.4",
+    "vite": "^3.2.3"
+  },
+  "react-native": "src/index.ts",
+  "module": "lib/module/index.js",
+  "types": "lib/typescript/index.d.ts",
+  "files": [
+    "packages",
+    "lib",
+    "!**/__tests__",
+    "!**/__fixtures__",
+    "!**/__mocks__"
+  ],
+  "react-native-builder-bob": {
+    "source": "components",
+    "output": "lib",
+    "targets": [
+      "commonjs",
+      "module",
+      "typescript"
+    ]
+  },
+  "eslintIgnore": [
+    "node_modules/",
+    "lib/"
+  ]
+}

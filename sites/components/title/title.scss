@@ -1,0 +1,16 @@
+.doc {
+    &-title {
+        &-position {
+            &.fixed {
+                .title {
+                  font-size: 24px;
+                  font-weight: bold;
+                }
+            }
+            .title {
+                font-size: 40px;
+                font-weight: bold;
+            }
+        }
+    }
+}

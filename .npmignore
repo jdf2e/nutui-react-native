@@ -1,0 +1,6 @@
+src/
+packages/
+scripts/
+dist/
+index.html
+vite/

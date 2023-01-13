@@ -1,0 +1,20 @@
+{
+  "nav": [
+    {
+      "name": "基础组件",
+      "enName": "base",
+      "packages": [
+        {
+          "version": "0.0.1",
+          "name": "Button",
+          "type": "component",
+          "cName": "按钮",
+          "desc": "按钮",
+          "sort": 1,
+          "show": true,
+          "author": ""
+        }
+      ]
+    }
+  ]
+}
