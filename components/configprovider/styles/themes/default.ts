@@ -548,13 +548,16 @@ const themeDefault: any = {
   '$switch-inside-height': 13,
 
   // // Toast
-  // $toast-title-font-size: 16px,
-  // $toast-text-font-size: 14px,
-  // $toast-font-color: $white,
-  // $toast-inner-padding: 24px 30px,
-  // $toast-inner-bg-color: rgba(0, 0, 0, 0.8),
-  // $toast-inner-border-radius: 12px,
-  // $toast-cover-bg-color: rgba(0, 0, 0, 0),
+  '$toast-title-font-size': 16,
+  '$toast-text-font-size': 12,
+  '$toast-font-color': commonStyles.$white,
+  '$toast-inner-padding-top': 24,
+  '$toast-inner-padding-bottom': 24,
+  '$toast-inner-padding-left': 30,
+  '$toast-inner-padding-right': 30,
+  '$toast-inner-bg-color': 'rgba(0, 0, 0, 0.8)',
+  '$toast-inner-border-radius': 12,
+  '$toast-cover-bg-color': 'rgba(0, 0, 0, 0)',
 
   // // Avatar
   '$avatar-square-border-radius': 5,
