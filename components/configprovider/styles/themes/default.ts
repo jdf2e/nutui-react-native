@@ -36,7 +36,28 @@ const commonStyles = {
   '$font-size-small': 12,
   '$font-size-base': 14,
   '$font-size-large': 16,
-  '$line-height-base': 1.5
+  '$line-height-base': 1.5,
+  $gray0: '#000000',
+  // 主要内容用色，常用语常规标题内容、细文浏览、常规按钮文字以及图表引导。
+  $gray1: '#1a1a1a',
+  // 次要文字色，用于次级标题、属性标示、非主要信息引导等。
+  $gray2: '#757575',
+  // 不可操作内容色，用于预置内容、无效内容、特殊不可点击按钮、组件边框线等。
+  $gray3: '#bfbfbf',
+  // 页面基底色，用于卡片式页面的兜底，永远置于页面最底层。
+  $gray4: '#f4f4f4',
+  // 卡片内嵌背景色，用于卡片内部的信息包裹，感知较弱。
+  $gray5: '#f8f8f8',
+  // 卡片背景色
+  $gray6: '#ffffff',
+  // 页面全局蒙层，用于弹出层、弹窗、新功能引导出现的整页遮罩
+  $gray7: 'rgba(0, 0, 0, 0.7)',
+  // 局部蒙层，用于非整页遮罩
+  $gray8: 'rgba(0, 0, 0, 0.4)',
+  // 间隔线/容错线，用于结构或信息分割
+  $gray9: 'rgba(0, 0, 0, 0.08)',
+  // 图片容错蒙层
+  $gray10: 'rgba(0, 0, 0, 0.02)'
 };
 
 const themeDefault: any = {
@@ -506,8 +527,15 @@ const themeDefault: any = {
   '$actionsheet-items-border-top_width':0.5,
   '$actionsheet-items-sub-text-color':commonStyles['$text-color'],
 
-  // // BackTop
-  // $backtop-border-color: #e0e0e0,
+  // BackTop
+  '$backtop-width': 45,
+  '$backtop-height': 45,
+  '$backtop-radius':23,
+  '$backtop-border-color':commonStyles.$gray3,
+  '$backtop-bg-color':commonStyles.$white,
+  '$backtop-text-size':12,
+  '$backtop-text-color':'#2c2c2c',
+  '$backtop-text-maginTop':2,
 
   // // Dialog
   // $dialog-width: 296px,
