@@ -1,0 +1,61 @@
+import { StyleSheet } from 'react-native';
+
+export default (theme: any) =>
+  StyleSheet.create({
+    nut_pag_container:{
+      flexDirection:'row',
+      height: theme['$pagination-height']
+    },
+    nut_pag_predisable:{
+      paddingHorizontal:theme['$pagination-paddingH'],
+      paddingVertical:theme['$pagination-paddingV'],
+      borderWidth:theme['$pagination-border-width'],
+      borderColor:theme['$pagination-border-color'],
+      backgroundColor:theme['$pagination-bg-color'],
+      justifyContent:'center',
+      alignItems:'center'
+    },
+    nut_pag_preable:{
+      paddingHorizontal:theme['$pagination-paddingH'],
+      paddingVertical:theme['$pagination-paddingV'],
+      borderWidth:theme['$pagination-border-width'],
+      borderColor:theme['$pagination-border-able-color'],
+      backgroundColor:theme['$pagination-bg-able-color'],
+      justifyContent:'center',
+      alignItems:'center'
+    },
+    nut_pag_predis_text:{
+      color:theme['$pagination-text-color'],
+      fontSize:theme['$pagination-text-size']
+    },
+    nut_pag_pre_text:{
+      color:theme['$pagination-text-pre-color'],
+      fontSize:theme['$pagination-text-size']
+    },
+    nut_pag_center_active:{
+      width:theme['$pagination-center-active-width'],
+      height:theme['$pagination-center-active-height'],
+      backgroundColor:theme['$pagination-center-active-bg'],
+      justifyContent:'center',
+      alignItems:'center',
+      borderRadius:theme['$pagination-center-active-radius']
+    },
+    nut_pag_center_disactive:{
+      width:theme['$pagination-center-active-width'],
+      height:theme['$pagination-center-active-height'],
+      borderWidth: theme['$pagination-center-disactive-border-width'],
+      borderColor:theme['$pagination-center-disactive-border-color'],
+      backgroundColor:theme['$pagination-center-disactive-bg'],
+      borderRadius:theme['$pagination-center-disactive-radius'],
+      justifyContent:'center',
+      alignItems:'center'
+    },
+    nut_pag_center_text:{
+      color:theme['$pagination-center-text-color'],
+      fontSize:theme['$pagination-center-text-size'],
+    },
+    nut_pag_center_distext:{
+      color:theme['$pagination-center-distext-color'],
+      fontSize:theme['$pagination-center-text-size'],
+    }    
+  });
