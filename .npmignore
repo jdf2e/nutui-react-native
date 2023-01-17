@@ -1,5 +1,5 @@
-src/
-packages/
+demo/
+example/
 scripts/
 dist/
 index.html

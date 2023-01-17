@@ -1,9 +1,6 @@
-import glob from 'glob'
-import path from 'path';
-import fs from 'fs-extra'
-// 直接用node 中的__dirname报错  
-// __dirname is not defined in ES module scope
-let __dirname = path.resolve('scripts');
+const glob = require('glob')
+const path = require('path')
+const fs = require('fs-extra')
 
 const config = JSON.parse(fs.readFileSync(path.resolve('sites', 'config.json')));
 

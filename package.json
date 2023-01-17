@@ -1,7 +1,6 @@
 {
   "name": "nutui-rn",
-  "version": "0.0.4",
-  "type": "module",
+  "version": "0.0.8",
   "scripts": {
     "generate:docs": "node scripts/generate-nutui.js",
     "generate:jd:docs": "node scripts/generate-jd-nutui.js",
@@ -13,10 +12,8 @@
   },
   "author": "jdf2e",
   "license": "MIT",
-  "main": "lib/commonjs/index.js",
   "dependencies": {
     "@bem-react/classname": "^1.5.12",
-    "react-native": "^0.71.0",
     "react-native-linear-gradient": "^2.6.2",
     "react-native-root-portal": "^1.0.9"
   },
@@ -40,6 +37,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-markdown": "^8.0.3",
+    "react-native": "^0.71.0",
     "react-native-builder-bob": "^0.20.3",
     "react-router-dom": "^5.3.4",
     "react-syntax-highlighter": "^15.4.5",
@@ -50,11 +48,12 @@
     "typescript": "^4.6.4",
     "vite": "^3.2.3"
   },
-  "react-native": "src/index.ts",
+  "main": "lib/commonjs/index.js",
+  "react-native": "components/index.ts",
   "module": "lib/module/index.js",
   "types": "lib/typescript/index.d.ts",
   "files": [
-    "packages",
+    "components",
     "lib",
     "!**/__tests__",
     "!**/__fixtures__",

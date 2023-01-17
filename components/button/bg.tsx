@@ -50,7 +50,7 @@ import React, { FunctionComponent, ReactNode } from 'react';
 import { View, Platform } from 'react-native';
 import { isLinearGradient, getLinearParam } from '../utils/color';
 
-import LinearGradient from 'react-native-linear-gradient';
+// import LinearGradient from 'react-native-linear-gradient';
 
 // 位置坐标
 type Pos = {
@@ -162,13 +162,13 @@ const Background: FunctionComponent<Props> = ({
   }
 
   return (
-    <LinearGradient
+    <View
       style={[...style, { borderWidth: 0 }]}
       {...restProps}
       {...toLinear(color)}
     >
       {children}
-    </LinearGradient>
+    </View>
   );
 };
 

@@ -37,7 +37,7 @@ export const getDefaultConfig = () => {
 };
 
 export const useConfig = () => {
-  return useContext(ConfigContext) ?? getDefaultConfig();
+  return useContext(ConfigContext) ? useContext(ConfigContext) :  getDefaultConfig();
 };
 
 // 创建一个 Context 对象

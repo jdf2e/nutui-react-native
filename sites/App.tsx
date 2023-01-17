@@ -1,38 +1,22 @@
 import React, { useEffect, useState } from 'react';
 import { HashRouter, Switch, Route } from 'react-router-dom';
-import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
-import ReactMarkdown from 'react-markdown';
-import rehypeRaw from 'rehype-raw';
-import remarkDirective from 'remark-directive';
-import remarkGfm from 'remark-gfm';
 
 import useLocale from './assets/locale/useLocale';
-import { routers, raws } from './docs';
+import { routers } from './docs';
 import Header from './components/header';
 import Nav from './components/nav';
 import Title from './components/title';
 import Issue from './components/issue';
-import myRemarkPlugin from './markdown-plugin/my-remark-plugin';
-import snackPlayer from './markdown-plugin/remark-snackplayer';
 import DemoPreview from './components/demo-preview';
 
 import './App.scss';
+import Remark from './components/remark';
 
 function App() {
   const [lang] = useLocale();
 
   const [fixed, setFixed] = useState(false);
   const [hidden, setHidden] = useState(false);
-
-  const getMarkdownByLang = (ru: string) => {
-    if (lang === 'zh-CN' || lang === '') {
-      // @ts-ignore
-      return raws[ru];
-    } else {
-      // @ts-ignore
-      return raws[`${ru}${lang.replace('-', '')}`];
-    }
-  };
 
   const scrollTitle = () => {
     let top = document.documentElement.scrollTop;
@@ -50,8 +34,8 @@ function App() {
   };
 
   useEffect(() => {
-    document.addEventListener('scroll', scrollTitle)
-  }, [])
+    document.addEventListener('scroll', scrollTitle);
+  }, []);
 
   return (
     <div>
@@ -79,26 +63,7 @@ function App() {
                   key={k}
                   path={`${lang ? `/${lang}` : ''}/component/${ru}`}
                 >
-                  <ReactMarkdown
-                    children={getMarkdownByLang(ru)}
-                    remarkPlugins={[
-                      snackPlayer,
-                      remarkGfm,
-                      remarkDirective,
-                      myRemarkPlugin,
-                    ]}
-                    rehypePlugins={[rehypeRaw]}
-                    components={{
-                      code({ node, inline, className, children, ...props }) {
-                        const match = /language-(\w+)/.exec(className || '');
-                        return (
-                          <code className={className} {...props}>
-                            {children}
-                          </code>
-                        );
-                      },
-                    }}
-                  />
+                  <Remark ru={ru} />
                 </Route>
               );
             })}
