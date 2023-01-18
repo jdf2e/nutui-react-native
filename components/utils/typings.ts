@@ -15,3 +15,11 @@ export const ComponentDefaults = {
   iconClassPrefix: 'nut-icon',
   iconFontClassName: 'nutui-iconfont',
 }
+
+export interface BasicComponent {
+  className?: string;
+  style?: CSSProperties;
+  iconFontClassName?: string;
+  iconClassPrefix?: string;
+  children?: ReactNode;
+}

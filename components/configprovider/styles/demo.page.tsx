@@ -1,6 +1,6 @@
 import React from 'react';
 import { StyleSheet, View, Text } from 'react-native';
-import { DiviceWidth, DiviceHeight, StatusBarHeight } from '../utils';
+import { DiviceWidth, DiviceHeight, StatusBarHeight } from '../../utils';
 
 export const DemoPage = ({ children }: { children: any }) => {
   return <View style={PageStyles.page}>{children}</View>;

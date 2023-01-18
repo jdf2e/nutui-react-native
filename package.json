@@ -1,6 +1,6 @@
 {
   "name": "nutui-rn",
-  "version": "0.0.8",
+  "version": "0.0.11",
   "scripts": {
     "generate:docs": "node scripts/generate-nutui.js",
     "generate:jd:docs": "node scripts/generate-jd-nutui.js",
