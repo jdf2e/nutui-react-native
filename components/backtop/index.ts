@@ -1,3 +1,3 @@
-import { BackTop } from './backtop.rn';
+import { BackTop } from './backtop';
 
 export default BackTop;
