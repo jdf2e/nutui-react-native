@@ -14,6 +14,7 @@
   "license": "MIT",
   "dependencies": {
     "@bem-react/classname": "^1.5.12",
+    "@react-spring/native": "9.3.2",
     "react-native-linear-gradient": "^2.6.2",
     "react-native-root-portal": "^1.0.9"
   },
