@@ -694,16 +694,20 @@ const themeDefault: any = {
   '$swiper-pagination-cross-absolute-bottom': 10,
   '$swiper-pagination-vertical-absolute-left': 10,
 
-  // // Price
-  // $price-symbol-big-size: 18px,
-  // $price-big-size: 24px,
-  // $price-decimal-big-size: 18px,
-  // $price-symbol-medium-size: 14px,
-  // $price-medium-size: 16px,
-  // $price-decimal-medium-size: 14px,
-  // $price-symbol-small-size: 10px,
-  // $price-small-size: 12px,
-  // $price-decimal-small-size: 10px,
+  // large price（✅）
+  '$price-symbol-big-size': 18,
+  '$price-integer-big-size': 24,
+  '$price-decimal-big-size': 18,
+
+  // normal price（✅）
+  '$price-symbol-medium-size': 14,
+  '$price-integer-medium-size': 16,
+  '$price-decimal-medium-size': 14,
+
+  // small price（✅）
+  '$price-symbol-small-size': 10,
+  '$price-integer-small-size': 12,
+  '$price-decimal-small-size': 10,
 
   // // CountDown
   // $countdown-display: flex,
