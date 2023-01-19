@@ -62,7 +62,10 @@ const commonStyles = {
 
 const themeDefault: any = {
   // Base
-
+  // 背景色
+  '$background-color': commonStyles.$gray4,
+  '$background-color2': commonStyles.$gray5,
+  '$background-color3': commonStyles.$gray6,
   // Button
   '$button-border-radius': 25,
   '$button-border-width': 1,
@@ -650,14 +653,14 @@ const themeDefault: any = {
   '$noticebar-right-icon-wrapable-size': 40,
   '$noticebar-right-icon-wrapable-padding': 32,
 
-  // // Empty
-  // $empty-padding: 32px 0,
-  // $empty-image-size: 170px,
-  // $empty-description-margin-top: 4px,
-  // $empty-description-color: #666666,
-  // $empty-description-font-size: 14px,
-  // $empty-description-line-height: 20px,
-  // $empty-description-padding: 0 40px,
+  // Empty
+  '$empty-padding': 32,
+  '$empty-image-size': 170,
+  '$empty-description-margin-top': 4,
+  '$empty-description-color': '#666666',
+  '$empty-description-font-size': 14,
+  '$empty-description-line-height': 20,
+  '$empty-description-padding': 40,
 
   // Steps
   '$step_h_left_width':30,
