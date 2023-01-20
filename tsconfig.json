@@ -17,5 +17,5 @@
     "isolatedModules": true,
     "jsx": "react-jsx"
   },
-  "include": ["sites", "vite/*.ts", "vite.config.ts"]
+  "include": ["vite/*.ts", "vite.config.ts"]
 }
