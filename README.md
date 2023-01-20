@@ -52,24 +52,22 @@
 <!-- * 🍭 90%+ Unit Test Coverage -->
 * 📖 Provide Sketch Design Resources
 
-
-
 ## Local Run
 
 ### Local H5
-```
+
+```sh
 git clone https://github.com/jdf2e/nutui-react-native.git
 
 cd nutui-react-native
 
-npm install
+yarn bootstrap
 
-npm run dev
-
-url：http://localhost:3000
+// Expo demo
+yarn dev
 ```
 
-##  Links
+## Links
 
 <ul>
     <li>
@@ -103,7 +101,7 @@ Thanks to all the following [developers](https://github.com/jdf2e/nutui-react-na
   <img src="https://contrib.rocks/image?repo=jdf2e/nutui-react-native" alt="contributors"/>
 </a>
 
-<!-- ## Stargazers 
+<!-- ## Stargazers
 
 [![Stargazers repo roster for @jdf2e/nutui-react-native](https://reporoster.com/stars/jdf2e/nutui-react-native)](https://github.com/jdf2e/nutui-react-native/stargazers)
 
@@ -118,7 +116,6 @@ Thanks to all the following [developers](https://github.com/jdf2e/nutui-react-na
 ## Release Notes
 
 NutUI follows [Angular Style Commit Message Conventions](https://gist.github.com/stephenparish/9941e89d80e2bc58a153). The up-to-date release notes are available on [Release](https://github.com/jdf2e/nutui-react-native/releases)
-
 
 ## Open Source License
 

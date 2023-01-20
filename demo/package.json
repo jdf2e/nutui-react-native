@@ -1,0 +1,36 @@
+{
+  "name": "@nutui/react-native-example",
+  "version": "1.0.0",
+  "main": "node_modules/expo/AppEntry.js",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web",
+    "eject": "expo eject"
+  },
+  "dependencies": {
+    "expo": "~47.0.8",
+    "expo-linear-gradient": "^11.0.3",
+    "expo-status-bar": "~1.4.2",
+    "react": "18.1.0",
+    "react-dom": "18.1.0",
+    "react-native": "0.70.5",
+    "react-native-web": "~0.18.9",
+    "resize-observer-polyfill": "^1.5.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.9",
+    "@expo/webpack-config": "^0.16.24",
+    "@types/react": "~18.0.14",
+    "@types/react-native": "~0.70.6",
+    "babel-loader": "^8.1.0",
+    "react-error-overlay": "6.0.9",
+    "typescript": "^4.6.3"
+  },
+  "resolutions": {
+    "//": "See https://github.com/facebook/create-react-app/issues/11773",
+    "react-error-overlay": "6.0.9"
+  },
+  "private": true
+}

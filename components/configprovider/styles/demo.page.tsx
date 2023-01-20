@@ -21,7 +21,7 @@ export const DemoCard = ({
         {title}
         {subTitle && <Text style={PageStyles.subTitle}>{`(${subTitle})`}</Text>}
       </Text>
-      <View style={PageStyles.item}>{children}</View>
+      <View style={PageStyles.card}>{children}</View>
     </>
   );
 };
@@ -41,7 +41,11 @@ export const PageStyles = StyleSheet.create({
     fontSize: '12px',
     paddingLeft: '10px'
   },
-  item: {
+  card: {
+    display: 'flex',
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    gap: 10,
     width: DiviceWidth - 40,
     backgroundColor: '#fff',
     borderRadius: 4,

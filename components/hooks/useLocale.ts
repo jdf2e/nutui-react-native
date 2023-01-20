@@ -14,12 +14,12 @@ const useLocale = (): [string, any] => {
   const handlePopState = () => {
     setLocale(getLocale());
   };
-  useEffect(() => {
-    window.parent.addEventListener('popstate', handlePopState);
-    return () => {
-      window.parent.removeEventListener('popstate', handlePopState);
-    };
-  }, []);
+  // useEffect(() => {
+  //   window.parent.addEventListener('popstate', handlePopState);
+  //   return () => {
+  //     window.parent.removeEventListener('popstate', handlePopState);
+  //   };
+  // }, []);
   return [locale, setLocale];
 };
 

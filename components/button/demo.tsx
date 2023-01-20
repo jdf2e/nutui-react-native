@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { DemoCard, DemoPage } from '../configprovider/styles/demo.page'
 import useTranslate from '../hooks/useTranslate'
 import { Button } from './button'
 
@@ -97,108 +98,347 @@ const ButtonDemo = () => {
 
   const [loading, setLoading] = useState(false)
   return (
-    <>
-      <div className="demo">
-        <h2>{translated.ce5c5446}</h2>
-        <Button
-          className="aa"
-          style={{ margin: 8 }}
-          type="primary"
-          shape="round"
-        >
-          {translated.c38a08ef}
-        </Button>
-        <Button type="info" style={{ margin: 8 }} shape="round">
-          {translated.b840c88f}
-        </Button>
-        <Button shape="round" style={{ margin: 8 }}>
-          {translated.a74a1fd4}
-        </Button>
-        <Button type="danger" style={{ margin: 8 }} shape="round">
-          {translated['8dab2f66']}
-        </Button>
-        <Button type="warning" style={{ margin: 8 }}>
-          {translated.cfbdc781}
-        </Button>
-        <Button type="success" style={{ margin: 8 }}>
-          {translated.c3a3a1d2}
-        </Button>
-
-        <h2>{translated.e51e4582}</h2>
-        <Button plain style={{ margin: 8 }} type="primary">
-          {translated.e51e4582}
-        </Button>
-        <Button plain style={{ margin: 8 }} type="info">
-          {translated.e51e4582}
-        </Button>
-        <h2>{translated['7db1a8b2']}</h2>
-        <Button disabled style={{ margin: 8 }} type="primary">
-          {translated['7db1a8b2']}
-        </Button>
-        <Button plain disabled style={{ margin: 8 }} type="info">
-          {translated['7db1a8b2']}
-        </Button>
-        <Button plain disabled style={{ margin: 8 }} type="primary">
-          {translated['7db1a8b2']}
-        </Button>
-        <h2>{translated.a52bef0c}</h2>
-        <Button loading type="info" style={{ margin: 8 }} />
-        <Button loading type="warning" style={{ margin: 8 }}>
-          {translated.d04fcbda}
-        </Button>
-        <Button
-          loading={loading}
-          type="success"
-          onClick={() => {
-            setTimeout(() => {
-              setLoading(false)
-            }, 1500)
-            setLoading(!loading)
+    <DemoPage>
+        <DemoCard
+          title="按钮类型"
+          style={{
+            flexDirection: 'row',
+            flexWrap: 'wrap',
+            justifyContent: 'space-around',
+            gap: 10
           }}
-          style={{ margin: 8 }}
         >
-          Click me!
-        </Button>
-        <h2>{translated['0aaad620']}</h2>
-        <Button
-          shape="square"
-          plain
-          type="primary"
-          icon="star-fill"
-          style={{ margin: 8 }}
-        />
-        <Button shape="square" type="primary" icon="star" style={{ margin: 8 }}>
-          {translated['60a53514']}
-        </Button>
-        <h2>{translated['0aaad620']}</h2>
-        <Button size="large" type="primary">
-          {translated.b8a453e3}
-        </Button>
-        <Button type="primary" style={{ margin: 8 }}>
-          {translated['248be9e1']}
-        </Button>
-        <Button size="small" style={{ margin: 8 }} type="primary">
-          {translated.ea3d02f2}
-        </Button>
-        <h2>{translated.c9e6df49}</h2>
-        <Button block type="primary">
-          {translated.c9e6df49}
-        </Button>
-        <h2>{translated['781b07fd']}</h2>
-        <Button color="#7232dd" style={{ margin: 8 }}>
-          {translated['1076d771']}
-        </Button>
-        <Button color="#7232dd" plain style={{ margin: 8 }}>
-          {translated['1076d771']}
-        </Button>
-        <Button
-          color="linear-gradient(to right, #ff6034, #ee0a24)"
-          style={{ margin: 8 }}
+          <Button>默认字体</Button>
+          <Button type="primary">主要字体</Button>
+          <Button type="info">信息字体</Button>
+          <Button type="danger">危险字体</Button>
+          <Button type="warning">警告字体</Button>
+          <Button type="success">成功字体</Button>
+        </DemoCard>
+
+        <DemoCard
+          title="朴素类型"
+          style={{
+            flexDirection: 'row',
+            flexWrap: 'wrap',
+            justifyContent: 'space-around',
+            gap: 10
+          }}
         >
-          {translated['6ab47cd2']}
-        </Button>
-      </div>
-    </>
+          <Button plain type="default">
+            默认字体
+          </Button>
+          <Button plain type="primary">
+            主要字体
+          </Button>
+          <Button plain type="info">
+            信息字体
+          </Button>
+          <Button plain type="danger">
+            危险字体
+          </Button>
+          <Button plain type="warning">
+            警告字体
+          </Button>
+          <Button plain type="success">
+            成功字体
+          </Button>
+        </DemoCard>
+
+        <DemoCard
+          title="禁用状态"
+          style={{
+            flexDirection: 'row',
+            flexWrap: 'wrap',
+            justifyContent: 'space-around',
+            gap: 10
+          }}
+        >
+          <Button disabled type="default">
+            默认字体
+          </Button>
+          <Button disabled type="primary">
+            主要字体
+          </Button>
+          <Button disabled type="info">
+            信息字体
+          </Button>
+          <Button disabled type="danger">
+            危险字体
+          </Button>
+          <Button disabled type="warning">
+            警告字体
+          </Button>
+          <Button disabled type="success">
+            成功字体
+          </Button>
+          <Button disabled plain type="default">
+            默认字体
+          </Button>
+          <Button disabled plain type="primary">
+            主要字体
+          </Button>
+          <Button disabled plain type="info">
+            信息字体
+          </Button>
+          <Button disabled plain type="danger">
+            危险字体
+          </Button>
+          <Button disabled plain type="warning">
+            警告字体
+          </Button>
+          <Button disabled plain type="success">
+            成功字体
+          </Button>
+        </DemoCard>
+
+        <DemoCard
+          title="加载状态"
+          style={{
+            flexDirection: 'row',
+            flexWrap: 'wrap',
+            justifyContent: 'space-around',
+            gap: 10
+          }}
+        >
+          <Button loading type="default">
+            默认字体
+          </Button>
+          <Button loading type="primary">
+            主要字体
+          </Button>
+          <Button loading type="info">
+            信息字体
+          </Button>
+          <Button loading type="danger">
+            危险字体
+          </Button>
+          <Button loading type="warning">
+            警告字体
+          </Button>
+          <Button loading type="success">
+            成功字体
+          </Button>
+          <Button loading plain type="default">
+            默认字体
+          </Button>
+          <Button loading plain type="primary">
+            主要字体
+          </Button>
+          <Button loading plain type="info">
+            信息字体
+          </Button>
+          <Button loading plain type="danger">
+            危险字体
+          </Button>
+          <Button loading plain type="warning">
+            警告字体
+          </Button>
+          <Button loading plain type="success">
+            成功字体
+          </Button>
+        </DemoCard>
+
+        <DemoCard
+          title="形状"
+          style={{
+            flexDirection: 'row',
+            flexWrap: 'wrap',
+            justifyContent: 'space-around',
+            gap: 10
+          }}
+        >
+          <Button shape="square" type="default">
+            默认字体
+          </Button>
+          <Button shape="square" type="primary">
+            主要字体
+          </Button>
+          <Button shape="square" type="info">
+            信息字体
+          </Button>
+          <Button shape="square" type="danger">
+            危险字体
+          </Button>
+          <Button shape="square" type="warning">
+            警告字体
+          </Button>
+          <Button shape="square" type="success">
+            成功字体
+          </Button>
+          <Button plain shape="square" type="default">
+            默认字体
+          </Button>
+          <Button plain shape="square" type="primary">
+            主要字体
+          </Button>
+          <Button plain shape="square" type="info">
+            信息字体
+          </Button>
+          <Button disabled shape="square" type="danger">
+            危险字体
+          </Button>
+          <Button disabled shape="square" type="warning">
+            警告字体
+          </Button>
+          <Button disabled shape="square" type="success">
+            成功字体
+          </Button>
+          <Button disabled shape="square" type="default">
+            默认字体
+          </Button>
+          <Button disabled shape="square" type="primary">
+            主要字体
+          </Button>
+          <Button disabled shape="square" type="info">
+            信息字体
+          </Button>
+          <Button plain disabled shape="square" type="default">
+            默认字体
+          </Button>
+          <Button plain disabled shape="square" type="primary">
+            主要字体
+          </Button>
+          <Button plain disabled shape="square" type="info">
+            信息字体
+          </Button>
+          <Button plain disabled shape="square" type="danger">
+            危险字体
+          </Button>
+          <Button plain disabled shape="square" type="warning">
+            警告字体
+          </Button>
+          <Button plain disabled shape="square" type="success">
+            成功字体
+          </Button>
+        </DemoCard>
+
+        <DemoCard
+          title="按钮尺寸"
+          style={{
+            gap: 10
+          }}
+        >
+          <Button size="large" type="default">
+            默认大
+          </Button>
+          <Button size="normal" type="default">
+            默认中
+          </Button>
+          <Button size="small" type="default">
+            默认小
+          </Button>
+
+          <Button size="large" type="primary">
+            默认大
+          </Button>
+          <Button size="normal" type="primary">
+            默认中
+          </Button>
+          <Button size="small" type="primary">
+            默认小
+          </Button>
+
+          <Button size="large" type="info">
+            默认大
+          </Button>
+          <Button size="normal" type="info">
+            默认中
+          </Button>
+          <Button size="small" type="info">
+            默认小
+          </Button>
+
+          <Button size="large" type="danger">
+            默认大
+          </Button>
+          <Button size="normal" type="danger">
+            默认中
+          </Button>
+          <Button size="small" type="danger">
+            默认小
+          </Button>
+
+          <Button size="large" type="warning">
+            默认大
+          </Button>
+          <Button size="normal" type="warning">
+            默认中
+          </Button>
+          <Button size="small" type="warning">
+            默认小
+          </Button>
+
+          <Button size="large" type="success">
+            默认大
+          </Button>
+          <Button size="normal" type="success">
+            默认中
+          </Button>
+          <Button size="small" type="success">
+            默认小
+          </Button>
+        </DemoCard>
+
+        <DemoCard
+          title="块级元素"
+          style={{
+            flexDirection: 'row',
+            flexWrap: 'wrap',
+            justifyContent: 'space-around',
+            gap: 10
+          }}
+        >
+          <Button block type="default">
+            块级元素
+          </Button>
+          <Button block type="primary">
+            块级元素
+          </Button>
+          <Button block type="info">
+            块级元素
+          </Button>
+          <Button block type="danger">
+            块级元素
+          </Button>
+          <Button block type="warning">
+            块级元素
+          </Button>
+          <Button block type="success">
+            块级元素
+          </Button>
+        </DemoCard>
+        <DemoCard
+          title="自定义颜色"
+          style={{
+            flexDirection: 'row',
+            flexWrap: 'wrap',
+            justifyContent: 'space-around',
+            gap: 10
+          }}
+        >
+        <Button color="#7232dd">
+            单色按钮
+          </Button>
+          <Button
+            color="#7232dd"
+            plain
+          >
+            单色按钮
+          </Button>
+          <Button
+            color="linear-gradient(to right, #ff6034, #ee0a24)"
+          >
+            渐变color
+          </Button>
+          <Button
+            color="linear-gradient(to right, #ff6034, #ee0a24)"
+            plain
+          >
+            渐变color
+          </Button>
+        </DemoCard>
+      </DemoPage>
   )
 }
 

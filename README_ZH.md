@@ -51,20 +51,19 @@
 <!-- * 🍭 单元测试覆盖率超过90%, 保障稳定性 -->
 * 📖 提供 Sketch 设计资源
 
-
 ## 项目运行
 
-### 本地运行H5
-```
+### 本地运行 H5
+
+```sh
 git clone https://github.com/jdf2e/nutui-react-native.git
 
 cd nutui-react-native
 
-npm install
+yarn bootstrap
 
-npm run dev
-
-访问：http://localhost:3000（如果已启动前台程序，则不需打开此地址）
+// 基于 expo 创建的 demo 工程，可通过 APP 或 H5 进行查看
+yarn dev
 ```
 
 ## 链接
@@ -114,7 +113,7 @@ npm run dev
   <img src="https://contrib.rocks/image?repo=jdf2e/nutui-react-native" />
 </a>
 
-## Stargazers 
+## Stargazers
 
 [![Stargazers repo roster for @jdf2e/nutui-react](https://reporoster.com/stars/jdf2e/nutui-react-native)](https://github.com/jdf2e/nutui-react-native/stargazers)
 
