@@ -3,17 +3,17 @@
   "version": "0.0.11",
   "scripts": {
     "bootstrap": "yarn demo && yarn install",
-    "dev": "yarn --cwd demo",
+    "dev": "yarn --cwd demo web",
     "doc": "npm run generate:docs && vite --open --force",
     "doc:jd": "npm run generate:jd:docs && vite --open --force",
     "generate:docs": "node scripts/generate-nutui.js",
     "generate:jd:docs": "node scripts/generate-jd-nutui.js",
-    "build:docs": "vite build",
+    "build:docs": "npm run generate:docs && vite build",
     "lint": "eslint \"**/*.{js,ts,tsx}\"",
     "preview": "vite preview",
     "prepack": "bob build",
-    "test": "jest",
-    "typecheck": "tsc --noEmit",
+    "test": "jest --passWithNoTests",
+    "typecheck": "npm run generate:docs && tsc --noEmit",
     "release": "release-it"
   },
   "author": "jdf2e",
@@ -167,7 +167,8 @@
     "demo/",
     "sites/",
     "vite/",
-    "scripts/"
+    "scripts/",
+    "dist/"
   ],
   "prettier": {
     "quoteProps": "consistent",
