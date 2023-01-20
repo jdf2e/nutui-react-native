@@ -38,8 +38,8 @@ export const PageStyles = StyleSheet.create({
     marginLeft: 20
   },
   subTitle: {
-    fontSize: '12px',
-    paddingLeft: '10px'
+    fontSize: 12,
+    paddingLeft: 10
   },
   card: {
     display: 'flex',
