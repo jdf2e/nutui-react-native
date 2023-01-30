@@ -48,7 +48,6 @@ Partial<EmptyProps> & React.HTMLAttributes<HTMLDivElement>
 }) => {
   const { locale, theme } = useConfig();
 
-  console.log('theme', theme);
   const styles = emptyStyles(theme);
   const getImgUrl = useCallback((image: string) => {
     const isHttpUrl =

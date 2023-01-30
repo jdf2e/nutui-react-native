@@ -60,7 +60,6 @@ Partial<FixedNavProps> & React.HTMLAttributes<HTMLDivElement>
   };
   const { locale, theme } = useConfig();
 
-  console.log('theme', theme);
   const styles = fixednavStyles(theme);
 
   const fadeAnim = useRef(new Animated.Value(type === 'left' ? -375 : 375)).current;
