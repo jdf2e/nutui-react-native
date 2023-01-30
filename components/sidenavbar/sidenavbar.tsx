@@ -1,6 +1,6 @@
 import React, { FunctionComponent, useState } from 'react';
 import { View, Text, TouchableOpacity, StyleProp, ViewStyle } from 'react-native';
-import Popup from '../popup/index.rn';
+import Popup from '../popup/index';
 import { OffsetContext } from './offsetContext';
 import { useConfig } from '../configprovider';
 import sidenavbarStyles from './styles';
