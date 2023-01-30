@@ -1,20 +1,14 @@
-import React, {
-  FunctionComponent,
-  useRef,
-  useEffect
-} from 'react';
+import React, { FunctionComponent, useRef, useEffect } from 'react';
 
-import {
-  View,
-  ViewStyle,
-  StyleProp,
-  Animated,
-  Platform
-} from 'react-native';
+import { View, ViewStyle, StyleProp, Animated, Platform } from 'react-native';
 
 import Avatar from '../avatar';
 
-import LinearGradient from 'react-native-linear-gradient';
+import {
+  default as RNLinearGradient,
+  LinearGradient,
+} from 'react-native-linear-gradient';
+
 import fConStyle from '../utils/filter-container-style';
 import toObj from '../utils/style-to-obj';
 import pt from '../utils/pt';
@@ -48,7 +42,7 @@ const defaultProps = {
   round: false,
   avatarSize: 50,
   loading: false,
-  avatarShape: 'round'
+  avatarShape: 'round',
 } as SkeletonProps;
 
 export const Skeleton: FunctionComponent<Partial<SkeletonProps>> = (props) => {
@@ -64,10 +58,10 @@ export const Skeleton: FunctionComponent<Partial<SkeletonProps>> = (props) => {
     round,
     loading,
     children,
-    avatarShape
+    avatarShape,
   } = {
     ...defaultProps,
-    ...props
+    ...props,
   };
 
   const { theme } = useConfig();
@@ -89,8 +83,8 @@ export const Skeleton: FunctionComponent<Partial<SkeletonProps>> = (props) => {
       duration: 1500,
       useNativeDriver: !!Platform.select({
         web: false,
-        native: true
-      })
+        native: true,
+      }),
     });
     animationRef.current.setValue(0);
     Animated.loop(animationLoop.current).start();
@@ -100,31 +94,27 @@ export const Skeleton: FunctionComponent<Partial<SkeletonProps>> = (props) => {
     if (avatarSize) {
       return {
         width: avatarSize,
-        height: avatarSize
+        height: avatarSize,
       };
     }
 
     return {
       width: 50,
-      height: 50
+      height: 50,
     };
   };
 
-  const wrapStyle = [
-    styles.container,
-    fConStyle(toObj(style || {}))
-  ];
+  const wrapStyle = [styles.container, fConStyle(toObj(style || {}))];
 
   const blockStyle = [
     styles.blockStyle,
     round ? styles.blockRoundStyle : {},
-    { width, height }
+    { width, height },
   ];
 
-  const avatarStyle = [
-    styles.avatarStyle,
-    getStyle()
-  ];
+  const avatarStyle = [styles.avatarStyle, getStyle()];
+
+  const LinearGradientComponent = RNLinearGradient || LinearGradient;
 
   return (
     <>
@@ -132,75 +122,58 @@ export const Skeleton: FunctionComponent<Partial<SkeletonProps>> = (props) => {
         <View>{children}</View>
       ) : (
         <View
-
           style={wrapStyle}
-
           onLayout={({ nativeEvent }) => {
             setLayoutWidth(nativeEvent.layout.width);
           }}
         >
-          {
-            animated ? (
-              <Animated.View
-                style={[
-                  styles.skeletonAnimation,
-                  { height: height * row, width: width / 4 },
-                  {
-                    transform: [
-                      {
-                        translateX: animationRef.current.interpolate({
-                          inputRange: [0, 1],
-                          outputRange: [-width / 4, width]
-                        })
-                      }
-                    ]
-                  }
+          {animated ? (
+            <Animated.View
+              style={[
+                styles.skeletonAnimation,
+                { height: height * row, width: width / 4 },
+                {
+                  transform: [
+                    {
+                      translateX: animationRef.current.interpolate({
+                        inputRange: [0, 1],
+                        outputRange: [-width / 4, width],
+                      }),
+                    },
+                  ],
+                },
+              ]}
+            >
+              <LinearGradientComponent
+                style={{
+                  height:
+                    height * row +
+                    (row > 1 ? row * pt(20) : 0) +
+                    (title ? pt(30) : 0),
+                }}
+                colors={[
+                  'rgba(255,255,255,0.3)',
+                  'rgba(255,255,255,0.5)',
+                  'rgba(255,255,255,0.3)',
                 ]}
-              >
-                <LinearGradient
-                  style={{
-                    height: height * row + (row > 1 ? row * pt(20) : 0) + (title ? pt(30) : 0)
-                  }}
-                  colors={[
-                    'rgba(255,255,255,0.3)',
-                    'rgba(255,255,255,0.5)',
-                    'rgba(255,255,255,0.3)'
-                  ]}
-                  start={{ x: 0, y: 0 }}
-                  end={{ x: 1, y: 0 }}
-                />
-
-              </Animated.View>
-            ) : null
-          }
-          <View
-            style={styles.nutSkeletonContent}
-          >
+                start={{ x: 0, y: 0 }}
+                end={{ x: 1, y: 0 }}
+              />
+            </Animated.View>
+          ) : null}
+          <View style={styles.nutSkeletonContent}>
             {avatar && (
               <Avatar
                 style={avatarStyle}
-                bgColor='rgb(239, 239, 239)'
+                bgColor="rgb(239, 239, 239)"
                 shape={avatarShape}
               />
             )}
 
-            <View
-              style={styles.skeletonContentLine}
-            >
-              {
-                title && (
-                  <View
-                    style={styles.skeletonTitle}
-                  />
-                )
-              }
+            <View style={styles.skeletonContentLine}>
+              {title && <View style={styles.skeletonTitle} />}
               {repeatLines(row).map((item, index) => {
-                return (
-                  <View
-                    style={blockStyle}
-                    key={+index}
-                  />
-                );
+                return <View style={blockStyle} key={+index} />;
               })}
             </View>
           </View>

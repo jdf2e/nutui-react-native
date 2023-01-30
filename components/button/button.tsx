@@ -269,10 +269,10 @@ export const Button: FunctionComponent<Partial<ButtonProps>> = forwardRef(
         : styles.indicatorColor.color;
 
     // 设置 TouchableHighlight 属性 underlayColor
-    const underlayColor = StyleSheet.flatten(
-      activeStyle ||
-        (plain ? styles.plainHighlight : styles[`${type}Highlight`])
-    ).backgroundColor; // 背景色
+    // const underlayColor = StyleSheet.flatten(
+    //   activeStyle ||
+    //     (plain ? styles.plainHighlight : styles[`${type}Highlight`])
+    // )?.backgroundColor; // 背景色
 
     // 设置loading 的字体颜色
     // const indicatorColor = (
@@ -326,7 +326,7 @@ export const Button: FunctionComponent<Partial<ButtonProps>> = forwardRef(
         {...restProps}
         style={wrapperInStyle}
         disabled={disabled}
-        underlayColor={underlayColor}
+        // underlayColor={underlayColor}
         // onPress={(e) => onPress && onPress(e)}
         onPress={onPressCallback}
         onPressIn={onPressInCallback}

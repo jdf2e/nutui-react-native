@@ -11,14 +11,14 @@
  *     useAngle: 是否使用角度
  *     angle: 角度
  *     angleCenter： 角度中心
- *  
- * 
+ *
+ *
  * @example
        start: { x: 0.3, y: 0.4 } 渐变是从 左侧30%， 上部 40% 开始
        end: { x: 0.7, y: 0.8 } 渐变是从 左侧70%， 上部 80% 结束
 
        以下配置可实现从左到右渐变。
-       start={{x: 0, y: 0}} 
+       start={{x: 0, y: 0}}
        end={{x: 1, y: 0}}
 
        如果想指定每种渐变颜色的范围，比如红色占20%， 绿色占70%，黑色占10%，
@@ -27,7 +27,7 @@
        red 范围就是 0.0 - 0.2；
        green 范围就是 0.2 - 0.7；
        black 范围就是 0.7 - 1.0；
- * 
+ *
  */
 
 /**
@@ -49,8 +49,10 @@
 import React, { FunctionComponent, ReactNode } from 'react';
 import { View, Platform } from 'react-native';
 import { isLinearGradient, getLinearParam } from '../utils/color';
-
-// import LinearGradient from 'react-native-linear-gradient';
+import {
+  default as RNLinearGradient,
+  LinearGradient,
+} from 'react-native-linear-gradient';
 
 // 位置坐标
 type Pos = {
@@ -161,14 +163,16 @@ const Background: FunctionComponent<Props> = ({
     return <View style={style}>{children}</View>;
   }
 
+  const LinearGradientComponent = RNLinearGradient || LinearGradient;
+
   return (
-    <View
+    <LinearGradientComponent
       style={[...style, { borderWidth: 0 }]}
       {...restProps}
       {...toLinear(color)}
     >
       {children}
-    </View>
+    </LinearGradientComponent>
   );
 };
 
