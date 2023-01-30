@@ -1,5 +1,4 @@
 import { StyleSheet } from 'react-native';
-import pt from '../utils/pt';
 import px from '../utils/px';
 
 export default (theme: any) => {
@@ -13,7 +12,6 @@ export default (theme: any) => {
       paddingLeft: theme['$cell-padding-left-right'],
       paddingRight: theme['$cell-padding-left-right'],
       backgroundColor: theme.$white,
-      marginTop: pt(20)
     },
 
     containerlarge: {

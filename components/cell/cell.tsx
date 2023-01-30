@@ -4,7 +4,7 @@ import {
   Text,
   TouchableHighlight,
   StyleProp,
-  ViewStyle
+  ViewStyle,
 } from 'react-native';
 
 import Icon from '../icon';
@@ -18,7 +18,7 @@ export interface CellProps {
   title: ReactNode; // 标题名称
   subTitle: ReactNode; // 左侧副标题
   desc: string; // 右侧描述
-  descTextAlign: string;// 右侧描述文本对齐方式 text-align
+  descTextAlign: string; // 右侧描述文本对齐方式 text-align
   isLink: boolean; // 是否展示右侧箭头并开启点击反馈 默认FALSE
   icon: string; // 左侧 图标名称 或图片链接
   roundRadius: number; // 圆角半径
@@ -53,7 +53,7 @@ const defaultProps = {
   iconSlot: null,
   linkSlot: null,
   cellGroup: false,
-  isLast: false
+  isLast: false,
 } as CellProps;
 
 export const Cell: FunctionComponent<Partial<CellProps>> = (props) => {
@@ -73,10 +73,10 @@ export const Cell: FunctionComponent<Partial<CellProps>> = (props) => {
     linkSlot,
     cellGroup,
     isLast,
-    style
+    style,
   } = {
     ...defaultProps,
-    ...props
+    ...props,
   };
 
   const { theme } = useConfig();
@@ -88,35 +88,29 @@ export const Cell: FunctionComponent<Partial<CellProps>> = (props) => {
   };
 
   const baseStyle = {
-    borderRadius: roundRadius
+    borderRadius: roundRadius,
   };
 
-  const tTextStyle = [
-    styles.tText,
-    styles[`tTextSize${size}`]
-  ];
+  const tTextStyle = [styles.tText, styles[`tTextSize${size}`]];
 
-  const subTextStyle = [
-    styles.subText,
-    styles[`subTextSize${size}`]
-  ];
+  const subTextStyle = [styles.subText, styles[`subTextSize${size}`]];
 
   const descCStyle = [
     styles.descC,
     center ? { alignSelf: 'center' } : {},
-    (title || subTitle || icon) ? {} : { textAlign: descTextAlign, flex: 1 }
+    title || subTitle || icon ? {} : { textAlign: descTextAlign, flex: 1 },
   ];
 
   const descTextStyle = [
     styles.descText,
     styles[`descAlone${!title && !subTitle}`],
-    styles[`descSize${size}`]
+    styles[`descSize${size}`],
   ];
 
   const innerStyle = [
     styles.innerStyle,
     styles[`innerCenter${center}`],
-    fConStyle(toObj(style || {}))
+    fConStyle(toObj(style || {})),
   ];
 
   const renderComponent = () => {
@@ -125,74 +119,29 @@ export const Cell: FunctionComponent<Partial<CellProps>> = (props) => {
     }
 
     return (
-      <View
-        style={innerStyle}
-      >
+      <View style={innerStyle}>
         <>
+          {iconSlot || null}
 
-          { iconSlot || null }
-
-          {icon
-            ? (
-              <Icon
-                name={icon}
-                style={styles.icon}
-                size={18}
-              />
-            )
-            : null}
-          { title || subTitle
-            ? (
-              <View
-                style={styles.titleContainer}
-              >
-                {title
-                  ? (
-                    <Text
-                      style={tTextStyle}
-                    >
-                      {title}
-                    </Text>
-                  )
-                  : null}
-                {subTitle
-                  ? (
-                    <Text
-                      style={subTextStyle}
-                    >
-                      {subTitle}
-                    </Text>
-                  )
-                  : null
-                }
-              </View>
-            )
-            : null}
+          {icon ? <Icon name={icon} style={styles.icon} size={18} /> : null}
+          {title || subTitle ? (
+            <View style={styles.titleContainer}>
+              {title ? <Text style={tTextStyle}>{title}</Text> : null}
+              {subTitle ? <Text style={subTextStyle}>{subTitle}</Text> : null}
+            </View>
+          ) : null}
         </>
         <>
-
-          {desc
-            ? (
-              <View
-                style={descCStyle}
-              >
-                <Text style={descTextStyle}>
-                  {desc}
-                </Text>
-              </View>
-            )
-            : null}
-          {!linkSlot && (isLink)
-            ? (
-              <Icon
-                name='right'
-                color='#979797'
-                size={14}
-              />
-            )
-            : (
-              <View>{linkSlot}</View>
-            )}
+          {desc ? (
+            <View style={descCStyle}>
+              <Text style={descTextStyle}>{desc}</Text>
+            </View>
+          ) : null}
+          {!linkSlot && isLink ? (
+            <Icon name="right" color="#979797" size={14} />
+          ) : (
+            <View>{linkSlot}</View>
+          )}
         </>
       </View>
     );
@@ -203,22 +152,18 @@ export const Cell: FunctionComponent<Partial<CellProps>> = (props) => {
     styles[`container${size}`],
     styles[`containerCellGroup${cellGroup}`],
     styles[`containerIsLast${isLast}`],
-    baseStyle
+    baseStyle,
   ];
 
   if (isLink) {
     return (
       <TouchableHighlight
-        style={baseStyle}
+        style={[baseStyle, { width: '100%' }]}
         activeOpacity={1}
         underlayColor={null}
         onPress={handleClick}
       >
-        <View
-          style={wrapStyle}
-        >
-          {renderComponent()}
-        </View>
+        <View style={wrapStyle}>{renderComponent()}</View>
       </TouchableHighlight>
     );
   }
@@ -226,27 +171,17 @@ export const Cell: FunctionComponent<Partial<CellProps>> = (props) => {
   if (onClick) {
     return (
       <TouchableHighlight
-        style={baseStyle}
+        style={[baseStyle, { width: '100%' }]}
         activeOpacity={1}
         underlayColor={null}
         onPress={onClick}
       >
-        <View
-          style={wrapStyle}
-        >
-          {renderComponent()}
-        </View>
+        <View style={wrapStyle}>{renderComponent()}</View>
       </TouchableHighlight>
     );
   }
 
-  return (
-    <View
-      style={wrapStyle}
-    >
-      {renderComponent()}
-    </View>
-  );
+  return <View style={wrapStyle}>{renderComponent()}</View>;
 };
 
 Cell.defaultProps = defaultProps;
