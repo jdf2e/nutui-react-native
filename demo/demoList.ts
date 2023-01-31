@@ -2,6 +2,7 @@ import ButtonDemo from 'nutui-rn/button/demo'
 import IconDemo from 'nutui-rn/icon/demo'
 import NavBarDemo from 'nutui-rn/navbar/demo'
 import ToastDemo from 'nutui-rn/toast/demo'
+import ActionSheetDemo from 'nutui-rn/actionsheet/demo'
 // import CellDemo from 'nutui-rn/cell/demo'
 
 export const DemoList = [{
@@ -21,6 +22,12 @@ export const DemoList = [{
   description: '导航栏',
   demo: NavBarDemo,
   type: 'Nav'
+},
+{
+  title: 'ActionSheet',
+  description: '动作面板',
+  demo: ActionSheetDemo,
+  type: 'Feedback'
 },
 {
   title: 'Toast',
