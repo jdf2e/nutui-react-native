@@ -1,12 +1,15 @@
+// 基础组件
 import ButtonDemo from 'nutui-rn/button/demo'
 import CellDemo from 'nutui-rn/cell/demo'
 import IconDemo from 'nutui-rn/icon/demo'
-
+// 导航组件
 import NavBarDemo from 'nutui-rn/navbar/demo'
-
+// 反馈组件
 import ActionSheetDemo from 'nutui-rn/actionsheet/demo'
 import BackTopDemo from 'nutui-rn/backtop/demo'
 import ToastDemo from 'nutui-rn/toast/demo'
+// 展示组件
+import AvatarDemo from 'nutui-rn/avatar/demo'
 
 export const DemoList = [{
   title: 'Button',
@@ -50,12 +53,12 @@ export const DemoList = [{
   demo: ToastDemo,
   type: 'Feedback'
 },
-// {
-//   title: 'Cell',
-//   description: ' 单元格',
-//   demo: ButtonDemo,
-//   type: 'Basic'
-// }
+{
+  title: 'Avatar',
+  description: '头像',
+  demo: AvatarDemo,
+  type: 'Exhibition'
+}
 ]
 
 export const CategoryList = [{

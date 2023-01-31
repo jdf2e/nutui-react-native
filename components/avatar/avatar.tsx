@@ -3,16 +3,10 @@ import React, {
   useEffect,
   useRef,
   FunctionComponent,
-  useContext
+  useContext,
 } from 'react';
 
-import {
-  View,
-  Image,
-  Text,
-  StyleProp,
-  ViewStyle
-} from 'react-native';
+import { View, Image, Text, StyleProp, ViewStyle } from 'react-native';
 
 import { AvatarContext } from '../avatargroup/avatarContext';
 
@@ -45,11 +39,11 @@ const defaultProps = {
   icon: '',
   iconSize: '',
   bgColor: '#eee',
-  color: '#666'
+  color: '#666',
 } as AvatarProps;
 
 export const Avatar: FunctionComponent<
-Partial<AvatarProps> & React.HTMLAttributes<HTMLDivElement>
+  Partial<AvatarProps> & React.HTMLAttributes<HTMLDivElement>
 > = (props) => {
   const {
     children,
@@ -63,10 +57,10 @@ Partial<AvatarProps> & React.HTMLAttributes<HTMLDivElement>
     style,
     activeAvatar,
     onActiveAvatar,
-    onError
+    onError,
   } = {
     ...defaultProps,
-    ...props
+    ...props,
   };
 
   const { theme } = useConfig();
@@ -93,7 +87,7 @@ Partial<AvatarProps> & React.HTMLAttributes<HTMLDivElement>
     zIndex:
       parent?.propAvatarGroup?.zIndex === 'right'
         ? `${Math.abs(maxSum - avatarIndex)}`
-        : ''
+        : '',
   };
 
   if (sizeValue.indexOf(size) > -1) {
@@ -106,29 +100,35 @@ Partial<AvatarProps> & React.HTMLAttributes<HTMLDivElement>
     styles.container,
     fConStyle(toObj(style || {})),
     styles[`size${mySize}`],
-    styles[`shape${mySize}${shape || parent?.propAvatarGroup?.shape || 'round'}`],
+    styles[
+      `shape${mySize}${shape || parent?.propAvatarGroup?.shape || 'round'}`
+    ],
     stylesObj,
-    sizeStyle
+    sizeStyle,
   ];
 
   const maxStyles = {
     backgroundColor: `${parent?.propAvatarGroup?.maxBgColor}`,
-    color: `${parent?.propAvatarGroup?.maxColor}`
+    color: `${parent?.propAvatarGroup?.maxColor}`,
   };
   const maxWrapStyle = [
     styles.container,
     fConStyle(toObj(style || {})),
     styles[`size${mySize}`],
-    styles[`shape${mySize}${shape || parent?.propAvatarGroup?.shape || 'round'}`],
+    styles[
+      `shape${mySize}${shape || parent?.propAvatarGroup?.shape || 'round'}`
+    ],
     maxStyles,
-    sizeStyle
+    sizeStyle,
   ];
 
   const imageStyle = [
     styles.avatarImg,
     styles[`size${mySize}`],
-    styles[`shape${mySize}${shape || parent?.propAvatarGroup?.shape || 'round'}`],
-    sizeStyle
+    styles[
+      `shape${mySize}${shape || parent?.propAvatarGroup?.shape || 'round'}`
+    ],
+    sizeStyle,
   ];
 
   const iconStyles = icon || '';
@@ -146,8 +146,8 @@ Partial<AvatarProps> & React.HTMLAttributes<HTMLDivElement>
       if (
         children[i]
 
-      // children[i].classList &&
-      // children[i].classList[0] === 'nut-avatar'
+        // children[i].classList &&
+        // children[i].classList[0] === 'nut-avatar'
       ) {
         children[i].setAttribute('data-index', i + 1);
       }
@@ -216,37 +216,20 @@ Partial<AvatarProps> & React.HTMLAttributes<HTMLDivElement>
           {(!parent?.propAvatarGroup?.maxCount ||
             avatarIndex <= parent?.propAvatarGroup?.maxCount) && (
             <>
-              {source
-                ? (
-                  <Image
-                    style={imageStyle}
-                    source={source}
-                    onError={errorEvent}
-                  />
-                )
-                : null}
-              {icon ? (
-                <Icon
-                  name={iconStyles}
-                  size={getIconSize()}
+              {source ? (
+                <Image
+                  style={imageStyle}
+                  source={source}
+                  onError={errorEvent}
                 />
               ) : null}
-              {
-                children
-                  ? (
-                    <Text
-                      style={styles.text}
-                    >
-                      {children}
-                    </Text>
-                  )
-                  : null
-              }
+              {icon ? <Icon name={iconStyles} size={getIconSize()} /> : null}
+              {children ? <Text style={styles.text}>{children}</Text> : null}
             </>
           )}
           {/* 折叠头像 */}
           {showMax && (
-            <View >
+            <View>
               {parent?.propAvatarGroup?.maxContent
                 ? parent?.propAvatarGroup?.maxContent
                 : `+ ${avatarIndex - parent?.propAvatarGroup?.maxCount}`}
@@ -260,4 +243,3 @@ Partial<AvatarProps> & React.HTMLAttributes<HTMLDivElement>
 
 Avatar.defaultProps = defaultProps;
 Avatar.displayName = 'NutAvatar';
-
