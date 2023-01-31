@@ -1,6 +1,6 @@
 {
-  "name": "nutui-rn",
-  "version": "0.0.11",
+  "name": "@nutui/nutui-react-native",
+  "version": "0.0.1",
   "scripts": {
     "bootstrap": "yarn --cwd demo && yarn",
     "dev": "yarn --cwd demo web",
@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/jdf2e/nutui-react-native#readme",
   "publishConfig": {
+    "access": "public",
     "registry": "https://registry.npmjs.org/"
   },
   "dependencies": {
