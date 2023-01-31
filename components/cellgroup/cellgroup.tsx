@@ -1,8 +1,5 @@
 import React, { FunctionComponent, ReactNode } from 'react';
-import {
-  View,
-  Text
-} from 'react-native';
+import { View, Text } from 'react-native';
 
 import { useConfig } from '../configprovider';
 import cellGroupStyles from './styles';
@@ -18,7 +15,7 @@ const defaultProps = {
   title: '',
   desc: '',
   titleSlot: null,
-  descSlot: null
+  descSlot: null,
 } as CellGroupProps;
 
 export const CellGroup: FunctionComponent<Partial<CellGroupProps>> = (
@@ -26,7 +23,7 @@ export const CellGroup: FunctionComponent<Partial<CellGroupProps>> = (
 ) => {
   const { children, title, desc, titleSlot, descSlot } = {
     ...defaultProps,
-    ...props
+    ...props,
   };
 
   const { theme } = useConfig();
@@ -44,56 +41,42 @@ export const CellGroup: FunctionComponent<Partial<CellGroupProps>> = (
         return React.cloneElement(o, {
           key: i,
           cellGroup: true,
-          isLast: i + 1 == cloneChildren.length
+          isLast: i + 1 == cloneChildren.length,
         });
       });
     } else {
       cloneChildren = React.cloneElement(cloneChildren, {
         cellGroup: true,
-        isLast: true
+        isLast: true,
       });
     }
   }
 
-  const wrapStyle = [
-    styles.container
-  ];
+  const wrapStyle = [styles.container];
 
   return (
-    <View
-      style={wrapStyle}
-    >
-
+    <View style={wrapStyle}>
       {titleSlot || (
         <>
-          {
-            title
-              ? (
-                <View style={styles.titleContainer}>
-                  <Text style={styles.title}>{title}</Text>
-                </View>
-              )
-              : null
-          }
+          {title ? (
+            <View style={styles.titleContainer}>
+              <Text style={styles.title}>{title}</Text>
+            </View>
+          ) : null}
         </>
       )}
 
       {descSlot || (
-        <>{
-          desc
-            ? <View style={styles.descContainer}>
+        <>
+          {desc ? (
+            <View style={styles.descContainer}>
               <Text style={styles.desc}>{desc}</Text>
             </View>
-            : null
-        }
+          ) : null}
         </>
       )}
 
-      <View
-        style={styles.wrap}
-      >
-        {cloneChildren}
-      </View>
+      <View style={styles.wrap}>{cloneChildren}</View>
     </View>
   );
 };

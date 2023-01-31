@@ -1,6 +1,6 @@
 import ButtonDemo from 'nutui-rn/button/demo'
+import CellDemo from 'nutui-rn/cell/demo'
 import IconDemo from 'nutui-rn/icon/demo'
-// import CellDemo from 'nutui-rn/cell/demo'
 
 import NavBarDemo from 'nutui-rn/navbar/demo'
 
@@ -12,6 +12,12 @@ export const DemoList = [{
   title: 'Button',
   description: '按钮',
   demo: ButtonDemo,
+  type: 'Basic'
+},
+{
+  title: 'Cell',
+  description: '单元格',
+  demo: CellDemo,
   type: 'Basic'
 },
 {
