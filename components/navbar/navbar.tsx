@@ -2,7 +2,6 @@ import React, { FunctionComponent } from 'react';
 import Icon from '../icon/index';
 import { TouchableOpacity, View, Text, StyleSheet } from 'react-native';
 import { IComponent, ComponentDefaults } from '../utils/typings';
-import deviceWidth from '../utils/deviceWidth';
 import statusBarHeight from '../utils/statusBarHeight';
 import pt from '../utils/pt';
 
@@ -158,7 +157,7 @@ export const NavBar: FunctionComponent<Partial<NavBarProps>> = (props) => {
         style={[
           mStyles.wrapper,
           {
-            width: deviceWidth,
+            width: '100%',
             borderBottomWidth: border ? 1 : 0,
             zIndex,
           },

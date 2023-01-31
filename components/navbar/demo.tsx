@@ -9,7 +9,7 @@ import { DemoCard, DemoPage } from '../configprovider/styles/demo.page';
 const NavBarDemo = () => {
   return (
     <DemoPage>
-      <DemoCard title="基础用法" backgroundColor='rgba(0, 0, 0, 0)' padding={0}>
+      <DemoCard title="基础用法" flexDirection='column' backgroundColor="rgba(0, 0, 0, 0)" padding={0}>
         <NavBar
           title="订单详情"
           border
@@ -93,8 +93,12 @@ const NavBarDemo = () => {
           </View>
         </NavBar>
       </DemoCard>
-      <DemoCard title="自定义导航栏中间内容" backgroundColor='rgba(0, 0, 0, 0)' padding={0}>
-      <NavBar
+      <DemoCard
+        title="自定义导航栏中间内容"
+        backgroundColor="rgba(0, 0, 0, 0)"
+        padding={0}
+      >
+        <NavBar
           desc="编辑"
           border
           leftShow
@@ -131,10 +135,8 @@ const NavBarDemo = () => {
           </View>
         </NavBar>
       </DemoCard>
-
     </DemoPage>
   );
 };
 
-export default NavBarDemo
-
+export default NavBarDemo;

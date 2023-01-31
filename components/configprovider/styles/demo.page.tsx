@@ -76,7 +76,7 @@ export const PageStyles = StyleSheet.create({
     width: DiviceWidth - 40,
     backgroundColor: '#fff',
     borderRadius: 4,
-    justifyContent: 'center',
+    justifyContent: 'flex-start',
     marginLeft: 20,
     marginBottom: 20,
     padding: 10,
