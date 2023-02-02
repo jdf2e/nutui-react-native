@@ -1,4 +1,4 @@
-# Button 
+# Button
 
 ### Introduce
 
@@ -7,7 +7,7 @@ Buttons are used to trigger an action, such as submitting a form.
 ### Install
 
 ``` javascript
-import { Button } from 'nutui-rn';
+import { Button } from '@nutui/nutui-react-native';
 ```
 
 ## Demo
@@ -16,9 +16,9 @@ import { Button } from 'nutui-rn';
 
 The button supports six types: 'default', 'primary', 'info', 'warning', 'danger', 'success', which defaults to 'default'.
 
-```SnackPlayer name=Button&dependencies=nutui-rn
+```SnackPlayer name=Button&dependencies=@nutui/nutui-react-native
 import  React from "react";
-import { Button } from 'nutui-rn';
+import { Button } from '@nutui/nutui-react-native';
 
 const App = () => {
   return (
@@ -40,9 +40,9 @@ export default App;
 
 Set the button to naïve with the text of the naïve button and the background white with the 'plain' attribute.
 
-```SnackPlayer name=Button&dependencies=nutui-rn
+```SnackPlayer name=Button&dependencies=@nutui/nutui-react-native
 import  React from "react";
-import { Button } from 'nutui-rn';
+import { Button } from '@nutui/nutui-react-native';
 
 const App = () => {
   return (
@@ -59,9 +59,9 @@ export default App;
 
 Disable the button through the 'disabled' attribute, which is not clickable.
 
-```SnackPlayer name=Button&dependencies=nutui-rn
+```SnackPlayer name=Button&dependencies=@nutui/nutui-react-native
 import  React from "react";
-import { Button } from 'nutui-rn';
+import { Button } from '@nutui/nutui-react-native';
 
 const App = () => {
   return (
@@ -80,9 +80,9 @@ export default App;
 
 Set the button shape through the 'shape' property, support circular, square buttons, and default to circle.
 
-```SnackPlayer name=Button&dependencies=nutui-rn
+```SnackPlayer name=Button&dependencies=@nutui/nutui-react-native
 import  React from "react";
-import { Button } from 'nutui-rn';
+import { Button } from '@nutui/nutui-react-native';
 
 const App = () => {
   return (
@@ -98,9 +98,9 @@ export default App;
 
 ### Load state
 
-```SnackPlayer name=Button&dependencies=nutui-rn
+```SnackPlayer name=Button&dependencies=@nutui/nutui-react-native
 import  React ,{useState} from "react";
-import { Button } from 'nutui-rn';
+import { Button } from '@nutui/nutui-react-native';
 
 const App = () => {
   const [loading,setLoading] = useState(false)
@@ -129,9 +129,9 @@ export default App;
 
 ### Icon button
 
-```SnackPlayer name=Button&dependencies=nutui-rn
+```SnackPlayer name=Button&dependencies=@nutui/nutui-react-native
 import  React from "react";
-import { Button } from 'nutui-rn';
+import { Button } from '@nutui/nutui-react-native';
 
 const App = () => {
   return (
@@ -148,11 +148,11 @@ export default App;
 
 Support 'large', 'normal', 'small' three sizes, the default is 'normal'.
 
-```SnackPlayer name=Button&dependencies=nutui-rn
+```SnackPlayer name=Button&dependencies=@nutui/nutui-react-native
 import  React from "react";
-import { Button } from 'nutui-rn';
+import { Button } from '@nutui/nutui-react-native';
 
-const App = () => { 
+const App = () => {
   return (
     <>
 <Button size="large" type="primary">Large</Button>
@@ -169,11 +169,11 @@ export default App;
 
 Buttons are inline block-level elements by default, and the 'block' attribute allows you to set the element type of the button to a block-level element, which is commonly used to implement banner buttons.
 
-```SnackPlayer name=Button&dependencies=nutui-rn
+```SnackPlayer name=Button&dependencies=@nutui/nutui-react-native
 import  React from "react";
-import { Button } from 'nutui-rn';
+import { Button } from '@nutui/nutui-react-native';
 
-const App = () => { 
+const App = () => {
   return (
     <>
 <Button block type="primary">Block</Button>
@@ -187,11 +187,11 @@ export default App;
 ### Custom colors
 The color property allows you to customize the color of the button.
 
-```SnackPlayer name=Button&dependencies=nutui-rn
+```SnackPlayer name=Button&dependencies=@nutui/nutui-react-native
 import  React from "react";
-import { Button } from 'nutui-rn';
+import { Button } from '@nutui/nutui-react-native';
 
-const App = () => { 
+const App = () => {
   return (
     <>
 <Button color="#7232dd">Monochrome</Button>

@@ -7,7 +7,7 @@
 ### 安裝
 
 ``` javascript
-import { Button } from 'nutui-rn';
+import { Button } from '@nutui/nutui-react-native';
 ```
 
 ## 代碼演示
@@ -16,9 +16,9 @@ import { Button } from 'nutui-rn';
 
 按鈕支援 'default'、'primary'、'info'、'warning'、'danger'、'success' 六種類型，預設為 'default'。
 
-```SnackPlayer name=Button&dependencies=nutui-rn
+```SnackPlayer name=Button&dependencies=@nutui/nutui-react-native
 import  React from "react";
-import { Button } from 'nutui-rn';
+import { Button } from '@nutui/nutui-react-native';
 
 const App = () => {
   return (
@@ -40,9 +40,9 @@ export default App;
 
 通過 『plain』 屬性將按鈕設置為樸素按鈕，樸素按鈕的文字為按鈕顏色，背景為白色。
 
-```SnackPlayer name=Button&dependencies=nutui-rn
+```SnackPlayer name=Button&dependencies=@nutui/nutui-react-native
 import  React from "react";
-import { Button } from 'nutui-rn';
+import { Button } from '@nutui/nutui-react-native';
 
 const App = () => {
   return (
@@ -59,9 +59,9 @@ export default App;
 
 通過 'disabled' 屬性來禁用按鈕，禁用狀態下按鈕不可點擊。
 
-```SnackPlayer name=Button&dependencies=nutui-rn
+```SnackPlayer name=Button&dependencies=@nutui/nutui-react-native
 import  React from "react";
-import { Button } from 'nutui-rn';
+import { Button } from '@nutui/nutui-react-native';
 
 const App = () => {
   return (
@@ -80,9 +80,9 @@ export default App;
 
 通過 『shape』 屬性設置按鈕形狀，支援圓形、方形按鈕，預設為圓形。
 
-```SnackPlayer name=Button&dependencies=nutui-rn
+```SnackPlayer name=Button&dependencies=@nutui/nutui-react-native
 import  React from "react";
-import { Button } from 'nutui-rn';
+import { Button } from '@nutui/nutui-react-native';
 
 const App = () => {
   return (
@@ -98,9 +98,9 @@ export default App;
 
 ### 載入狀態
 
-```SnackPlayer name=Button&dependencies=nutui-rn
+```SnackPlayer name=Button&dependencies=@nutui/nutui-react-native
 import  React ,{useState} from "react";
-import { Button } from 'nutui-rn';
+import { Button } from '@nutui/nutui-react-native';
 
 const App = () => {
   const [loading,setLoading] = useState(false)
@@ -129,9 +129,9 @@ export default App;
 
 ### 圖示按鈕
 
-```SnackPlayer name=Button&dependencies=nutui-rn
+```SnackPlayer name=Button&dependencies=@nutui/nutui-react-native
 import  React from "react";
-import { Button } from 'nutui-rn';
+import { Button } from '@nutui/nutui-react-native';
 
 const App = () => {
   return (
@@ -148,11 +148,11 @@ export default App;
 
 支援 'large'、'normal'、'small' 三種尺寸，預設為 'normal'。
 
-```SnackPlayer name=Button&dependencies=nutui-rn
+```SnackPlayer name=Button&dependencies=@nutui/nutui-react-native
 import  React from "react";
-import { Button } from 'nutui-rn';
+import { Button } from '@nutui/nutui-react-native';
 
-const App = () => { 
+const App = () => {
   return (
     <>
     <Button size="large" type="primary">大號按鈕</Button>
@@ -169,11 +169,11 @@ export default App;
 
 按鈕在預設情況下為行內塊級元素，通過 'block' 屬性可以將按鈕的元素類型設置為塊級元素，常用來實現通欄按鈕。
 
-```SnackPlayer name=Button&dependencies=nutui-rn
+```SnackPlayer name=Button&dependencies=@nutui/nutui-react-native
 import  React from "react";
-import { Button } from 'nutui-rn';
+import { Button } from '@nutui/nutui-react-native';
 
-const App = () => { 
+const App = () => {
   return (
     <>
 <Button block type="primary">塊級元素</Button>
@@ -187,11 +187,11 @@ export default App;
 ### 自定義顏色
 通過 color 屬性可以自定義按鈕的顏色。
 
-```SnackPlayer name=Button&dependencies=nutui-rn
+```SnackPlayer name=Button&dependencies=@nutui/nutui-react-native
 import  React from "react";
-import { Button } from 'nutui-rn';
+import { Button } from '@nutui/nutui-react-native';
 
-const App = () => { 
+const App = () => {
   return (
     <>
     <Button color="#7232dd">單色按鈕</Button>

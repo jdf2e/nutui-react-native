@@ -7,8 +7,8 @@ import {
   StyleSheet,
 } from 'react-native';
 
-import Icon from 'nutui-rn/icon';
-import pt from 'nutui-rn/utils/pt';
+import Icon from '@nutui/nutui-react-native/icon';
+import pt from '@nutui/nutui-react-native/utils/pt';
 import { CategoryList, DemoList } from '../demoList';
 
 const Home = (props: any) => {

@@ -4,10 +4,10 @@
 
 用于全局配置 NutUI-React 组件，提供国际化支持。
 
-```SnackPlayer name=ConfigProvider&dependencies=nutui-rn
+```SnackPlayer name=ConfigProvider&dependencies=@nutui/nutui-react-native
 import React from 'react';
-import { ConfigProvider, Textarea } from "nutui-rn";
-import en from "nutui-rn/locales/en-US";
+import { ConfigProvider, Textarea } from "@nutui/nutui-react-native";
+import en from "@nutui/nutui-react-native/locales/en-US";
 
 const App = () => {
   return (
@@ -23,17 +23,17 @@ export default App;
 ### 安装
 
 ```javascript
-import { ConfigProvider } from 'nutui-rn';
+import { ConfigProvider } from '@nutui/nutui-react-native';
 ```
 
 ## 代码演示
 
 ### 基础用法
 
-```SnackPlayer name=ConfigProvider&dependencies=nutui-rn
+```SnackPlayer name=ConfigProvider&dependencies=@nutui/nutui-react-native
 import React from 'react';
-import { ConfigProvider, Textarea } from "nutui-rn";
-import en from "nutui-rn/locales/en-US";
+import { ConfigProvider, Textarea } from "@nutui/nutui-react-native";
+import en from "@nutui/nutui-react-native/locales/en-US";
 
 const App = () => {
   return (

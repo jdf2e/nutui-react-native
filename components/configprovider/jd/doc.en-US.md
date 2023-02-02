@@ -4,10 +4,10 @@
 
 Used to configure NutUI-React components globally, providing internationalization support.
 
-```SnackPlayer name=ConfigProvider&dependencies=nutui-rn
+```SnackPlayer name=ConfigProvider&dependencies=@nutui/nutui-react-native
 import React from 'react';
-import { ConfigProvider, Textarea } from "nutui-rn";
-import en from "nutui-rn/locales/en-US";
+import { ConfigProvider, Textarea } from "@nutui/nutui-react-native";
+import en from "@nutui/nutui-react-native/locales/en-US";
 
 const App = () => {
   return (
@@ -23,15 +23,15 @@ export default App;
 ### Install
 
 ```javascript
-import { ConfigProvider } from 'nutui-rn';
+import { ConfigProvider } from '@nutui/nutui-react-native';
 ```
 
 ## Demo
 
-```SnackPlayer name=ConfigProvider&dependencies=nutui-rn
+```SnackPlayer name=ConfigProvider&dependencies=@nutui/nutui-react-native
 import React from 'react';
-import { ConfigProvider, Textarea } from "nutui-rn";
-import en from "nutui-rn/locales/en-US";
+import { ConfigProvider, Textarea } from "@nutui/nutui-react-native";
+import en from "@nutui/nutui-react-native/locales/en-US";
 
 const App = () => {
   return (

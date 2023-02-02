@@ -3,7 +3,7 @@ import { StatusBar } from 'expo-status-bar';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
-import ConfigProvider, { useConfig } from 'nutui-rn/configprovider';
+import ConfigProvider, { useConfig } from '@nutui/nutui-react-native/configprovider';
 import Home from './src/Home';
 import { DemoList } from './demoList';
 import Theme from './components/Theme';

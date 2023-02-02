@@ -1,15 +1,15 @@
 // 基础组件
-import ButtonDemo from 'nutui-rn/button/demo'
-import CellDemo from 'nutui-rn/cell/demo'
-import IconDemo from 'nutui-rn/icon/demo'
+import ButtonDemo from '@nutui/nutui-react-native/button/demo'
+import CellDemo from '@nutui/nutui-react-native/cell/demo'
+import IconDemo from '@nutui/nutui-react-native/icon/demo'
 // 导航组件
-import NavBarDemo from 'nutui-rn/navbar/demo'
+import NavBarDemo from '@nutui/nutui-react-native/navbar/demo'
 // 反馈组件
-import ActionSheetDemo from 'nutui-rn/actionsheet/demo'
-import BackTopDemo from 'nutui-rn/backtop/demo'
-import ToastDemo from 'nutui-rn/toast/demo'
+import ActionSheetDemo from '@nutui/nutui-react-native/actionsheet/demo'
+import BackTopDemo from '@nutui/nutui-react-native/backtop/demo'
+import ToastDemo from '@nutui/nutui-react-native/toast/demo'
 // 展示组件
-import AvatarDemo from 'nutui-rn/avatar/demo'
+import AvatarDemo from '@nutui/nutui-react-native/avatar/demo'
 
 export const DemoList = [{
   title: 'Button',

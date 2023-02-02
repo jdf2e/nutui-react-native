@@ -1,6 +1,6 @@
 import { View, TouchableHighlight } from 'react-native';
 
-import { Button, Icon, Dialog } from 'nutui-rn';
+import { Button, Icon, Dialog } from '@nutui/nutui-react-native';
 
 const ThemePanel = (props: any) => {
   return <View>Theme</View>;

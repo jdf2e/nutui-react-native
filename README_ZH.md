@@ -10,13 +10,13 @@
     <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square" alt="PRs Welcome" />
   </a>
   <a href="https://github.com/jdf2e/nutui-react-native">
-    <img src="https://img.shields.io/npm/l/nutui-rn.svg" alt="license"/>
+    <img src="https://img.shields.io/npm/l/@nutui/nutui-react-native.svg" alt="license"/>
   </a>
-  <a href="https://www.npmjs.com/package/nutui-rn">
-    <img src="https://img.shields.io/npm/v/nutui-rn.svg?style=flat-square">
+  <a href="https://www.npmjs.com/package/@nutui/nutui-react-native">
+    <img src="https://img.shields.io/npm/v/@nutui/nutui-react-native.svg?style=flat-square">
   </a>
-  <a href="https://www.npmjs.com/package/nutui-rn">
-    <img src="https://img.shields.io/npm/dt/nutui-rn.svg?style=flat-square">
+  <a href="https://www.npmjs.com/package/@nutui/nutui-react-native">
+    <img src="https://img.shields.io/npm/dt/@nutui/nutui-react-native.svg?style=flat-square">
   </a>
   <a href="https://github.com/jdf2e/nutui-react-native">
     <img src="https://img.shields.io/github/contributors/jdf2e/nutui-react-native" alt="GitHub contributors">
