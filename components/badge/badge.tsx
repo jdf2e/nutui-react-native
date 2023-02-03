@@ -1,8 +1,7 @@
 import React, { FunctionComponent, ReactNode } from 'react';
-import { View, Text, StyleProp, ViewStyle, StyleSheet } from 'react-native';
+import { View, Text, StyleProp, ViewStyle } from 'react-native';
 
 import Icon from '../icon';
-import pt from '../utils/pt';
 import toObj from '../utils/style-to-obj';
 import fConStyle from '../utils/filter-container-style';
 import badgeStyle from './styles';
@@ -73,24 +72,21 @@ export const Badge: FunctionComponent<Partial<BadgeProps>> = (props) => {
 
   let wrapStyle = [styles.container, fConStyle(toObj(style || {}))];
   let dotStyle = [styles.sup, dot ? styles.isDot : {}, getStyle()];
-
+  console.log('dotStyle', content(), dot,  dotStyle)
   return (
     <View style={wrapStyle}>
       {icon !== '' ? (
         <View
           style={styles.slotIcons}
-          // className="slot-icons"
         >
           <Icon name={icon} color="#ffffff" size={12} />
         </View>
       ) : null}
       <View>{children}</View>
 
-      {content() ? (
-        <View style={dotStyle}>
-          <Text style={styles.text}>{content()}</Text>
-        </View>
-      ) : null}
+      <View style={dotStyle}>
+        <Text style={styles.text}>{content() || ''}</Text>
+      </View>
     </View>
   );
 };
