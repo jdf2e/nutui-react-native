@@ -12,6 +12,9 @@ import ToastDemo from '@nutui/nutui-react-native/toast/demo'
 import AvatarDemo from '@nutui/nutui-react-native/avatar/demo'
 import BadgeDemo from '@nutui/nutui-react-native/badge/demo'
 
+// 特色组件
+import CardDemo from '@nutui/nutui-react-native/card/demo'
+
 export const DemoList = [{
   title: 'Button',
   description: '按钮',
@@ -65,6 +68,12 @@ export const DemoList = [{
   description: '徽标',
   demo: BadgeDemo,
   type: 'Exhibition'
+},
+{
+  title: 'Card',
+  description: '商品卡片',
+  demo: CardDemo,
+  type: 'Business'
 }
 ]
 
