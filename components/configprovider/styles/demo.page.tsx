@@ -21,7 +21,6 @@ export const DemoCard = ({
   backgroundColor?: string;
   padding?: number;
 }) => {
-  console.log('children', children);
   return (
     <>
       <Text style={PageStyles.title}>
