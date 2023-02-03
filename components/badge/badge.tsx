@@ -72,7 +72,6 @@ export const Badge: FunctionComponent<Partial<BadgeProps>> = (props) => {
 
   let wrapStyle = [styles.container, fConStyle(toObj(style || {}))];
   let dotStyle = [styles.sup, dot ? styles.isDot : {}, getStyle()];
-  console.log('dotStyle', content(), dot,  dotStyle)
   return (
     <View style={wrapStyle}>
       {icon !== '' ? (
