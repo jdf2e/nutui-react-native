@@ -2,6 +2,7 @@
 import ButtonDemo from '@nutui/nutui-react-native/button/demo'
 import CellDemo from '@nutui/nutui-react-native/cell/demo'
 import IconDemo from '@nutui/nutui-react-native/icon/demo'
+import OverlayDemo from '@nutui/nutui-react-native/overlay/demo'
 // 导航组件
 import NavBarDemo from '@nutui/nutui-react-native/navbar/demo'
 // 反馈组件
@@ -32,6 +33,12 @@ export const DemoList = [{
   title: 'Icon',
   description: '图标',
   demo: IconDemo,
+  type: 'Basic'
+},
+{
+  title: 'Overlay',
+  description: '遮罩层',
+  demo: OverlayDemo,
   type: 'Basic'
 },
 {
