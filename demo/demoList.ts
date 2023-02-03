@@ -10,6 +10,7 @@ import BackTopDemo from '@nutui/nutui-react-native/backtop/demo'
 import ToastDemo from '@nutui/nutui-react-native/toast/demo'
 // 展示组件
 import AvatarDemo from '@nutui/nutui-react-native/avatar/demo'
+import BadgeDemo from '@nutui/nutui-react-native/badge/demo'
 
 export const DemoList = [{
   title: 'Button',
@@ -57,6 +58,12 @@ export const DemoList = [{
   title: 'Avatar',
   description: '头像',
   demo: AvatarDemo,
+  type: 'Exhibition'
+},
+{
+  title: 'Badge',
+  description: '徽标',
+  demo: BadgeDemo,
   type: 'Exhibition'
 }
 ]
