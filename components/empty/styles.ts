@@ -8,7 +8,8 @@ export default (theme: any) =>
       backgroundColor: theme['$background-color3'],
       flexDirection: 'column',
       justifyContent: 'center',
-      alignItems: 'center'
+      alignItems: 'center',
+      width: '100%',
     },
     imgContaienr: {
       width: theme['$empty-image-size'],
