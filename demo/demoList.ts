@@ -3,6 +3,9 @@ import ButtonDemo from '@nutui/nutui-react-native/button/demo'
 import CellDemo from '@nutui/nutui-react-native/cell/demo'
 import IconDemo from '@nutui/nutui-react-native/icon/demo'
 import OverlayDemo from '@nutui/nutui-react-native/overlay/demo'
+// 布局组件
+import GridDemo from '@nutui/nutui-react-native/grid/demo'
+
 // 导航组件
 import NavBarDemo from '@nutui/nutui-react-native/navbar/demo'
 // 反馈组件
@@ -14,6 +17,7 @@ import AvatarDemo from '@nutui/nutui-react-native/avatar/demo'
 import BadgeDemo from '@nutui/nutui-react-native/badge/demo'
 import EmptyDemo from '@nutui/nutui-react-native/empty/demo'
 import PopupDemo from '@nutui/nutui-react-native/popup/demo'
+import PriceDemo from '@nutui/nutui-react-native/price/demo'
 
 // 特色组件
 import CardDemo from '@nutui/nutui-react-native/card/demo'
@@ -41,6 +45,12 @@ export const DemoList = [{
   description: '遮罩层',
   demo: OverlayDemo,
   type: 'Basic'
+},
+{
+  title: 'Grid',
+  description: '宫格',
+  demo: GridDemo,
+  type: 'Layout'
 },
 {
   title: 'NavBar',
@@ -88,6 +98,12 @@ export const DemoList = [{
   title: 'Popup',
   description: '气泡弹出层',
   demo: PopupDemo,
+  type: 'Exhibition'
+},
+{
+  title: 'Price',
+  description: '价格',
+  demo: PriceDemo,
   type: 'Exhibition'
 },
 {
