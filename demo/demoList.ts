@@ -14,6 +14,7 @@ import ToastDemo from '@nutui/nutui-react-native/toast/demo'
 // 展示组件
 import AvatarDemo from '@nutui/nutui-react-native/avatar/demo'
 import BadgeDemo from '@nutui/nutui-react-native/badge/demo'
+import CollapseDemo from '@nutui/nutui-react-native/collapse/demo'
 import EmptyDemo from '@nutui/nutui-react-native/empty/demo'
 import PopupDemo from '@nutui/nutui-react-native/popup/demo'
 
@@ -90,6 +91,12 @@ export const DemoList = [{
   title: 'Badge',
   description: '徽标',
   demo: BadgeDemo,
+  type: 'Exhibition'
+},
+{
+  title: 'Collapse',
+  description: '折叠面板',
+  demo: CollapseDemo,
   type: 'Exhibition'
 },
 {
