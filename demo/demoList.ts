@@ -9,6 +9,7 @@ import NavBarDemo from '@nutui/nutui-react-native/navbar/demo'
 // 反馈组件
 import ActionSheetDemo from '@nutui/nutui-react-native/actionsheet/demo'
 import BackTopDemo from '@nutui/nutui-react-native/backtop/demo'
+import DragDemo from '@nutui/nutui-react-native/drag/demo'
 import ToastDemo from '@nutui/nutui-react-native/toast/demo'
 // 展示组件
 import AvatarDemo from '@nutui/nutui-react-native/avatar/demo'
@@ -65,6 +66,12 @@ export const DemoList = [{
   title: 'BackTop',
   description: '回到顶部',
   demo: BackTopDemo,
+  type: 'Feedback'
+},
+{
+  title: 'Drag',
+  description: '拖拽',
+  demo: DragDemo,
   type: 'Feedback'
 },
 {
