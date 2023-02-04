@@ -15,6 +15,23 @@
           "author": ""
         }
       ]
+    },
+    {
+      "name": "导航组件",
+      "enName": "nav",
+      "packages": [
+        {
+          "version": "0.0.1",
+          "name": "Elevator",
+          "type": "component",
+          "cName": "电梯楼层",
+          "desc": "用于列表快速定位以及索引的显示",
+          "sort": 1,
+          "show": true,
+          "taro": true,
+          "author": "songsong"
+        }
+      ]
     }
   ]
 }

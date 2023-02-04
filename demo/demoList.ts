@@ -4,6 +4,7 @@ import CellDemo from '@nutui/nutui-react-native/cell/demo'
 import IconDemo from '@nutui/nutui-react-native/icon/demo'
 import OverlayDemo from '@nutui/nutui-react-native/overlay/demo'
 // 导航组件
+import ElevatorDemo from '@nutui/nutui-react-native/elevator/demo'
 import NavBarDemo from '@nutui/nutui-react-native/navbar/demo'
 // 反馈组件
 import ActionSheetDemo from '@nutui/nutui-react-native/actionsheet/demo'
@@ -41,6 +42,12 @@ export const DemoList = [{
   description: '遮罩层',
   demo: OverlayDemo,
   type: 'Basic'
+},
+{
+  title: 'Elevator',
+  description: '电梯楼层',
+  demo: ElevatorDemo,
+  type: 'Nav'
 },
 {
   title: 'NavBar',
