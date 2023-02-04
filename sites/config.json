@@ -64,6 +64,17 @@
           "show": true,
           "taro": true,
           "author": "zhenyulei"
+        },
+        {
+          "version": "1.0.0",
+          "name": "Empty",
+          "type": "component",
+          "cName": "空状态",
+          "desc": "空状态时的占位提示",
+          "sort": 2,
+          "show": true,
+          "taro": true,
+          "author": "liukun"
         }
       ]
     }
