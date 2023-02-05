@@ -33,7 +33,7 @@ const Nav = () => {
                   if (!cp.show) return null;
                   return (
                     <NavLink
-                      key={Date.now()}
+                      key={cp.name}
                       activeClassName='selected'
                       to={`${lang ? `/${lang}` : ''}/component/${cp.name}`}
                     >

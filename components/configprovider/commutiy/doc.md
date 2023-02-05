@@ -7,7 +7,7 @@
 ### 安装
 
 ``` javascript
-import { ConfigProvider } from '@nutui/nutui-react';
+import { ConfigProvider } from '@nutui/nutui-react-native';
 ```
 
 ## 代码演示

@@ -82,6 +82,7 @@
     "remark-gfm": "^3.0.1",
     "sass": "^1.56.0",
     "typescript": "^4.6.4",
+    "unist-builder": "^3.0.1",
     "vite": "^3.2.3"
   },
   "main": "lib/commonjs/index.js",
