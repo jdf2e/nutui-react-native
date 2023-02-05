@@ -13,6 +13,7 @@ export const DemoCard = ({
   flexDirection = 'row',
   backgroundColor = '#fff',
   padding = 10,
+  marginLeft = 20,
 }: {
   title: string;
   subTitle?: string;
@@ -20,6 +21,7 @@ export const DemoCard = ({
   flexDirection?: 'row' | 'column';
   backgroundColor?: string;
   padding?: number;
+  marginLeft?: number;
 }) => {
   return (
     <>
@@ -28,7 +30,7 @@ export const DemoCard = ({
         {subTitle && <Text style={PageStyles.subTitle}>{`(${subTitle})`}</Text>}
       </Text>
       <View
-        style={[PageStyles.card, { flexDirection, backgroundColor, padding }]}
+        style={[PageStyles.card, { flexDirection, backgroundColor, padding, marginLeft }]}
       >
         {children.length > 0 ? (
           children.map((Component, index) => (

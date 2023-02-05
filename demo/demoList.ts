@@ -5,6 +5,7 @@ import IconDemo from '@nutui/nutui-react-native/icon/demo'
 import OverlayDemo from '@nutui/nutui-react-native/overlay/demo'
 // 布局组件
 import GridDemo from '@nutui/nutui-react-native/grid/demo'
+import LayoutDemo from '@nutui/nutui-react-native/row/demo'
 
 // 导航组件
 import NavBarDemo from '@nutui/nutui-react-native/navbar/demo'
@@ -50,6 +51,12 @@ export const DemoList = [{
   title: 'Grid',
   description: '宫格',
   demo: GridDemo,
+  type: 'Layout'
+},
+{
+  title: 'Layout',
+  description: '布局',
+  demo: LayoutDemo,
   type: 'Layout'
 },
 {
