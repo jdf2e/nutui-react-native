@@ -117,14 +117,11 @@ export default App;
 | visible             | 当前组件是否显示                                            | Boolean                                 | `false`       |
 | zIndex              | 遮罩层级                                                    | String、Number                          | `2000`        |
 | duration            | 遮罩动画时长，单位秒                                        | Number                                  | `0.3`         |
-| overlayClass        | 自定义遮罩类名                                              | String                                  | -             |
 | overlayStyle        | 自定义遮罩样式                                              | CSSProperties                           | -             |
-| lockScroll          | 背景是否锁定                                                | Boolean                                 | `true`        |
 | overlay             | 是否显示遮罩                                                | Boolean                                 | `true`        |
 | closeOnClickOverlay | 是否点击遮罩关闭                                            | Boolean                                 | `true`        |
 | position            | 弹出位置（top,bottom,left,right,center）                    | String                                  | `"center"`    |
 | style               | 自定义弹框样式                                              | CSSProperties                           | -             |
-| popClass            | 自定义弹框类名                                              | String                                  | -             |
 | closeable           | 是否显示关闭按钮                                            | Boolean                                 | `false`       |
 | closeIconPosition   | 关闭按钮位置（top-left,top-right,bottom-left,bottom-right） | String                                  | `"top-right"` |
 | closeIcon           | 自定义 Icon                                                 | String                                  | `"close"`     |
