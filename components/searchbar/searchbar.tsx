@@ -19,8 +19,6 @@ export interface SearchBarProps extends IComponent {
   placeholder?: string
   /** 搜索框形状，可选值为 round	 */
   shape?: 'square' | 'round'
-  /** 自定义class名	 */
-  className?: string
   /** 是否禁用输入框	 */
   disabled?: boolean
   /** 最大输入长度	 */
@@ -61,8 +59,6 @@ export interface SearchBarProps extends IComponent {
   onClear?: (event: Event) => void
   /** 点击取消按钮后触发	 */
   onCancel?: () => void
-  /** 点击输入区域时触发	 */
-  onClickInput?: (event: Event) => void
   /** 点击输入框内左侧图标时触发	 */
   onClickLeftinIcon?: (value: string, event: Event) => void
   /** 点击输入框外左侧图标时触发	 */
@@ -102,7 +98,6 @@ export const SearchBar: FunctionComponent<
   const {
     placeholder,
     shape,
-    className,
     disabled,
     maxLength,
     clearable,
@@ -121,7 +116,6 @@ export const SearchBar: FunctionComponent<
     onClear,
     onCancel,
     onSearch,
-    onClickInput,
     onClickLeftinIcon,
     onClickLeftoutIcon,
     onClickRightinIcon,
@@ -335,7 +329,6 @@ export const SearchBar: FunctionComponent<
       </View>
       {renderRightoutIcon()}
       {renderRightLabel()}
-
     </View>
   )
 }
