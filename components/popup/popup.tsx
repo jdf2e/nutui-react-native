@@ -21,14 +21,11 @@ type Teleport = HTMLElement | (() => HTMLElement) | null
 export interface PopupProps extends IComponent {
   visible: boolean
   position: string
-  transition: string
   style: React.CSSProperties
-  popClass: string
   closeable: boolean
   closeIconPosition: string
   closeIcon: string
   destroyOnClose: boolean
-  teleport: Teleport
   overlay: boolean
   round: boolean
   onOpen: () => void
@@ -43,14 +40,11 @@ export interface PopupProps extends IComponent {
 const defaultProps = {
   ...ComponentDefaults,
   position: 'center',
-  transition: '',
   style: {},
-  popClass: '',
   closeable: false,
   closeIconPosition: 'top-right',
   closeIcon: 'close',
   destroyOnClose: true,
-  teleport: null,
   overlay: true,
   round: false,
   onOpen: () => {},
@@ -74,21 +68,15 @@ export const Popup: FunctionComponent<
     overlay,
     closeOnClickOverlay,
     overlayStyle,
-    overlayClass,
     zIndex,
-    lockScroll,
     duration,
     closeable,
     closeIconPosition,
     closeIcon,
     style,
-    transition,
     round,
     position,
-    popClass,
-    className,
     destroyOnClose,
-    teleport,
     onOpen,
     onClose,
     onClickOverlay,
@@ -96,8 +84,6 @@ export const Popup: FunctionComponent<
     onOpened,
     onClosed,
     onClick,
-    iconClassPrefix,
-    iconFontClassName,
   } = props
 
   const { theme } = useConfig();
@@ -106,7 +92,6 @@ export const Popup: FunctionComponent<
   const [index, setIndex] = useState(zIndex || _zIndex)
   const [innerVisible, setInnerVisible] = useState(visible)
   const [showChildren, setShowChildren] = useState(true)
-  const [transitionName, setTransitionName] = useState('')
 
   const [viewWidth, setViewWidth] = useState(0)
 
@@ -320,10 +305,6 @@ export const Popup: FunctionComponent<
     visible && open()
     !visible && close()
   }, [visible])
-
-  useEffect(() => {
-    setTransitionName(transition || `popup-slide-${position}`)
-  }, [position])
 
   return renderNode()
 }
