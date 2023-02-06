@@ -10,7 +10,6 @@ export interface OverlayProps {
   overlayStyle: React.CSSProperties
   closeOnClickOverlay: boolean
   visible: boolean
-  lockScroll: boolean
   onPress:(event: Event) => void
 }
 export const defaultOverlayProps = {
@@ -19,7 +18,6 @@ export const defaultOverlayProps = {
   overlayClass: '',
   closeOnClickOverlay: true,
   visible: false,
-  lockScroll: true,
   overlayStyle: {},
   onPress:()=>{}
 } as OverlayProps
@@ -33,7 +31,6 @@ export const Overlay: FunctionComponent<
     overlayClass,
     closeOnClickOverlay,
     visible,
-    lockScroll,
     overlayStyle,
     onPress,
     ...rest
