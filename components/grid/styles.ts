@@ -5,6 +5,6 @@ export default (theme: any) =>
     nut_grid_container: {
         flexDirection:'row',
         backgroundColor:theme['$grid-bg-color'],
-        flexWrap:"wrap"
+        flexWrap:"wrap",
       }
   });

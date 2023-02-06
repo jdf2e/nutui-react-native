@@ -92,19 +92,19 @@ const InputNumberDemo = () => {
 
   return (
       <DemoPage >
-        <DemoCard title={translated['84aa6bce']}>
+        <DemoCard title={translated['84aa6bce']} flexDirection="column" padding={0}>
           <Cell>
             <InputNumber modelValue={inputState.val1} />
           </Cell>
         </DemoCard>
 
-        <DemoCard title={translated['55cc5fb7']}>
+        <DemoCard title={translated['55cc5fb7']} flexDirection="column" padding={0}>
           <Cell>
             <InputNumber modelValue={inputState.val2} step="5" />
           </Cell>
         </DemoCard>
 
-        <DemoCard title={translated['9636103a']}>
+        <DemoCard title={translated['9636103a']} flexDirection="column" padding={0}>
             <Cell>
               <InputNumber
                 modelValue={inputState.val3}
@@ -115,19 +115,19 @@ const InputNumberDemo = () => {
             </Cell>
         </DemoCard>
 
-        <DemoCard title={translated['181965e2']}>
+        <DemoCard title={translated['181965e2']} flexDirection="column" padding={0}>
           <Cell>
             <InputNumber modelValue={inputState.val4} disabled />
           </Cell>
         </DemoCard>
 
-        <DemoCard title={translated['e7b2ce1f']}>
+        <DemoCard title={translated['e7b2ce1f']} flexDirection="column" padding={0}>
             <Cell>
               <InputNumber modelValue={inputState.val5} readonly />
             </Cell>
         </DemoCard>
 
-        <DemoCard title={translated['3a42134b']}>
+        <DemoCard title={translated['3a42134b']} flexDirection="column" padding={0}>
             <Cell>
               <InputNumber
                 modelValue={inputState.val6}
@@ -138,7 +138,7 @@ const InputNumberDemo = () => {
             </Cell>
         </DemoCard>
 
-        <DemoCard title={translated['65bafb1d']}>
+        <DemoCard title={translated['65bafb1d']} flexDirection="column" padding={0}>
             <Cell>
                 <InputNumber
                 modelValue={inputState.val7}
@@ -148,7 +148,7 @@ const InputNumberDemo = () => {
             </Cell>
         </DemoCard>
 
-        <DemoCard title={translated['7e2394ae']}>
+        <DemoCard title={translated['7e2394ae']} flexDirection="column" padding={0}>
             <Cell>
                 <InputNumber
                 modelValue={inputState.val8}

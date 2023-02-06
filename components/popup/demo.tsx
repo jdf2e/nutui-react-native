@@ -81,15 +81,17 @@ const PopupDemo = () => {
 
   return (
     <DemoPage>
-       <DemoCard title={translated.ce5c5446}>
+       <DemoCard title={translated.ce5c5446} flexDirection="column" padding={0}>
        <Cell
           title={translated.c38a08ef}
           isLink
-          onPress={() => {
+          onClick={() => {
             setShowBasic(true)
           }}
         />
-        <Popup
+      </DemoCard>
+
+      <Popup
           closeOnClickOverlay
           visible={showBasic}
           style={{
@@ -104,19 +106,44 @@ const PopupDemo = () => {
                <Text>{translated.b840c88f}</Text>
           </View>
         </Popup>
-      </DemoCard>
 
 
-      <DemoCard title={translated.a74a1fd4}>
+      <DemoCard title={translated.a74a1fd4} flexDirection="column" padding={0}>
           
       <Cell
           title={translated['8dab2f66']}
           isLink
-          onPress={() => {
+          onClick={() => {
             setShowTop(true)
           }}
         />
-        <Popup
+       
+        <Cell
+          title={translated.cfbdc781}
+          isLink
+          onClick={() => {
+            setShowBottom(true)
+          }}
+        />
+
+      
+      <Cell
+          title={translated.c3a3a1d2}
+          isLink
+          onClick={() => {
+            setShowLeft(true)
+          }}
+        />
+
+        <Cell
+          title={translated.e51e4582}
+          isLink
+          onClick={() => {
+            setShowRight(true)
+          }}
+        />
+      </DemoCard>
+      <Popup
           closeOnClickOverlay
           visible={showTop}
           style={{ width: '100%', height: '30%', backgroundColor: '#fff' }}
@@ -125,14 +152,6 @@ const PopupDemo = () => {
             setShowTop(false)
           }}
           onClickOverlay={ () => {  setShowTop(false) } }
-        />
-
-        <Cell
-          title={translated.cfbdc781}
-          isLink
-          onPress={() => {
-            setShowBottom(true)
-          }}
         />
 
         <Popup
@@ -146,14 +165,6 @@ const PopupDemo = () => {
           onClickOverlay={ () => {  setShowBottom(false) } }
         />
 
-      <Cell
-          title={translated.c3a3a1d2}
-          isLink
-          onPress={() => {
-            setShowLeft(true)
-          }}
-        />
-
         <Popup
           closeOnClickOverlay
           visible={showLeft}
@@ -163,14 +174,6 @@ const PopupDemo = () => {
             setShowLeft(false)
           }}
           onClickOverlay={ () => {  setShowLeft(false) } }
-        />
-
-        <Cell
-          title={translated.e51e4582}
-          isLink
-          onPress={() => {
-            setShowRight(true)
-          }}
         />
 
         <Popup
@@ -183,18 +186,33 @@ const PopupDemo = () => {
           }}
           onClickOverlay={ () => {  setShowRight(false) } }
         />
-      </DemoCard>
 
-      <DemoCard title={translated['7db1a8b2']}>
+
+
+      <DemoCard title={translated['7db1a8b2']} flexDirection="column" padding={0}>
         
         <Cell
           title={translated['7db1a8b2']}
           isLink
-          onPress={() => {
+          onClick={() => {
             setShowIcon(true)
           }}
         />
-
+        <Cell
+          title={translated.a52bef0c}
+          isLink
+          onClick={() => {
+            setShowIconPosition(true)
+          }}
+        />      
+        <Cell
+          title={translated.d04fcbda}
+          isLink
+          onClick={() => {
+            setShowIconDefine(true)
+          }}
+        />
+        </DemoCard>
         <Popup
           closeable
           closeOnClickOverlay
@@ -207,15 +225,6 @@ const PopupDemo = () => {
           onClickOverlay={ () => {  setShowIcon(false) } }
           onClickCloseIcon={() => { setShowIcon(false) } }
         />
-
-
-        <Cell
-          title={translated.a52bef0c}
-          isLink
-          onPress={() => {
-            setShowIconPosition(true)
-          }}
-        />      
 
         <Popup
           closeable
@@ -231,15 +240,7 @@ const PopupDemo = () => {
           onClickCloseIcon={() => { setShowIconPosition(false) } }
         />
 
-        <Cell
-          title={translated.d04fcbda}
-          isLink
-          onPress={() => {
-            setShowIconDefine(true)
-          }}
-        />
-
-      <Popup
+        <Popup
           closeable
           closeOnClickOverlay
           visible={showIconDefine}
@@ -252,16 +253,19 @@ const PopupDemo = () => {
           onClickOverlay={ () => {  setShowIconDefine(false) } }
           onClickCloseIcon={() => { setShowIconDefine(false) } }
         />
-        </DemoCard>
 
-        <DemoCard title={translated['0aaad620']}>
+
+
+        <DemoCard title={translated['0aaad620']} flexDirection="column" padding={0}>
         <Cell
           title={translated['0aaad620']}
           isLink
-          onPress={() => {
+          onClick={() => {
             setShowBottomRound(true)
           }}
         />
+
+          </DemoCard>
 
         <Popup
           closeable
@@ -276,8 +280,6 @@ const PopupDemo = () => {
           onClickOverlay={ () => {  setShowBottomRound(false) } }
           onClickCloseIcon={() => { setShowBottomRound(false) } }
         />
-
-          </DemoCard>
   
     </DemoPage>
   )

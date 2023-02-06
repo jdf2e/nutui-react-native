@@ -10,13 +10,13 @@ const RateDemo = () => {
   }
   return (
       <DemoPage >
-         <DemoCard title={'基础用法'}>
+         <DemoCard title={'基础用法'} padding={0}>
           <Cell>
             <Rate modelValue={3} />
           </Cell>
          </DemoCard>
 
-         <DemoCard title={'半星'}>
+         <DemoCard title={'半星'} padding={0}>
           <Cell>
               <Rate
                 allowHalf
@@ -26,7 +26,7 @@ const RateDemo = () => {
           </Cell>
          </DemoCard>
 
-         <DemoCard title={'自定义 icon'}>
+         <DemoCard title={'自定义 icon'} padding={0}>
             <Cell>
                 <Rate
                   checkedIcon="heart-fill1"
@@ -37,13 +37,13 @@ const RateDemo = () => {
             </Cell>
          </DemoCard>
 
-         <DemoCard title={'自定义数量'}>
+         <DemoCard title={'自定义数量'} padding={0}>
             <Cell>
                 <Rate count="6" modelValue="3" />
             </Cell>
          </DemoCard>
 
-         <DemoCard title={'最少选中数量（支持半星）'}>
+         <DemoCard title={'最少选中数量（支持半星）'} padding={0}>
             <Cell>
               <Rate
                 modelValue="2"
@@ -53,25 +53,25 @@ const RateDemo = () => {
             </Cell>
          </DemoCard>
 
-         <DemoCard title={'禁用状态'}>
+         <DemoCard title={'禁用状态'} padding={0}>
             <Cell>
               <Rate disabled modelValue="3" />
             </Cell>
          </DemoCard>
 
-         <DemoCard title={'只读状态'}>
+         <DemoCard title={'只读状态'} padding={0}>
             <Cell>
               <Rate modelValue="3" readonly />
             </Cell>
          </DemoCard>
 
-         <DemoCard title={'绑定事件'}>
+         <DemoCard title={'绑定事件'} padding={0}>
             <Cell>
               <Rate modelValue="3" onChange={onChange} />
             </Cell>
          </DemoCard>
 
-         <DemoCard title={'自定义尺寸 35px'}>
+         <DemoCard title={'自定义尺寸 35px'} padding={0}>
             <Cell>
                 <Rate modelValue="3" iconSize="35" />
             </Cell>

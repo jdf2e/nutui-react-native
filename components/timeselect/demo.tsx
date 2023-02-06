@@ -81,7 +81,7 @@ const TimeSelectDemo = () => {
   return (
     
       <DemoPage>
-        <Cell title={translated.text2} onPress={handleClick} />
+        <Cell title={translated.text2} onClick={handleClick} />
         <TimeSelect
           visible={visible1}
           height="50%"

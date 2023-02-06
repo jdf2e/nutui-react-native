@@ -2,14 +2,32 @@
 import ButtonDemo from '@nutui/nutui-react-native/button/demo'
 import CellDemo from '@nutui/nutui-react-native/cell/demo'
 import IconDemo from '@nutui/nutui-react-native/icon/demo'
+import OverLayDemo from '@nutui/nutui-react-native/overlay/demo'
+import PopupDemo from '@nutui/nutui-react-native/popup/demo'
+
 // 导航组件
 import NavBarDemo from '@nutui/nutui-react-native/navbar/demo'
+import PaginationDemo from '@nutui/nutui-react-native/pagination/demo'
 // 反馈组件
 import ActionSheetDemo from '@nutui/nutui-react-native/actionsheet/demo'
 import BackTopDemo from '@nutui/nutui-react-native/backtop/demo'
 import ToastDemo from '@nutui/nutui-react-native/toast/demo'
 // 展示组件
 import AvatarDemo from '@nutui/nutui-react-native/avatar/demo'
+import StepsDemo from '@nutui/nutui-react-native/steps/demo'
+
+
+// 布局组件
+import GridDemo from '@nutui/nutui-react-native/grid/demo'
+import LayoutDemo from '@nutui/nutui-react-native/row/demo'
+
+//录入组件
+import SearchBarDemo from '@nutui/nutui-react-native/searchbar/demo'
+import InputNumberDemo from '@nutui/nutui-react-native/inputnumber/demo'
+import RateDemo from '@nutui/nutui-react-native/rate/demo'
+
+//特色组件
+import TimeSelectDemo from '@nutui/nutui-react-native/timeselect/demo'
 
 export const DemoList = [{
   title: 'Button',
@@ -58,7 +76,70 @@ export const DemoList = [{
   description: '头像',
   demo: AvatarDemo,
   type: 'Exhibition'
-}
+},
+{
+  title: 'Overlay',
+  description: '遮罩层',
+  demo: OverLayDemo,
+  type: 'Basic'
+},
+{
+  title: 'Popup',
+  description: '弹出层',
+  demo: PopupDemo,
+  type: 'Basic'
+},
+{
+  title: 'Grid',
+  description: '宫格',
+  demo: GridDemo,
+  type: 'Layout'
+},
+{
+  title: 'Layout',
+  description: '布局',
+  demo: LayoutDemo,
+  type: 'Layout'
+},
+{
+  title: 'Pagination',
+  description: '分页',
+  demo: PaginationDemo,
+  type: 'Nav'
+},
+{
+  title: 'SearchBar',
+  description: '搜索栏',
+  demo: SearchBarDemo,
+  type: 'Dentry'
+},
+{
+  title: 'InputNumber',
+  description: '数字输入框',
+  demo: InputNumberDemo,
+  type: 'Dentry'
+},
+{
+  title: 'Rate',
+  description: '评分',
+  demo: RateDemo,
+  type: 'Dentry'
+},
+{
+  title: 'Steps',
+  description: '步骤条',
+  demo: StepsDemo,
+  type: 'Exhibition'
+},
+{
+  title: 'TimeSelect',
+  description: '配送时间',
+  demo: TimeSelectDemo,
+  type: 'Business'
+},
+
+
+
 ]
 
 export const CategoryList = [{

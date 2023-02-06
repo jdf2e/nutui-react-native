@@ -65,7 +65,7 @@ const OverlayDemo = () => {
 
   return (
     <DemoPage>
-        <DemoCard title={translated['84aa6bce']}>
+        <DemoCard title={translated['84aa6bce']} flexDirection="column" padding={0}>
         <Cell>
           <Button type="primary" onPress={handleToggleShow}>
             {translated['2a9e4928']}
@@ -74,7 +74,7 @@ const OverlayDemo = () => {
         </Cell>
       </DemoCard>
 
-      <DemoCard title={translated['abbf9359']}>
+      <DemoCard title={translated['abbf9359']} flexDirection="column" padding={0}>
       <Cell>
           <Button type="primary" onPress={handleToggleShow2}>
             {translated['2a9e4928']}
@@ -89,7 +89,7 @@ const OverlayDemo = () => {
         </Cell>
       </DemoCard>
 
-      <DemoCard title={translated['ec0d7acf']}>
+      <DemoCard title={translated['ec0d7acf']} flexDirection="column" padding={0}>
       <Cell>
           <Button type="success" onPress={handleToggleShow3}>
             {translated.ec0d7acf}
