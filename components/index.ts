@@ -42,6 +42,7 @@ import Toast from './toast';
 
 // 展示组件
 import Avatar from './avatar';
+import Badge from './badge';
 import Collapse from './collapse';
 import CollapseItem from './collapseitem';
 import CountDown from './countdown';
@@ -98,6 +99,7 @@ export {
   Toast,
 
   Avatar,
+  Badge,
   Collapse,
   CollapseItem,
   CountDown,

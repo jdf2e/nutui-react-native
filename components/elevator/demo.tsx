@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Text } from 'react-native';
-import { Elevator, elevatorContext } from '@components/elevator/elevator';
+import { Elevator, elevatorContext } from './elevator';
 import { useTranslate } from '../utils';
 import Icon from '../icon';
 import { DemoPage, DemoCard } from '../configprovider/styles/demo.page';

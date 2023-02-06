@@ -5,6 +5,7 @@ import React, {
   CSSProperties,
 } from 'react'
 import {
+  View,
   TouchableOpacity
 } from 'react-native';
 import  deviceWidth  from '../utils/deviceWidth'
@@ -42,12 +43,12 @@ export const Col: FunctionComponent<
   }
   const getStyle = () => {
     // 定义col的style类
-    
+
     const style: CSSProperties = {}
     style.paddingLeft = (gutter as number) / 2
-    style.paddingRight = (gutter as number) / 2,
-    style.width = (deviceWidth - (24/parseInt(span) -1) 
-    * parseInt(gutter))  * (parseInt(span)/24 ); 
+    style.paddingRight = (gutter as number) / 2
+    style.width = (deviceWidth - (24/parseInt(span) -1)
+    * parseInt(gutter))  * (parseInt(span)/24 );
     if(offset){
       style.marginTop = parseInt(offset);
     }
@@ -59,14 +60,17 @@ export const Col: FunctionComponent<
   }, [span, offset, gutter])
 
   return (
-    <TouchableOpacity
+    <View
       style={{ ...colStyle }}
       onPress={(e) => {
         onPress && onPress(e, 'col')
       }}
+      onLayout={(e) => {
+        console.log(e.nativeEvent.layout)
+      }}
     >
       {children}
-    </TouchableOpacity>
+    </View>
   )
 }
 

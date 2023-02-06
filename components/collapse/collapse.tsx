@@ -101,7 +101,7 @@ export const Collapse: FunctionComponent<Partial<CollapseProps>> = memo(
     };
 
     return (
-      <View style={style}>
+      <View style={[style, {width: '100%'}]}>
         {childrenDom.map((item: any) => {
           return React.cloneElement(item, {
             isOpen: defaultOpenIndex.includes(item.props.name),

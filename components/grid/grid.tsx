@@ -1,23 +1,23 @@
-import React, { CSSProperties, FunctionComponent } from 'react'
+import React, { CSSProperties, FunctionComponent } from 'react';
 import { View } from 'react-native';
 import { useConfig } from '../configprovider';
 import gridStyles from './styles';
 
-export type GridDirection = 'horizontal' | 'vertical'
+export type GridDirection = 'horizontal' | 'vertical';
 
 export interface GridProps {
-  columnNum: string | number
-  border: boolean
-  gutter: string | number
-  center: boolean
-  square: boolean
-  reverse: boolean
-  direction: GridDirection
-  className?: string
-  iconSize?: string | number
-  iconColor?: string
-  style?: CSSProperties,
-  onPress: () => void
+  columnNum: string | number;
+  border: boolean;
+  gutter: string | number;
+  center: boolean;
+  square: boolean;
+  reverse: boolean;
+  direction: GridDirection;
+  className?: string;
+  iconSize?: string | number;
+  iconColor?: string;
+  style?: CSSProperties;
+  onPress: () => void;
 }
 
 const defaultProps = {
@@ -30,7 +30,7 @@ const defaultProps = {
   direction: 'vertical',
   iconSize: 28,
   iconColor: '',
-} as GridProps
+} as GridProps;
 
 export const Grid: FunctionComponent<
   Partial<GridProps> & React.HTMLAttributes<HTMLDivElement>
@@ -49,40 +49,39 @@ export const Grid: FunctionComponent<
     iconColor,
     className,
     ...rest
-  } = { ...defaultProps, ...props }
+  } = { ...defaultProps, ...props };
 
   const { theme } = useConfig();
   const mStyles = gridStyles(theme);
 
-  const childrenDom = React.Children.toArray(children)
+  const childrenDom = React.Children.toArray(children);
 
   const pxCheck = (value: string | number): number => {
-    let getValue: any = value
+    let getValue: any = value;
     if (Number.isNaN(Number(value)) || typeof value === 'string') {
-      getValue = parseInt(String(value))
+      getValue = parseInt(String(value));
     }
     if (!getValue || getValue == '') {
-      getValue = 0
+      getValue = 0;
     }
 
-    return getValue
-  }
+    return getValue;
+  };
 
   const rootStyle = () => {
-    let styleSelf: CSSProperties = {}
+    let styleSelf: CSSProperties = {};
     if (style) {
-      styleSelf = style
+      styleSelf = style;
     }
     if (gutter) {
-      styleSelf.paddingLeft = pxCheck(gutter)
+      styleSelf.paddingLeft = pxCheck(gutter);
     }
 
-    return styleSelf
-  }
+    return styleSelf;
+  };
 
   return (
-    <View 
-    style={[mStyles.nut_grid_container,rootStyle()]}>
+    <View style={[mStyles.nut_grid_container, rootStyle()]}>
       {childrenDom.map((item: any, idex: number) => {
         return React.cloneElement(item, {
           index: idex,
@@ -94,12 +93,12 @@ export const Grid: FunctionComponent<
           reverse,
           direction,
           parentIconSize: iconSize,
-          parentIconColor: iconColor
-        })
+          parentIconColor: iconColor,
+        });
       })}
     </View>
-  )
-}
+  );
+};
 
-Grid.defaultProps = defaultProps
-Grid.displayName = 'NutGrid'
+Grid.defaultProps = defaultProps;
+Grid.displayName = 'NutGrid';

@@ -15,6 +15,79 @@
           "author": ""
         }
       ]
+    },
+    {
+      "name": "导航组件",
+      "enName": "nav",
+      "packages": [
+        {
+          "version": "0.0.1",
+          "name": "Elevator",
+          "type": "component",
+          "cName": "电梯楼层",
+          "desc": "用于列表快速定位以及索引的显示",
+          "sort": 1,
+          "show": true,
+          "taro": true,
+          "author": "songsong"
+        }
+      ]
+    },
+    {
+      "name": "操作反馈",
+      "enName": "feedback",
+      "packages": [
+        {
+          "version": "0.0.1",
+          "name": "Drag",
+          "type": "component",
+          "cName": "拖拽",
+          "desc": "实现可拖拽的任意元素",
+          "sort": 1,
+          "show": true,
+          "taro": true,
+          "author": "songsong"
+        }
+      ]
+    },
+    {
+      "name": "展示组件",
+      "enName": "exhibition",
+      "packages": [
+        {
+          "version": "0.0.1",
+          "name": "Collapse",
+          "type": "component",
+          "cName": "折叠面板",
+          "desc": "折叠面板，可进行内容折叠展开操作，可以多面板配合使用。",
+          "sort": 1,
+          "show": true,
+          "taro": true,
+          "author": "zhenyulei"
+        },
+        {
+          "version": "1.0.0",
+          "name": "Empty",
+          "type": "component",
+          "cName": "空状态",
+          "desc": "空状态时的占位提示",
+          "sort": 2,
+          "show": true,
+          "taro": true,
+          "author": "liukun"
+        },
+        {
+          "version": "0.0.1",
+          "name": "Price",
+          "type": "component",
+          "cName": "价格",
+          "desc": "用来对商品价格数值的小数点前后部分应用不同样式，还支持人民币符号、千位分隔符、设置小数点位数等功能。",
+          "sort": 3,
+          "show": true,
+          "taro": true,
+          "author": "songsong"
+        }
+      ]
     }
   ]
 }

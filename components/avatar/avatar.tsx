@@ -73,27 +73,19 @@ export const Avatar: FunctionComponent<
   const avatarRef = useRef<any>(null);
   const parent: any = useContext(AvatarContext);
 
-  const sizeValue = ['large', 'normal', 'small'];
-
-  const sizeStyle = {};
-
   const stylesObj = {
     backgroundColor: `${bgColor}`,
     color: `${color}`,
     marginLeft:
       avatarIndex !== 1 && parent?.propAvatarGroup?.span
         ? parent?.propAvatarGroup?.span
-        : '',
+        : 0,
     zIndex:
       parent?.propAvatarGroup?.zIndex === 'right'
         ? `${Math.abs(maxSum - avatarIndex)}`
         : '',
   };
 
-  if (sizeValue.indexOf(size) > -1) {
-    sizeStyle.width = size;
-    sizeStyle.height = size;
-  }
 
   const mySize = size || parent?.propAvatarGroup?.size || 'normal';
   const wrapStyle = [
@@ -104,7 +96,6 @@ export const Avatar: FunctionComponent<
       `shape${mySize}${shape || parent?.propAvatarGroup?.shape || 'round'}`
     ],
     stylesObj,
-    sizeStyle,
   ];
 
   const maxStyles = {
@@ -119,7 +110,6 @@ export const Avatar: FunctionComponent<
       `shape${mySize}${shape || parent?.propAvatarGroup?.shape || 'round'}`
     ],
     maxStyles,
-    sizeStyle,
   ];
 
   const imageStyle = [
@@ -128,7 +118,6 @@ export const Avatar: FunctionComponent<
     styles[
       `shape${mySize}${shape || parent?.propAvatarGroup?.shape || 'round'}`
     ],
-    sizeStyle,
   ];
 
   const iconStyles = icon || '';

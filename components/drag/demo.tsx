@@ -24,7 +24,7 @@ const DragDemo = () => {
       directionY: '只能Y轴拖动',
       attract: '自动吸边',
       attractText: '按钮',
-      limitBoundaries: '限制拖拽边界'
+      limitBoundaries: '限制拖拽边界',
     },
     'zh-TW': {
       basic: '基本用法',
@@ -34,7 +34,7 @@ const DragDemo = () => {
       directionY: '只能Y軸拖動',
       attract: '自動吸邊',
       attractText: '按鈕',
-      limitBoundaries: '限製拖拽邊界'
+      limitBoundaries: '限製拖拽邊界',
     },
     'en-US': {
       basic: 'Basic Usage',
@@ -44,8 +44,8 @@ const DragDemo = () => {
       directionY: 'Y axis',
       attract: 'Attract',
       attractText: 'Button',
-      limitBoundaries: 'Limit Boundaries'
-    }
+      limitBoundaries: 'Limit Boundaries',
+    },
   });
   const bottom = () => {
     return DiviceHeight - 100;
@@ -56,49 +56,49 @@ const DragDemo = () => {
     fontSize: 14,
     color: '#fff',
     lineHeight: 36,
-    backgroundColor: '#fa2c19'
+    backgroundColor: '#fa2c19',
   };
 
   const cardStyle = {
-    height: 100,
-    padding: 10
+    backgroundColor: 'transparent',
   };
 
   return (
     <DemoPage>
-      <DemoCard title={translated.basic} style={cardStyle}>
-        <Drag style={{ top: 0, left: 8 }}>
-          <Text style={btnStyle}>{translated.dragBasic}</Text>
-        </Drag>
+      <DemoCard title={translated.basic} {...cardStyle}>
+        <View style={{ width: '100%', height: 50 }}>
+          <Drag style={{ top: 0, left: 0 }}>
+            <Text style={btnStyle}>{translated.dragBasic}</Text>
+          </Drag>
+        </View>
       </DemoCard>
-      <DemoCard title={translated.direction} style={cardStyle}>
-        <Drag direction='x' style={{ top: 0, left: 8 }}>
-          <Text style={btnStyle}> {translated.directionX}</Text>
-        </Drag>
-        <Drag direction='y' style={{ top: 0, right: 50 }}>
-          <Text style={btnStyle}> {translated.directionY}</Text>
-        </Drag>
+      <DemoCard title={translated.direction} {...cardStyle}>
+        <View style={{ width: '100%', height: 100 }}>
+          <Drag direction="x" style={{ top: 0, left: 0 }}>
+            <Text style={btnStyle}> {translated.directionX}</Text>
+          </Drag>
+          <Drag direction="y" style={{ top: 0, right: 50 }}>
+            <Text style={btnStyle}> {translated.directionY}</Text>
+          </Drag>
+        </View>
       </DemoCard>
-      <DemoCard title={translated.attract} style={cardStyle}>
-        <Drag direction='x' attract style={{ left: 8 }}>
-          <Text style={btnStyle}>{translated.attractText}</Text>
-        </Drag>
+      <DemoCard title={translated.attract} {...cardStyle}>
+        <View style={{ width: '100%', height: 100 }}>
+          <Drag direction="x" attract style={{ left: 0 }}>
+            <Text style={btnStyle}>{translated.attractText}</Text>
+          </Drag>
+        </View>
       </DemoCard>
-      <View style={{
-        position: 'absolute',
-        bottom: 50,
-        left: 0
-      }}
-      >
-        <DemoCard title={translated.limitBoundaries} style={cardStyle}>
+      <DemoCard title={translated.limitBoundaries} {...cardStyle}>
+        <View style={{ width: '100%', height: 100, backgroundColor: '#fff' }}>
           <Drag
-            boundary={{ top: 0, left: 0, bottom: bottom(), right: 40 }}
+            boundary={{ top: 0, left: 0, bottom: bottom(), right: 60 }}
             style={{ left: 50 }}
           >
             <Text style={btnStyle}>{translated.limitBoundaries}</Text>
           </Drag>
-        </DemoCard>
-      </View>
+        </View>
+      </DemoCard>
     </DemoPage>
   );
 };
