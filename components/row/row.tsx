@@ -1,8 +1,6 @@
 import React, { FunctionComponent } from 'react';
 import { View, TouchableOpacity } from 'react-native';
 
-import deviceWidth from '../utils/deviceWidth';
-
 type EventType = 'row' | 'col';
 export interface RowProps {
   type: string;
@@ -10,7 +8,7 @@ export interface RowProps {
   align: string;
   wrap: string;
   gutter: string | number;
-  onPress: (e: any, type: EventType) => void;
+  onClick: (e: any, type: EventType) => void;
 }
 const defaultProps = {
   type: '',
@@ -18,12 +16,12 @@ const defaultProps = {
   align: 'flex-start',
   wrap: 'nowrap',
   gutter: '0',
-  onPress: () => {},
+  onClick: () => {},
 } as RowProps;
 export const Row: FunctionComponent<
-  Partial<RowProps> & Omit<React.HTMLAttributes<HTMLDivElement>, 'onPress'>
+  Partial<RowProps> & Omit<React.HTMLAttributes<HTMLDivElement>, 'onClick'>
 > = (props) => {
-  const { children, type, justify, align, wrap, gutter, onPress } = {
+  const { children, type, justify, align, wrap, gutter, onClick } = {
     ...defaultProps,
     ...props,
   };
@@ -134,7 +132,7 @@ export const Row: FunctionComponent<
           getWrapStyle(),
         ]}
         onPress={(e: any) => {
-          onPress && onPress(e, 'row');
+          onClick && onClick(e, 'row');
         }}
       >
         {cloneChildren}
@@ -151,7 +149,7 @@ export const Row: FunctionComponent<
           getWrapStyle(),
         ]}
         onPress={(e: any) => {
-          onPress && onPress(e, 'row');
+          onClick && onClick(e, 'row');
         }}
       >
         {cloneChildren}

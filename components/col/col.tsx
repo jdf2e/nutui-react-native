@@ -15,7 +15,7 @@ export interface ColProps {
   offset: string | number
   gutter: string | number
   rowClassName: string
-  onPress: (e: any, type: EventType) => void
+  onClick: (e: any, type: EventType) => void
 }
 const defaultProps = {
   span: '24',
@@ -25,9 +25,9 @@ const defaultProps = {
 } as ColProps
 
 export const Col: FunctionComponent<
-  Partial<ColProps> & Omit<React.HTMLAttributes<HTMLDivElement>, 'onPress'>
+  Partial<ColProps> & Omit<React.HTMLAttributes<HTMLDivElement>, 'onClick'>
 > = (props) => {
-  const { span, offset, children, rowClassName,gutter, onPress } = {
+  const { span, offset, children, rowClassName,gutter, onClick } = {
     ...defaultProps,
     ...props,
   }
@@ -60,17 +60,17 @@ export const Col: FunctionComponent<
   }, [span, offset, gutter])
 
   return (
-    <View
+    <TouchableOpacity
       style={{ ...colStyle }}
       onPress={(e) => {
-        onPress && onPress(e, 'col')
+        onClick && onClick(e, 'col')
       }}
       onLayout={(e) => {
         console.log(e.nativeEvent.layout)
       }}
     >
       {children}
-    </View>
+    </TouchableOpacity>
   )
 }
 
