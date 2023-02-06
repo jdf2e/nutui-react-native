@@ -37,7 +37,7 @@ export const Steps: FunctionComponent<
 
   return (
     <DataContext.Provider value={parentSteps}>
-      <View style={{flex:1,flexDirection: direction == 'horizontal' ? 'row':'column'}}>
+      <View style={{flex:1,width:'100%',flexDirection: direction == 'horizontal' ? 'row':'column'}}>
         {children}
       </View>
     </DataContext.Provider>
