@@ -245,7 +245,7 @@ export const Popup: FunctionComponent<
           ...getStyles(),
         }}
       >
-        {showChildren ? <View onLayout={(event)=>{
+        {showChildren ? <View style={{flex: 1}} onLayout={(event)=>{
             if(position === 'center' && viewWidth ===0){
                 setViewWidth(event?.nativeEvent?.layout?.width)
             }

@@ -34,6 +34,22 @@
       ]
     },
     {
+      "name": "数据录入",
+      "enName": "dentry",
+      "packages": [
+        {
+          "name": "Calendar",
+          "type": "component",
+          "cName": "日历",
+          "desc": "日历，可平铺/弹窗展示",
+          "sort": 1,
+          "show": true,
+          "taro": true,
+          "author": "szg2008"
+        }
+      ]
+    },
+    {
       "name": "操作反馈",
       "enName": "feedback",
       "packages": [
