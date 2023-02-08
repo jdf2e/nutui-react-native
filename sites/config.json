@@ -28,8 +28,17 @@
           "desc": "用于列表快速定位以及索引的显示",
           "sort": 1,
           "show": true,
-          "taro": true,
-          "author": "songsong"
+          "author": ""
+        },
+        {
+          "version": "0.1.0",
+          "name": "FixedNav",
+          "type": "component",
+          "cName": "悬浮导航",
+          "desc": "悬浮收齐体验交互，用于快捷导航",
+          "sort": 2,
+          "show": true,
+          "author": ""
         }
       ]
     },
@@ -44,8 +53,7 @@
           "desc": "日历，可平铺/弹窗展示",
           "sort": 1,
           "show": true,
-          "taro": true,
-          "author": "szg2008"
+          "author": ""
         }
       ]
     },
@@ -61,8 +69,7 @@
           "desc": "实现可拖拽的任意元素",
           "sort": 1,
           "show": true,
-          "taro": true,
-          "author": "songsong"
+          "author": ""
         }
       ]
     },
@@ -78,8 +85,7 @@
           "desc": "折叠面板，可进行内容折叠展开操作，可以多面板配合使用。",
           "sort": 1,
           "show": true,
-          "taro": true,
-          "author": "zhenyulei"
+          "author": ""
         },
         {
           "version": "1.0.0",
@@ -89,8 +95,7 @@
           "desc": "空状态时的占位提示",
           "sort": 2,
           "show": true,
-          "taro": true,
-          "author": "liukun"
+          "author": ""
         },
         {
           "version": "0.0.1",
@@ -100,8 +105,7 @@
           "desc": "用来对商品价格数值的小数点前后部分应用不同样式，还支持人民币符号、千位分隔符、设置小数点位数等功能。",
           "sort": 3,
           "show": true,
-          "taro": true,
-          "author": "songsong"
+          "author": ""
         }
       ]
     }

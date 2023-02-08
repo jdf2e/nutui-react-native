@@ -1,10 +1,10 @@
 import React, { FunctionComponent, MouseEvent, useRef, useEffect, useState } from 'react';
 import { View, Text, Animated, Image, TouchableOpacity } from 'react-native';
 import Icon from '../icon';
-// import Overlay from '../overlay/index.rn';
 import { IComponent } from '../utils/typings';
 import { useConfig } from '../configprovider';
 import fixednavStyles from './styles';
+import pt from '../utils/pt';
 
 type Direction = 'right' | 'left';
 type Position = {
@@ -14,7 +14,7 @@ type Position = {
 
 export interface FixedNavProps extends IComponent {
   visible: boolean;
-  overlay: boolean;
+//   overlay: boolean;
   navList: any[];
   activeText: string;
   unActiveText: string;
@@ -22,25 +22,27 @@ export interface FixedNavProps extends IComponent {
   type: Direction;
   onChange: (v: any) => void;
   onSelected: (v: any, event: MouseEvent) => void;
-  slotList: React.ReactNode;
-  slotBtn: React.ReactNode;
+  slotList?: React.ReactNode;
+  slotBtn?: React.ReactNode;
 }
 
 const defaultProps = {
+  visible: false,
+//   overlay: false,
   navList: [],
   activeText: '',
   unActiveText: '',
-  //   type: 'right',
+  type: 'right',
   position: {
     top: 'auto',
     bottom: 'auto'
   },
   onSelected: () => {},
   onChange: () => {}
-};
+} as FixedNavProps
 
 export const FixedNav: FunctionComponent<
-Partial<FixedNavProps> & React.HTMLAttributes<HTMLDivElement>
+Partial<FixedNavProps>
 > = (props) => {
   const {
     // overlay,
@@ -62,7 +64,7 @@ Partial<FixedNavProps> & React.HTMLAttributes<HTMLDivElement>
 
   const styles = fixednavStyles(theme);
 
-  const fadeAnim = useRef(new Animated.Value(type === 'left' ? -375 : 375)).current;
+  const fadeAnim = useRef(new Animated.Value(type === 'left' ? -pt(375) : pt(375))).current;
   const [navWidth, setNavWidth] = useState(375);
 
   const onSelectCb = (event: MouseEvent, item: any): void => {
@@ -77,8 +79,6 @@ Partial<FixedNavProps> & React.HTMLAttributes<HTMLDivElement>
 
     setNavWidth(width);
   };
-
-  console.log('visible', visible);
 
   useEffect(() => {
     console.log(fadeAnim);

@@ -112,7 +112,6 @@ const FixedNavDemo = () => {
       <FixedNav
         navList={navList}
         activeText={translated.title1}
-        overlay
         position={{ top: 70 }}
         onChange={change1}
         visible={visible1}
@@ -131,7 +130,6 @@ const FixedNavDemo = () => {
       <FixedNav
         navList={navList}
         position={{ top: 210 }}
-        overlay={false}
         visible={visible3}
         onChange={change3}
         onSelected={selected3}
@@ -160,8 +158,7 @@ const FixedNavDemo = () => {
           </>
         }
       />
-      {/* <!-- 配合 Drag 支持拖拽 ，小程序暂不支持 --> */}
-      <Drag direction='y' style={{ right: 0, bottom: 240 }}>
+      <Drag direction='y' style={{ right: 0, top: 350 }}>
         <FixedNav
           navList={navList}
           unActiveText={translated.title6}

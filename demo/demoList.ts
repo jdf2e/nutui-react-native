@@ -5,13 +5,13 @@ import IconDemo from '@nutui/nutui-react-native/icon/demo'
 import OverLayDemo from '@nutui/nutui-react-native/overlay/demo'
 import PopupDemo from '@nutui/nutui-react-native/popup/demo'
 // 导航组件
+import ElevatorDemo from '@nutui/nutui-react-native/elevator/demo';
+import FixedNavDemo from '@nutui/nutui-react-native/fixednav/demo';
 import NavBarDemo from '@nutui/nutui-react-native/navbar/demo'
 import PaginationDemo from '@nutui/nutui-react-native/pagination/demo'
 // 布局组件
 import GridDemo from '@nutui/nutui-react-native/grid/demo';
 import LayoutDemo from '@nutui/nutui-react-native/row/demo';
-// 导航组件
-import ElevatorDemo from '@nutui/nutui-react-native/elevator/demo';
 // 反馈组件
 import ActionSheetDemo from '@nutui/nutui-react-native/actionsheet/demo';
 import BackTopDemo from '@nutui/nutui-react-native/backtop/demo';
@@ -75,6 +75,12 @@ export const DemoList = [
     title: 'Elevator',
     description: '电梯楼层',
     demo: ElevatorDemo,
+    type: 'Nav',
+  },
+  {
+    title: 'FixedNav',
+    description: '悬浮导航',
+    demo: FixedNavDemo,
     type: 'Nav',
   },
   {
