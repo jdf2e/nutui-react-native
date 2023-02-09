@@ -111,27 +111,27 @@ const SideNavBarDemo = () => {
 
   return (
     <DemoPage>
-      <DemoCard title={text1}>
+      <DemoCard title={text1} flexDirection='column'>
         <Cell
           title={title1}
           isLink
-          onPress={() => {
+          onClick={() => {
             changeNarBar(true, 'left');
           }}
         />
         <Cell
           title={title2}
           isLink
-          onPress={() => {
+          onClick={() => {
             changeNarBar(true, 'right');
           }}
         />
       </DemoCard>
-      <DemoCard title={text2}>
+      <DemoCard title={text2} flexDirection='column'>
         <Cell
           title={title3}
           isLink
-          onPress={() => {
+          onClick={() => {
             changeNarBar(true, 'right');
             setShowThird(true);
           }}

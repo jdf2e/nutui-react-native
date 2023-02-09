@@ -15,7 +15,7 @@ import { FixedNav } from '@nutui/nutui-react-native';
 
 ```SnackPlayer name=FixedNav&dependencies=@nutui/nutui-react-native
 import React, { useState } from "react";
-import { FixedNav } from '@nutui/nutui-react';
+import { FixedNav } from '@nutui/nutui-react-native';
 
 const App = () => {
   const navList = [
@@ -69,7 +69,7 @@ export default App;
 
 ```SnackPlayer name=FixedNav&dependencies=@nutui/nutui-react-native
 import React, { useState } from "react";
-import { FixedNav } from '@nutui/nutui-react';
+import { FixedNav } from '@nutui/nutui-react-native';
 
 const App = () => {
   const navList = [
@@ -126,7 +126,7 @@ export default App;
 
 ```SnackPlayer name=FixedNav&dependencies=@nutui/nutui-react-native
 import React, { useState } from "react";
-import { FixedNav } from '@nutui/nutui-react';
+import { FixedNav } from '@nutui/nutui-react-native';
 
 const App = () => {
   const navList = [
@@ -180,7 +180,7 @@ export default App;
 
 ```SnackPlayer name=FixedNav&dependencies=@nutui/nutui-react-native
 import React, { useState } from "react";
-import { Icon, FixedNav } from '@nutui/nutui-react';
+import { Icon, FixedNav } from '@nutui/nutui-react-native';
 
 const App = () => {
   const navList = [
@@ -248,7 +248,7 @@ export default App;
 
 ```SnackPlayer name=FixedNav&dependencies=@nutui/nutui-react-native
 import React, { useState } from "react";
-import { Drag, FixedNav } from '@nutui/nutui-react';
+import { Drag, FixedNav } from '@nutui/nutui-react-native';
 
 const App = () => {
   const navList = [

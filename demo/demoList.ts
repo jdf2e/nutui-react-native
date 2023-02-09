@@ -7,6 +7,7 @@ import PopupDemo from '@nutui/nutui-react-native/popup/demo'
 // 导航组件
 import ElevatorDemo from '@nutui/nutui-react-native/elevator/demo';
 import FixedNavDemo from '@nutui/nutui-react-native/fixednav/demo';
+import SideNavBarDemo from '@nutui/nutui-react-native/sidenavbar/demo';
 import NavBarDemo from '@nutui/nutui-react-native/navbar/demo'
 import PaginationDemo from '@nutui/nutui-react-native/pagination/demo'
 // 布局组件
@@ -81,6 +82,12 @@ export const DemoList = [
     title: 'FixedNav',
     description: '悬浮导航',
     demo: FixedNavDemo,
+    type: 'Nav',
+  },
+  {
+    title: 'SideNavBar',
+    description: '侧边栏导航',
+    demo: SideNavBarDemo,
     type: 'Nav',
   },
   {

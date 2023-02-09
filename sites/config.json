@@ -39,6 +39,16 @@
           "sort": 2,
           "show": true,
           "author": ""
+        },
+        {
+          "version": "0.1.0",
+          "name": "SideNavBar",
+          "type": "component",
+          "cName": "侧边栏导航",
+          "desc": "用于内容选择和切换",
+          "sort": 3,
+          "show": true,
+          "author": ""
         }
       ]
     },

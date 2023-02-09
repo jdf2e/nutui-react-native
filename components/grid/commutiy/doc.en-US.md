@@ -7,7 +7,7 @@ Used to separate into equal-width blocks for page navigation.
 ### Install
 
 ```javascript
-import { Grid, GridItem } from '@nutui/nutui-react';
+import { Grid, GridItem } from '@nutui/nutui-react-native';
 ```
 
 ### Basic Usage

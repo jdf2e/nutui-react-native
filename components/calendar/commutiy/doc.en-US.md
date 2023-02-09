@@ -16,7 +16,7 @@ import { Calendar } from '@nutui/nutui-react-native';
 
 ```SnackPlayer name=Calendar&dependencies=@nutui/nutui-react-native
 import  React, { useState } from "react";
-import { Cell, Calendar } from '@nutui/nutui-react';
+import { Cell, Calendar } from '@nutui/nutui-react-native';
 
 const App = () => {
     const [date, setDate] = useState('');
@@ -57,7 +57,7 @@ export default App;
 
 ```SnackPlayer name=Calendar&dependencies=@nutui/nutui-react-native
 import  React, { useState } from "react";
-import { Cell, Calendar } from '@nutui/nutui-react';
+import { Cell, Calendar } from '@nutui/nutui-react-native';
 
 const App = () => {
     const [date1, setDate1] = useState(['2019-12-23', '2019-12-26'])
@@ -98,7 +98,7 @@ export default App;
 
 ```SnackPlayer name=Calendar&dependencies=@nutui/nutui-react-native
 import  React, { useState } from "react";
-import { Cell, Calendar } from '@nutui/nutui-react';
+import { Cell, Calendar } from '@nutui/nutui-react-native';
 
 const App = () => {
     const [date3, setDate3] = useState('')
@@ -139,7 +139,7 @@ export default App;
 
 ```SnackPlayer name=Calendar&dependencies=@nutui/nutui-react-native
 import  React, { useState } from "react";
-import { Cell, Calendar } from '@nutui/nutui-react';
+import { Cell, Calendar } from '@nutui/nutui-react-native';
 
 const App = () => {
     const [date3, setDate3] = useState('')
@@ -180,7 +180,7 @@ export default App;
 
 ```SnackPlayer name=Calendar&dependencies=@nutui/nutui-react-native
 import  React, { useState } from "react";
-import { Cell, Calendar } from '@nutui/nutui-react';
+import { Cell, Calendar } from '@nutui/nutui-react-native';
 
 interface Day {
   day: string | number;
@@ -246,7 +246,7 @@ export default App;
 
 ```SnackPlayer name=Calendar&dependencies=@nutui/nutui-react-native
 import  React, { useState, useRef } from "react";
-import { Cell, Calendar } from '@nutui/nutui-react';
+import { Cell, Calendar } from '@nutui/nutui-react-native';
 
 const Utils = {
     date2Str(date: Date, split?: string): string {
@@ -381,7 +381,7 @@ export default App;
 
 ```SnackPlayer name=Calendar&dependencies=@nutui/nutui-react-native
 import  React, { useState } from "react";
-import { Calendar } from '@nutui/nutui-react';
+import { Calendar } from '@nutui/nutui-react-native';
 
 const App = () => {
     const [date2, setDate2] = useState('2020-07-08')

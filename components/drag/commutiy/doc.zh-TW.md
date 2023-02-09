@@ -7,10 +7,7 @@
 ### 安裝
 
 ```javascript
-// react
-import { Drag } from '@nutui/nutui-react'
-// taro
-import { Drag } from '@nutui/nutui-react-taro'
+import { Drag } from '@nutui/nutui-react-native'
 ```
 
 ## 代碼演示
@@ -20,7 +17,7 @@ import { Drag } from '@nutui/nutui-react-taro'
 
 ```SnackPlayer name=Drag&dependencies=@nutui/nutui-react-native
 import  React from "react";
-import { Drag } from '@nutui/nutui-react';
+import { Drag } from '@nutui/nutui-react-native';
 
 const App = () => {
   const btnStyle = {
@@ -46,7 +43,7 @@ export default App;
 
 ```SnackPlayer name=Drag&dependencies=@nutui/nutui-react-native
 import  React from "react";
-import { Drag } from '@nutui/nutui-react';
+import { Drag } from '@nutui/nutui-react-native';
 
 const App = () => {
   const btnStyle = {
@@ -77,7 +74,7 @@ export default App;
 
 ```SnackPlayer name=Drag&dependencies=@nutui/nutui-react-native
 import  React from "react";
-import { Drag } from '@nutui/nutui-react';
+import { Drag } from '@nutui/nutui-react-native';
 
 const App = () => {
   const btnStyle = {
@@ -102,7 +99,7 @@ export default App;
 ## 限製拖拽邊界
 ```SnackPlayer name=Drag&dependencies=@nutui/nutui-react-native
 import  React from "react";
-import { Drag } from '@nutui/nutui-react';
+import { Drag } from '@nutui/nutui-react-native';
 
 const App = () => {
   const btnStyle = {

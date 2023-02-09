@@ -93,7 +93,7 @@ export default App;
 
 ```SnackPlayer name=Popup
 import React, { useState } from "react";
-import { Popup, Cell } from '@nutui/nutui-react';
+import { Popup, Cell } from '@nutui/nutui-react-native';
 
 const App = () => {
   const [showBottomRound, setShowBottomRound] = useState(false);
