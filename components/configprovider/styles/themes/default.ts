@@ -324,14 +324,18 @@ const themeDefault: any = {
   // $tabs-vertical-titles-item-active-line-height: 14px,
   // $tabs-vertical-titles-width: 100px,
 
-  // // Indicator
-  // $indicator-color: $primary-color,
-  // $indicator-dot-color: $disable-color,
-  // $indicator-white: $white,
-  // $indicator-size: 18px,
-  // $indicator-dot-size: calc($indicator-size / 3),
-  // $indicator-border-size: $indicator-size + 2,
-  // $indicator-number-font-size: 10px,
+  // Indicator
+  '$indicator-color': commonStyles['$primary-color'],
+  '$indicator-dot-color': commonStyles['$disable-color'],
+  '$indicator-white': commonStyles.$white,
+  '$indicator-size': 18,
+  '$indicator-dot-size': 6,
+  '$indicator-border-size': 20,
+  '$indicator-number-font-size': 10,
+  '$indicator-dot-margin': 4,
+  '$indicator-dot-vertical-margin': 4,
+  '$indicator-dot-first-margin': 0,
+  '$indicator-dot-last-margin': 0,
 
   // // SideNavBar
   // $sidenavbar-content-bg-color: $white,
