@@ -19,6 +19,7 @@ import Col from './col';
 // 导航组件
 import Elevator from './elevator';
 import FixedNav from './fixednav';
+import Indicator from './indicator';
 import Navbar from './navbar';
 import Pagination from './pagination';
 import SideNavBar from './sidenavbar';
@@ -26,6 +27,7 @@ import SubSideNavBar from './subsidenavbar';
 import SideNavBarItem from './sidenavbaritem';
 
 // 录入组件
+import Calendar from './calendar';
 import Checkbox from './checkbox';
 import InputNumber from './inputnumber';
 import Radio from './radio';
@@ -36,6 +38,7 @@ import SearchBar from './searchbar';
 import ActionSheet from './actionsheet';
 import BackTop from './backtop';
 import Dialog from './dialog';
+import Drag from './drag';
 import Swipe from './swipe';
 import Switch from './switch';
 import Toast from './toast';
@@ -58,6 +61,7 @@ import Tag from './tag';
 import TrendArrow from './trendarrow';
 
 // 特色组件
+import Card from './card';
 import TimeSelect from './timeselect';
 
 export {
@@ -79,12 +83,14 @@ export {
 
   Elevator,
   FixedNav,
+  Indicator,
   Navbar,
   Pagination,
   SideNavBar,
   SubSideNavBar,
   SideNavBarItem,
 
+  Calendar,
   Checkbox,
   InputNumber,
   Radio,
@@ -94,6 +100,7 @@ export {
   ActionSheet,
   BackTop,
   Dialog,
+  Drag,
   Swipe,
   Switch,
   Toast,
@@ -114,5 +121,6 @@ export {
   Tag,
   TrendArrow,
 
+  Card,
   TimeSelect,
 };
