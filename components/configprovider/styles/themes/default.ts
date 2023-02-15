@@ -551,27 +551,27 @@ const themeDefault: any = {
   // // InfiniteLoading
   // $infiniteloading-bottom-color: #c8c8c8,
 
-  // // Notify
-  // $notify-text-color: $white,
-  // $notify-padding: 12px 0,
-  // $notify-font-size: 14px,
-  // $notify-height: 44px,
-  // $notify-line-height: auto,
-  // $notify-base-background-color: linear-gradient(135deg, $primary-color 0%, $primary-color-end 100%),
-  // $notify-primary-background-color: linear-gradient(
-  //   315deg,
-  //   rgba(73, 143, 242, 1) 0%,
-  //   rgba(73, 101, 242, 1) 100%
-  // ),
-  // $notify-success-background-color: linear-gradient(
-  //   135deg,
-  //   rgba(38, 191, 38, 1) 0%,
-  //   rgba(39, 197, 48, 1) 45%,
-  //   rgba(40, 207, 63, 1) 83%,
-  //   rgba(41, 212, 70, 1) 100%
-  // ),
-  // $notify-danger-background-color: rgba(250, 50, 25, 1),
-  // $notify-warning-background-color: linear-gradient(135deg, rgba(255, 93, 13, 1) 0%, rgba(255, 154, 13, 1) 100%),
+  // Notify
+  '$notify-text-color': commonStyles.$white,
+  '$notify-padding': 12,
+  '$notify-font-size': 14,
+  '$notify-height': 44,
+  '$notify-line-height': 'auto',
+  '$notify-base-background-color': [
+    'rgba(250, 44, 25, 1)',
+    'rgba(250, 63, 25, 1)',
+    'rgba(250, 89, 25, 1)',
+    'rgba(250, 100, 25, 1)',
+  ],
+  '$notify-primary-background-color': ['rgba(73, 143, 242, 1)', 'rgba(73, 101, 242, 1)'],
+  '$notify-success-background-color': [
+    'rgba(38, 191, 38, 1)',
+    'rgba(39, 197, 48, 1)',
+    'rgba(40, 207, 63, 1)',
+    'rgba(41, 212, 70, 1)',
+  ],
+  '$notify-danger-background-color': 'rgba(250, 50, 25, 1)',
+  '$notify-warning-background-color': ['rgba(255, 93, 13, 1)', 'rgba(255, 154, 13, 1)'],
 
   // Switch
   '$switch-close-bg-color': '#ebebeb',

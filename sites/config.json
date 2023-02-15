@@ -90,6 +90,16 @@
           "sort": 1,
           "show": true,
           "author": ""
+        },
+        {
+          "version": "0.0.1",
+          "name": "Notify",
+          "type": "component",
+          "cName": "消息通知",
+          "desc": "在页面顶部展示消息提示",
+          "sort": 2,
+          "show": true,
+          "author": ""
         }
       ]
     },

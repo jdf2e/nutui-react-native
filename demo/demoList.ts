@@ -18,6 +18,7 @@ import LayoutDemo from '@nutui/nutui-react-native/row/demo';
 import ActionSheetDemo from '@nutui/nutui-react-native/actionsheet/demo';
 import BackTopDemo from '@nutui/nutui-react-native/backtop/demo';
 import DragDemo from '@nutui/nutui-react-native/drag/demo';
+import NotifyDemo from '@nutui/nutui-react-native/notify/demo';
 import ToastDemo from '@nutui/nutui-react-native/toast/demo';
 // 展示组件
 import AvatarDemo from '@nutui/nutui-react-native/avatar/demo'
@@ -119,6 +120,12 @@ export const DemoList = [
     title: 'Drag',
     description: '拖拽',
     demo: DragDemo,
+    type: 'Feedback',
+  },
+  {
+    title: 'Notify',
+    description: '消息通知',
+    demo: NotifyDemo,
     type: 'Feedback',
   },
   {
