@@ -10,26 +10,18 @@ export interface BackTopProps extends IComponent {
   className?: string;
   bottom: number;
   right: number;
-  elId: string;
-  distance: number;
   zIndex: number;
-  isAnimation: boolean;
-  duration: number;
   children?: HTMLElement | any;
   style?: React.CSSProperties;
   isShow: boolean;
-  onPress?: (event: MouseEvent) => void;
+  onClick?: (event: MouseEvent) => void;
 }
 
 const defaultProps = {
   ...ComponentDefaults,
   bottom: 20,
   right: 10,
-  elId: 'body',
-  distance: 200,
   zIndex: 10,
-  isAnimation: true,
-  duration: 1000,
   isShow: false,
 } as BackTopProps;
 
@@ -40,14 +32,9 @@ export const BackTop: FunctionComponent<
     children,
     bottom,
     right,
-    elId,
-    distance,
     zIndex,
-    isAnimation,
-    className,
-    duration,
     style,
-    onPress,
+    onClick,
     iconClassPrefix,
     iconFontClassName,
     isShow,
@@ -61,7 +48,7 @@ export const BackTop: FunctionComponent<
 
   // 返回顶部点击事件
   const goTop = (e: any) => {
-    onPress && onPress(e);
+    onClick && onClick(e);
   };
 
   const backTopClass = {

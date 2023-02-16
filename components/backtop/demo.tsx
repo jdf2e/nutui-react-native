@@ -69,7 +69,6 @@ const BackTopDemo = () => {
             ref={ref1}
             scrollEventThrottle={16}
             onScroll={(event) => {
-              console.log(event.nativeEvent.contentOffset.y);
               if (backIsShow && event.nativeEvent.contentOffset.y <= distance) {
                 setBackIsShow(false);
               } else if (
@@ -94,7 +93,7 @@ const BackTopDemo = () => {
           </ScrollView>
           <BackTop
             isShow={backIsShow}
-            onPress={(e) => {
+            onClick={(e) => {
               onPressTop(e);
             }}
             bottom={200}
