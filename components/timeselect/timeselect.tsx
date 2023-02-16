@@ -20,7 +20,6 @@ export interface DateType {
   date: string
 }
 export interface TimeSelectProps {
-  className?: string
   style: React.CSSProperties
   visible?: boolean
   height?: string
@@ -44,7 +43,6 @@ export interface TimeSelectProps {
   onTimeChange?: (time: string, selectTimeData: TimeType[]) => void
 }
 const defaultProps = {
-  className: '',
   style: {},
   visible: false,
   height: '20%',
@@ -60,7 +58,6 @@ export const TimeSelect: FunctionComponent<Partial<TimeSelectProps>> = (
 ) => {
   const {
     visible,
-    className,
     height,
     title,
     currentKey,
