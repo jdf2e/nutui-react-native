@@ -23,6 +23,7 @@ import ToastDemo from '@nutui/nutui-react-native/toast/demo';
 // 展示组件
 import AvatarDemo from '@nutui/nutui-react-native/avatar/demo'
 import StepsDemo from '@nutui/nutui-react-native/steps/demo'
+import EllipsisDemo from '@nutui/nutui-react-native/ellipsis/demo'
 //录入组件
 import CalendarDemo from '@nutui/nutui-react-native/calendar/demo'
 import SearchBarDemo from '@nutui/nutui-react-native/searchbar/demo'
@@ -218,6 +219,13 @@ export const DemoList = [
     demo: TimeSelectDemo,
     type: 'Business'
   },
+  {
+    title: 'Ellipsis',
+    description: '文本省略',
+    demo: EllipsisDemo,
+    type: 'Exhibition'
+  },
+  
 ];
 
 export const CategoryList = [

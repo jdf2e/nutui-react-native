@@ -59,6 +59,7 @@ import Swiper from './swiper';
 import SwiperItem from './swiperitem';
 import Tag from './tag';
 import TrendArrow from './trendarrow';
+import Ellipsis from './ellipsis';
 
 // 特色组件
 import Card from './card';
@@ -120,6 +121,7 @@ export {
   SwiperItem,
   Tag,
   TrendArrow,
+  Ellipsis,
 
   Card,
   TimeSelect,
