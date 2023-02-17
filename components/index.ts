@@ -60,6 +60,7 @@ import SwiperItem from './swiperitem';
 import Tag from './tag';
 import TrendArrow from './trendarrow';
 import Ellipsis from './ellipsis';
+import Virtuallist from './virtuallist';
 
 // 特色组件
 import Card from './card';
@@ -122,6 +123,7 @@ export {
   Tag,
   TrendArrow,
   Ellipsis,
+  Virtuallist,
 
   Card,
   TimeSelect,

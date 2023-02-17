@@ -24,6 +24,7 @@ import ToastDemo from '@nutui/nutui-react-native/toast/demo';
 import AvatarDemo from '@nutui/nutui-react-native/avatar/demo'
 import StepsDemo from '@nutui/nutui-react-native/steps/demo'
 import EllipsisDemo from '@nutui/nutui-react-native/ellipsis/demo'
+import VirtuallistDemo from '@nutui/nutui-react-native/virtuallist/demo'
 //录入组件
 import CalendarDemo from '@nutui/nutui-react-native/calendar/demo'
 import SearchBarDemo from '@nutui/nutui-react-native/searchbar/demo'
@@ -223,6 +224,12 @@ export const DemoList = [
     title: 'Ellipsis',
     description: '文本省略',
     demo: EllipsisDemo,
+    type: 'Exhibition'
+  },
+  {
+    title: 'Virtuallist',
+    description: '虚拟列表',
+    demo: VirtuallistDemo,
     type: 'Exhibition'
   },
   
