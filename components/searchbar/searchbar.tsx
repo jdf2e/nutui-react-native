@@ -131,7 +131,6 @@ export const SearchBar: FunctionComponent<
 
   const change = (event: Event) => {
     const { text } = event?.nativeEvent as any
-    console.log('event值',text)
     onChange && onChange?.(text, event)
     setValue(text)
   }
@@ -174,6 +173,7 @@ export const SearchBar: FunctionComponent<
         onBlur={(e: any) => blur(e)}
       />
     )
+    
   }
 
 
