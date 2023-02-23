@@ -1,0 +1,124 @@
+# Badge 徽標
+
+### 介紹
+
+出现在图标或文字右上角的红色圆点、数字或者文字，表示有新内容或者待处理的信息。
+
+### 安裝
+
+``` javascript
+// react
+import { Badge } from '@nutui/nutui-react';
+
+```
+
+## 代碼實例
+
+### 基本用法
+
+```SnackPlayer name=Badge&dependencies=@nutui/nutui-react-native
+<Badge value={8}>
+  <Avatar icon="my" shape="square"></Avatar>
+</Badge>
+<Badge value={76}>
+  <Avatar icon="my" shape="square"></Avatar>
+</Badge>
+<Badge value="NEW">
+  <Avatar icon="my" shape="square"></Avatar>
+</Badge>
+<Badge dot>
+  <Avatar icon="my" shape="square"></Avatar>
+</Badge>
+```
+
+### 最大值
+
+```SnackPlayer name=Badge&dependencies=@nutui/nutui-react-native
+<Badge value={200} max={9}>
+  <Avatar icon="my" shape="square"></Avatar>
+</Badge>
+<Badge value={200} max={20}>
+  <Avatar icon="my" shape="square"></Avatar>
+</Badge>
+<Badge value={200} max={99}>>
+  <Avatar icon="my" shape="square"></Avatar>
+</Badge>
+```
+
+
+### 自定義徽標內容
+
+```SnackPlayer name=Badge&dependencies=@nutui/nutui-react-native
+<Badge icon="checklist">
+  <Avatar icon="my" shape="square"></Avatar>
+</Badge>
+<Badge icon="link">
+  <Avatar icon="my" shape="square"></Avatar>
+</Badge>
+<Badge icon="download">
+  <Avatar icon="my" shape="square"></Avatar>
+</Badge>
+```
+
+### 自定義位置
+
+```SnackPlayer name=Badge&dependencies=@nutui/nutui-react-native
+<Badge value={8} top="5" right="5">
+  <Avatar icon="my" shape="square"></Avatar>
+</Badge>
+<Badge value={76} top="10" right="10">
+  <Avatar icon="my" shape="square"></Avatar>
+</Badge>
+<Badge value="NEW">
+  <Avatar icon="my" shape="square"></Avatar>
+</Badge>
+```
+
+### 獨立展示
+
+```SnackPlayer name=Badge&dependencies=@nutui/nutui-react-native
+<Badge value={8}> </Badge>
+<Badge value={76}> </Badge>
+<Badge value="NEW"> </Badge>
+```
+
+## API
+
+### Props
+
+| 字段    | 說明                                       | 類型    | 默認值    |
+|---------|--------------------------------------------|---------|-----------|
+| value   | 顯示的內容                                 | String  | -         |
+| max     | value 為數值時，最大值 | Number  | `10000`   |
+| zIndex | 徽標的 z-index 值 | Number  | `10`      |
+| dot     | 是否為小點 | Boolean | `false`   |
+| top     | 上下偏移量，支持單位設置，可設置為：5 等 | Number  | `0`       |
+| right   | 左右偏移量，支持單位設置，可設置為：5 等 | Number  | `0`       |
+| color   | 徽標背景顏色                               | String  | `#fa2c19` |
+| icons   | 徽標自定義                               | String  | - |
+
+
+
+
+
+## 主題定制
+
+### 樣式變量
+
+組件提供了下列 CSS 變量，可用於自定義樣式，使用方法請參考 [ConfigProvider 組件](#/zh-CN/component/configprovider)。
+
+| 名稱 | 默認值 |
+| --- | --- |
+| --nutui-badge-color | ` #fff` |
+| --nutui-badge-font-size | ` $font-size-1` |
+| --nutui-badge-default-background-color | `  rgba(255, 255, 255, 1)` |
+| --nutui-badge-border-radius | ` 14` |
+| --nutui-badge-padding-top | ` 0` |
+| --nutui-badge-padding-bottom | ` 0` |
+| --nutui-badge-padding-left | ` 5` |
+| --nutui-badge-padding-right | ` 5` |
+| --nutui-badge-z-index | ` 1` |
+| --nutui-badge-dot-width | ` 7` |
+| --nutui-badge-dot-height | ` 7` |
+| --nutui-badge-dot-border-radius | ` 7` |
+| --nutui-badge-dot-padding | ` 0` |

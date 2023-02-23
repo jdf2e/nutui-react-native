@@ -33,9 +33,9 @@ function App() {
     }
   };
 
-  useEffect(() => {
-    document.addEventListener('scroll', scrollTitle);
-  }, []);
+  // useEffect(() => {
+  //   document.addEventListener('scroll', scrollTitle);
+  // }, []);
 
   return (
     <div>

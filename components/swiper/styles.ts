@@ -5,7 +5,8 @@ import {
 export default (theme: any) => {
   return StyleSheet.create({
     itemStyle: {
-      height: '100%'
+      height: '100%',
+      width: '100%'
     },
     pagination: {
       position: 'absolute',

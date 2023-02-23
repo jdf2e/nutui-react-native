@@ -8,7 +8,7 @@ import pt from '../utils/pt';
 export default (theme: any) => {
   return StyleSheet.create({
     acrossContainer: {
-      width: pt(750),
+      width: '100%',
       paddingTop: theme['$noticebar-wrapable-padding-top-bottom'],
       paddingBottom: theme['$noticebar-wrapable-padding-top-bottom'],
       paddingLeft: pt(theme['$noticebar-wrapable-padding-left-right']),
@@ -35,16 +35,30 @@ export default (theme: any) => {
       color: theme['$noticebar-color']
     },
     rIconContainer: {
-      width: theme['$noticebar-right-icon-wrapable-size'],
-      height: theme['$noticebar-right-icon-wrapable-size'],
-      padding: theme['$noticebar-right-icon-wrapable-padding'],
+      width: pt(theme['$noticebar-right-icon-wrapable-size']),
+      height: pt(theme['$noticebar-right-icon-wrapable-size']),
+      padding: pt(theme['$noticebar-right-icon-wrapable-padding']),
+      justifyContent: 'center',
+      alignItems: 'center'
+    },
+    rIconContainer2: {
+      position: 'absolute',
+      right: 25,
+      top: 11,
+      width: pt(theme['$noticebar-right-icon-wrapable-size']),
+      height: pt(theme['$noticebar-right-icon-wrapable-size']),
+      padding: pt(theme['$noticebar-right-icon-wrapable-padding']),
       justifyContent: 'center',
       alignItems: 'center'
     },
     horseLampList: {
       margin: 0,
-      padding: 0,
-      width: pt(620)
+      padding: 0
+    },
+    abs: {
+      position: 'absolute',
+      right: 35,
+      top: 25
     },
     wrap: {
       justifyContent: 'center',

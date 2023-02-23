@@ -178,7 +178,7 @@ Partial<SwiperProps> & Omit<React.HTMLAttributes<HTMLDivElement>, 'onChange'>
               <PageView
                 ref={pageViewRef}
                 style={{
-                  width: '100%',
+                  width: width || '100%',
                   height: height
                 }}
                 styles={styles}

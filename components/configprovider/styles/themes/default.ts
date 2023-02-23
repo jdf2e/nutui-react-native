@@ -230,13 +230,13 @@ const themeDefault: any = {
   // $menu-scroll-fixed-z-index: 1000,
 
   // // Tabbar
-  // $tabbar-active-color: $primary-color,
-  // $tabbar-unactive-color: $primary-color,
-  // $tabbar-border-top: 1px solid #eee,
-  // $tabbar-border-bottom: 1px solid #eee,
-  // $tabbar-box-shadow: none,
-  // $tabbar-item-text-font-size: $font-size-0,
-  // $tabbar-item-text-line-height: initial,
+  '$tabbar-background-color': commonStyles.$white,
+  '$tabbar-border-top-width': 1,
+  '$tabbar-border-top-color': '#eee',
+  '$tabbar-border-bottom-width': 1,
+  '$tabbar-border-bottom-color': '#eee',
+  '$tabbar-padding-top': 14,
+  '$tabbar-padding-bottom': 14,
 
   // elevator（✅）
   '$elevator-list-inner-bg-color': commonStyles.$gray6,
@@ -773,10 +773,11 @@ const themeDefault: any = {
   // $collapse-wrapper-content-background-color: $white,
 
   // // Table
-  // $table-border-color: #ececec,
-  // $table-cols-padding: 10px,
-  // $table-tr-even-bg-color: #f3f3f3,
-  // $table-tr-odd-bg-color: $white,
+  '$table-border-color': '#ececec',
+  '$table-border-width': 1,
+  '$table-cols-padding': 20,
+  '$table-tr-even-bg-color': '#f3f3f3',
+  '$table-tr-odd-bg-color': commonStyles.$white,
 
   // // Ellipsis
   // $ellipsis-expand-collapse-color: #3460fa,

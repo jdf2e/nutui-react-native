@@ -3,6 +3,7 @@
   "version": "0.0.2",
   "scripts": {
     "bootstrap": "yarn --cwd demo && yarn",
+    "dev:ios": "yarn --cwd demo ios",
     "dev": "yarn --cwd demo web",
     "doc": "npm run generate:docs && vite --open --force",
     "doc:jd": "npm run generate:jd:docs && vite --open --force",

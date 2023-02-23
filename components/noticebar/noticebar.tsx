@@ -97,6 +97,7 @@ Omit<React.HTMLAttributes<HTMLDivElement>, 'onClick'>
     ...props
   };
   const [showNoticeBar, SetShowNoticeBar] = useState(true);
+  const [noticeBarWidth, setNoticeBarWidth] = useState(0);
   const scrollList: any = useRef([]);
 
   const { theme } = useConfig();
@@ -267,11 +268,17 @@ Omit<React.HTMLAttributes<HTMLDivElement>, 'onClick'>
 
   const renderVertical = () => {
     return (
-      <View style={acrossStyle}>
+      <View 
+        style={acrossStyle}
+        onLayout={(e)=> {
+          let width = e.nativeEvent && e.nativeEvent.layout && e.nativeEvent.layout.width
+          setNoticeBarWidth(width || 0)
+        }}
+      >
 
         {children ? (
           <Carousel
-            style={[styles.horseLampList, { height }]}
+            style={[styles.horseLampList, { width: noticeBarWidth - 60, height }]}
             selectedIndex={1}
             autoplay
             infinite
@@ -284,7 +291,7 @@ Omit<React.HTMLAttributes<HTMLDivElement>, 'onClick'>
           </Carousel>
         ) : (
           <Carousel
-            style={[styles.horseLampList, { paddingTop: 10, height }]}
+            style={[styles.horseLampList, { width: noticeBarWidth - 60, height }]}
             selectedIndex={1}
             autoplay
             infinite
@@ -295,6 +302,10 @@ Omit<React.HTMLAttributes<HTMLDivElement>, 'onClick'>
               return (
                 <TouchableHighlight
                   key={index}
+                  style={{
+                    height,
+                    justifyContent: 'center'
+                  }}
                   underlayColor={null}
                   activeOpacity={1}
                   onPress={() => {
@@ -302,7 +313,6 @@ Omit<React.HTMLAttributes<HTMLDivElement>, 'onClick'>
                   }}
                 >
                   <Text
-
                     style={textStyle}
                   >
                     {item}
@@ -321,11 +331,10 @@ Omit<React.HTMLAttributes<HTMLDivElement>, 'onClick'>
               <TouchableHighlight
                 underlayColor={null}
                 activeOpacity={1}
+                style={styles.rIconContainer}
                 onPress={onIconClick}
               >
-                <View
-                  style={styles.rIconContainer}
-                >
+                <View>
                   <Icon
                     name='close'
                     size={11}

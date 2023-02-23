@@ -342,7 +342,7 @@ Partial<SwipeProps>
   };
 
   const wrapStyle = [
-    { justifyContent: 'center' },
+    { width: '100%',justifyContent: 'center' },
     fConStyle(toObj(style || {}))
   ];
 

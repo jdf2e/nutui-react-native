@@ -111,7 +111,7 @@ export const Skeleton: FunctionComponent<Partial<SkeletonProps>> = (props) => {
     round ? styles.blockRoundStyle : {},
     { width, height },
   ];
-
+  
   const avatarStyle = [styles.avatarStyle, getStyle()];
 
   const LinearGradientComponent = RNLinearGradient || LinearGradient;

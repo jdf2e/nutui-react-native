@@ -25,10 +25,14 @@ export const DemoCard = ({
 }) => {
   return (
     <>
-      <Text style={PageStyles.title}>
-        {title}
-        {subTitle && <Text style={PageStyles.subTitle}>{`(${subTitle})`}</Text>}
-      </Text>
+      {
+        (title || subTitle) && (
+          <Text style={PageStyles.title}>
+            {title}
+            {subTitle && <Text style={PageStyles.subTitle}>{`(${subTitle})`}</Text>}
+          </Text>
+        )
+      }
       <View
         style={[PageStyles.card, { flexDirection, backgroundColor, padding, marginLeft }]}
       >

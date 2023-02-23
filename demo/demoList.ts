@@ -2,6 +2,7 @@
 import ButtonDemo from '@nutui/nutui-react-native/button/demo'
 import CellDemo from '@nutui/nutui-react-native/cell/demo'
 import IconDemo from '@nutui/nutui-react-native/icon/demo'
+import ImageDemo from '@nutui/nutui-react-native/image/demo';
 import OverLayDemo from '@nutui/nutui-react-native/overlay/demo'
 import PopupDemo from '@nutui/nutui-react-native/popup/demo'
 // 导航组件
@@ -10,27 +11,40 @@ import FixedNavDemo from '@nutui/nutui-react-native/fixednav/demo';
 import IndicatorDemo from '@nutui/nutui-react-native/indicator/demo';
 import SideNavBarDemo from '@nutui/nutui-react-native/sidenavbar/demo';
 import NavBarDemo from '@nutui/nutui-react-native/navbar/demo'
+import TabbarDemo from '@nutui/nutui-react-native/tabbar/demo';
 import PaginationDemo from '@nutui/nutui-react-native/pagination/demo'
 // 布局组件
+import DividerDemo from '@nutui/nutui-react-native/divider/demo';
 import GridDemo from '@nutui/nutui-react-native/grid/demo';
 import LayoutDemo from '@nutui/nutui-react-native/row/demo';
-// 反馈组件
+// 操作反馈组件
 import ActionSheetDemo from '@nutui/nutui-react-native/actionsheet/demo';
 import BackTopDemo from '@nutui/nutui-react-native/backtop/demo';
 import DragDemo from '@nutui/nutui-react-native/drag/demo';
 import NotifyDemo from '@nutui/nutui-react-native/notify/demo';
+import SwipeDemo from '@nutui/nutui-react-native/swipe/demo';
+import SwitchDemo from '@nutui/nutui-react-native/switch/demo';
 import ToastDemo from '@nutui/nutui-react-native/toast/demo';
 // 展示组件
 import AvatarDemo from '@nutui/nutui-react-native/avatar/demo'
+import CountDownDemo from '@nutui/nutui-react-native/countdown/demo';
 import StepsDemo from '@nutui/nutui-react-native/steps/demo'
 import EllipsisDemo from '@nutui/nutui-react-native/ellipsis/demo'
+import NoticeBarDemo from '@nutui/nutui-react-native/noticebar/demo';
 import VirtuallistDemo from '@nutui/nutui-react-native/virtuallist/demo'
 import ProgressDemo from '@nutui/nutui-react-native/progress/demo'
+import SkeletonDemo from '@nutui/nutui-react-native/skeleton/demo';
+import SwiperDemo from '@nutui/nutui-react-native/swiper/demo';
+import TableDemo from '@nutui/nutui-react-native/table/demo';
+import TagDemo from '@nutui/nutui-react-native/tag/demo';
+import TrendArrowDemo from '@nutui/nutui-react-native/trendarrow/demo';
 
 //录入组件
 import CalendarDemo from '@nutui/nutui-react-native/calendar/demo'
+import CheckboxDemo from '@nutui/nutui-react-native/checkbox/demo';
 import SearchBarDemo from '@nutui/nutui-react-native/searchbar/demo'
-import InputNumberDemo from '@nutui/nutui-react-native/inputnumber/demo'
+import InputNumberDemo from '@nutui/nutui-react-native/inputnumber/demo';
+import RadioDemo from '@nutui/nutui-react-native/radio/demo';
 import RateDemo from '@nutui/nutui-react-native/rate/demo'
 //特色组件
 import TimeSelectDemo from '@nutui/nutui-react-native/timeselect/demo'
@@ -61,10 +75,22 @@ export const DemoList = [
     type: 'Basic',
   },
   {
+    title: 'Image',
+    description: '图片',
+    demo: ImageDemo,
+    type: 'Basic',
+  },
+  {
     title: 'Overlay',
     description: '遮罩层',
     demo: OverLayDemo,
     type: 'Basic',
+  },
+  {
+    title: 'Divider',
+    description: '分割线',
+    demo: DividerDemo,
+    type: 'Layout',
   },
   {
     title: 'Grid',
@@ -97,15 +123,21 @@ export const DemoList = [
     type: 'Nav',
   },
   {
+    title: 'NavBar',
+    description: '导航栏',
+    demo: NavBarDemo,
+    type: 'Nav',
+  },
+  {
     title: 'SideNavBar',
     description: '侧边栏导航',
     demo: SideNavBarDemo,
     type: 'Nav',
   },
   {
-    title: 'NavBar',
-    description: '导航栏',
-    demo: NavBarDemo,
+    title: 'Tabbar',
+    description: '标签栏',
+    demo: TabbarDemo,
     type: 'Nav',
   },
   {
@@ -133,6 +165,18 @@ export const DemoList = [
     type: 'Feedback',
   },
   {
+    title: 'Swipe',
+    description: '滑动手势',
+    demo: SwipeDemo,
+    type: 'Feedback',
+  },
+  {
+    title: 'Switch',
+    description: '开关',
+    demo: SwitchDemo,
+    type: 'Feedback',
+  },
+  {
     title: 'Toast',
     description: '吐司',
     demo: ToastDemo,
@@ -154,6 +198,12 @@ export const DemoList = [
     title: 'Collapse',
     description: '折叠面板',
     demo: CollapseDemo,
+    type: 'Exhibition',
+  },
+  {
+    title: 'CountDown',
+    description: '倒计时',
+    demo: CountDownDemo,
     type: 'Exhibition',
   },
   {
@@ -193,6 +243,12 @@ export const DemoList = [
     type: 'Dentry'
   },
   {
+    title: 'Checkbox',
+    description: '复选按钮',
+    demo: CheckboxDemo,
+    type: 'Dentry'
+  },
+  {
     title: 'SearchBar',
     description: '搜索栏',
     demo: SearchBarDemo,
@@ -202,6 +258,12 @@ export const DemoList = [
     title: 'InputNumber',
     description: '数字输入框',
     demo: InputNumberDemo,
+    type: 'Dentry'
+  },
+  {
+    title: 'Radio',
+    description: '单选按钮',
+    demo: RadioDemo,
     type: 'Dentry'
   },
   {
@@ -229,6 +291,12 @@ export const DemoList = [
     type: 'Exhibition'
   },
   {
+    title: 'NoticeBar',
+    description: '公告栏',
+    demo: NoticeBarDemo,
+    type: 'Exhibition'
+  },
+  {
     title: 'Virtuallist',
     description: '虚拟列表',
     demo: VirtuallistDemo,
@@ -239,8 +307,37 @@ export const DemoList = [
     description: '进度条',
     demo: ProgressDemo,
     type: 'Exhibition'
+  },
+  {
+    title: 'Skeleton',
+    description: '骨架屏',
+    demo: SkeletonDemo,
+    type: 'Exhibition'
+  },
+  {
+    title: 'Swiper',
+    description: '轮播',
+    demo: SwiperDemo,
+    type: 'Exhibition'
+  },
+  {
+    title: 'Table',
+    description: '表格',
+    demo: TableDemo,
+    type: 'Exhibition'
+  },
+  {
+    title: 'Tag',
+    description: '标签',
+    demo: TagDemo,
+    type: 'Exhibition'
+  },
+  {
+    title: 'TrendArrow',
+    description: '趋势箭头',
+    demo: TrendArrowDemo,
+    type: 'Exhibition'
   }
-  
 ];
 
 export const CategoryList = [
