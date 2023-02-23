@@ -2,6 +2,7 @@ import React, { FunctionComponent, useEffect, useState } from 'react'
 import {
   View,
   TouchableOpacity,
+  Platform,
 } from 'react-native';
 
 import Icon from '../icon/index'
@@ -119,11 +120,20 @@ export const Rate: FunctionComponent<Partial<RateProps>> = (props) => {
             disabled={disabled || readonly}
             onPress={(event) => {
               if(allowHalf){
-                if(event.nativeEvent.locationX>= pxCheck(iconSize)/2){
-                  onClick(event, n)
+                if(Platform.OS==='web'){
+                    if(event.nativeEvent.offsetX  >= pxCheck(iconSize)/2){
+                      onClick(event, n)
+                    }else{
+                      onHalfClick(event, n)
+                    }
                 }else{
-                  onHalfClick(event, n)
+                  if(event.nativeEvent.locationX>= pxCheck(iconSize)/2){
+                    onClick(event, n)
+                  }else{
+                    onHalfClick(event, n)
+                  }
                 }
+               
               }else{
                 onClick(event, n)
               }
