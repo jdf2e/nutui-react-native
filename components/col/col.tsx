@@ -66,7 +66,7 @@ export const Col: FunctionComponent<
         onClick && onClick(e, 'col')
       }}
       onLayout={(e) => {
-        console.log(e.nativeEvent.layout)
+       // console.log(e.nativeEvent.layout)
       }}
     >
       {children}

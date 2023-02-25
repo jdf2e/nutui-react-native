@@ -8,7 +8,8 @@ import React, {
 import {
   View,
   TextInput,
-  TouchableOpacity
+  TouchableOpacity,
+  Platform
 } from 'react-native';
 import Icon from '../icon/index'
 
@@ -200,24 +201,49 @@ export const InputNumber: FunctionComponent<
        
       />
       </TouchableOpacity>
-      <View  
+
+      {
+        Platform.OS === 'web' ?
+        <View  
         style={pxCheck(inputWidth) == 0? mStyles.nut_inputnumber_zerowidth :
           { width: pxCheck(inputWidth),...mStyles.nut_inputnumber_fixwidth}
-      }
+      }>
+          <input
+            type="number"
+            min={min}
+            max={max}
+            style={{ width:pxCheck(inputWidth) == 0? 50 : pxCheck(inputWidth) , 
+              textAlign:'center',borderWidth:0,backgroundColor:'transparent'}}
+            disabled={disabled}
+            readOnly={readonly}
+            value={inputValue}
+            onInput={changeValue}
+            onBlur={burValue}
+            onFocus={focusValue}
+        />
+      </View> : 
+      <View  
+          style={pxCheck(inputWidth) == 0? mStyles.nut_inputnumber_zerowidth :
+            { width: pxCheck(inputWidth),...mStyles.nut_inputnumber_fixwidth}
+          }
       >
-      <TextInput
-        type="number"
-        min={min}
-        max={max}
-        style={{color: disabled? '#d5d5d5':'#000000',padding:0}}
-        textAlign='center'  
-        editable={!(readonly || disabled)}
-        value={`${inputValue}`}
-        onChange={changeValue}
-        onBlur={burValue}
-        onFocus={focusValue}
-      />
+          <TextInput
+            type="number"
+            min={min}
+            max={max}
+            style={{color: disabled? '#d5d5d5':'#000000',padding:0}}
+            textAlign='center'  
+            editable={!(readonly || disabled)}
+            value={`${inputValue}`}
+            onChange={changeValue}
+            onBlur={burValue}
+            onFocus={focusValue}
+          />
+
       </View>
+
+      }
+     
       <TouchableOpacity onPress={addNumber}>
       <Icon
         style={mStyles.nut_icon_marginH}

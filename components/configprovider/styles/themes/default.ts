@@ -419,8 +419,8 @@ const themeDefault: any = {
 
  // InputNumber
  '$inputnumber-height': 25,
- '$inputnumber-bg-color':commonStyles['gray4'],
- '$inputnumber-paddingH':20,
+ '$inputnumber-bg-color':commonStyles.$gray4,
+ '$inputnumber-paddingH':0,
  '$inputnumber-radius':3,
  '$inputnumber-icon-marginH':10,
 

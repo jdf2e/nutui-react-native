@@ -72,11 +72,11 @@ const TimeSelectDemo = () => {
     pannelKey: string | number,
     selectTimeData: TimeType[]
   ) => {
-    console.log('pannelKey, selectTimeData: ', pannelKey, selectTimeData)
+     console.log('pannelKey, selectTimeData: ', pannelKey, selectTimeData)
   }
   // 选择配送时间触发回调事件
   const handleTimeChange = (time: string, selectTimeData: TimeType[]) => {
-    console.log('time, selectTimeData: ', time, selectTimeData)
+     console.log('time, selectTimeData: ', time, selectTimeData)
   }
   return (
     
