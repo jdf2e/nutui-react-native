@@ -67,11 +67,22 @@
       "enName": "dentry",
       "packages": [
         {
+          "version": "0.0.1",
           "name": "Calendar",
           "type": "component",
           "cName": "日历",
           "desc": "日历，可平铺/弹窗展示",
           "sort": 1,
+          "show": true,
+          "author": ""
+        },
+        {
+          "version": "0.1.0",
+          "name": "Input",
+          "type": "component",
+          "cName": "输入框",
+          "desc": "单行输入框",
+          "sort": 2,
           "show": true,
           "author": ""
         }
