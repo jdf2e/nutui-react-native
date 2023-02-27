@@ -325,6 +325,15 @@
           "sort": 7,
           "show": true,
           "author": ""
+        },{
+          "version": "0.0.3",
+          "name": "Input",
+          "type": "component",
+          "cName": "输入框",
+          "desc": "单行输入框",
+          "sort": 8,
+          "show": true,
+          "author": ""
         }
       ]
     },

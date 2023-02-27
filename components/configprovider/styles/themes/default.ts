@@ -424,11 +424,14 @@ const themeDefault: any = {
  '$inputnumber-radius':3,
  '$inputnumber-icon-marginH':10,
 
-  // // Input
-  // $input-border-bottom: #eaf0fb,
-  // $input-disabled-color: #c8c9cc,
-  // $input-required-color: $required-color,
-  // $input-font-size: $font-size-2,
+  // Input
+  '$input-border-bottom': '#eaf0fb',
+  '$input-disabled-color': '#c8c9cc',
+  '$input-required-color': commonStyles['$required-color'],
+  '$input-font-size': commonStyles['$font-size-2'],
+  '$input-padding-v': 10,
+  '$input-padding-h': 25,
+
 
   // Radio
   '$radio-label-font-color': '#1d1e1e',

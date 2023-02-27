@@ -43,9 +43,10 @@ import TrendArrowDemo from '@nutui/nutui-react-native/trendarrow/demo';
 import CalendarDemo from '@nutui/nutui-react-native/calendar/demo'
 import CheckboxDemo from '@nutui/nutui-react-native/checkbox/demo';
 import SearchBarDemo from '@nutui/nutui-react-native/searchbar/demo'
+import InputDemo from '@nutui/nutui-react-native/input/demo';
 import InputNumberDemo from '@nutui/nutui-react-native/inputnumber/demo';
 import RadioDemo from '@nutui/nutui-react-native/radio/demo';
-import RateDemo from '@nutui/nutui-react-native/rate/demo'
+import RateDemo from '@nutui/nutui-react-native/rate/demo';
 //特色组件
 import TimeSelectDemo from '@nutui/nutui-react-native/timeselect/demo'
 import BadgeDemo from '@nutui/nutui-react-native/badge/demo';
@@ -252,6 +253,12 @@ export const DemoList = [
     title: 'SearchBar',
     description: '搜索栏',
     demo: SearchBarDemo,
+    type: 'Dentry'
+  },
+  {
+    title: 'Input',
+    description: '输入框',
+    demo: InputDemo,
     type: 'Dentry'
   },
   {

@@ -31,6 +31,7 @@ import TabbarItem from './tabbaritem';
 // 录入组件
 import Calendar from './calendar';
 import Checkbox from './checkbox';
+import Input from './input';
 import InputNumber from './inputnumber';
 import Radio from './radio';
 import Rate from './rate';
@@ -41,6 +42,7 @@ import ActionSheet from './actionsheet';
 import BackTop from './backtop';
 import Dialog from './dialog';
 import Drag from './drag';
+import Notify from './notify';
 import Swipe from './swipe';
 import Switch from './switch';
 import Toast from './toast';
@@ -100,6 +102,7 @@ export {
 
   Calendar,
   Checkbox,
+  Input,
   InputNumber,
   Radio,
   Rate,
@@ -109,6 +112,7 @@ export {
   BackTop,
   Dialog,
   Drag,
+  Notify,
   Swipe,
   Switch,
   Toast,
