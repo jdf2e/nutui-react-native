@@ -18,7 +18,7 @@ import { ConfigProvider } from '@nutui/nutui-react-native';
 
 ```tsx
 import React from 'react';
-import { ConfigProvider, Textarea } from "@nutui/nutui-react";
+import { ConfigProvider } from "@nutui/nutui-react-native";
 import en from "@nutui/nutui-react/dist/locales/en-US";
 
 const App = () => {

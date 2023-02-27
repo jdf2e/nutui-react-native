@@ -64,7 +64,7 @@ const BackTopDemo = () => {
   return (
     <DemoPage>
       <DemoCard title="基本用法" padding={0}>
-        <View style={{ width: deviceWidth - 40, height: 600 }}>
+        <View style={{ width: deviceWidth - 40, height: 500 }}>
           <ScrollView
             ref={ref1}
             scrollEventThrottle={16}

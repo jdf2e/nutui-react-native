@@ -25,6 +25,8 @@ import Pagination from './pagination';
 import SideNavBar from './sidenavbar';
 import SubSideNavBar from './subsidenavbar';
 import SideNavBarItem from './sidenavbaritem';
+import Tabbar from './tabbar';
+import TabbarItem from './tabbaritem';
 
 // 录入组件
 import Calendar from './calendar';
@@ -57,6 +59,7 @@ import Steps from './steps';
 import Step from './step';
 import Swiper from './swiper';
 import SwiperItem from './swiperitem';
+import Table from './table';
 import Tag from './tag';
 import TrendArrow from './trendarrow';
 import Ellipsis from './ellipsis';
@@ -92,6 +95,8 @@ export {
   SideNavBar,
   SubSideNavBar,
   SideNavBarItem,
+  Tabbar,
+  TabbarItem,
 
   Calendar,
   Checkbox,
@@ -121,6 +126,7 @@ export {
   Step,
   Swiper,
   SwiperItem,
+  Table,
   Tag,
   TrendArrow,
   Ellipsis,
