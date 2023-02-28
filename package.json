@@ -1,6 +1,6 @@
 {
   "name": "@nutui/nutui-react-native",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "scripts": {
     "bootstrap": "yarn --cwd demo && yarn",
     "dev:ios": "yarn --cwd demo ios",
