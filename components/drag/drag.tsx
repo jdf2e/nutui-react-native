@@ -1,6 +1,5 @@
 import React, { FunctionComponent, useState, useRef } from 'react';
-import { View, StyleProp, PanResponder, ViewStyle, StyleSheet } from 'react-native';
-import { useSpring, animated } from '@react-spring/native';
+import { View, StyleProp, PanResponder, ViewStyle, StyleSheet, Animated } from 'react-native';
 import { DiviceWidth, DiviceHeight } from '../utils';
 
 export interface DragProps {
@@ -36,13 +35,8 @@ Partial<DragProps>
     };
 
   const [boundaryState, setBoundaryState] = useState(boundary);
-  const [springs, api] = useSpring(() => ({
-    from: {
-      left: boundaryState.left,
-      top: boundaryState.top
-    }
-  }));
-
+  const {current: curTop} = React.useRef(new Animated.Value(boundaryState.top));
+  const {current: curLeft} = React.useRef(new Animated.Value(boundaryState.left));
   const middleLine = useRef(0);
   const touchX = useRef(0);
   const touchY = useRef(0);
@@ -85,11 +79,11 @@ Partial<DragProps>
 
       return false;
     },
-    onMoveShouldSetPanResponderCapture: () => true,
+    onMoveShouldSetPanResponderCapture: () => false,
 
     onPanResponderGrant: () => {
-      touchX.current = springs.left.animation.toValues?.[0] || 0;
-      touchY.current = springs.top.animation.toValues?.[0] || 0;
+      touchX.current = curLeft._value || 0;
+      touchY.current = curTop._value || 0;
     },
     onPanResponderMove: (e, g) => {
       let left = touchX.current + g.dx;
@@ -116,40 +110,36 @@ Partial<DragProps>
         left = touchX.current;
       }
 
-      api.start({
-        to: { left, top },
-        immediate: true
-      });
+      curTop.setValue(top);
+      curLeft.setValue(left);
+
     },
     onPanResponderRelease: () => {
-      const left = springs.left.animation.toValues?.[0] || 0;
-      const top = springs.top.animation.toValues?.[0] || 0;
+      const left = curLeft._value || 0;
+      const top = curTop._value || 0;
 
       if (direction !== 'y' && attract) {
         if (left < middleLine.current) {
-          api.start({
-            to: { left: boundaryState.left, top },
-            immediate: false
-          });
+            curLeft.setValue(boundaryState.left);
         } else {
-          api.start({
-            to: { left: boundaryState.right, top },
-            immediate: false
-          });
+            curLeft.setValue(boundaryState.right);
         }
       }
-    }
+    },
   });
 
   return (
-    <View
-      style={[styles.wrap, style]}
-      {...reset}
-      onLayout={getInfo}
-    >
-      <animated.View style={springs} {...panResponder.panHandlers}>
+    <View style={[styles.wrap, style]} {...reset} onLayout={getInfo}>
+      <Animated.View style={{transform: [
+            {
+              translateY: curTop
+            },
+            {
+                translateX: curLeft
+            }
+          ]}} {...panResponder.panHandlers}>
         {children}
-      </animated.View>
+      </Animated.View>
     </View>
   );
 };

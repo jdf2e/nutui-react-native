@@ -1,6 +1,6 @@
 import React, { useState, MouseEvent } from 'react';
 import { View, Text, StyleSheet } from 'react-native';
-import { useTranslate } from '../utils';
+import { useTranslate, DiviceHeight } from '../utils';
 import Icon from '../icon';
 import { FixedNav } from './fixednav';
 import Drag from '../drag';
@@ -108,70 +108,75 @@ const FixedNavDemo = () => {
   };
 
   return (
-    <DemoPage>
-      <FixedNav
-        navList={navList}
-        activeText={translated.title1}
-        position={{ top: 70 }}
-        onChange={change1}
-        visible={visible1}
-        onSelected={selected1}
-      />
-      <FixedNav
-        navList={navList}
-        type='left'
-        position={{ top: 140 }}
-        visible={visible2}
-        activeText={translated.title2}
-        unActiveText={translated.title3}
-        onChange={change2}
-        onSelected={selected2}
-      />
-      <FixedNav
-        navList={navList}
-        position={{ top: 210 }}
-        visible={visible3}
-        onChange={change3}
-        onSelected={selected3}
-      />
-      <FixedNav
-        position={{ top: 280 }}
-        type='left'
-        visible={visible4}
-        onChange={change4}
-        onSelected={selected4}
-        slotList={
-          <View style={styles.ul}>
-            <Text style={styles.li}>1</Text>
-            <Text style={styles.li}>2</Text>
-            <Text style={styles.li}>3</Text>
-            <Text style={styles.li}>4</Text>
-            <Text style={styles.li}>5</Text>
-          </View>
-        }
-        slotBtn={
-          <>
-            <Icon name='retweet' color='#fff' />
-            <Text style={styles.text}>
-              {visible4 ? translated.title4 : translated.title5}
-            </Text>
-          </>
-        }
-      />
-      <Drag direction='y' style={{ right: 0, top: 350 }}>
+    // <DemoPage>
+      <View style={styles.container}>
         <FixedNav
           navList={navList}
-          unActiveText={translated.title6}
-          visible={visible5}
-          onChange={change5}
-          onSelected={selected5}
+          activeText={translated.title1}
+          position={{ top: 70 }}
+          onChange={change1}
+          visible={visible1}
+          onSelected={selected1}
         />
-      </Drag>
-    </DemoPage>
+        <FixedNav
+          navList={navList}
+          type="left"
+          position={{ top: 140 }}
+          visible={visible2}
+          activeText={translated.title2}
+          unActiveText={translated.title3}
+          onChange={change2}
+          onSelected={selected2}
+        />
+        <FixedNav
+          navList={navList}
+          position={{ top: 210 }}
+          visible={visible3}
+          onChange={change3}
+          onSelected={selected3}
+        />
+        <FixedNav
+          position={{ top: 280 }}
+          type="left"
+          visible={visible4}
+          onChange={change4}
+          onSelected={selected4}
+          slotList={
+            <View style={styles.ul}>
+              <Text style={styles.li}>1</Text>
+              <Text style={styles.li}>2</Text>
+              <Text style={styles.li}>3</Text>
+              <Text style={styles.li}>4</Text>
+              <Text style={styles.li}>5</Text>
+            </View>
+          }
+          slotBtn={
+            <>
+              <Icon name="retweet" color="#fff" />
+              <Text style={styles.text}>
+                {visible4 ? translated.title4 : translated.title5}
+              </Text>
+            </>
+          }
+        />
+        <Drag direction="y" style={{ right: 0, top: 350 }}>
+          <FixedNav
+            navList={navList}
+            unActiveText={translated.title6}
+            visible={visible5}
+            onChange={change5}
+            onSelected={selected5}
+          />
+        </Drag>
+      </View>
+    // </DemoPage>
   );
 };
 
 const styles = StyleSheet.create({
+  container: {
+    height: DiviceHeight
+  },
   ul: {
     flexDirection: 'row',
     width: '100%',
