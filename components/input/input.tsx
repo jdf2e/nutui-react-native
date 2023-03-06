@@ -420,12 +420,12 @@ export const Input: FunctionComponent<
                       disabled && styles.nutInputText_disabled,
                       error && styles.nutInputText_error,
                     ]}
-                    maxLength={maxlength}
+                    maxLength={maxlength || undefined}
                     placeholder={placeholder || locale.placeholder}
                     placeholderTextColor={
                       error ? theme['$input-required-color'] : ''
                     }
-                    editable={!readonly}
+                    editable={!readonly && !disabled}
                     value={inputValue}
                     autoFocus={autofocus}
                     onBlur={(e: any) => {
@@ -448,7 +448,7 @@ export const Input: FunctionComponent<
                       error && styles.nutInputText_error,
                     ]}
                     // type={inputType(type)}
-                    maxLength={maxlength}
+                    maxLength={maxlength || undefined}
                     placeholder={placeholder || locale.placeholder}
                     placeholderTextColor={
                       error ? theme['$input-required-color'] : ''

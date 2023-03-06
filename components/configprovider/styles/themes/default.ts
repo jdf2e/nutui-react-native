@@ -477,12 +477,14 @@ const themeDefault: any = {
   // $shortpassword-error: $primary-color,
   // $shortpassword-forget: rgba(128, 128, 128, 1),
 
-  // // TextArea
-  // $textarea-font: $font-size-2,
-  // $textarea-height: 100px,
-  // $textarea-limit-color: $text-color,
-  // $textarea-text-color: $title-color,
-  // $textarea-disabled-color: $disable-color,
+  // TextArea
+  '$textarea-font': commonStyles['$font-size-2'],
+  '$textarea-padding': 16,
+  '$textarea-height': 100,
+  '$textarea-text-line-height': 30,
+  '$textarea-limit-color': commonStyles['$text-color'],
+  '$textarea-text-color': commonStyles['$title-color'],
+  '$textarea-disabled-color': commonStyles['$disable-color'],
 
   // // Uploader
   // $uploader-picture-width: 100px,

@@ -44,6 +44,7 @@ import CalendarDemo from '@nutui/nutui-react-native/calendar/demo'
 import CheckboxDemo from '@nutui/nutui-react-native/checkbox/demo';
 import SearchBarDemo from '@nutui/nutui-react-native/searchbar/demo'
 import InputDemo from '@nutui/nutui-react-native/input/demo';
+import TextAreaDemo from '@nutui/nutui-react-native/textarea/demo'
 import InputNumberDemo from '@nutui/nutui-react-native/inputnumber/demo';
 import RadioDemo from '@nutui/nutui-react-native/radio/demo';
 import RateDemo from '@nutui/nutui-react-native/rate/demo';
@@ -259,6 +260,12 @@ export const DemoList = [
     title: 'Input',
     description: '输入框',
     demo: InputDemo,
+    type: 'Dentry'
+  },
+  {
+    title: 'TextArea',
+    description: '文本域',
+    demo: TextAreaDemo,
     type: 'Dentry'
   },
   {
