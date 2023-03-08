@@ -19,7 +19,7 @@ interface T {
   c9e6df49: string;
 }
 
-const tabbarDemo = () => {
+const TabbarDemo = () => {
   const [translated] = useTranslate<T>({
     'zh-CN': {
       ce5c5446: '基础用法',
@@ -169,4 +169,4 @@ const tabbarDemo = () => {
   );
 };
 
-export default tabbarDemo;
+export default TabbarDemo;

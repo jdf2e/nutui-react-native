@@ -24,7 +24,7 @@ interface T {
   sorting: string;
 }
 
-const tableDemo = () => {
+const TableDemo = () => {
   const [translated] = useTranslate<T>({
     'zh-CN': {
       basic: '基础用法',
@@ -307,4 +307,4 @@ const tableDemo = () => {
   );
 };
 
-export default tableDemo;
+export default TableDemo;
