@@ -9,10 +9,10 @@ import PopupDemo from '@nutui/nutui-react-native/popup/demo'
 import ElevatorDemo from '@nutui/nutui-react-native/elevator/demo';
 import FixedNavDemo from '@nutui/nutui-react-native/fixednav/demo';
 import IndicatorDemo from '@nutui/nutui-react-native/indicator/demo';
-import SideNavBarDemo from '@nutui/nutui-react-native/sidenavbar/demo';
 import NavBarDemo from '@nutui/nutui-react-native/navbar/demo'
-import TabbarDemo from '@nutui/nutui-react-native/tabbar/demo';
 import PaginationDemo from '@nutui/nutui-react-native/pagination/demo'
+import SideNavBarDemo from '@nutui/nutui-react-native/sidenavbar/demo';
+import TabbarDemo from '@nutui/nutui-react-native/tabbar/demo';
 // 布局组件
 import DividerDemo from '@nutui/nutui-react-native/divider/demo';
 import GridDemo from '@nutui/nutui-react-native/grid/demo';
@@ -28,32 +28,32 @@ import ToastDemo from '@nutui/nutui-react-native/toast/demo';
 // 展示组件
 import AvatarDemo from '@nutui/nutui-react-native/avatar/demo'
 import CountDownDemo from '@nutui/nutui-react-native/countdown/demo';
-import StepsDemo from '@nutui/nutui-react-native/steps/demo'
 import EllipsisDemo from '@nutui/nutui-react-native/ellipsis/demo'
 import NoticeBarDemo from '@nutui/nutui-react-native/noticebar/demo';
-import VirtuallistDemo from '@nutui/nutui-react-native/virtuallist/demo'
 import ProgressDemo from '@nutui/nutui-react-native/progress/demo'
 import SkeletonDemo from '@nutui/nutui-react-native/skeleton/demo';
+import StepsDemo from '@nutui/nutui-react-native/steps/demo'
 import SwiperDemo from '@nutui/nutui-react-native/swiper/demo';
 import TableDemo from '@nutui/nutui-react-native/table/demo';
 import TagDemo from '@nutui/nutui-react-native/tag/demo';
 import TrendArrowDemo from '@nutui/nutui-react-native/trendarrow/demo';
+import VirtuallistDemo from '@nutui/nutui-react-native/virtuallist/demo'
 
 //录入组件
 import CalendarDemo from '@nutui/nutui-react-native/calendar/demo'
 import CheckboxDemo from '@nutui/nutui-react-native/checkbox/demo';
-import SearchBarDemo from '@nutui/nutui-react-native/searchbar/demo'
 import InputDemo from '@nutui/nutui-react-native/input/demo';
-import TextAreaDemo from '@nutui/nutui-react-native/textarea/demo'
 import InputNumberDemo from '@nutui/nutui-react-native/inputnumber/demo';
 import RadioDemo from '@nutui/nutui-react-native/radio/demo';
 import RateDemo from '@nutui/nutui-react-native/rate/demo';
+import SearchBarDemo from '@nutui/nutui-react-native/searchbar/demo'
+import TextAreaDemo from '@nutui/nutui-react-native/textarea/demo'
 //特色组件
-import TimeSelectDemo from '@nutui/nutui-react-native/timeselect/demo'
 import BadgeDemo from '@nutui/nutui-react-native/badge/demo';
 import CollapseDemo from '@nutui/nutui-react-native/collapse/demo';
 import EmptyDemo from '@nutui/nutui-react-native/empty/demo';
 import PriceDemo from '@nutui/nutui-react-native/price/demo';
+import TimeSelectDemo from '@nutui/nutui-react-native/timeselect/demo'
 // 特色组件
 import CardDemo from '@nutui/nutui-react-native/card/demo';
 
