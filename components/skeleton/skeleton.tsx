@@ -7,7 +7,7 @@ import Avatar from '../avatar';
 import {
   default as RNLinearGradient,
   LinearGradient,
-} from 'react-native-linear-gradient';
+} from 'expo-linear-gradient';
 
 import fConStyle from '../utils/filter-container-style';
 import toObj from '../utils/style-to-obj';
@@ -111,7 +111,7 @@ export const Skeleton: FunctionComponent<Partial<SkeletonProps>> = (props) => {
     round ? styles.blockRoundStyle : {},
     { width, height },
   ];
-  
+
   const avatarStyle = [styles.avatarStyle, getStyle()];
 
   const LinearGradientComponent = RNLinearGradient || LinearGradient;

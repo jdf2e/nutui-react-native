@@ -52,7 +52,7 @@ import { isLinearGradient, getLinearParam } from '../utils/color';
 import {
   default as RNLinearGradient,
   LinearGradient,
-} from 'react-native-linear-gradient';
+} from 'expo-linear-gradient';
 
 // 位置坐标
 type Pos = {

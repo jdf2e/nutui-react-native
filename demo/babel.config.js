@@ -12,7 +12,6 @@ module.exports = function (api) {
         {
           extensions: ['.tsx', '.ts', '.js', '.json'],
           alias: {
-            'react-native-linear-gradient': 'expo-linear-gradient',
             // For development, we want to alias the library to the source
             [pak.name]: path.join(__dirname, '..', pak.source),
           },

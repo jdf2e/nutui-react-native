@@ -57,7 +57,7 @@ import toObj from '../utils/style-to-obj';
 import {
   default as RNLinearGradient,
   LinearGradient,
-} from 'react-native-linear-gradient';
+} from 'expo-linear-gradient';
 
 // 位置坐标
 type Pos = {
