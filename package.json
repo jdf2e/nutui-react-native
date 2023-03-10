@@ -15,7 +15,7 @@
     "prepack": "bob build",
     "test": "jest --passWithNoTests",
     "typecheck": "npm run generate:docs && tsc --noEmit",
-    "release": "release-it --ci"
+    "release": "release-it --ci --verbose"
   },
   "author": "jdf2e",
   "license": "MIT",
