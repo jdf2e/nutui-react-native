@@ -3,7 +3,9 @@ import { StatusBar } from 'expo-status-bar';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
-import ConfigProvider, { useConfig } from '@nutui/nutui-react-native/configprovider';
+import ConfigProvider, {
+  useConfig,
+} from '@nutui/nutui-react-native/configprovider';
 import Home from './src/Home';
 import { DemoList } from './demoList';
 import Theme from './components/Theme';
@@ -16,15 +18,30 @@ export default function App() {
   const changeTheme = (theme: any) => {
     setTheme(theme);
   };
+  const componentRoutes: any = {};
+  DemoList.forEach((item) => {
+    componentRoutes[item.title] = {
+      path: item.title.toLocaleLowerCase(),
+    };
+  });
+  const linking = {
+    prefixes: ['https://nutui.jd.com', 'nutui://'],
+    config: {
+      screens: {
+        Home: '/',
+        ...componentRoutes
+      },
+    },
+  };
   return (
     <ConfigProvider theme={theme}>
-      <NavigationContainer>
+      <NavigationContainer linking={linking}>
         <Stack.Navigator initialRouteName="Home">
           <Stack.Screen
             name="Home"
             component={Home}
             options={{
-              headerShown: false
+              headerShown: false,
             }}
           />
 
