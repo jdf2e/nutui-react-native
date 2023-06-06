@@ -64,7 +64,6 @@ export default (theme: any) =>
       height: pt(48),
       textAlign: 'left',
       borderWidth: 0,
-      textDecoration: 'none',
       outlineWidh: 0,
       backgroundColor: 'transparent',
       color: theme['$gray1'],
