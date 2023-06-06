@@ -97,7 +97,7 @@ export const Row: FunctionComponent<
                 gutter: gutter,
               })
             );
-            returnView.push(<View style={{ width: parseInt(gutter) }} />);
+            returnView.push(<View key={'gutter' + i} style={{ width: parseInt(gutter) }} />);
           }
         }
         if (wrap === 'reverse') {
