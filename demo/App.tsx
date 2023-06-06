@@ -29,7 +29,7 @@ export default function App() {
     config: {
       screens: {
         Home: '/',
-        ...componentRoutes
+        ...componentRoutes,
       },
     },
   };
@@ -42,6 +42,7 @@ export default function App() {
             component={Home}
             options={{
               headerShown: false,
+              headerTitle: '',
             }}
           />
 
