@@ -24,10 +24,7 @@ export default function App() {
             name="Home"
             component={Home}
             options={{
-              title: 'NutUI Demo',
-              // headerLeft: (props) => (
-              //   <Theme {...props} onChange={changeTheme} current={theme} />
-              // ),
+              headerShown: false
             }}
           />
 
