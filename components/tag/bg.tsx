@@ -54,10 +54,7 @@ import { isLinearGradient, getLinearParam } from '../utils/color';
 
 import toObj from '../utils/style-to-obj';
 
-import {
-  default as RNLinearGradient,
-  LinearGradient,
-} from 'expo-linear-gradient';
+import * as LinearGradient from 'react-native-linear-gradient';
 
 // 位置坐标
 type Pos = {
@@ -162,7 +159,9 @@ const Background: FunctionComponent<Props> = ({
     return <View style={style}>{children}</View>;
   }
 
-  const LinearGradientComponent = RNLinearGradient || LinearGradient;
+  const LinearGradientModuleRef = (LinearGradient as any);
+  const LinearGradientComponent = LinearGradientModuleRef.LinearGradient || LinearGradientModuleRef.default;
+
   return (
     <LinearGradientComponent
       style={[toObj(style), { borderWidth: 0 }]}

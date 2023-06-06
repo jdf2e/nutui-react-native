@@ -4,10 +4,7 @@ import { View, ViewStyle, StyleProp, Animated, Platform } from 'react-native';
 
 import Avatar from '../avatar';
 
-import {
-  default as RNLinearGradient,
-  LinearGradient,
-} from 'expo-linear-gradient';
+import * as LinearGradient from 'react-native-linear-gradient';
 
 import fConStyle from '../utils/filter-container-style';
 import toObj from '../utils/style-to-obj';
@@ -114,7 +111,8 @@ export const Skeleton: FunctionComponent<Partial<SkeletonProps>> = (props) => {
 
   const avatarStyle = [styles.avatarStyle, getStyle()];
 
-  const LinearGradientComponent = RNLinearGradient || LinearGradient;
+  const LinearGradientModuleRef = (LinearGradient as any);
+  const LinearGradientComponent = LinearGradientModuleRef.LinearGradient || LinearGradientModuleRef.default;
 
   return (
     <>

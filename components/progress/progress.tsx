@@ -11,10 +11,7 @@ import Icon from '../icon';
 
 import { IComponent, ComponentDefaults } from '../utils/typings';
 import pt from '../utils/pt';
-import {
-  default as RNLinearGradient,
-  LinearGradient,
-} from 'expo-linear-gradient';
+import * as LinearGradient from 'react-native-linear-gradient';
 
 export type ProgressSize = 'small' | 'base' | 'large';
 export type TextType = 'icon' | 'text';
@@ -166,7 +163,9 @@ export const Progress: FunctionComponent<
     );
   };
 
-  const LinearGradientComponent = RNLinearGradient || LinearGradient;
+  const LinearGradientModuleRef = (LinearGradient as any);
+  const LinearGradientComponent = LinearGradientModuleRef.LinearGradient || LinearGradientModuleRef.default;
+
   return (
     <View style={[styles.containerOut, style]} {...rest}>
       <View style={styles.containerInner}>
@@ -200,7 +199,7 @@ export const Progress: FunctionComponent<
                 }}
               />
             ) : (
-              <LinearGradient
+              <LinearGradientComponent
                 start={{ x: 0, y: 0 }}
                 end={{ x: 1, y: 0 }}
                 colors={strokeColor}
@@ -209,7 +208,7 @@ export const Progress: FunctionComponent<
                   height: getHeight(),
                   borderRadius: getHeight() / 2,
                 }}
-              ></LinearGradient>
+              ></LinearGradientComponent>
             )}
           </Animated.View>
           {showText && textInside && (
@@ -235,7 +234,7 @@ export const Progress: FunctionComponent<
                   name={iconName}
                   color={iconColor}
                 />
-              ) : <LinearGradient
+              ) : <LinearGradientComponent
                 start={{ x : 0, y : 0 }}
                 end={{ x : 1, y : 0 }}
                 colors={textBackground}
@@ -248,7 +247,7 @@ export const Progress: FunctionComponent<
                   {isShowPercentage ? '%' : ''}
                 </Text>
               )}
-              </LinearGradient>}
+              </LinearGradientComponent>}
 
               {Platform.OS === 'web' ? (
                 <View
@@ -270,7 +269,7 @@ export const Progress: FunctionComponent<
                   )}
                 </View>
               ) : (
-                <LinearGradient
+                <LinearGradientComponent
                   start={{ x: 0, y: 0 }}
                   end={{ x: 1, y: 0 }}
                   colors={textBackground}
@@ -282,7 +281,7 @@ export const Progress: FunctionComponent<
                       {isShowPercentage ? '%' : ''}
                     </Text>
                   )}
-                </LinearGradient>
+                </LinearGradientComponent>
               )}
             </Animated.View>
           )}
