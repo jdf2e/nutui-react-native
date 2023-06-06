@@ -1,8 +1,10 @@
+import { IComponent, BasicComponent, ComponentDefaults } from './typings';
 export { default as DiviceWidth } from './deviceWidth';
 export { default as DiviceHeight } from './deviceHeight';
 export { default as StatusBarHeight } from './statusBarHeight';
-export { IComponent, BasicComponent, ComponentDefaults } from './typings';
 export { default as useTranslate } from '../hooks/useTranslate';
+export type { IComponent, BasicComponent };
+export { ComponentDefaults };
 
 const trimExtraChar = (value: string, char: string, regExp: RegExp) => {
   const index = value.indexOf(char);

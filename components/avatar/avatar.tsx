@@ -4,9 +4,18 @@ import React, {
   useRef,
   FunctionComponent,
   useContext,
+  CSSProperties,
 } from 'react';
 
-import { View, Image, Text, StyleProp, ViewStyle } from 'react-native';
+import {
+  View,
+  Image,
+  Text,
+  ViewStyle,
+  RegisteredStyle,
+  RecursiveArray,
+  Falsy,
+} from 'react-native';
 
 import { AvatarContext } from '../avatargroup/avatarContext';
 
@@ -25,7 +34,16 @@ export interface AvatarProps {
   bgColor: string;
   color: string;
   source: any;
-  style: StyleProp<ViewStyle> | undefined;
+  style:
+    | ((
+        | false
+        | ViewStyle
+        | RegisteredStyle<ViewStyle>
+        | RecursiveArray<Falsy | ViewStyle | RegisteredStyle<ViewStyle>>
+        | null
+      ) &
+        CSSProperties)
+    | undefined;
   children: React.ReactNode;
   activeAvatar: (e: any) => void;
   onActiveAvatar: (e: any) => void;
@@ -85,7 +103,6 @@ export const Avatar: FunctionComponent<
         ? `${Math.abs(maxSum - avatarIndex)}`
         : '',
   };
-
 
   const mySize = size || parent?.propAvatarGroup?.size || 'normal';
   const wrapStyle = [

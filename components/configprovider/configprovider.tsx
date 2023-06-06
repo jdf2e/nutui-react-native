@@ -41,7 +41,7 @@ export const useConfig = () => {
 };
 
 // 创建一个 Context 对象
-const ConfigContext = createContext<ConfigProviderProps | null>(null);
+const ConfigContext = createContext<ConfigProviderProps>(defaultProps);
 
 export const ConfigProvider: FunctionComponent<
   Partial<ConfigProviderProps> & React.HTMLAttributes<HTMLDivElement>
