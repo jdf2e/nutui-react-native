@@ -516,7 +516,7 @@ export const CalendarItem = React.forwardRef<
     const currentScrollTop = y;
     let current = Math.floor(currentScrollTop / state.avgHeight);
     current = current < 0 ? 0 : current;
-    
+
     scrollTop.current = currentScrollTop;
 
     if (current === 0) {
@@ -820,7 +820,7 @@ export const CalendarItem = React.forwardRef<
         )}
         <View style={styles.calendarWeeks} ref={weeksPanel}>
           {weeks.map((item: string, index: number) => (
-            <Text style={[styles.calendarWeekItem, 
+            <Text style={[styles.calendarWeekItem,
                 (!index || weeks.length-1 === index) && styles.calendarWeekday
             ]} key={item}>
               {item}
@@ -945,7 +945,7 @@ export const CalendarItem = React.forwardRef<
           </TouchableOpacity>
         </View>
       ) : (
-        ''
+        null
       )}
     </View>
   );
