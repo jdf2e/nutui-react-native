@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { DemoCard, DemoPage } from '../configprovider/styles/demo.page'
 import useTranslate from '../hooks/useTranslate'
 import { Button } from './button'
+import pt from '../utils/pt'
 
 interface T {
   ce5c5446: string
@@ -316,10 +317,10 @@ const ButtonDemo = () => {
         <DemoCard
           title="按钮尺寸"
           style={{
-            gap: 10
+            gap: 10,
           }}
         >
-          <Button size="large" type="default">
+          <Button size="large" style={{width: pt(620)}} type="default">
             默认大
           </Button>
           <Button size="normal" type="default">
@@ -329,7 +330,7 @@ const ButtonDemo = () => {
             默认小
           </Button>
 
-          <Button size="large" type="primary">
+          <Button size="large" style={{width: pt(620)}} type="primary">
             默认大
           </Button>
           <Button size="normal" type="primary">
@@ -339,7 +340,7 @@ const ButtonDemo = () => {
             默认小
           </Button>
 
-          <Button size="large" type="info">
+          <Button size="large" style={{width: pt(620)}} type="info">
             默认大
           </Button>
           <Button size="normal" type="info">
@@ -349,7 +350,7 @@ const ButtonDemo = () => {
             默认小
           </Button>
 
-          <Button size="large" type="danger">
+          <Button size="large" style={{width: pt(620)}} type="danger">
             默认大
           </Button>
           <Button size="normal" type="danger">
@@ -359,7 +360,7 @@ const ButtonDemo = () => {
             默认小
           </Button>
 
-          <Button size="large" type="warning">
+          <Button size="large" style={{width: pt(620)}} type="warning">
             默认大
           </Button>
           <Button size="normal" type="warning">
@@ -369,7 +370,7 @@ const ButtonDemo = () => {
             默认小
           </Button>
 
-          <Button size="large" type="success">
+          <Button size="large" style={{width: pt(620)}} type="success">
             默认大
           </Button>
           <Button size="normal" type="success">
@@ -389,22 +390,22 @@ const ButtonDemo = () => {
             gap: 10
           }}
         >
-          <Button block type="default">
+          <Button block style={{width: pt(620)}} type="default">
             块级元素
           </Button>
-          <Button block type="primary">
+          <Button block style={{width: pt(620)}} type="primary">
             块级元素
           </Button>
-          <Button block type="info">
+          <Button block style={{width: pt(620)}} type="info">
             块级元素
           </Button>
-          <Button block type="danger">
+          <Button block style={{width: pt(620)}} type="danger">
             块级元素
           </Button>
-          <Button block type="warning">
+          <Button block style={{width: pt(620)}} type="warning">
             块级元素
           </Button>
-          <Button block type="success">
+          <Button block style={{width: pt(620)}} type="success">
             块级元素
           </Button>
         </DemoCard>
