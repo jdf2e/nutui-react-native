@@ -15,7 +15,7 @@ import { Elevator } from '@nutui/nutui-react-native'
 
 ### Basic Usage
 
-```SnackPlayer name=Elevator&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React from 'react'
 import { Elevator } from '@nutui/nutui-react-native'
 
@@ -92,7 +92,7 @@ export default App
 
 ### Custom index
 
-```SnackPlayer name=Elevator&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React from 'react'
 import { Elevator } from '@nutui/nutui-react-native'
 
@@ -221,7 +221,7 @@ export default App
 
 ### Index ceiling
 
-```SnackPlayer name=Elevator&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React from 'react'
 import { Elevator } from '@nutui/nutui-react-native'
 
@@ -364,7 +364,7 @@ export default App
 
 ### Custom Content
 
-```SnackPlayer name=Elevator&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React from 'react'
 import { Elevator, elevatorContext, Icon } from '@nutui/nutui-react-native'
 

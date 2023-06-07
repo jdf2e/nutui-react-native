@@ -1,4 +1,4 @@
-# Drag 
+# Drag
 
 ### Intro
 
@@ -14,7 +14,7 @@ import { Drag } from '@nutui/nutui-react-native'
 
 ### Basic Usage
 
-```SnackPlayer name=Drag&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React from "react";
 import { Drag } from '@nutui/nutui-react-native';
 
@@ -40,7 +40,7 @@ export default App;
 
 ##  Limit Direction
 
-```SnackPlayer name=Drag&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React from "react";
 import { Drag } from '@nutui/nutui-react-native';
 
@@ -71,7 +71,7 @@ export default App;
 
 ## Attract
 
-```SnackPlayer name=Drag&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React from "react";
 import { Drag } from '@nutui/nutui-react-native';
 
@@ -96,7 +96,7 @@ export default App;
 
 
 ## Limit Boundaries
-```SnackPlayer name=Drag&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React from "react";
 import { Drag } from '@nutui/nutui-react-native';
 
@@ -110,7 +110,7 @@ const App = () => {
     lineHeight: '36px',
     background: 'linear-gradient(135deg,#fa2c19 0,#fa6419 100%)',
   }
-  
+
     const right = () => {
     return document.documentElement.clientWidth - 300 - 9
     }

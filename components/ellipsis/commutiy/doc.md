@@ -17,9 +17,7 @@ import { Ellipsis } from '@nutui/nutui-react-native';
 
 ### 头部省略
 
-:::demo
-
-```tsx
+```SnackPlayer
 import  React from "react";
 import { Ellipsis, Cell } from '@nutui/nutui-react-native';
 
@@ -34,13 +32,10 @@ const App = () => {
 };
 export default App;
 ```
-:::
 
 ### 尾部省略
 
-:::demo
-
-```tsx
+```SnackPlayer
 import  React from "react";
 import { Ellipsis, Cell } from '@nutui/nutui-react-native';
 
@@ -55,13 +50,10 @@ const App = () => {
 };
 export default App;
 ```
-:::
 
 ### 中间省略
 
-:::demo
-
-```tsx
+```SnackPlayer
 import  React from "react";
 import { Ellipsis, Cell } from '@nutui/nutui-react-native';
 
@@ -76,13 +68,10 @@ const App = () => {
 };
 export default App;
 ```
-:::
 
 ### 多行省略
 
-:::demo
-
-```tsx
+```SnackPlayer
 import  React from "react";
 import { Ellipsis, Cell } from '@nutui/nutui-react';
 
@@ -97,7 +86,6 @@ const App = () => {
 };
 export default App;
 ```
-:::
 
 ## API
 

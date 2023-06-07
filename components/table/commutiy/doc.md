@@ -5,6 +5,7 @@
 用于展示基础表格
 
 ### 安装
+
 ```ts
 import { Table } from '@nutui/nutui-react-native';
 ```
@@ -14,8 +15,7 @@ import { Table } from '@nutui/nutui-react-native';
 
 ### 基本用法
 
-:::demo
-```SnackPlayer name=Table&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React, { useState } from "react";
 import { Text } from 'react-native';
 import { Table } from '@nutui/nutui-react-native';
@@ -73,11 +73,9 @@ const App = () => {
 };
 export default App;
 ```
-:::
 
 ### 是否显示边框，文字对齐
-:::demo
-```SnackPlayer name=Table&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React, { useState } from "react";
 import { Table } from '@nutui/nutui-react-native';
 
@@ -132,12 +130,10 @@ const App = () => {
 };
 export default App;
 ```
-:::
 
 
 ### 显示总结栏
-:::demo
-```SnackPlayer name=Table&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React, { useState } from "react";
 import { Text } from 'react-native';
 import { Table } from '@nutui/nutui-react-native';
@@ -199,11 +195,9 @@ const App = () => {
 };
 export default App;
 ```
-:::
 
 ### 条纹、明暗交替
-:::demo
-```SnackPlayer name=Table&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React, { useState } from "react";
 import { Text } from 'react-native';
 import { Table } from '@nutui/nutui-react-native';
@@ -265,11 +259,9 @@ const App = () => {
 };
 export default App;
 ```
-:::
 
 ### 无数据默认展示，支持自定义
-:::demo
-```SnackPlayer name=Table&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React, { useState } from "react";
 import { Text } from 'react-native';
 import { Table } from '@nutui/nutui-react-native';
@@ -320,11 +312,9 @@ const App = () => {
 };
 export default App;
 ```
-:::
 
 ### 自定义单元格
-:::demo
-```SnackPlayer name=Table&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React, { useState } from "react";
 import { Table, Button, Icon, Toast } from '@nutui/nutui-react-native';
 
@@ -396,11 +386,9 @@ const App = () => {
 };
 export default App;
 ```
-:::
 
 ### 支持异步渲染(5s之后看效果)
-:::demo
-```SnackPlayer name=Table&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React, { useState } from "react";
 import { Table, Button, Icon, Toast } from '@nutui/nutui-react-native';
 
@@ -472,11 +460,9 @@ const App = () => {
 };
 export default App;
 ```
-:::
 
 ### 支持排序
-:::demo
-```SnackPlayer name=Table&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React, { useState } from "react";
 import { Table, Button, Icon, Toast } from '@nutui/nutui-react-native';
 
@@ -534,7 +520,6 @@ const App = () => {
 };
 export default App;
 ```
-:::
 
 
 ## API

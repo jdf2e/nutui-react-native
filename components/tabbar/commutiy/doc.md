@@ -14,8 +14,7 @@ import { Tabbar, TabbarItem } from '@nutui/nutui-react';
 
 ### 基础用法
 
-:::demo
-```SnackPlayer name=Tabbar&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React from "react";
 import {  Tabbar, TabbarItem } from '@nutui/nutui-react';
 
@@ -31,11 +30,9 @@ const App = () => (
 
 export default App;
 ```
-:::
 ### 自定义选中
 
-:::demo
-```SnackPlayer name=Tabbar&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React from "react";
 import {  Tabbar, TabbarItem } from '@nutui/nutui-react';
 
@@ -51,11 +48,9 @@ const App = () => (
 
 export default App;
 ```
-:::
 ### 徽标提示
 
-:::demo
-```SnackPlayer name=Tabbar&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React from "react";
 import {  Tabbar, TabbarItem } from '@nutui/nutui-react';
 
@@ -71,12 +66,10 @@ const App = () => (
 
 export default App;
 ```
-:::
 
 ### 红点
 
-:::demo
-```SnackPlayer name=Tabbar&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React from "react";
 import { Tabbar, TabbarItem } from '@nutui/nutui-react';
 
@@ -92,12 +85,10 @@ const App = () => (
 
 export default App;
 ```
-:::
 
 ### 自定义颜色
 
-:::demo
-```SnackPlayer name=Tabbar&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React from "react";
 import {  Tabbar, TabbarItem } from '@nutui/nutui-react';
 
@@ -113,11 +104,9 @@ const App = () => (
 
 export default App;
 ```
-:::
 ### 可自定义icon个数的tabbar
 
-:::demo
-```SnackPlayer name=Tabbar&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React from "react";
 import {  Tabbar, TabbarItem } from '@nutui/nutui-react';
 
@@ -131,11 +120,9 @@ const App = () => (
 
 export default App;
 ```
-:::
 ### 固定底部，可自由跳转
 
-:::demo
-```SnackPlayer name=Tabbar&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React from "react";
 import { Tabbar, TabbarItem } from '@nutui/nutui-react';
 
@@ -154,7 +141,6 @@ const App = () => (
 
 export default App;
 ```
-:::        
 
 ## API
 

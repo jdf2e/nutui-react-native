@@ -14,7 +14,7 @@ import { Price } from '@nutui/nutui-react-native'
 
 ### 基礎用法 small normal large
 
-```SnackPlayer name=Price&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React from "react"
 import { Price, Cell } from '@nutui/nutui-react-native'
 
@@ -39,7 +39,7 @@ export default App;
 
 ### 不保留小數
 
-```SnackPlayer name=Price&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React from "react"
 import { Price, Cell } from '@nutui/nutui-react-native'
 
@@ -62,7 +62,7 @@ export default App;
 
 ### 有人民幣符號，無千位分隔
 
-```SnackPlayer name=Price&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React from "react"
 import { Price, Cell } from '@nutui/nutui-react-native'
 
@@ -79,7 +79,7 @@ export default App;
 
 ### 帶人民幣符號，有千位分隔，保留小數點後三位
 
-```SnackPlayer name=Price&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React from "react"
 import { Price, Cell } from '@nutui/nutui-react-native'
 
@@ -102,7 +102,7 @@ export default App;
 
 ### 調整 symbol 符號位置
 
-```SnackPlayer name=Price&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React from "react"
 import { Price, Cell } from '@nutui/nutui-react-native'
 
@@ -126,7 +126,7 @@ export default App;
 
 ### 異步隨機變更
 
-```SnackPlayer name=Price&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React, { useState, useEffect } from 'react'
 import { Price, Cell } from '@nutui/nutui-react-native'
 

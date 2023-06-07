@@ -4,7 +4,7 @@
 
 Used to configure NutUI-React components globally, providing internationalization support.
 
-```SnackPlayer name=ConfigProvider&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React from 'react';
 import { ConfigProvider, Textarea } from "@nutui/nutui-react-native";
 import en from "@nutui/nutui-react-native/locales/en-US";
@@ -28,7 +28,7 @@ import { ConfigProvider } from '@nutui/nutui-react-native';
 
 ## Demo
 
-```SnackPlayer name=ConfigProvider&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React from 'react';
 import { ConfigProvider, Textarea } from "@nutui/nutui-react-native";
 import en from "@nutui/nutui-react-native/locales/en-US";

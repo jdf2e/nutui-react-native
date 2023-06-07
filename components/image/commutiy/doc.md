@@ -18,9 +18,7 @@ import { Image } from '@nutui/nutui-react-native';
 
 基础用法与原生 img 标签类似，可以设置 source、width、height 等原生属性。
 
-:::demo
-
-```SnackPlayer name=Image&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React from "react";
 import { Image } from '@nutui/nutui-react-native';
 
@@ -39,15 +37,12 @@ const App = () => {
 export default App;
 
 ```
-:::
 
 ### 填充模式
 
 通过 resizeMode 属性可以设置图片填充模式，等同于原生的 object-fit 属性，可选值见下方表格。
 
-:::demo
-
-```SnackPlayer name=Image&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React from "react";
 import { Image } from '@nutui/nutui-react-native';
 
@@ -70,8 +65,7 @@ export default App;
 
 通过 round 属性可以设置图片变圆
 
-:::demo
-```SnackPlayer name=Image&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React from "react";
 import { Image } from '@nutui/nutui-react-native';
 
@@ -88,14 +82,12 @@ const App = () => {
 export default App;
 
 ```
-:::
 
 ### 加载中图片
 
 `Image` 组件提供了默认的加载中提示，支持通过 `loading` 插槽自定义内容。
 
-:::demo
-```SnackPlayer name=Image&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React from "react";
 import { Image, Icon } from '@nutui/nutui-react-native';
 
@@ -116,14 +108,12 @@ const App = () => {
 export default App;
 
 ```
-:::
 
 ### 加载失败
 
 `Image` 组件提供了默认的加载失败提示，支持通过 `error` 插槽自定义内容。
 
-:::demo
-```SnackPlayer name=Image&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React from "react";
 import { Image, Icon } from '@nutui/nutui-react-native';
 

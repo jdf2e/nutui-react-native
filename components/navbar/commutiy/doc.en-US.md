@@ -1,6 +1,6 @@
 # Navbar
 
-### introduce 
+### introduce
 
 
 Provides navigation capabilities.
@@ -15,15 +15,14 @@ import { NavBar } from '@nutui/nutui-react-native';
 
 ### Basic usage
 
-:::demo
-```SnackPlayer name=NavBar&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React from "react";
 import { View } from 'react-native';
 import { NavBar, Icon, Toast } from '@nutui/nutui-react-native';
 
 const App = () => {
-  return ( 
-    <>   
+  return (
+    <>
       <NavBar
           title="detail"
           border
@@ -48,20 +47,18 @@ const App = () => {
         </NavBar>
     </>
   );
-};  
+};
 export default App;
 
 ```
-:::
 
-:::demo
-```SnackPlayer name=NavBar&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React from "react";
 import { NavBar } from '@nutui/nutui-react-native';
 
 const App = () => {
-  return ( 
-    <>   
+  return (
+    <>
       <NavBar
           title="Broswing historyu"
           desc="clear"
@@ -79,20 +76,18 @@ const App = () => {
         />
     </>
   );
-};  
+};
 export default App;
 
 ```
-:::
 
-:::demo
-```SnackPlayer name=NavBar&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React from "react";
 import { NavBar, Icon } from '@nutui/nutui-react-native';
 
 const App = () => {
-  return ( 
-    <>   
+  return (
+    <>
       <NavBar
           title="cart"
           desc="edit"
@@ -118,19 +113,17 @@ const App = () => {
         </NavBar>
     </>
   );
-};  
+};
 export default App;
 
 ```
-:::
 
-:::demo
-```SnackPlayer name=NavBar&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React from "react";
 import { NavBar, Icon } from '@nutui/nutui-react-native';
 
 const App = () => {
-  return ( 
+  return (
     <>
       <NavBar
           title="order details"
@@ -156,24 +149,22 @@ const App = () => {
         </NavBar>
     </>
   );
-};  
+};
 export default App;
 
 ```
-:::
 
 
 ### Customize the middle content of the navigation bar
 
-:::demo
-```SnackPlayer name=NavBar&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React, { useState } from "react";
 import { View } from 'react-native';
 import { NavBar, Icon, Toast } from '@nutui/nutui-react-native';
 
 const App = () => {
-  return ( 
-    <>   
+  return (
+    <>
       <NavBar
           desc="edit"
           border
@@ -212,27 +203,26 @@ const App = () => {
         </NavBar>
     </>
   );
-};  
+};
 export default App;
 
 ```
-:::
 
-### Prop  
+### Prop
 
 | Prop            | Description                                                                                           | Type    | Default  |
 |-----------------|------------------------------------------------------------------------------------------------|---------|---------|
 | title           | title name                                                                                       | String  | -       |
 | desc            | Description on the right                                                                                       | String  | -       |
 | leftShow        | Whether to show the left arrow                                                                              | Boolean | true   |
-| titIcon         | title with icon                                                         | String  | -       |   
-| leftText         | copy on the left                                                         | String  | -       |   
-| fixed         | Is it fixed                                                         | Boolean  | false       |   
-| safeAreaInsetTop         | Whether it is suitable for the safe area                                                         | Boolean  | false       |   
-| border         | whether to show the bottom border                                      | Boolean  | false    | 
+| titIcon         | title with icon                                                         | String  | -       |
+| leftText         | copy on the left                                                         | String  | -       |
+| fixed         | Is it fixed                                                         | Boolean  | false       |
+| safeAreaInsetTop         | Whether it is suitable for the safe area                                                         | Boolean  | false       |
+| border         | whether to show the bottom border                                      | Boolean  | false    |
 | placeholder         | When fixed to the top, whether to generate a placeholder element of equal height at the label position           | Boolean  | false    |
 | zIndex         | Navigation Bar Hierarchy           | Number、String  | 10    |
-| style         | container style           | React.CSSProperties  | {}    |                                        
+| style         | container style           | React.CSSProperties  | {}    |
 
 ### Event
 

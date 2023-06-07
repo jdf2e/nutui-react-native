@@ -13,9 +13,7 @@ import { Checkbox, CheckboxGroup } from '@nutui/nutui-react-native';
 
 ## Basic Usage
 
-:::demo
-
-```SnackPlayer name=Checkbox&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React, {useState} from "react";
 import { Checkbox, CheckboxGroup } from '@nutui/nutui-react-native';
 
@@ -32,13 +30,9 @@ const CheckBoxDemo = () => {
 export default CheckBoxDemo;
 ```
 
-:::
-
 ## Disabled state
 
-:::demo
-
-```SnackPlayer name=Checkbox&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React from "react";
 import { Checkbox, CheckboxGroup } from '@nutui/nutui-react-native';
 
@@ -61,13 +55,9 @@ const CheckBoxDemo = () => {
 export default CheckBoxDemo;
 ```
 
-:::
-
 ## Custom dimensions
 
-:::demo
-
-```SnackPlayer name=Checkbox&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React from "react";
 import { Checkbox, CheckboxGroup } from '@nutui/nutui-react-native';
 
@@ -80,16 +70,12 @@ const CheckBoxDemo = () => {
 export default CheckBoxDemo;
 ```
 
-:::
-
 ## Customize the icon
 
 It is recommended to set both the 'iconName' and 'iconActiveName' properties
 here
 
-:::demo
-
-```SnackPlayer name=Checkbox&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React from "react";
 import { Checkbox, CheckboxGroup } from '@nutui/nutui-react-native';
 
@@ -102,15 +88,11 @@ const CheckBoxDemo = () => {
 export default CheckBoxDemo;
 ```
 
-:::
-
 ## Change event
 
 When the value changes, the change event is triggered
 
-:::demo
-
-```SnackPlayer name=Checkbox&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React from "react";
 import { Checkbox, CheckboxGroup } from '@nutui/nutui-react-native';
 
@@ -129,13 +111,9 @@ const CheckBoxDemo = () => {
 export default CheckBoxDemo;
 ```
 
-:::
-
 ## CheckboxGroup
 
-:::demo
-
-```SnackPlayer name=Checkbox&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React from "react";
 import { Checkbox, CheckboxGroup } from '@nutui/nutui-react-native';
 
@@ -167,13 +145,9 @@ const CheckBoxDemo = () => {
 export default CheckBoxDemo;
 ```
 
-:::
-
 ## CheckBoxGroup Disabled
 
-:::demo
-
-```SnackPlayer name=Checkbox&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React, { useState } from "react";
 import { Checkbox, CheckboxGroup } from '@nutui/nutui-react-native';
 
@@ -199,13 +173,9 @@ const CheckBoxDemo = () => {
 export default CheckBoxDemo;
 ```
 
-:::
-
 ## CheckboxGroup Select All/Cancel
 
-:::demo
-
-```SnackPlayer name=Checkbox&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React from "react";
 import { Checkbox, CheckboxGroup, Button } from '@nutui/nutui-react-native';
 
@@ -263,12 +233,9 @@ const CheckBoxDemo = () => {
 export default CheckBoxDemo;
 ```
 
-:::
-
 ## use checkboxGroup, Limit the maximum number of options (2)
 
-:::demo
-```SnackPlayer name=Checkbox&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React, { useState, useRef } from "react";
 import { Checkbox, CheckboxGroup, Button, Toast } from '@nutui/nutui-react-native';
 
@@ -300,11 +267,9 @@ const CheckBoxDemo = () => {
 }
 export default CheckBoxDemo;
 ```
-:::
 
 ## Select all / half / cancel
-:::demo
-```SnackPlayer name=Checkbox&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React, { useState, useRef } from "react";
 import { Checkbox, CheckboxGroup, Button, Toast } from '@nutui/nutui-react-native';
 
@@ -358,7 +323,6 @@ const CheckBoxDemo = () => {
 }
 export default CheckBoxDemo;
 ```
-:::
 
 
 ## Checkbox

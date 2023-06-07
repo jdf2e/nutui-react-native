@@ -19,8 +19,7 @@ import { Swiper,SwiperItem } from '@nutui/nutui-react-native';
 `paginationColor` Indicator color customization
 `onChange` When the card changes
 
-:::demo
-``` SnackPlayer name=Swiper&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React, { useState } from 'react'
 import { Swiper,SwiperItem, Image } from '@nutui/nutui-react-native';
 
@@ -80,11 +79,9 @@ const App = () => {
 }
 export default App;
 ```
-:::
 ### Asynchronous loading
 
-:::demo
-``` SnackPlayer name=Swiper&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React, { useState, useEffect } from 'react'
 import { Swiper,SwiperItem, Image } from '@nutui/nutui-react-native';
 
@@ -129,14 +126,12 @@ const App = () => {
 }
 export default App;
 ```
-:::
 
 ### Dynamic loading
 
 Support dynamic addition / deletion of pictures
 
-:::demo
-``` SnackPlayer name=Swiper&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React, { useState, useEffect } from 'react'
 import { Swiper,SwiperItem, Image } from '@nutui/nutui-react-native';
 
@@ -182,13 +177,11 @@ const App = () => {
 }
 export default App;
 ```
-:::
 
 ### Custom size
 `width` Custom rotation size
 
-:::demo
-``` SnackPlayer name=Swiper&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React, { useState } from 'react'
 import { Swiper,SwiperItem, Image } from '@nutui/nutui-react-native';
 
@@ -249,14 +242,12 @@ const App = () => {
 }
 export default App;
 ```
-:::
 
 ### Custom paging indicator
 
 `pageContent` Custom indicator
 
-:::demo
-``` SnackPlayer name=Swiper&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React, { useState } from 'react'
 import {
   View,
@@ -341,14 +332,12 @@ const App = () => {
 }
 export default App;
 ```
-:::
 
 ### Manual switching
 
 You can manually switch through `api` (`prev`, `next`)
 
-:::demo
-``` SnackPlayer name=Swiper&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React, { useState, useRef } from 'react'
 import {
   View,
@@ -359,7 +348,7 @@ import { Swiper, SwiperItem, Icon, Image } from '@nutui/nutui-react-native';
 const App = () => {
   const swiperRef = React.useRef<any>(null)
   const [current2, setCurrent2] = useState(1)
-  
+
   const onChange3 = (e) => {
     setCurrent(e + 1)
   }
@@ -472,14 +461,12 @@ const App = () => {
 }
 export default App;
 ```
-:::
 
 ### Vertical direction
 
 `direction` Custom rotation direction
 
-:::demo
-``` SnackPlayer name=Swiper&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React, { useState } from 'react'
 import { Swiper,SwiperItem, Image } from '@nutui/nutui-react-native';
 

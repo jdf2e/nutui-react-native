@@ -1,4 +1,4 @@
-#  NoticeBar 
+#  NoticeBar
 
 ### Intro
 
@@ -14,9 +14,7 @@ import { NoticeBar } from '@nutui/nutui-react-native';
 
 ### Basic Usage
 
-:::demo
-
-```SnackPlayer name=NoticeBar&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React, {useState} from "react";
 import { NoticeBar } from '@nutui/nutui-react-native';
 
@@ -30,14 +28,11 @@ const App = () => {
 }
 export default App
 ```
-:::
 
 ### Scrollable
 Scrolling is automatically enabled when the content length of the notification bar overflows, which can be controlled through the scrollable property.
 
-:::demo
-
-```SnackPlayer name=NoticeBar&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React, {useState} from "react";
 import { NoticeBar } from '@nutui/nutui-react-native';
 
@@ -49,23 +44,20 @@ const App = () => {
             scrollable
         />
 
-        <NoticeBar 
-            text="Nutui is a Jingdong style mobile terminal component library. It uses Vue language to write applications that can be used on H5 and applet platforms to help R & D personnel improve development efficiency and development experience." 
-            scrollable={false} 
+        <NoticeBar
+            text="Nutui is a Jingdong style mobile terminal component library. It uses Vue language to write applications that can be used on H5 and applet platforms to help R & D personnel improve development efficiency and development experience."
+            scrollable={false}
         />
       </>
     )
 }
 export default App
 ```
-:::
 
 
 ### Mode
 
-:::demo
-
-```SnackPlayer name=NoticeBar&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React, {useState} from "react";
 import { NoticeBar } from '@nutui/nutui-react-native';
 
@@ -83,7 +75,7 @@ const App = () => {
           Nutui is a Jingdong style mobile terminal component library. It uses Vue language to write applications that can be used on H5 and applet platforms to help R & D personnel improve development efficiency and development experience.
         </NoticeBar>
 
-        <NoticeBar 
+        <NoticeBar
           leftIcon="https://img13.360buyimg.com/imagetools/jfs/t1/72082/2/3006/1197/5d130c8dE1c71bcd6/e48a3b60804c9775.png"
         >
           Jingdong
@@ -93,35 +85,29 @@ const App = () => {
 }
 export default App
 ```
-:::
 
 
 ### Wrapable
 
 When text is long, you can enable multi-line display by setting the wrapable property.
 
-:::demo
-
-```SnackPlayer name=NoticeBar&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React, {useState} from "react";
 import { NoticeBar } from '@nutui/nutui-react-native';
 
 const App = () => {
     const text = 'Nutui is a Jingdong style mobile terminal component library. It uses Vue language to write applications that can be used on H5 and applet platforms to help R & D personnel improve development efficiency and development experience.'
-    
+
     return (
       <NoticeBar text={text} wrapable />
     )
 }
 export default App
 ```
-:::
 
 ### Vertical Scroll
 
-:::demo
-
-```SnackPlayer name=NoticeBar&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React, {useState} from "react";
 import { NoticeBar } from '@nutui/nutui-react-native';
 
@@ -147,15 +133,12 @@ const App = () => {
 }
 export default App
 ```
-:::
 
 
 
 ### Vertical Scroll Complex Animation
 
-:::demo
-
-```SnackPlayer name=NoticeBar&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React, {useState} from "react";
 import { NoticeBar } from '@nutui/nutui-react-native';
 
@@ -175,14 +158,11 @@ const App = () => {
 }
 export default App
 ```
-:::
 
 
 ### Vertical Scroll Custom Style
 
-:::demo
-
-```SnackPlayer name=NoticeBar&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React, {useState} from "react";
 import { Text } from 'react-native';
 import { NoticeBar } from '@nutui/nutui-react-native';
@@ -209,15 +189,12 @@ const App = () => {
 };
 export default App
 ```
-:::
 
 
 
 ### Vertical Scroll Custom Right Icon
 
-:::demo
-
-```SnackPlayer name=NoticeBar&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React, {useState} from "react";
 import { NoticeBar,Icon } from '@nutui/nutui-react-native';
 
@@ -238,7 +215,6 @@ const App = () => {
 };
 export default App
 ```
-:::
 
 
 ## API

@@ -18,8 +18,7 @@ import { Image } from '@nutui/nutui-react-native';
 
 The basic usage is similar to the native img tag. You can set the source, width, height and other native attributes.
 
-:::demo
-```SnackPlayer name=Image&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React from "react";
 import { Image } from '@nutui/nutui-react-native';
 
@@ -37,14 +36,12 @@ const App = () => {
 export default App;
 
 ```
-:::
 
 ### Object Fill
 
 The `resizeMode` attribute is used to set the image filling mode, which is equivalent to the original `Object-fit` attribute.
 
-:::demo
-```SnackPlayer name=Image&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React from "react";
 import { Image } from '@nutui/nutui-react-native';
 
@@ -64,11 +61,9 @@ export default App;
 
 ### Round
 
-The round attribute allows you to set the image to be round. 
+The round attribute allows you to set the image to be round.
 
-:::demo
-
-```SnackPlayer name=Image&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React from "react";
 import { Image } from '@nutui/nutui-react-native';
 
@@ -86,14 +81,12 @@ const App = () => {
 export default App;
 
 ```
-:::
 
 ### Loading
 
 The Image component provides a default loading prompt and supports custom content through the loading slot.
 
-:::demo
-```SnackPlayer name=Image&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React from "react";
 import { Image, Icon } from '@nutui/nutui-react-native';
 
@@ -114,14 +107,12 @@ const App = () => {
 export default App;
 
 ```
-:::
 
 ### Error
 
 The Image component provides a default loading failure warning and supports custom content through the error slot.
 
-:::demo
-```SnackPlayer name=Image&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React from "react";
 import { Image, Icon } from '@nutui/nutui-react-native';
 
@@ -158,7 +149,7 @@ export default App;
 | loadingImg `v1.4.6`    | Set the prompt image during loading, which conflicts with `slotLoding` and has a higher priority than `slotLoding`     | String | -              |
 | errorImg   `v1.4.6`    | Set the error prompt image, which conflicts with `slotError` and has a higher priority than `slotError`         | String | -              |
 
-### ImageFit 
+### ImageFit
 
 | Attribute         | Description                             |
 |--------------|----------------------------------|

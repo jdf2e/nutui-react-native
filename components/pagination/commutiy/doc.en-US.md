@@ -1,13 +1,13 @@
 #  Pagination
 
 ### Intro
-    
+
 When the amount of data is too much, use pagination to separate the data.
-    
+
 ### Install
 ``` javascript
 import { Pagination } from '@nutui/nutui-react-native';
-```    
+```
 
 ### Basic Usage
 
@@ -36,7 +36,6 @@ const App = () => {
 }
 export default App;
 ```
-:::
 ### Simple mode
 Pagination can be switched to simple mode with simple mode attribute, and pagination cann't display specific page buttons.
 :::demo
@@ -52,18 +51,17 @@ const App = () => {
   }
   return (
     <Pagination
-      modelValue={currentPage2} 
-      pageCount={12} 
-      mode="simple" 
-      onChange={pageChange2} 
+      modelValue={currentPage2}
+      pageCount={12}
+      mode="simple"
+      onChange={pageChange2}
     />
   )
 }
 export default App;
 ```
-:::
 
-### Show ellipses 
+### Show ellipses
 The ellipses button will display after with force-ellipses attribute, click it can jump quickly.
 :::demo
 ``` tsx
@@ -88,7 +86,6 @@ const App = () => {
 }
 export default App;
 ```
-:::
 ### Custom Button
 Pass in a custom method through pageNodeRender, parameters: { number: "page number", text: "page text", active: "active page" }
 :::demo
@@ -112,20 +109,19 @@ const App = () => {
       totalItems="500"
       showPageSize="5"
       onChange={pageChange4}
-      pageNodeRender={pageNodeRender} 
-      prevText={<Icon name="left"/>} 
+      pageNodeRender={pageNodeRender}
+      prevText={<Icon name="left"/>}
       nextText={<Icon name="right"/>}
     />
   )
 }
 export default App;
 ```
-:::
-    
+
 ## API
-    
+
 ### Props
-    
+
 | Attribute           | Description                             | Type                      | Default            |
 | -------------- | -------------------------------- | ------------------------- | ----------------- |
 | modelValue     | current page number                         | Number                    | -                 |
@@ -139,9 +135,9 @@ export default App;
 | showPageSize   | number of pages displayed                   | String \| Number          | 5                 |
 | forceEllipses  | Whether to show ellipsis                   | Boolean                   | false             |
 | pageNodeRender | Used to customize page number content             | (page) => React.ReactNode | -                 |
-    
+
 ### Events
-    
+
 | Event | Description           | Arguments |
 | -------- | -------------- | -------- |
 | onChange |  when the page number changes | value    |

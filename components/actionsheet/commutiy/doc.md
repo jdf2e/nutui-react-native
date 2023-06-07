@@ -13,8 +13,7 @@ import { ActionSheet } from '@nutui/nutui-react-native';
 
 ### 基本用法
 
-:::demo
-```tsx
+```SnackPlayer
 import  React, { useState } from "react";
 import { ActionSheet,Cell } from '@nutui/nutui-react-native';
 import { View, Text } from 'react-native';
@@ -44,15 +43,15 @@ const App = () => {
     setIsVisible1(false)
   }
 
-  return ( 
-    <>   
+  return (
+    <>
     <Cell isLink onClick={() => setIsVisible1(!isVisible1)}>
       <View>
         <Text>基础用法</Text>
       </View>
       <Text>{val1}</Text>
     </Cell>
-            
+
     <ActionSheet
       visible={isVisible1}
       menuItems={menuItemsOne}
@@ -61,15 +60,13 @@ const App = () => {
      />
     </>
   );
-};  
+};
 export default App;
 
 ```
-:::
-### 展示取消按钮
+<!-- ### 展示取消按钮
 
-:::demo
-```tsx
+```SnackPlayer
 import  React, { useState } from "react";
 import { ActionSheet,Cell } from '@nutui/nutui-react-native';
 import { View, Text } from 'react-native';
@@ -92,15 +89,15 @@ const App = () => {
     setVal2(itemParams.name)
     setIsVisible2(false)
   }
-  return ( 
-    <>   
+  return (
+    <>
     <Cell isLink onClick={() => setIsVisible2(!isVisible2)}>
       <View>
         <Text>展示取消按钮</Text>
       </View>
       <Text>{val2}</Text>
     </Cell>
-            
+
     <ActionSheet
       visible={isVisible2}
       cancelTxt="取消"
@@ -110,15 +107,13 @@ const App = () => {
      />
     </>
   );
-};  
+};
 export default App;
 
 ```
-:::
 ### 展示描述信息
 
-:::demo
-```tsx
+```SnackPlayer
 import  React, { useState } from "react";
 import { ActionSheet,Cell } from '@nutui/nutui-react-native';
 import { View, Text } from 'react-native';
@@ -142,8 +137,8 @@ const App = () => {
     setVal3(itemParams.name)
     setIsVisible3(false)
   }
-  return ( 
-    <>   
+  return (
+    <>
     <Cell isLink onClick={() => setIsVisible3(!isVisible3)}>
       <View>
         <Text>展示描述信息</Text>
@@ -161,15 +156,13 @@ const App = () => {
      />
     </>
   );
-};  
+};
 export default App;
 
 ```
-:::
 ### 选项状态
 
-:::demo
-```tsx
+```SnackPlayer
 import  React, { useState } from "react";
 import { ActionSheet,Cell } from '@nutui/nutui-react-native';
 import { View, Text } from 'react-native';
@@ -185,8 +178,8 @@ const App = () => {
       disable: true,
     },
   ]
-  return ( 
-    <>   
+  return (
+    <>
     <Cell isLink onClick={() => setIsVisible4(!isVisible4)}>
       <View>
         <Text>选项状态</Text>
@@ -204,11 +197,10 @@ const App = () => {
      />
     </>
   );
-};  
+};
 export default App;
 
-```
-:::
+``` -->
 
 ## Prop
 

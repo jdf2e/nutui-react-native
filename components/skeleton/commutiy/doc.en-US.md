@@ -14,8 +14,7 @@ import { Skeleton } from '@nutui/nutui-react-native';
 
 ### Basic usage
 
-:::demo
-```SnackPlayer name=Skeleton&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React from "react";
 import { Skeleton } from '@nutui/nutui-react-native';
 
@@ -28,12 +27,10 @@ const App = () => {
 }
 export default App;
 ```
-:::
 
 ### Incoming multiline
 
-:::demo
-```SnackPlayer name=Skeleton&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React from "react";
 import { Skeleton } from '@nutui/nutui-react-native';
 
@@ -46,12 +43,10 @@ const App = () => {
 }
 export default App;
 ```
-:::
 
 ### Show Faces
 
-:::demo
-```SnackPlayer name=Skeleton&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React from "react";
 import { Skeleton } from '@nutui/nutui-react-native';
 
@@ -64,12 +59,10 @@ const App = () => {
 }
 export default App;
 ```
-:::
 
 ### Title paragraph fillet style
 
-:::demo
-```SnackPlayer name=Skeleton&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React from "react";
 import { Skeleton } from '@nutui/nutui-react-native';
 
@@ -88,11 +81,11 @@ export default App;
 
 ## API
 
-### Prop  
+### Prop
 
 | Attribute       | Description                                             | Type    | Default    |
 |------------|-------------------------------------------------|---------|----------|
-| loading    | Whether to display skeleton screen                                    | Boolean | `false`    | 
+| loading    | Whether to display skeleton screen                                    | Boolean | `false`    |
 | width       | Width per row                                        | Number  | 100 |
 | height      | Height of each row                                        | Number  | 100   |
 | animated    | Whether to turn on skeleton screen animation                                | Boolean  | `false`  |

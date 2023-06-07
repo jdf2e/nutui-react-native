@@ -1,4 +1,4 @@
-#  Switch 
+#  Switch
 
 ### Introduction
 
@@ -14,47 +14,42 @@ import { Switch } from '@nutui/nutui-react-native';
 
 ### Basic usage
 
-:::demo
-```SnackPlayer name=Switch&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React from "react";
 import { Switch } from '@nutui/nutui-react-native';
 
 const App = () => {
-  return ( 
-    <>   
+  return (
+    <>
     <Switch checked />
     </>
   );
-};  
+};
 export default App;
 
 ```
-:::
 
 
 ### disable status
 
-:::demo
-```SnackPlayer name=Switch&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React from "react";
 import { Switch } from '@nutui/nutui-react-native';
 
 const App = () => {
-  return ( 
-    <>   
+  return (
+    <>
     <Switch checked disable />
     </>
   );
-};  
+};
 export default App;
 
 ```
-:::
 
 ### change event
 
-:::demo
-```SnackPlayer name=Switch&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React from "react";
 import { Switch } from '@nutui/nutui-react-native';
 
@@ -62,34 +57,32 @@ const App = () => {
   const change = (value: boolean, event: Event) => {
     alert(`Triggering the change event, the switch status：${value}`)
   }
-  return ( 
-    <>   
+  return (
+    <>
     <Switch change={(value, event) => change(value, event)} />
     </>
   );
-};  
+};
 export default App;
 
 ```
-:::
 ### Asynchronous control
 
-:::demo
-```SnackPlayer name=Switch&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React, { useState } from "react";
 import { Switch } from '@nutui/nutui-react-native';
 
 const App = () => {
   const [checkedAsync, setCheckedAsync] = useState(true)
-  
+
   const changeAsync = (value: boolean, event: Event) => {
     alert(`Asynchronous trigger after 2 seconds ${value}`)
     setTimeout(() => {
       setCheckedAsync(value)
     }, 2000)
   }
-  return ( 
-    <>   
+  return (
+    <>
     <Switch
       checked={checkedAsync}
       isAsync
@@ -97,47 +90,42 @@ const App = () => {
      />
     </>
   );
-};  
+};
 export default App;
 
 ```
-:::
 ### Custom color
 
-:::demo
-```SnackPlayer name=Switch&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React from "react";
 import { Switch } from '@nutui/nutui-react-native';
 
 const App = () => {
-  return ( 
-    <>   
+  return (
+    <>
     <Switch activeColor="blue" />
     </>
   );
-};  
+};
 export default App;
 
 ```
-:::
 ### Support text
 
-:::demo
-```SnackPlayer name=Switch&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React from "react";
 import { Switch } from '@nutui/nutui-react-native';
 
 const App = () => {
-  return ( 
-    <>   
+  return (
+    <>
     <Switch activeText="open" inactiveText="close" />
     </>
   );
-};  
+};
 export default App;
 
 ```
-:::
 
 
 

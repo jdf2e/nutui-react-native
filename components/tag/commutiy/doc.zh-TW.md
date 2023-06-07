@@ -14,9 +14,7 @@ import { Tag } from '@nutui/nutui-react-native';
 
 ### 基礎用法
 
-:::demo
-
-```SnackPlayer name=Tag&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React from "react";
 import { Tag } from '@nutui/nutui-react-native';
 
@@ -33,13 +31,9 @@ const App = () => {
 export default App;
 ```
 
-:::
-
 ### 空心樣式
 
-:::demo
-
-```SnackPlayer name=Tag&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React from "react";
 import { Tag } from '@nutui/nutui-react-native';
 
@@ -53,13 +47,9 @@ const App = () => {
 export default App;
 ```
 
-:::
-
 ### 圆角样式
 
-:::demo
-
-```SnackPlayer name=Tag&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React from "react";
 import { Tag } from '@nutui/nutui-react-native';
 
@@ -73,13 +63,9 @@ const App = () => {
 export default App;
 ```
 
-:::
-
 ### 標記樣式
 
-:::demo
-
-```SnackPlayer name=Tag&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React from "react";
 import { Tag } from '@nutui/nutui-react-native';
 
@@ -93,13 +79,9 @@ const App = () => {
 export default App;
 ```
 
-:::
-
 ### 可关闭標籤
 
-:::demo
-
-```SnackPlayer name=Tag&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React from "react";
 import { Tag } from '@nutui/nutui-react-native';
 
@@ -113,13 +95,9 @@ const App = () => {
 export default App;
 ```
 
-:::
-
 ### 自定義顏色
 
-:::demo
-
-```SnackPlayer name=Tag&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React from "react";
 import { Tag } from '@nutui/nutui-react-native';
 
@@ -139,9 +117,7 @@ export default App;
 
 ### 點擊事件
 
-:::demo
-
-```SnackPlayer name=Tag&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React from "react";
 import { Tag } from '@nutui/nutui-react-native';
 
@@ -155,13 +131,9 @@ const App = () => {
 export default App;
 ```
 
-:::
-
 ### 展示控制
 
-:::demo
-
-```SnackPlayer name=Tag&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React, {useState} from "react";
 import { Tag,Button } from '@nutui/nutui-react-native';
 
@@ -173,16 +145,14 @@ const App = () => {
       isShow? (
         <Tag type='primary' onClick={()=>alert('Tag clicked')}>標籤</Tag>
       ):null
-    }  
+    }
     <Button type='default' size="small" onClick={()=>{setIsShow(false)}} >點擊刪除Tag</Button>
     </>
   )
-  
+
 }
 export default App;
 ```
-
-:::
 ## API
 
 ### Props

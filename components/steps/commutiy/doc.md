@@ -12,8 +12,7 @@ import { Steps } from '@nutui/nutui-react-native';
 
 ### 基本用法
 
-:::demo
-```tsx
+```SnackPlayer
 import React, { useState } from "react";
 import { Steps, Step, Button } from '@nutui/nutui-react-native';
 import { View, Text } from 'react-native';
@@ -57,12 +56,10 @@ const styles = StyleSheet.create({
   }
 });
 ```
-:::
 
 ### 标题和描述信息
 
-:::demo
-```tsx
+```SnackPlayer
 import React, { useState } from "react";
 import { Steps, Step, Button } from '@nutui/nutui-react-native';
 import { View, Text } from 'react-native';
@@ -108,12 +105,10 @@ const styles = StyleSheet.create({
   }
 });
 ```
-:::
 
 ### 自定义图标
 
-:::demo
-```tsx
+```SnackPlayer
 import React, { useState } from "react";
 import { Steps, Step, Button } from '@nutui/nutui-react-native';
 import { View, Text } from 'react-native';
@@ -137,11 +132,9 @@ const App = () => {
 }
 export default App;
 ```
-:::
 
 ### 竖向步骤条
-:::demo
-```tsx
+```SnackPlayer
 import React, { useState } from "react";
 import { Steps, Step, Button } from '@nutui/nutui-react-native';
 import { View, Text } from 'react-native';
@@ -196,11 +189,9 @@ const styles = StyleSheet.create({
   }
 });
 ```
-:::
 
 ### 点状步骤和垂直方向
-:::demo
-```tsx
+```SnackPlayer
 import React, { useState } from "react";
 import { Steps, Step, Button } from '@nutui/nutui-react-native';
 import { View, Text } from 'react-native';
@@ -260,7 +251,6 @@ const styles = StyleSheet.create({
   }
 });
 ```
-:::
 
 
 ## API
@@ -271,7 +261,7 @@ const styles = StyleSheet.create({
 
 | 参数                   | 说明                                                        | 类型           | 默认值      |
 | ---------------------- | ----------------------------------------------------------- | -------------- | ----------- |
-| direction	             | 	显示方向，`horizontal`,`vertical`  | String        | 'horizontal'  | 
+| direction	             | 	显示方向，`horizontal`,`vertical`  | String        | 'horizontal'  |
 | current	               | 	当前所在的步骤           | Number        | 0      |
 | progressDot            |  点状步骤条     | Boolean | false         |
 | isStart               |  开始步骤     | Boolean | true         |

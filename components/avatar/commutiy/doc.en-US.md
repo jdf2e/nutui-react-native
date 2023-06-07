@@ -15,38 +15,36 @@ import { Avatar } from '@nutui/nutui-react-native';
 Support three sizes：small、normal、large
 
 :::demo
-``` SnackPlayer name=Avatar&dependencies=@nutui/nutui-react-native
+``` SnackPlayer
 import React from "react";
 import { Avatar } from '@nutui/nutui-react-native';
 
 const App = () => {
   return (
     <>
-      <Avatar 
-        size="large" 
+      <Avatar
+        size="large"
         icon="https://img12.360buyimg.com/imagetools/jfs/t1/143702/31/16654/116794/5fc6f541Edebf8a57/4138097748889987.png"
        />
-      <Avatar 
-        size="normal" 
+      <Avatar
+        size="normal"
         icon="https://img12.360buyimg.com/imagetools/jfs/t1/143702/31/16654/116794/5fc6f541Edebf8a57/4138097748889987.png"
        />
-      <Avatar 
-        size="small" 
+      <Avatar
+        size="small"
         icon="https://img12.360buyimg.com/imagetools/jfs/t1/143702/31/16654/116794/5fc6f541Edebf8a57/4138097748889987.png"
-       />  
+       />
     </>
   )
 }
 export default App;
 ```
-:::
 
 ### Shape
 
 Support two shapes：square、round
 
-:::demo
-``` SnackPlayer name=Avatar&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React from "react";
 import { Avatar } from '@nutui/nutui-react-native';
 
@@ -60,21 +58,19 @@ const App = () => {
 }
 export default App;
 ```
-:::
 
 ### Type
 
 Support three types：picture、icon、letter
 
-:::demo
-``` SnackPlayer name=Avatar&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React from "react";
 import { Avatar } from '@nutui/nutui-react-native';
 
 const App = () => {
   return (
     <>
-      <Avatar 
+      <Avatar
         source={{
           uri: 'https://img12.360buyimg.com/imagetools/jfs/t1/143702/31/16654/116794/5fc6f541Edebf8a57/4138097748889987.png'
         }}
@@ -86,27 +82,25 @@ const App = () => {
 }
 export default App;
 ```
-:::
 
 ### Custom colors and background colors
 
 Icon and letter types can have custom colors and background colors
 
-:::demo
-``` SnackPlayer name=Avatar&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React from "react";
 import { Avatar } from '@nutui/nutui-react-native';
 
 const App = () => {
   return (
     <>
-      <Avatar 
-        icon="my" 
-        color="#fff" 
-        bgColor="#FA2C19" 
+      <Avatar
+        icon="my"
+        color="#fff"
+        bgColor="#FA2C19"
       />
-      <Avatar 
-        color="rgb(245, 106, 0)" 
+      <Avatar
+        color="rgb(245, 106, 0)"
         bgColor="rgb(253, 227, 207)">U</Avatar>
     </>
   )

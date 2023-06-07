@@ -14,8 +14,7 @@ import { InputNumber } from '@nutui/nutui-react-native';
 
 Initialize a default value
 
-:::demo
-```tsx
+```SnackPlayer
 import React, { useState } from "react";
 import { InputNumber } from '@nutui/nutui-react-native';
 
@@ -31,14 +30,12 @@ const App = () => {
 }
 export default App;
 ```
-:::
 
 ### Step size setting
 
-Set step  `step` 5 
+Set step  `step` 5
 
-:::demo
-```tsx
+```SnackPlayer
 import React, { useState } from "react";
 import { InputNumber } from '@nutui/nutui-react-native';
 
@@ -54,14 +51,12 @@ const App = () => {
 }
 export default App;
 ```
-:::
 
 ### Limit input range
 
 `min` and `max` attributes represent the minimum and maximum values respectively
 
-:::demo
-```tsx
+```SnackPlayer
 import React, { useState } from "react";
 import { InputNumber,Toast } from '@nutui/nutui-react-native';
 
@@ -81,14 +76,12 @@ const App = () => {
 }
 export default App;
 ```
-:::
 
 ### Disabled state
 
 `disabled` When disabled, you cannot click the button or modify the input box.
 
-:::demo
-```tsx
+```SnackPlayer
 import React, { useState } from "react";
 import { InputNumber } from '@nutui/nutui-react-native';
 
@@ -104,14 +97,12 @@ const App = () => {
 }
 export default App;
 ```
-:::
 
 ### Read only disable input box
 
 `readonly` Set read-only disable input box input behavior
 
-:::demo
-```tsx
+```SnackPlayer
 import React, { useState } from "react";
 import { InputNumber } from '@nutui/nutui-react-native';
 
@@ -127,14 +118,12 @@ const App = () => {
 }
 export default App;
 ```
-:::
 
 ### Support decimal point
 
 Set step size `step` 0.1  `decimal-places` keep 1 decimal place
 
-:::demo
-```tsx
+```SnackPlayer
 import React, { useState } from "react";
 import { InputNumber } from '@nutui/nutui-react-native';
 
@@ -150,13 +139,11 @@ const App = () => {
 }
 export default App;
 ```
-:::
 ### Support asynchronous modification
 
 Asynchronous modification through `change` event and `model-value`
 
-:::demo
-```tsx
+```SnackPlayer
 import React, { useState } from "react";
 import { InputNumber, Toast } from '@nutui/nutui-react-native';
 
@@ -179,12 +166,10 @@ const App = () => {
 }
 export default App;
 ```
-:::
 
 ### Custom button size
 
-:::demo
-```tsx
+```SnackPlayer
 import React, { useState } from "react";
 import { InputNumber, Toast } from '@nutui/nutui-react-native';
 
@@ -200,7 +185,6 @@ const App = () => {
 }
 export default App;
 ```
-:::
 
 ## API
 

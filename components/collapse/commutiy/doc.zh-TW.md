@@ -6,7 +6,7 @@
 
 ### 安裝
 
-```ts
+```SnackPlayer
 import { Collapse,CollapseItem } from '@nutui/nutui-react-native'
 ```
 
@@ -15,7 +15,7 @@ import { Collapse,CollapseItem } from '@nutui/nutui-react-native'
 
 ### 基礎用法
 
-```SnackPlayer name=Collapse&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React from "react";
 import { Collapse,CollapseItem } from '@nutui/nutui-react-native';
 
@@ -40,7 +40,7 @@ export default App;
 ```
 ### 無icon樣式，綁定點擊事件
 
-```SnackPlayer name=Collapse&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React, { useState } from 'react'
 import { Collapse ,CollapseItem} from '@nutui/nutui-react-native'
 
@@ -48,7 +48,7 @@ const App = () => {
   const changeEnv = (isOpen: boolean, name: string) => {
     console.log(isOpen, name)
   }
-  return (  
+  return (
   <Collapse activeName={['1', '2']} change={(isOpen, name) => changeEnv(isOpen, name)}>
     <CollapseItem title="標題1" name="1">
       Nutui-React 是一套擁有京東風格的輕量級的 React 組件庫
@@ -67,12 +67,12 @@ export default App;
 
 ### 手風琴模式
 
-```SnackPlayer name=Collapse&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React from 'react'
 import { Collapse ,CollapseItem} from '@nutui/nutui-react-native'
 
 const App = () => {
-  return (  
+  return (
   <Collapse activeName={['1']} accordion icon="arrow-down">
     <CollapseItem title="標題1" name="1" subTitle="文本内容">
       Nutui-React 是一套擁有京東風格的輕量級的 React 組件庫
@@ -90,12 +90,12 @@ export default App;
 ```
 ### 自定义折叠图标
 
-```SnackPlayer name=Collapse&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React from 'react'
 import { Collapse ,CollapseItem} from '@nutui/nutui-react-native'
 
 const App = () => {
-  return (  
+  return (
   <Collapse activeName={['1']} accordion icon="arrow-right2" rotate={90}>
     <CollapseItem title="标题1" name="1" icon="arrow-down">
       Nutui-React 是一套擁有京東風格的輕量級的 React 組件庫
@@ -113,12 +113,12 @@ export default App;
 ```
 ### 自定義title圖標
 
-```SnackPlayer name=Collapse&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React from 'react'
 import { Collapse ,CollapseItem} from '@nutui/nutui-react-native'
 
 const App = () => {
-  return (  
+  return (
     <Collapse activeName={['1']} accordion icon="arrow-down">
       <CollapseItem
         title="标题1"
@@ -149,7 +149,7 @@ export default App;
 ```
 ### 動態改變數據
 
-```SnackPlayer name=Collapse&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React, { useState } from 'react'
 import { Collapse ,CollapseItem,Button} from '@nutui/nutui-react-native'
 

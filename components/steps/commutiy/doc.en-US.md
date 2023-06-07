@@ -12,8 +12,7 @@ import { Steps } from '@nutui/nutui-react-native';
 
 ### Basic Usage
 
-:::demo
-```tsx
+```SnackPlayer
 import React, { useState } from "react";
 import { Steps, Step, Button } from '@nutui/nutui-react-native';
 import { View, Text } from 'react-native';
@@ -57,12 +56,10 @@ const styles = StyleSheet.create({
   }
 });
 ```
-:::
 
 ### Title and description information
 
-:::demo
-```tsx
+```SnackPlayer
 import React, { useState } from "react";
 import { Steps, Step, Button } from '@nutui/nutui-react-native';
 import { View, Text } from 'react-native';
@@ -108,12 +105,10 @@ const styles = StyleSheet.create({
   }
 });
 ```
-:::
 
 ### Custom icon
 
-:::demo
-```tsx
+```SnackPlayer
 import React, { useState } from "react";
 import { Steps, Step, Button } from '@nutui/nutui-react-native';
 import { View, Text } from 'react-native';
@@ -137,11 +132,9 @@ const App = () => {
 }
 export default App;
 ```
-:::
 
 ### Vertical step bar
-:::demo
-```tsx
+```SnackPlayer
 import React, { useState } from "react";
 import { Steps, Step, Button } from '@nutui/nutui-react-native';
 import { View, Text } from 'react-native';
@@ -196,11 +189,9 @@ const styles = StyleSheet.create({
   }
 });
 ```
-:::
 
 ### Point step and vertical direction
-:::demo
-```tsx
+```SnackPlayer
 import React, { useState } from "react";
 import { Steps, Step, Button } from '@nutui/nutui-react-native';
 import { View, Text } from 'react-native';
@@ -260,7 +251,6 @@ const styles = StyleSheet.create({
   }
 });
 ```
-:::
 
 
 ## API
@@ -271,7 +261,7 @@ const styles = StyleSheet.create({
 
 | Attribute                   | Description                                                        | Type           | Default      |
 | ---------------------- | ----------------------------------------------------------- | -------------- | ----------- |
-| direction	             | 	Show direction，`horizontal`,`vertical`  | String        | 'horizontal'  | 
+| direction	             | 	Show direction，`horizontal`,`vertical`  | String        | 'horizontal'  |
 | current	               | 	Current step           | Number        | 0      |
 | progressDot            |  Dot step bar     | Boolean | false         |
 | isStart               |  start step need     | Boolean | true         |

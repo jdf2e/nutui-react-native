@@ -14,9 +14,7 @@ import { Radio,RadioGroup } from '@nutui/nutui-react-native';
 
 通過 **value** 綁定值當前選項的 **label** 。 並且必須 **RadioGroup** 和 **Radio** 相結合進行使用
 
-:::demo
-
-```SnackPlayer name=Radio&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React, { useState } from 'react'
 import { Radio, RadioGroup } from '@nutui/nutui-react-native';
 
@@ -43,13 +41,9 @@ const RadioGroupLast = () => {
 export default RadioGroupLast;
 ```
 
-:::
-
 ## 水準使用
 
-:::demo
-
-```SnackPlayer name=Radio&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React, { useState } from 'react'
 import { Radio, RadioGroup } from '@nutui/nutui-react-native';
 
@@ -76,13 +70,9 @@ const RadioGroupLast = () => {
 export default RadioGroupLast;
 ```
 
-:::
-
 ## 自訂尺寸
 
-:::demo
-
-```SnackPlayer name=Radio&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React, { useState } from 'react'
 import { Radio, RadioGroup } from '@nutui/nutui-react-native';
 
@@ -98,15 +88,11 @@ const RadioGroupLast = () => {
 export default RadioGroupLast;
 ```
 
-:::
-
 ## 自訂圖示
 
 建議 『iconName』 'iconActiveName' 一起修改
 
-:::demo
-
-```SnackPlayer name=Radio&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React, { useState } from 'react'
 import { Radio, RadioGroup } from '@nutui/nutui-react-native';
 
@@ -124,13 +110,9 @@ const RadioGroupLast = () => {
 export default RadioGroupLast;
 ```
 
-:::
-
 ## 觸發 change 事件
 
-:::demo
-
-```SnackPlayer name=Radio&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React, { useState } from 'react'
 import { Radio, RadioGroup } from '@nutui/nutui-react-native';
 
@@ -148,8 +130,6 @@ const RadioGroupLast = () => {
 }
 export default RadioGroupLast;
 ```
-
-:::
 
 ## Prop
 

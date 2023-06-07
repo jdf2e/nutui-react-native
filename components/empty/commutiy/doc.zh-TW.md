@@ -14,7 +14,7 @@ import { Empty } from '@nutui/nutui-react-native'
 ## 代碼演示
 
 ### 基礎用法
-```SnackPlayer name=Empty&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React from "react";
 import { Empty } from '@nutui/nutui-react-native';
 
@@ -27,7 +27,7 @@ export default App;
 ```
 
 ### 自定義內容大小
-```SnackPlayer name=Empty&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React from "react";
 import { Empty } from '@nutui/nutui-react-native';
 
@@ -40,7 +40,7 @@ export default App;
 ```
 
 ### 圖片類型，內置 3 個
-```SnackPlayer name=Empty&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React from "react";
 import { Empty } from '@nutui/nutui-react-native';
 
@@ -57,14 +57,14 @@ export default App;
 ```
 
 ### 自定義圖片
-```SnackPlayer name=Empty&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React from "react";
 import { Empty } from '@nutui/nutui-react-native';
 
 const App = () => {
   return (
     <Empty
-      description="無優惠券" 
+      description="無優惠券"
       image={<img src="https://static-ftcms.jd.com/p/files/61a9e3313985005b3958672e.png" alt=""/>}
      />
   );
@@ -74,7 +74,7 @@ export default App;
 
 
 ### 底部內容
-```SnackPlayer name=Empty&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React from "react";
 import { Empty } from '@nutui/nutui-react-native';
 

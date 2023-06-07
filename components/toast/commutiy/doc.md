@@ -16,9 +16,7 @@ import { Toast } from '@nutui/nutui-react-native';
 
 #### 文字提示
 
-:::demo
-
-```SnackPlayer name=Toast&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React, {useState} from "react";
 import { Toast, Cell } from '@nutui/nutui-react-native';
 
@@ -40,13 +38,10 @@ const App = () => {
 }
 export default App
 ```
-:::
 
 #### 标题提示
 
-:::demo
-
-```SnackPlayer name=Toast&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React, {useState} from "react";
 import { Toast, Cell } from '@nutui/nutui-react-native';
 
@@ -68,12 +63,9 @@ const App = () => {
 }
 export default App
 ```
-:::
 #### 成功提示
 
-:::demo
-
-```SnackPlayer name=Toast&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React, {useState} from "react";
 import { Toast, Cell } from '@nutui/nutui-react-native';
 
@@ -95,14 +87,11 @@ const App = () => {
 }
 export default App
 ```
-:::
 
 
 #### 失败提示
 
-:::demo
-
-```SnackPlayer name=Toast&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React, {useState} from "react";
 import { Toast, Cell } from '@nutui/nutui-react-native';
 
@@ -124,14 +113,11 @@ const App = () => {
 }
 export default App
 ```
-:::
 
 
 #### 警告提示
 
-:::demo
-
-```SnackPlayer name=Toast&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React, {useState} from "react";
 import { Toast, Cell } from '@nutui/nutui-react-native';
 
@@ -153,14 +139,11 @@ const App = () => {
 }
 export default App
 ```
-:::
 
 
 #### 加载提示
 
-:::demo
-
-```SnackPlayer name=Toast&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React, {useState} from "react";
 import { Toast, Cell } from '@nutui/nutui-react-native';
 
@@ -182,15 +165,12 @@ const App = () => {
 }
 export default App
 ```
-:::
 
 
 
 #### 展示时长设置
 
-:::demo
-
-```SnackPlayer name=Toast&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React, {useState} from "react";
 import { Toast, Cell, Button } from '@nutui/nutui-react-native';
 
@@ -227,13 +207,10 @@ const App = () => {
 }
 export default App
 ```
-:::
 
 #### Toast自定义底部高度
 
-:::demo
-
-```SnackPlayer name=Toast&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React, {useState} from "react";
 import { Toast, Cell } from '@nutui/nutui-react-native';
 
@@ -256,14 +233,11 @@ const App = () => {
 }
 export default App
 ```
-:::
 
 
 #### 加载Loading带透明罩
 
-:::demo
-
-```SnackPlayer name=Toast&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React, {useState} from "react";
 import { Toast, Cell } from '@nutui/nutui-react-native';
 
@@ -292,7 +266,6 @@ const App = () => {
 }
 export default App
 ```
-:::
 
 
 

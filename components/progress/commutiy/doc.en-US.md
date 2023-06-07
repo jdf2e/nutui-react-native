@@ -30,7 +30,6 @@ const App = () => {
 };
 export default App;
 ```
-:::
 
 ### Custom Style
 
@@ -53,7 +52,6 @@ const App = () => {
 };
 export default App;
 ```
-:::
 
 ### Don't Show Percentage
 
@@ -74,7 +72,6 @@ const App = () => {
 };
 export default App;
 ```
-:::
 
 ### Show Percentage
 
@@ -94,7 +91,6 @@ const App = () => {
 };
 export default App;
 ```
-:::
 
 ### Text Inside
 
@@ -115,7 +111,6 @@ const App = () => {
 };
 export default App;
 ```
-:::
 
 ### Custom Content
 
@@ -141,7 +136,6 @@ const App = () => {
 };
 export default App;
 ```
-:::
 
 ## Custom Size
 
@@ -180,7 +174,6 @@ const App = () => {
 };
 export default App;
 ```
-:::
 
 ### Status Display
 
@@ -194,7 +187,7 @@ const App = () => {
   return (
     <View>
       <Cell>
-        <Progress 
+        <Progress
             percentage={30}
             strokeColor={['#05ebd0', '#2f7bfc']}
         />
@@ -215,7 +208,6 @@ const App = () => {
 };
 export default App;
 ```
-:::
 
 ### Dynamic Change
 
@@ -237,7 +229,7 @@ const App = () => {
     <Cell>
       <Button
         type="default"
-        style={{ margin: 8 }} 
+        style={{ margin: 8 }}
         onClick={() => {
           let num = value;
           if (value <= 0) {
@@ -249,8 +241,8 @@ const App = () => {
       >
         减少
       </Button>
-      <Button 
-        type="primary" 
+      <Button
+        type="primary"
         onClick={() => {
           let num = value;
           if (value >= 100) {
@@ -268,7 +260,6 @@ const App = () => {
 };
 export default App;
 ```
-:::
 
 ## API
 

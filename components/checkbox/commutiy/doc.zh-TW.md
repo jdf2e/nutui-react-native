@@ -13,9 +13,7 @@ import { Checkbox, CheckboxGroup } from '@nutui/nutui-react-native';
 
 ## 基本用法
 
-:::demo
-
-```SnackPlayer name=Checkbox&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React, { useState } from "react";
 import { Checkbox, CheckboxGroup } from '@nutui/nutui-react-native';
 
@@ -30,13 +28,9 @@ const CheckBoxDemo = () => {
 export default CheckBoxDemo;
 ```
 
-:::
-
 ## 禁用狀態
 
-:::demo
-
-```SnackPlayer name=Checkbox&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React from "react";
 import { Checkbox, CheckboxGroup } from '@nutui/nutui-react-native';
 
@@ -59,13 +53,9 @@ const CheckBoxDemo = () => {
 export default CheckBoxDemo;
 ```
 
-:::
-
 ## 自定義尺寸
 
-:::demo
-
-```SnackPlayer name=Checkbox&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React from "react";
 import { Checkbox, CheckboxGroup } from '@nutui/nutui-react-native';
 
@@ -78,15 +68,11 @@ const CheckBoxDemo = () => {
 export default CheckBoxDemo;
 ```
 
-:::
-
 ## 自定義圖標
 
 這裡建議同時設置 `iconName` 和 `iconActiveName` 屬性
 
-:::demo
-
-```SnackPlayer name=Checkbox&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React from "react";
 import { Checkbox, CheckboxGroup } from '@nutui/nutui-react-native';
 
@@ -97,15 +83,11 @@ const CheckBoxDemo = () => {
 }
 export default CheckBoxDemo;
 ```
-
-:::
 ## change事件
 
 值發生變化時，將觸發change事件
 
-:::demo
-
-```SnackPlayer name=Checkbox&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React from "react";
 import { Checkbox, CheckboxGroup, Toast } from '@nutui/nutui-react-native';
 
@@ -124,13 +106,9 @@ const CheckBoxDemo = () => {
 export default CheckBoxDemo;
 ```
 
-:::
-
 ## CheckBoxGroup
 
-:::demo
-
-```SnackPlayer name=Checkbox&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React, { useState } from "react";
 import { Checkbox, CheckboxGroup } from '@nutui/nutui-react-native';
 
@@ -162,13 +140,9 @@ const CheckBoxDemo = () => {
 export default CheckBoxDemo;
 ```
 
-:::
-
 ## CheckBoxGroup 禁用
 
-:::demo
-
-```SnackPlayer name=Checkbox&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React, { useState } from "react";
 import { Checkbox, CheckboxGroup } from '@nutui/nutui-react-native';
 
@@ -194,13 +168,9 @@ const CheckBoxDemo = () => {
 export default CheckBoxDemo;
 ```
 
-:::
-
 ## CheckboxGroup 全選/取消
 
-:::demo
-
-```SnackPlayer name=Checkbox&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React, { useState, useRef } from "react";
 import { Checkbox, CheckboxGroup, Button, Toast } from '@nutui/nutui-react-native';
 
@@ -258,12 +228,9 @@ const CheckBoxDemo = () => {
 export default CheckBoxDemo;
 ```
 
-:::
-
 ## checkboxGroup使用，限制最大可選數（2個）
 
-:::demo
-```SnackPlayer name=Checkbox&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React, { useState, useRef } from "react";
 import { Checkbox, CheckboxGroup, Button, Toast } from '@nutui/nutui-react-native';
 
@@ -295,11 +262,9 @@ const CheckBoxDemo = () => {
 }
 export default CheckBoxDemo;
 ```
-:::
 
 ## 全選/半選/取消
-:::demo
-```SnackPlayer name=Checkbox&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React, { useState, useRef } from "react";
 import { Checkbox, CheckboxGroup, Button, Toast } from '@nutui/nutui-react-native';
 
@@ -353,11 +318,10 @@ const CheckBoxDemo = () => {
 }
 export default CheckBoxDemo;
 ```
-:::
 
 ## Checkbox
 
-| 字段                            | 說明 | 類型 | 默認值 | 
+| 字段                            | 說明 | 類型 | 默認值 |
 |-------------------------------| ----- | ----- | -----|
 | checked                       | 是否處於選中狀態 | Boolean | `false`|
 | disabled                      | 是否禁用選擇 | Boolean | `false`|

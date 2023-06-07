@@ -6,7 +6,8 @@
 用于内容选择和切换
 
 ### 安装
-```tsx
+
+```ts
 import { SideNavBar,SubSideNavBar,SideNavBarItem } from '@nutui/nutui-react-native';
 ```
 ## 代码演示
@@ -27,9 +28,9 @@ const App = () => {
       position,
     })
   }
- 
-  return ( 
-    <>   
+
+  return (
+    <>
     <Cell
           title="左侧弹出"
           isLink
@@ -63,11 +64,10 @@ const App = () => {
         </SideNavBar>
     </>
   );
-};  
+};
 export default App;
 
 ```
-:::
 
 ### 嵌套及回调
 
@@ -86,15 +86,15 @@ const App = () => {
   const clickTitle = ({ title, ikey, isShow }) => {
     Toast.text(`title=${title},ikey=${ikey},isShow=${isShow}`)
   }
-  return ( 
-    <>  
+  return (
+    <>
       <Cell
           title="显示"
           isLink
           onClick={() => {
             changeNarBar(true)
           }}
-        /> 
+        />
     <SideNavBar
           title="首页"
           visible={visible}
@@ -118,11 +118,10 @@ const App = () => {
         </SideNavBar>
     </>
   );
-};  
+};
 export default App;
 
 ```
-:::
 
 
 

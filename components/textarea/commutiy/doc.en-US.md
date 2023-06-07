@@ -15,7 +15,7 @@ import { TextArea } from '@nutui/nutui-react-native';
 
 ### Basic Usage
 
-```SnackPlayer name=TextArea&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React, {useState} from "react";
 import { TextArea } from '@nutui/nutui-react-native';
 
@@ -49,7 +49,7 @@ export default App
 
 ### Display word count
 
-```SnackPlayer name=TextArea&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React, {useState} from "react";
 import { TextArea } from '@nutui/nutui-react-native';
 
@@ -66,7 +66,7 @@ export default App
 
 ### Height customization, stretching
 
-```SnackPlayer name=TextArea&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React, {useState} from "react";
 import { TextArea } from '@nutui/nutui-react-native';
 
@@ -83,7 +83,7 @@ export default App
 
 ### read-only，disabled
 
-```SnackPlayer name=TextArea&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React, {useState} from "react";
 import { TextArea } from '@nutui/nutui-react-native';
 
@@ -100,7 +100,7 @@ export default App
 
 ### TextAlign
 
-```SnackPlayer name=TextArea&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React, {useState} from "react";
 import { TextArea } from '@nutui/nutui-react-native';
 

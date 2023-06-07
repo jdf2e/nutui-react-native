@@ -6,7 +6,7 @@
 
 ### 安裝
 
-```ts
+```SnackPlayer
 import { Switch } from '@nutui/nutui-react-native';
 ```
 
@@ -14,47 +14,42 @@ import { Switch } from '@nutui/nutui-react-native';
 
 ### 基礎用法
 
-:::demo
-```SnackPlayer name=Switch&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React from "react";
 import { Switch } from '@nutui/nutui-react-native';
 
 const App = () => {
-  return ( 
-    <>   
+  return (
+    <>
     <Switch checked />
     </>
   );
-};  
+};
 export default App;
 
 ```
-:::
 
 
 ### 禁用狀態
 
-:::demo
-```SnackPlayer name=Switch&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React from "react";
 import { Switch } from '@nutui/nutui-react-native';
 
 const App = () => {
-  return ( 
-    <>   
+  return (
+    <>
     <Switch checked disable />
     </>
   );
-};  
+};
 export default App;
 
 ```
-:::
 
 ### change事件
 
-:::demo
-```SnackPlayer name=Switch&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React from "react";
 import { Switch } from '@nutui/nutui-react-native';
 
@@ -62,34 +57,32 @@ const App = () => {
   const change = (value: boolean, event: Event) => {
     alert(`觸發了change事件，開關狀態：${value}`)
   }
-  return ( 
-    <>   
+  return (
+    <>
     <Switch change={(value, event) => change(value, event)} />
     </>
   );
-};  
+};
 export default App;
 
 ```
-:::
 ### 異步控制
 
-:::demo
-```SnackPlayer name=Switch&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React, { useState } from "react";
 import { Switch } from '@nutui/nutui-react-native';
 
 const App = () => {
   const [checkedAsync, setCheckedAsync] = useState(true)
-  
+
   const changeAsync = (value: boolean, event: Event) => {
     alert(`2秒後異步觸發 ${value}`)
     setTimeout(() => {
       setCheckedAsync(value)
     }, 2000)
   }
-  return ( 
-    <>   
+  return (
+    <>
     <Switch
       checked={checkedAsync}
       isAsync
@@ -97,47 +90,42 @@ const App = () => {
      />
     </>
   );
-};  
+};
 export default App;
 
 ```
-:::
 ### 自定義顏色
 
-:::demo
-```SnackPlayer name=Switch&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React from "react";
 import { Switch } from '@nutui/nutui-react-native';
 
 const App = () => {
-  return ( 
-    <>   
+  return (
+    <>
     <Switch activeColor="blue" />
     </>
   );
-};  
+};
 export default App;
 
 ```
-:::
 ### 支持文字
 
-:::demo
-```SnackPlayer name=Switch&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React from "react";
 import { Switch } from '@nutui/nutui-react-native';
 
 const App = () => {
-  return ( 
-    <>   
+  return (
+    <>
     <Switch activeText="開" inactiveText="關" />
     </>
   );
-};  
+};
 export default App;
 
 ```
-:::
 
 
 

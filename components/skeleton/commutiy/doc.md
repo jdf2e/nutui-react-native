@@ -14,8 +14,7 @@ import { Skeleton } from '@nutui/nutui-react-native';
 
 ### 基础用法
 
-:::demo
-```SnackPlayer name=Skeleton&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React from "react";
 import { Skeleton } from '@nutui/nutui-react-native';
 
@@ -28,73 +27,67 @@ const App = () => {
 }
 export default App;
 ```
-:::
 
 ### 传入多行
 
-:::demo
-```SnackPlayer name=Skeleton&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React from "react";
 import { Skeleton } from '@nutui/nutui-react-native';
 
 const App = () => {
   return (
     <>
-      <Skeleton 
-        width={250} 
-        height={15} 
-        row={3} 
-        title 
-        animated 
+      <Skeleton
+        width={250}
+        height={15}
+        row={3}
+        title
+        animated
       />
     </>
   )
 }
 export default App;
 ```
-:::
 
 ### 显示头像
 
-:::demo
-```SnackPlayer name=Skeleton&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React from "react";
 import { Skeleton } from '@nutui/nutui-react-native';
 
 const App = () => {
   return (
     <>
-      <Skeleton 
-        width={250} 
-        height={15} 
-        row={3} 
-        title 
-        animated 
-        avatar 
-        avatarSize={100} 
+      <Skeleton
+        width={250}
+        height={15}
+        row={3}
+        title
+        animated
+        avatar
+        avatarSize={100}
       />
     </>
   )
 }
 export default App;
 ```
-:::
 
 ### 标题段落圆角风格
 
-:::demo
-```SnackPlayer name=Skeleton&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React from "react";
 import { Skeleton } from '@nutui/nutui-react-native';
 
 const App = () => {
   return (
     <>
-      <Skeleton 
-        width={250} 
-        height={15} 
-        animated 
-        round 
+      <Skeleton
+        width={250}
+        height={15}
+        animated
+        round
       />
     </>
   )
@@ -107,11 +100,11 @@ export default App;
 
 ## API
 
-### Prop  
+### Prop
 
 | 字段       | 说明                                             | 类型    | 默认值    |
 |------------|-------------------------------------------------|---------|----------|
-| loading    | 是否显示骨架屏(true不显示骨架屏，false显示骨架屏)                                    | Boolean | `true`    | 
+| loading    | 是否显示骨架屏(true不显示骨架屏，false显示骨架屏)                                    | Boolean | `true`    |
 | width       | 每行宽度                                       | number  | `100` |
 | height      | 每行高度                                        | number  | `100`   |
 | animated    | 是否开启骨架屏动画                                | Boolean  | `false`  |

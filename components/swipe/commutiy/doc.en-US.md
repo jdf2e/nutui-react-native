@@ -1,4 +1,4 @@
-# Swipe 
+# Swipe
 
 ### introduce
 It is often used for gesture operations such as sliding left and right to delete cells
@@ -13,9 +13,7 @@ import { Swipe } from '@nutui/nutui-react-native';
 
 ### Basic usage
 
-:::demo
-
-```SnackPlayer name=Swipe&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 
 import React from "react";
 import {
@@ -56,13 +54,10 @@ const App = () => {
 }
 export default App;
 ```
-:::
 
 ### Disable sliding
 
-:::demo
-
-```SnackPlayer name=Swipe&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 
 import React from "react";
 import {
@@ -94,14 +89,11 @@ const App = () => {
 
 export default App;
 ```
-:::
 
 
 ### Event monitoring
 
-:::demo
-
-```SnackPlayer name=Swipe&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React from "react";
 import {
   View,
@@ -167,13 +159,10 @@ const App = () => {
 }
 export default App;
 ```
-:::
 
 ### Asynchronous control
 
-:::demo
-
-```SnackPlayer name=Swipe&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 
 import React, { useRef } from "react";
 import {
@@ -224,14 +213,11 @@ const App = () => {
 }
 export default App;
 ```
-:::
 
 
 ### Custom content
 
-:::demo
-
-```SnackPlayer name=Swipe&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React from "react";
 import { View, Text } from 'react-native'
 import { Swipe, Button, InputNumber } from '@nutui/nutui-react-native';
@@ -269,7 +255,6 @@ const App = () => {
 }
 export default App;
 ```
-:::
 
 ## API
 

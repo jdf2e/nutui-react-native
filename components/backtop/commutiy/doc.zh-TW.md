@@ -14,9 +14,7 @@ import { BackTop } from '@nutui/nutui-react-native';
 
 ### 基础用法
 
-:::demo
-
-```tsx
+```SnackPlayer
 import  React from "react";
 import { BackTop } from '@nutui/nutui-react-native';
 import { View } from 'react-native';
@@ -34,13 +32,10 @@ const App = () => {
 };
 export default App;
 ```
-:::
 
 ### 设置出现位置
 
-:::demo
-
-```tsx
+```SnackPlayer
 import  React from "react";
 import { BackTop } from '@nutui/nutui-react-native';
 import { View } from 'react-native';
@@ -49,7 +44,7 @@ const App = () => {
   const [backIsShow, setBackIsShow] = useState(false);
 
    const onPressTop = (e) => {
-    
+
   };
 
   return (
@@ -67,12 +62,9 @@ const App = () => {
 };
 export default App;
 ```
-:::
 ### 自定义样式
 
-:::demo
-
-```tsx
+```SnackPlayer
 import  React from "react";
 import { BackTop } from '@nutui/nutui-react-native';
 import { View ,Text} from 'react-native';
@@ -81,7 +73,7 @@ const App = () => {
   const [backIsShow, setBackIsShow] = useState(false);
 
    const onPressTop = (e) => {
-    
+
   };
 
   return (
@@ -101,13 +93,10 @@ const App = () => {
 };
 export default App;
 ```
-:::
 
 ### click 事件
 
-:::demo
-
-```tsx
+```SnackPlayer
 import  React from "react";
 import { BackTop } from '@nutui/nutui-react-native';
 import { View } from 'react-native';
@@ -116,7 +105,7 @@ const App = () => {
   const [backIsShow, setBackIsShow] = useState(false);
 
    const onPressTop = (e) => {
-    
+
   };
 
   return (
@@ -132,7 +121,6 @@ const App = () => {
 };
 export default App;
 ```
-:::
 
 ## API
 

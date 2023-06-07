@@ -13,8 +13,7 @@ import { InputNumber } from '@nutui/nutui-react-native';
 
 初始化一個默認值
 
-:::demo
-```tsx
+```SnackPlayer
 import React, { useState } from "react";
 import { InputNumber } from '@nutui/nutui-react-native';
 
@@ -30,14 +29,12 @@ const App = () => {
 }
 export default App;
 ```
-:::
 
 ### 步長設置
 
-設置步長 `step` 5 
+設置步長 `step` 5
 
-:::demo
-```tsx
+```SnackPlayer
 import React, { useState } from "react";
 import { InputNumber } from '@nutui/nutui-react-native';
 
@@ -53,14 +50,12 @@ const App = () => {
 }
 export default App;
 ```
-:::
 
 ### 限制輸入範圍
 
 `min` 和 `max` 屬性分別表示最小值和最大值
 
-:::demo
-```tsx
+```SnackPlayer
 import React, { useState } from "react";
 import { InputNumber,Toast } from '@nutui/nutui-react-native';
 
@@ -80,14 +75,12 @@ const App = () => {
 }
 export default App;
 ```
-:::
 
 ### 禁用狀態
 
 `disabled` 禁用狀態下無法點擊按鈕或修改輸入框。
 
-:::demo
-```tsx
+```SnackPlayer
 import React, { useState } from "react";
 import { InputNumber } from '@nutui/nutui-react-native';
 
@@ -103,14 +96,12 @@ const App = () => {
 }
 export default App;
 ```
-:::
 
 ### 只讀禁用輸入框
 
 `readonly` 設置只讀禁用輸入框輸入行為
 
-:::demo
-```tsx
+```SnackPlayer
 import React, { useState } from "react";
 import { InputNumber } from '@nutui/nutui-react-native';
 
@@ -126,14 +117,12 @@ const App = () => {
 }
 export default App;
 ```
-:::
 
 ### 支持小數點
 
 設置步長 `step` 0.1  `decimal-places` 小數保留1位
 
-:::demo
-```tsx
+```SnackPlayer
 import React, { useState } from "react";
 import { InputNumber } from '@nutui/nutui-react-native';
 
@@ -149,13 +138,11 @@ const App = () => {
 }
 export default App;
 ```
-:::
 ### 支持異步修改
 
 通過 `change` 事件和 `model-value` 進行異步修改
 
-:::demo
-```tsx
+```SnackPlayer
 import React, { useState } from "react";
 import { InputNumber, Toast } from '@nutui/nutui-react-native';
 
@@ -178,12 +165,10 @@ const App = () => {
 }
 export default App;
 ```
-:::
 
 ### 自定義按鈕大小
 
-:::demo
-```tsx
+```SnackPlayer
 import React, { useState } from "react";
 import { InputNumber, Toast } from '@nutui/nutui-react-native';
 
@@ -199,7 +184,6 @@ const App = () => {
 }
 export default App;
 ```
-:::
 
 ## API
 

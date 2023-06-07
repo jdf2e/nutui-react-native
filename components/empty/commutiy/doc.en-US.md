@@ -14,7 +14,7 @@ import { Empty } from '@nutui/nutui-react-native'
 ## Demo
 
 ### Basic usage
-```SnackPlayer name=Empty&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React from "react";
 import { Empty } from '@nutui/nutui-react-native';
 
@@ -27,7 +27,7 @@ export default App;
 ```
 
 ### Custom content size
-```SnackPlayer name=Empty&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React from "react";
 import { Empty } from '@nutui/nutui-react-native';
 
@@ -40,7 +40,7 @@ export default App;
 ```
 
 ### Picture type, 3 built-in
-```SnackPlayer name=Empty&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React from "react";
 import { Empty } from '@nutui/nutui-react-native';
 
@@ -57,14 +57,14 @@ export default App;
 ```
 
 ### Custom image
-```SnackPlayer name=Empty&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React from "react";
 import { Empty } from '@nutui/nutui-react-native';
 
 const App = () => {
   return (
     <Empty
-      description="No Coupon" 
+      description="No Coupon"
       image={<img src="https://static-ftcms.jd.com/p/files/61a9e3313985005b3958672e.png" alt=""/>}
      />
   );
@@ -74,7 +74,7 @@ export default App;
 
 
 ### Bottom content
-```SnackPlayer name=Empty&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React from "react";
 import { Empty } from '@nutui/nutui-react-native';
 

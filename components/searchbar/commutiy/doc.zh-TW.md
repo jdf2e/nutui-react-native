@@ -17,8 +17,7 @@ import { SearchBar } from '@nutui/nutui-react-native';
 
 `SearchBar` 的 `placeholder` 内容支持自定義。
 
-:::demo
-```tsx
+```SnackPlayer
 import React from "react";
 import { SearchBar } from '@nutui/nutui-react-native';
 
@@ -29,14 +28,12 @@ const App = () => {
 }
 export default App;
 ```
-:::
 
 ### 蒐索框形狀及最大長度
 
 `SearchBar`的`round`内容支持定義圓角直角，`maxLength`可控制輸入字元的最大長度。
 
-:::demo
-```tsx
+```SnackPlayer
 import React from "react";
 import { SearchBar } from '@nutui/nutui-react-native';
 
@@ -47,15 +44,13 @@ const App = () => {
 }
 export default App;
 ```
-:::
 
 
 ### 蒐索框內外背景設定
 
 `SearchBar`的`background`内容可以設定蒐索框外部的背景色，`inputBackground`内容可以設定蒐索框的背景色，`align`設定文字對齊管道
 
-:::demo
-```tsx
+```SnackPlayer
 import React from "react";
 import { SearchBar } from '@nutui/nutui-react-native';
 
@@ -70,14 +65,12 @@ const App = () => {
 }
 export default App;
 ```
-:::
 
 ### 蒐索框文字設定
 
 `SearchBar`的`label`内容可以設定蒐索框左側文字，`actionText`内容可以設定取消按鈕文字
 
-:::demo
-```tsx
+```SnackPlayer
 import React from "react";
 import { SearchBar } from '@nutui/nutui-react-native';
 
@@ -89,15 +82,13 @@ const App = () => {
 export default App;
 
 ```
-:::
 
 
 ### 自定義圖標設定
 
 `SearchBar`的`leftoutIcon` `rightoutIcon`内容可以設定左右的圖標或者自定義內容
 
-:::demo
-```tsx
+```SnackPlayer
 import React from "react";
 import { SearchBar, Icon } from '@nutui/nutui-react-native';
 
@@ -112,7 +103,6 @@ const App = () => {
 export default App;
 
 ```
-:::
 
 
 
@@ -120,8 +110,7 @@ export default App;
 
 `SearchBar`的`change`可獲取輸入的內容。
 
-:::demo
-```tsx
+```SnackPlayer
 import React, { useState } from 'react'
 import { SearchBar } from '@nutui/nutui-react-native';
 
@@ -140,7 +129,6 @@ const App = () => {
 }
 export default App;
 ```
-:::
 
 
 ## API

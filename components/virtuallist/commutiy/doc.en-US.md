@@ -201,7 +201,6 @@ const styles = StyleSheet.create({
 
 export default ListDemo
 ```
-:::
 ## API
 
 ### Props

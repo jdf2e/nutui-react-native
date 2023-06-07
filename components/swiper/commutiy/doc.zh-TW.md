@@ -20,8 +20,7 @@ import { Swiper,SwiperItem } from '@nutui/nutui-react-native';
 `paginationColor` 指示器颜色自定义
 `onChange` 当卡片发生变化
 
-:::demo
-``` SnackPlayer name=Swiper&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React, { useState } from 'react'
 import { Swiper,SwiperItem, Image } from '@nutui/nutui-react-native';
 
@@ -81,11 +80,9 @@ const App = () => {
 }
 export default App;
 ```
-:::
 ### 异步加载
 
-:::demo
-``` SnackPlayer name=Swiper&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React, { useState, useEffect } from 'react'
 import { Swiper,SwiperItem, Image } from '@nutui/nutui-react-native';
 
@@ -130,14 +127,12 @@ const App = () => {
 }
 export default App;
 ```
-:::
 
 ### 动态加载
 
 支持动态增加/删除图片
 
-:::demo
-``` SnackPlayer name=Swiper&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React, { useState, useEffect } from 'react'
 import { Swiper,SwiperItem, Image } from '@nutui/nutui-react-native';
 
@@ -183,13 +178,11 @@ const App = () => {
 }
 export default App;
 ```
-:::
 
 ### 自定义大小
 
 `width` 自定义轮播大小
-:::demo
-``` SnackPlayer name=Swiper&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React, { useState } from 'react'
 import { Swiper,SwiperItem, Image } from '@nutui/nutui-react-native';
 
@@ -250,14 +243,12 @@ const App = () => {
 }
 export default App;
 ```
-:::
 
 ### 自定义分页指示器
 
 `pageContent` 表示自定义指示器
 
-:::demo
-``` SnackPlayer name=Swiper&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React, { useState } from 'react'
 import {
   View,
@@ -342,14 +333,12 @@ const App = () => {
 }
 export default App;
 ```
-:::
 
 ### 手动切换
 
 可通过 `API`(`prev`,`next`)进行手动切换
 
-:::demo
-``` SnackPlayer name=Swiper&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React, { useState, useRef } from 'react'
 import {
   View,
@@ -360,7 +349,7 @@ import { Swiper, SwiperItem, Icon, Image } from '@nutui/nutui-react-native';
 const App = () => {
   const swiperRef = React.useRef<any>(null)
   const [current2, setCurrent2] = useState(1)
-  
+
   const onChange3 = (e) => {
     setCurrent(e + 1)
   }
@@ -473,14 +462,12 @@ const App = () => {
 }
 export default App;
 ```
-:::
 
 ### 垂直方向
 
 `direction` 自定义轮播方向
 
-:::demo
-``` SnackPlayer name=Swiper&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React, { useState } from 'react'
 import { Swiper,SwiperItem, Image } from '@nutui/nutui-react-native';
 

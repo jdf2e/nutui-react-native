@@ -6,7 +6,8 @@
 For content selection and switching
 
 ### Install
-```tsx
+
+```ts
 import { SideNavBar,SubSideNavBar,SideNavBarItem } from '@nutui/nutui-react-native';
 ```
 
@@ -27,9 +28,9 @@ const App = () => {
       position,
     })
   }
- 
-  return ( 
-    <>   
+
+  return (
+    <>
     <Cell
           title="left"
           isLink
@@ -63,11 +64,10 @@ const App = () => {
         </SideNavBar>
     </>
   );
-};  
+};
 export default App;
 
 ```
-:::
 
 ### Nesting (up to three layers recommended)
 
@@ -86,15 +86,15 @@ const App = () => {
   const clickTitle = ({ title, ikey, isShow }) => {
     Toast.text(`title=${title},ikey=${ikey},isShow=${isShow}`)
   }
-  return ( 
-    <>  
+  return (
+    <>
       <Cell
           title="show"
           isLink
           onClick={() => {
             changeNarBar(true)
           }}
-        /> 
+        />
     <SideNavBar
           title="首页"
           visible={visible}
@@ -118,11 +118,10 @@ const App = () => {
         </SideNavBar>
     </>
   );
-};  
+};
 export default App;
 
 ```
-:::
 
 
 

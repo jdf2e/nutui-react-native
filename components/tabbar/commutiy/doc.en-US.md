@@ -14,8 +14,7 @@ import { Tabbar, TabbarItem } from '@nutui/nutui-react';
 
 ### Basic usage
 
-:::demo
-```SnackPlayer name=Tabbar&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React from "react";
 import {  Tabbar, TabbarItem } from '@nutui/nutui-react';
 
@@ -35,11 +34,9 @@ const App = () =>(
 
 export default App;
 ```
-:::
 ### custom check
 
-:::demo
-```SnackPlayer name=Tabbar&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React from "react";
 import {  Tabbar, TabbarItem } from '@nutui/nutui-react';
 
@@ -55,11 +52,9 @@ const App = () => (
 
 export default App;
 ```
-:::
 ### Logo Tips
 
-:::demo
-```SnackPlayer name=Tabbar&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React from "react";
 import { Tabbar, TabbarItem } from '@nutui/nutui-react';
 
@@ -75,12 +70,10 @@ const App = () => (
 
 export default App;
 ```
-:::
 
 ### Red dot
 
-:::demo
-```SnackPlayer name=Tabbar&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React from "react";
 import { Tabbar, TabbarItem } from '@nutui/nutui-react';
 
@@ -96,11 +89,9 @@ const App = () => (
 
 export default App;
 ```
-:::
 ### custom color
 
-:::demo
-```SnackPlayer name=Tabbar&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React from "react";
 import {  Tabbar, TabbarItem } from '@nutui/nutui-react';
 
@@ -116,11 +107,9 @@ const App = () => (
 
 export default App;
 ```
-:::
 ### Tabbar with customizable number of icons
 
-:::demo
-```SnackPlayer name=Tabbar&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React from "react";
 import {  Tabbar, TabbarItem } from '@nutui/nutui-react';
 
@@ -134,11 +123,9 @@ const App = () => (
 
 export default App;
 ```
-:::
 ### Fixed bottom, free to jump
 
-:::demo
-```SnackPlayer name=Tabbar&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React from "react";
 import {  Tabbar, TabbarItem } from '@nutui/nutui-react';
 
@@ -154,7 +141,6 @@ const App = () => (
 
 export default App;
 ```
-:::        
 
 ## API
 

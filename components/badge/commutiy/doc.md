@@ -16,9 +16,7 @@ import { Badge } from '@nutui/nutui-react-native';
 
 ### 基本用法
 
-:::demo
-
-```SnackPlayer name=Badge&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React from "react";
 import { Badge, Avatar } from '@nutui/nutui-react-native';
 
@@ -43,13 +41,9 @@ const App = () => {
 export default App;
 ```
 
-:::
-
 ### 最大值
 
-:::demo
-
-```SnackPlayer name=Badge&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React from "react";
 import { Badge, Avatar } from '@nutui/nutui-react-native';
 
@@ -71,13 +65,9 @@ const App = () => {
 export default App;
 ```
 
-:::
-
 ### 自定义徽标内容
 
-:::demo
-
-```SnackPlayer name=Badge&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React from "react";
 import { Badge, Avatar } from '@nutui/nutui-react-native';
 
@@ -99,13 +89,9 @@ const App = () => {
 export default App;
 ```
 
-:::
-
 ### 自定义位置
 
-:::demo
-
-```SnackPlayer name=Badge&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React from "react";
 import { Badge, Avatar } from '@nutui/nutui-react-native';
 
@@ -127,13 +113,9 @@ const App = () => {
 export default App;
 ```
 
-:::
-
 ### 独立展示
 
-:::demo
-
-```SnackPlayer name=Badge&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React from "react";
 import { Badge } from '@nutui/nutui-react-native';
 
@@ -148,8 +130,6 @@ const App = () => {
 }
 export default App;
 ```
-
-:::
 
 ## API
 

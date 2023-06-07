@@ -13,9 +13,7 @@ import { Card,Price, Tag} from '@nutui/nutui-react-native';
 
 ### 基本用法
 
-:::demo
-
-```SnackPlayer name=Card&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React from "react";
 import { Card,Price, Tag } from '@nutui/nutui-react-native';
 
@@ -45,13 +43,9 @@ const App = () => {
 export default App;
 ```
 
-:::
-
 ### 自定義商品標簽
 
-:::demo
-
-```SnackPlayer name=Card&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React from "react";
 import { Card,Price, Tag } from '@nutui/nutui-react-native';
 
@@ -103,13 +97,9 @@ export default App;
 
 ```
 
-:::
-
 ### 價格後自定義標簽
 
-:::demo
-
-```SnackPlayer name=Card&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React from "react";
 import { Card,Price, Tag } from '@nutui/nutui-react-native';
 
@@ -148,12 +138,9 @@ const App = () => {
 export default App;
 ```
 
-:::
-
 ### 自定義店鋪介紹
 
-:::demo
-```SnackPlayer name=Card&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React from "react";
 import { Card,Price, Tag } from '@nutui/nutui-react-native';
 
@@ -168,7 +155,7 @@ const App = () => {
     delivery: '廠商配送',
     shopName: '陽澄湖大閘蟹自營店>',
   }
-  
+
   return (
     <Card
         imgUrl={imgUrl}
@@ -190,13 +177,9 @@ const App = () => {
 export default App;
 ```
 
-:::
-
 ### 自定義右下角內容
 
-:::demo
-
-```SnackPlayer name=Card&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React from "react";
 import { Card,Price, Tag } from '@nutui/nutui-react-native';
 
@@ -211,7 +194,7 @@ const App = () => {
     delivery: '廠商配送',
     shopName: '陽澄湖大閘蟹自營店>',
   }
-  
+
   return (
     <Card
         imgUrl={imgUrl}
@@ -233,8 +216,6 @@ const App = () => {
 };
 export default App;
 ```
-
-:::
 
 
 ## API

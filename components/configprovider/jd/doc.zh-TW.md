@@ -4,7 +4,7 @@
 
 用於全域配置 NutUI-React 元件，提供國際化支援。
 
-```SnackPlayer name=ConfigProvider&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React from 'react';
 import { ConfigProvider, Textarea } from "@nutui/nutui-react-native";
 import en from "@nutui/nutui-react-native/locales/en-US";
@@ -30,7 +30,7 @@ import { ConfigProvider } from '@nutui/nutui-react-native';
 
 ### 基礎用法
 
-```SnackPlayer name=ConfigProvider&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React from 'react';
 import { ConfigProvider, Textarea } from "@nutui/nutui-react-native";
 import en from "@nutui/nutui-react-native/locales/en-US";

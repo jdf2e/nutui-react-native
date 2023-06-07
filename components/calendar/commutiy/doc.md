@@ -14,7 +14,7 @@ import { Calendar } from '@nutui/nutui-react-native';
 
 ### 基础用法
 
-```SnackPlayer name=Calendar&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React, { useState } from "react";
 import { Cell, Calendar } from '@nutui/nutui-react-native';
 
@@ -38,7 +38,7 @@ const App = () => {
     return (
         <>
             <Cell title="选择单个日期" desc={ date ? `${date} ${dateWeek}` : '请选择' } onClick={ openSwitch } />
-            <Calendar 
+            <Calendar
                 visible={ isVisible }
                 defaultValue={ date }
                 startDate="2022-01-11"
@@ -55,7 +55,7 @@ export default App;
 
 ### 区间选择
 
-```SnackPlayer name=Calendar&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React, { useState } from "react";
 import { Cell, Calendar } from '@nutui/nutui-react-native';
 
@@ -78,7 +78,7 @@ const App = () => {
     return (
         <>
             <Cell title="选择日期区间" desc={ date1 ? `${date1[0]}至${date1[1]}` : '请选择' } onClick={ openSwitch1 } />
-            <Calendar 
+            <Calendar
                 visible={ isVisible1 }
                 defaultValue={ date1 }
                 type="range"
@@ -96,7 +96,7 @@ export default App;
 
 ### 选择多个日期
 
-```SnackPlayer name=Calendar&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React, { useState } from "react";
 import { Cell, Calendar } from '@nutui/nutui-react-native';
 
@@ -137,7 +137,7 @@ export default App;
 
 ### 快捷选择
 
-```SnackPlayer name=Calendar&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React, { useState } from "react";
 import { Cell, Calendar } from '@nutui/nutui-react-native';
 
@@ -178,7 +178,7 @@ export default App;
 
 ### 自定义日历-自定义时间文案
 
-```SnackPlayer name=Calendar&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React, { useState } from "react";
 import { Cell, Calendar } from '@nutui/nutui-react-native';
 
@@ -220,7 +220,7 @@ const App = () => {
     return (
         <>
             <Cell title="选择日期" desc={ date3 ? `${date3[0]}至${date3[1]}` : '请选择' } onClick={ openSwitch3 } />
-            
+
             <Calendar
                 visible={isVisible3}
                 defaultValue={date3}
@@ -244,7 +244,7 @@ export default App;
 
 ### 自定义日历-自定义按钮
 
-```SnackPlayer name=Calendar&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React, { useState, useRef } from "react";
 import { Cell, Calendar } from '@nutui/nutui-react-native';
 
@@ -379,7 +379,7 @@ export default App;
 
 ### 平铺展示
 
-```SnackPlayer name=Calendar&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React, { useState } from "react";
 import { Calendar } from '@nutui/nutui-react-native';
 

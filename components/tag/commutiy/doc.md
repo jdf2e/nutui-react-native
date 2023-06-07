@@ -14,9 +14,7 @@ import { Tag } from '@nutui/nutui-react-native';
 
 ### 基础用法
 
-:::demo
-
-```SnackPlayer name=Tag&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React from "react";
 import { Tag } from '@nutui/nutui-react-native';
 
@@ -33,13 +31,9 @@ const App = () => {
 export default App;
 ```
 
-:::
-
 ### 空心样式
 
-:::demo
-
-```SnackPlayer name=Tag&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React from "react";
 import { Tag } from '@nutui/nutui-react-native';
 
@@ -53,13 +47,9 @@ const App = () => {
 export default App;
 ```
 
-:::
-
 ### 圆角样式
 
-:::demo
-
-```SnackPlayer name=Tag&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React from "react";
 import { Tag } from '@nutui/nutui-react-native';
 
@@ -73,13 +63,9 @@ const App = () => {
 export default App;
 ```
 
-:::
-
 ### 标记样式
 
-:::demo
-
-```SnackPlayer name=Tag&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React from "react";
 import { Tag } from '@nutui/nutui-react-native';
 
@@ -93,13 +79,9 @@ const App = () => {
 export default App;
 ```
 
-:::
-
 ### 可关闭标签
 
-:::demo
-
-```SnackPlayer name=Tag&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React from "react";
 import { Tag } from '@nutui/nutui-react-native';
 
@@ -113,13 +95,9 @@ const App = () => {
 export default App;
 ```
 
-:::
-
 ### 自定义颜色
 
-:::demo
-
-```SnackPlayer name=Tag&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React from "react";
 import { Tag } from '@nutui/nutui-react-native';
 
@@ -135,14 +113,10 @@ const App = () => {
 export default App;
 ```
 
-:::
-
 
 ### 点击事件
 
-:::demo
-
-```SnackPlayer name=Tag&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React from "react";
 import { Tag } from '@nutui/nutui-react-native';
 
@@ -156,13 +130,9 @@ const App = () => {
 export default App;
 ```
 
-:::
-
 ### 展示控制
 
-:::demo
-
-```SnackPlayer name=Tag&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React, {useState} from "react";
 import { Tag,Button } from '@nutui/nutui-react-native';
 
@@ -174,16 +144,14 @@ const App = () => {
       isShow? (
         <Tag type='primary' onClick={()=>alert('Tag clicked')}>标签</Tag>
       ):null
-    }  
+    }
     <Button type='default' size="small" onClick={()=>{setIsShow(false)}} >点击删除Tag</Button>
     </>
   )
-  
+
 }
 export default App;
 ```
-
-:::
 ## API
 
 ### Props

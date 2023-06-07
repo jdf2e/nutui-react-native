@@ -12,9 +12,7 @@ import { TimeSelect } from '@nutui/nutui-react-native';
 
 ### 基本用法
 
-:::demo
-
-```tsx
+```SnackPlayer
 import React, { useState } from 'react'
 import { TimeSelect, Cell, Toast } from '@nutui/nutui-react-native'
 import { View } from 'react-native';
@@ -78,8 +76,6 @@ const TimeSelectDemo = () => {
 
 export default TimeSelectDemo
 ```
-
-:::
 
 ## API
 

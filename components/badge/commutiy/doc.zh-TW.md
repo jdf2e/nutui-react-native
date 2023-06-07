@@ -16,7 +16,7 @@ import { Badge } from '@nutui/nutui-react';
 
 ### 基本用法
 
-```SnackPlayer name=Badge&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 <Badge value={8}>
   <Avatar icon="my" shape="square"></Avatar>
 </Badge>
@@ -33,7 +33,7 @@ import { Badge } from '@nutui/nutui-react';
 
 ### 最大值
 
-```SnackPlayer name=Badge&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 <Badge value={200} max={9}>
   <Avatar icon="my" shape="square"></Avatar>
 </Badge>
@@ -48,7 +48,7 @@ import { Badge } from '@nutui/nutui-react';
 
 ### 自定義徽標內容
 
-```SnackPlayer name=Badge&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 <Badge icon="checklist">
   <Avatar icon="my" shape="square"></Avatar>
 </Badge>
@@ -62,7 +62,7 @@ import { Badge } from '@nutui/nutui-react';
 
 ### 自定義位置
 
-```SnackPlayer name=Badge&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 <Badge value={8} top="5" right="5">
   <Avatar icon="my" shape="square"></Avatar>
 </Badge>
@@ -76,7 +76,7 @@ import { Badge } from '@nutui/nutui-react';
 
 ### 獨立展示
 
-```SnackPlayer name=Badge&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 <Badge value={8}> </Badge>
 <Badge value={76}> </Badge>
 <Badge value="NEW"> </Badge>

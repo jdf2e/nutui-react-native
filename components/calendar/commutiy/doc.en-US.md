@@ -14,7 +14,7 @@ import { Calendar } from '@nutui/nutui-react-native';
 
 ### Basic usage
 
-```SnackPlayer name=Calendar&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React, { useState } from "react";
 import { Cell, Calendar } from '@nutui/nutui-react-native';
 
@@ -38,7 +38,7 @@ const App = () => {
     return (
         <>
             <Cell title="select a single date" desc={ date ? `${date} ${dateWeek}` : 'please choose' } onClick={ openSwitch } />
-            <Calendar 
+            <Calendar
                 visible={ isVisible }
                 defaultValue={ date }
                 startDate="2022-01-11"
@@ -55,7 +55,7 @@ export default App;
 
 ### interval selection
 
-```SnackPlayer name=Calendar&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React, { useState } from "react";
 import { Cell, Calendar } from '@nutui/nutui-react-native';
 
@@ -78,7 +78,7 @@ const App = () => {
     return (
         <>
             <Cell title="Select date range" desc={ date1 ? `${date1[0]}to${date1[1]}` : 'please choose' } onClick={ openSwitch1 } />
-            <Calendar 
+            <Calendar
                 visible={ isVisible1 }
                 defaultValue={ date1 }
                 type="range"
@@ -96,7 +96,7 @@ export default App;
 
 ### select multiple dates
 
-```SnackPlayer name=Calendar&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React, { useState } from "react";
 import { Cell, Calendar } from '@nutui/nutui-react-native';
 
@@ -137,7 +137,7 @@ export default App;
 
 ### quick selection
 
-```SnackPlayer name=Calendar&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React, { useState } from "react";
 import { Cell, Calendar } from '@nutui/nutui-react-native';
 
@@ -178,7 +178,7 @@ export default App;
 
 ### Custom Calendar - Custom Time Copy
 
-```SnackPlayer name=Calendar&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React, { useState } from "react";
 import { Cell, Calendar } from '@nutui/nutui-react-native';
 
@@ -220,7 +220,7 @@ const App = () => {
     return (
         <>
             <Cell title="select date" desc={ date3 ? `${date3[0]}to${date3[1]}` : 'please choose' } onClick={ openSwitch3 } />
-            
+
             <Calendar
                 visible={isVisible3}
                 defaultValue={date3}
@@ -244,7 +244,7 @@ export default App;
 
 ### Custom Calendar - Custom Button
 
-```SnackPlayer name=Calendar&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React, { useState, useRef } from "react";
 import { Cell, Calendar } from '@nutui/nutui-react-native';
 
@@ -379,7 +379,7 @@ export default App;
 
 ### Tiled display
 
-```SnackPlayer name=Calendar&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React, { useState } from "react";
 import { Calendar } from '@nutui/nutui-react-native';
 

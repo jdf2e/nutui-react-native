@@ -11,11 +11,9 @@ import { BackTop } from '@nutui/nutui-react-native';
 ```
 
 
-### Basic Usage 
+### Basic Usage
 
-:::demo
-
-```tsx
+```SnackPlayer
 import  React from "react";
 import { BackTop } from '@nutui/nutui-react-native';
 import { View } from 'react-native';
@@ -33,13 +31,10 @@ const App = () => {
 };
 export default App;
 ```
-:::
 
 ### Distance
 
-:::demo
-
-```tsx
+```SnackPlayer
 import  React from "react";
 import { BackTop } from '@nutui/nutui-react-native';
 import { View } from 'react-native';
@@ -48,7 +43,7 @@ const App = () => {
   const [backIsShow, setBackIsShow] = useState(false);
 
    const onPressTop = (e) => {
-    
+
   };
 
   return (
@@ -66,12 +61,9 @@ const App = () => {
 };
 export default App;
 ```
-:::
 ### Custom Style
 
-:::demo
-
-```tsx
+```SnackPlayer
 import  React from "react";
 import { BackTop } from '@nutui/nutui-react-native';
 import { View ,Text} from 'react-native';
@@ -80,7 +72,7 @@ const App = () => {
   const [backIsShow, setBackIsShow] = useState(false);
 
    const onPressTop = (e) => {
-    
+
   };
 
   return (
@@ -100,13 +92,10 @@ const App = () => {
 };
 export default App;
 ```
-:::
 
 ### Click
 
-:::demo
-
-```tsx
+```SnackPlayer
 import  React from "react";
 import { BackTop } from '@nutui/nutui-react-native';
 import { View } from 'react-native';
@@ -115,7 +104,7 @@ const App = () => {
   const [backIsShow, setBackIsShow] = useState(false);
 
    const onPressTop = (e) => {
-    
+
   };
 
   return (
@@ -131,7 +120,6 @@ const App = () => {
 };
 export default App;
 ```
-:::
 
 ## API
 

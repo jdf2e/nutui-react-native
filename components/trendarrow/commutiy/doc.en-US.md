@@ -1,4 +1,4 @@
-# TrendArrow 
+# TrendArrow
 
 ### Intro
 
@@ -16,9 +16,7 @@ import { TrendArrow } from '@nutui/nutui-react-native';
 
 ### Basic Usage
 
-:::demo
-
-```SnackPlayer name=TrendArrow&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React from "react"
 import { TrendArrow, Cell } from '@nutui/nutui-react-native'
 
@@ -33,13 +31,9 @@ const App = () => {
 export default App;
 ```
 
-:::
-
 ### Change text color
 
-:::demo
-
-```SnackPlayer name=TrendArrow&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React from "react"
 import { TrendArrow, Cell } from '@nutui/nutui-react-native'
 
@@ -54,13 +48,9 @@ const App = () => {
 export default App;
 ```
 
-:::
-
 ### Specify decimal places
 
-:::demo
-
-```SnackPlayer name=TrendArrow&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React from "react"
 import { TrendArrow, Cell } from '@nutui/nutui-react-native'
 
@@ -75,13 +65,9 @@ const App = () => {
 export default App;
 ```
 
-:::
-
 ### Arrow ahead
 
-:::demo
-
-```SnackPlayer name=TrendArrow&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React from "react"
 import { TrendArrow, Cell } from '@nutui/nutui-react-native'
 
@@ -96,13 +82,9 @@ const App = () => {
 export default App;
 ```
 
-:::
-
 ### Show sign
 
-:::demo
-
-```SnackPlayer name=TrendArrow&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React from "react"
 import { TrendArrow, Cell } from '@nutui/nutui-react-native'
 
@@ -117,13 +99,9 @@ const App = () => {
 export default App;
 ```
 
-:::
-
 ### Whether to show 0
 
-:::demo
-
-```SnackPlayer name=TrendArrow&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React from "react"
 import { TrendArrow, Cell } from '@nutui/nutui-react-native'
 
@@ -138,13 +116,9 @@ const App = () => {
 export default App;
 ```
 
-:::
-
 ### Custom color
 
-:::demo
-
-```SnackPlayer name=TrendArrow&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React from "react"
 import { TrendArrow, Cell } from '@nutui/nutui-react-native'
 
@@ -166,13 +140,9 @@ const App = () => {
 export default App;
 ```
 
-:::
-
 ### Custom icon
 
-:::demo
-
-```SnackPlayer name=TrendArrow&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React from "react"
 import { TrendArrow, Cell, Icon } from '@nutui/nutui-react-native'
 
@@ -189,8 +159,6 @@ const App = () => {
 };
 export default App;
 ```
-
-:::
 
 
 ## API

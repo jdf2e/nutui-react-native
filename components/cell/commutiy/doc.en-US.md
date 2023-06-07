@@ -1,4 +1,4 @@
-# Cell 
+# Cell
 
 ### Intro
 
@@ -16,9 +16,7 @@ import { Cell, CellGroup } from '@nutui/nutui-react-native'
 
 ###  Basic Usage
 
-:::demo
-
-```SnackPlayer name=Cell&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React from 'react'
 import { Cell } from '@nutui/nutui-react-native'
 
@@ -45,13 +43,9 @@ const App = () => {
 export default App
 ```
 
-:::
-
 ### Size setting large
 
-:::demo
-
-```SnackPlayer name=Cell&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React from 'react'
 import { Cell } from '@nutui/nutui-react-native'
 
@@ -71,13 +65,9 @@ const App = () => {
 export default App
 ```
 
-:::
-
 ### Use Slots
 
-:::demo
-
-```SnackPlayer name=Cell&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React from 'react'
 import { Text } from 'react-native';
 import { Cell } from '@nutui/nutui-react-native'
@@ -94,13 +84,9 @@ const App = () => {
 export default App
 ```
 
-:::
-
 ### Use Slots(title slots)
 
-:::demo
-
-```SnackPlayer name=Cell&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React from 'react'
 import { Text } from 'react-native';
 import { Cell } from '@nutui/nutui-react-native'
@@ -120,13 +106,9 @@ const App = () => {
 export default App
 ```
 
-:::
-
 ### Link | CellGroup Usage
 
-:::demo
-
-```SnackPlayer name=Cell&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React from 'react'
 import { CellGroup, Cell } from '@nutui/nutui-react-native'
 
@@ -151,13 +133,9 @@ const App = () => {
 export default App
 ```
 
-:::
-
 ### Customize the right arrow area
 
-:::demo
-
-```SnackPlayer name=Cell&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React from 'react'
 import { CellGroup, Cell, Switch } from '@nutui/nutui-react-native'
 
@@ -171,13 +149,9 @@ const App = () => {
 export default App
 ```
 
-:::
-
 ### Customize the left Icon area
 
-:::demo
-
-```SnackPlayer name=Cell&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React from 'react'
 import { CellGroup, Cell, Image } from '@nutui/nutui-react-native'
 
@@ -204,13 +178,9 @@ const App = () => {
 export default App
 ```
 
-:::
-
 ### Cell Display Icon
 
-:::demo
-
-```SnackPlayer name=Cell&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React from 'react'
 import { Cell } from '@nutui/nutui-react-native'
 
@@ -220,13 +190,9 @@ const App = () => {
 export default App
 ```
 
-:::
-
 ### Only display desc , you can adjust the content position through desc-text-align
 
-:::demo
-
-```SnackPlayer name=Cell&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React from 'react'
 import { Cell } from '@nutui/nutui-react-native'
 
@@ -236,15 +202,11 @@ const App = () => {
 export default App
 ```
 
-:::
-
 ### Vertical Center
 
 You can center the left and right contents of the cell vertically through the 'center' attribute.
 
-:::demo
-
-```SnackPlayer name=Cell&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React from 'react'
 import { Cell } from '@nutui/nutui-react-native'
 
@@ -255,8 +217,6 @@ const App = () => {
 }
 export default App
 ```
-
-:::
 
 ## API
 
@@ -315,9 +275,9 @@ The component provides the following CSS variables, which can be used to customi
 | --nutui-cell-subtitle-color | ` $gray2` |
 | --nutui-cell-border-radius | ` 6` |
 | --nutui-cell-padding-top | ` 13` |
-| --nutui-cell-padding-bottom | ` 13` | 
+| --nutui-cell-padding-bottom | ` 13` |
 | --nutui-cell-padding-left | ` 16` |
-| --nutui-cell-padding-right | ` 16` | 
+| --nutui-cell-padding-right | ` 16` |
 | --nutui-cell-after-right | ` 16` |
 | --nutui-cell-after-border-bottom-width | `  2` |
 | --nutui-cell-after-border-bottom-color | ` #f5f6f7` |

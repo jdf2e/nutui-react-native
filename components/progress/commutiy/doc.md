@@ -30,7 +30,6 @@ const App = () => {
 };
 export default App;
 ```
-:::
 
 ### 设置高度和颜色
 
@@ -53,7 +52,6 @@ const App = () => {
 };
 export default App;
 ```
-:::
 
 ### 设置百分比不显示
 
@@ -74,7 +72,6 @@ const App = () => {
 };
 export default App;
 ```
-:::
 
 ### 设置百分比外显
 
@@ -94,7 +91,6 @@ const App = () => {
 };
 export default App;
 ```
-:::
 
 ### 设置百分比内显
 
@@ -115,7 +111,6 @@ const App = () => {
 };
 export default App;
 ```
-:::
 
 ### 设置内显自定义内容
 
@@ -141,7 +136,6 @@ const App = () => {
 };
 export default App;
 ```
-:::
 
 ### 自定义尺寸
 
@@ -180,7 +174,6 @@ const App = () => {
 };
 export default App;
 ```
-:::
 
 ### 设置状态显示
 
@@ -194,7 +187,7 @@ const App = () => {
   return (
     <View>
       <Cell>
-        <Progress 
+        <Progress
             percentage={30}
             strokeColor={['#05ebd0', '#2f7bfc']}
         />
@@ -215,7 +208,6 @@ const App = () => {
 };
 export default App;
 ```
-:::
 
 ### 动态改变
 
@@ -237,7 +229,7 @@ const App = () => {
     <Cell>
       <Button
         type="default"
-        style={{ margin: 8 }} 
+        style={{ margin: 8 }}
         onClick={() => {
           let num = value;
           if (value <= 0) {
@@ -249,8 +241,8 @@ const App = () => {
       >
         减少
       </Button>
-      <Button 
-        type="primary" 
+      <Button
+        type="primary"
         onClick={() => {
           let num = value;
           if (value >= 100) {
@@ -268,7 +260,6 @@ const App = () => {
 };
 export default App;
 ```
-:::
 
 ## API
 

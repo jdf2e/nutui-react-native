@@ -16,7 +16,7 @@ import { Button } from '@nutui/nutui-react-native';
 
 The button supports six types: 'default', 'primary', 'info', 'warning', 'danger', 'success', which defaults to 'default'.
 
-```SnackPlayer name=Button&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React from "react";
 import { Button } from '@nutui/nutui-react-native';
 
@@ -40,7 +40,7 @@ export default App;
 
 Set the button to naïve with the text of the naïve button and the background white with the 'plain' attribute.
 
-```SnackPlayer name=Button&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React from "react";
 import { Button } from '@nutui/nutui-react-native';
 
@@ -59,7 +59,7 @@ export default App;
 
 Disable the button through the 'disabled' attribute, which is not clickable.
 
-```SnackPlayer name=Button&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React from "react";
 import { Button } from '@nutui/nutui-react-native';
 
@@ -80,7 +80,7 @@ export default App;
 
 Set the button shape through the 'shape' property, support circular, square buttons, and default to circle.
 
-```SnackPlayer name=Button&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React from "react";
 import { Button } from '@nutui/nutui-react-native';
 
@@ -98,7 +98,7 @@ export default App;
 
 ### Load state
 
-```SnackPlayer name=Button&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React ,{useState} from "react";
 import { Button } from '@nutui/nutui-react-native';
 
@@ -129,7 +129,7 @@ export default App;
 
 ### Icon button
 
-```SnackPlayer name=Button&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React from "react";
 import { Button } from '@nutui/nutui-react-native';
 
@@ -148,7 +148,7 @@ export default App;
 
 Support 'large', 'normal', 'small' three sizes, the default is 'normal'.
 
-```SnackPlayer name=Button&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React from "react";
 import { Button } from '@nutui/nutui-react-native';
 
@@ -169,7 +169,7 @@ export default App;
 
 Buttons are inline block-level elements by default, and the 'block' attribute allows you to set the element type of the button to a block-level element, which is commonly used to implement banner buttons.
 
-```SnackPlayer name=Button&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React from "react";
 import { Button } from '@nutui/nutui-react-native';
 
@@ -187,7 +187,7 @@ export default App;
 ### Custom colors
 The color property allows you to customize the color of the button.
 
-```SnackPlayer name=Button&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React from "react";
 import { Button } from '@nutui/nutui-react-native';
 

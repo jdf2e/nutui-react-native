@@ -16,9 +16,7 @@ import { Badge } from '@nutui/nutui-react-native';
 
 ### Basic usage
 
-:::demo
-
-```SnackPlayer name=Badge&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React from "react";
 import { Badge, Avatar } from '@nutui/nutui-react-native';
 
@@ -43,13 +41,9 @@ const App = () => {
 export default App;
 ```
 
-:::
-
 ### Max Size
 
-:::demo
-
-```SnackPlayer name=Badge&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React from "react";
 import { Badge, Avatar } from '@nutui/nutui-react-native';
 
@@ -74,9 +68,7 @@ export default App;
 
 ### Custom context
 
-:::demo
-
-```SnackPlayer name=Badge&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React from "react";
 import { Badge, Avatar } from '@nutui/nutui-react-native';
 
@@ -98,13 +90,9 @@ const App = () => {
 export default App;
 ```
 
-:::
-
 ### Custom Position
 
-:::demo
-
-```SnackPlayer name=Badge&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React from "react";
 import { Badge, Avatar } from '@nutui/nutui-react-native';
 
@@ -126,13 +114,9 @@ const App = () => {
 export default App;
 ```
 
-:::
-
 ### Display Alone
 
-:::demo
-
-```SnackPlayer name=Badge&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React from "react";
 import { Badge } from '@nutui/nutui-react-native';
 
@@ -147,8 +131,6 @@ const App = () => {
 }
 export default App;
 ```
-
-:::
 
 ## API
 

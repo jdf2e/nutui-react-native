@@ -12,144 +12,129 @@ import { Rate } from '@nutui/nutui-react-native';
 
 ## 代码演示
 
-### 基础用法  
+### 基础用法
 
-:::demo
-```tsx
+```SnackPlayer
 import  React from "react";
 import { Rate } from '@nutui/nutui-react-native';
 import { View } from 'react-native';
 
 const App = () => {
-  return ( 
-    <View>   
+  return (
+    <View>
       <Rate modelValue={3} />
     </View>
   );
-};  
+};
 export default App;
 
 ```
-:::
-        
-### 半星  
 
-:::demo
-```tsx
+### 半星
+
+```SnackPlayer
 import  React from "react";
 import { Rate } from '@nutui/nutui-react-native';
 import { View } from 'react-native';
 
 const App = () => {
-  return ( 
-    <View>   
+  return (
+    <View>
       <Rate allowHalf modelValue="3.5" />
     </View>
   );
-};  
+};
 export default App;
 
 ```
-:::
-### 自定义 icon   
+### 自定义 icon
 
-:::demo
-```tsx
+```SnackPlayer
 import  React from "react";
 import { Rate } from '@nutui/nutui-react-native';
 import { View } from 'react-native';
 
 const App = () => {
-  return ( 
-    <View>   
+  return (
+    <View>
     <Rate checkedIcon="heart-fill1" uncheckedIcon="heart" modelValue="3" />
     </View>
   );
-};  
+};
 export default App;
 
 ```
-:::
-### 自定义数量  
+### 自定义数量
 
-:::demo
-```tsx
+```SnackPlayer
 import  React from "react";
 import { Rate } from '@nutui/nutui-react-native';
 import { View } from 'react-native';
 
 const App = () => {
-  return ( 
-    <View>   
+  return (
+    <View>
         <Rate count="6" modelValue="3" />
     </View>
   );
-};  
+};
 export default App;
 
 ```
-:::
-### 最少选中数量（支持半星）  
+### 最少选中数量（支持半星）
 
-:::demo
-```tsx
+```SnackPlayer
 import  React from "react";
 import { Rate } from '@nutui/nutui-react-native';
 import { View } from 'react-native';
 
 const App = () => {
-  return ( 
-    <View>   
+  return (
+    <View>
         <Rate count="5" modelValue="2" minimizeValue="3"/>
     </View>
   );
-};  
+};
 export default App;
 
 ```
-:::
-### 禁用状态  
+### 禁用状态
 
-:::demo
-```tsx
+```SnackPlayer
 import  React from "react";
 import { Rate } from '@nutui/nutui-react-native';
 import { View } from 'react-native';
 
 const App = () => {
-  return ( 
-    <View>   
+  return (
+    <View>
         <Rate disabled modelValue="3" />
     </View>
   );
-};  
+};
 export default App;
 
 ```
-:::
-### 只读状态  
+### 只读状态
 
-:::demo
-```tsx
+```SnackPlayer
 import  React from "react";
 import { Rate } from '@nutui/nutui-react-native';
 import { View } from 'react-native';
 
 const App = () => {
-  return ( 
-    <View>   
+  return (
+    <View>
         <Rate modelValue="3" readonly />
     </View>
   );
-};  
+};
 export default App;
 
 ```
-:::
-### 绑定事件  
+### 绑定事件
 
-:::demo
-```tsx
+```SnackPlayer
 import  React from "react";
 import { Rate } from '@nutui/nutui-react-native';
 import { View } from 'react-native';
@@ -158,35 +143,32 @@ const App = () => {
   const onChange = (val: any) => {
     alert(val)
   }
-  return ( 
-    <View>   
+  return (
+    <View>
         <Rate modelValue="3" onChange={onChange} />
     </View>
   );
-};  
+};
 export default App;
 
 ```
-:::
-### 自定义尺寸 35px  
+### 自定义尺寸 35px
 
-:::demo
-```tsx
+```SnackPlayer
 import  React from "react";
 import { Rate } from '@nutui/nutui-react-native';
 import { View } from 'react-native';
 
 const App = () => {
-  return ( 
-    <View>   
+  return (
+    <View>
         <Rate modelValue="3" iconSize="35" />
     </View>
   );
-};  
+};
 export default App;
 
 ```
-:::
 
 ## API
 
@@ -201,8 +183,8 @@ export default App;
 | activeColor            | 图标选中颜色                              | String  | #fa200c     |
 | voidColor              | 图标未选中颜色                            | String  | #ccc        |
 | uncheckedIcon          | 使用图标(未选中)                          | String  | star-n      |
-| checkedIcon            | 使用图标(选中)                            | String  | star-fill-n | 
-| halfcheckedIcon        | 使用图标(半星图标,使用半星图标时一定要传)      | String  |  | 
+| checkedIcon            | 使用图标(选中)                            | String  | star-fill-n |
+| halfcheckedIcon        | 使用图标(半星图标,使用半星图标时一定要传)      | String  |  |
 | allowHalf              | 是否半星                                  | Boolean | false       |
 | readonly               | 是否只读                                  | Boolean | false       |
 | disabled               | 是否禁用                                  | Boolean | false       |

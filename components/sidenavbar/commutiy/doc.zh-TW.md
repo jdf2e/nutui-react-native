@@ -6,7 +6,7 @@
 用於內容選擇和切換
 
 ### 安裝
-```tsx
+```SnackPlayer
 import { SideNavBar,SubSideNavBar,SideNavBarItem } from '@nutui/nutui-react-native';
 ```
 ## 代碼演示
@@ -27,9 +27,9 @@ const App = () => {
       position,
     })
   }
- 
-  return ( 
-    <>   
+
+  return (
+    <>
     <Cell
           title="左側彈出"
           isLink
@@ -63,11 +63,10 @@ const App = () => {
         </SideNavBar>
     </>
   );
-};  
+};
 export default App;
 
 ```
-:::
 
 ### 嵌套及回調
 
@@ -86,15 +85,15 @@ const App = () => {
   const clickTitle = ({ title, ikey, isShow }) => {
     Toast.text(`title=${title},ikey=${ikey},isShow=${isShow}`)
   }
-  return ( 
-    <>  
+  return (
+    <>
       <Cell
           title="顯示"
           isLink
           onClick={() => {
             changeNarBar(true)
           }}
-        /> 
+        />
     <SideNavBar
           title="首頁"
           visible={visible}
@@ -118,11 +117,10 @@ const App = () => {
         </SideNavBar>
     </>
   );
-};  
+};
 export default App;
 
 ```
-:::
 
 
 

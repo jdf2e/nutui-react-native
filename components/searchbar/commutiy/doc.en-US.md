@@ -17,8 +17,7 @@ import { SearchBar } from '@nutui/nutui-react-native';
 
 `SearchBar`'s `placeholder` 'attribute supports customization.
 
-:::demo
-```tsx
+```SnackPlayer
 import React from "react";
 import { SearchBar } from '@nutui/nutui-react-native';
 
@@ -29,14 +28,12 @@ const App = () => {
 }
 export default App;
 ```
-:::
 
 ### Search box shape and maximum length
 
 `SearchBar`'s `round` Attribute supports defining fillet right angles，`maxLength` Can control the maximum length of input characters。
 
-:::demo
-```tsx
+```SnackPlayer
 import React from "react";
 import { SearchBar } from '@nutui/nutui-react-native';
 
@@ -47,15 +44,13 @@ const App = () => {
 }
 export default App;
 ```
-:::
 
 
 ### Background settings inside and outside the search box
 
 `SearchBar`'s `background` Property to set the background color outside the search box，`inputBackground` Property to set the background color of the search box，`align` Set text alignment
 
-:::demo
-```tsx
+```SnackPlayer
 import React from "react";
 import { SearchBar } from '@nutui/nutui-react-native';
 
@@ -70,14 +65,12 @@ const App = () => {
 }
 export default App;
 ```
-:::
 
 ### Search box text settings
 
 `SearchBar`’s `label` Property to set the text on the left side of the search box，`actionText` Property to set the Cancel button text
 
-:::demo
-```tsx
+```SnackPlayer
 import React from "react";
 import { SearchBar } from '@nutui/nutui-react-native';
 
@@ -89,15 +82,13 @@ const App = () => {
 export default App;
 
 ```
-:::
 
 
 ### Customize icon settings
 
 `SearchBar`'s `leftoutIcon` `rightoutIcon` Property can set the left and right icons or customize the content
 
-:::demo
-```tsx
+```SnackPlayer
 import React from "react";
 import { SearchBar, Icon } from '@nutui/nutui-react-native';
 
@@ -112,7 +103,6 @@ const App = () => {
 export default App;
 
 ```
-:::
 
 
 
@@ -120,8 +110,7 @@ export default App;
 
 `SearchBar`'s `change` You can get the input content.
 
-:::demo
-```tsx
+```SnackPlayer
 import React, { useState } from 'react'
 import { SearchBar } from '@nutui/nutui-react-native';
 import { Text } from 'react-native';
@@ -141,7 +130,6 @@ const App = () => {
 }
 export default App;
 ```
-:::
 
 
 ## API

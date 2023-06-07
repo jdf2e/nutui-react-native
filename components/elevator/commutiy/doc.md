@@ -14,7 +14,7 @@ import { Elevator } from '@nutui/nutui-react-native'
 
 ### 基本用法
 
-```SnackPlayer name=Elevator&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React from 'react'
 import { Elevator } from '@nutui/nutui-react-native'
 
@@ -92,7 +92,7 @@ export default App
 ### 自定义索引
 
 
-```SnackPlayer name=Elevator&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React from 'react'
 import { Elevator } from '@nutui/nutui-react-native'
 
@@ -222,7 +222,7 @@ export default App
 ### 吸顶索引
 
 
-```SnackPlayer name=Elevator&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React from 'react'
 import { Elevator } from '@nutui/nutui-react-native'
 
@@ -365,7 +365,7 @@ export default App
 
 ### 自定义内容
 
-```SnackPlayer name=Elevator&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React from 'react'
 import { Elevator, elevatorContext, Icon } from '@nutui/nutui-react-native'
 

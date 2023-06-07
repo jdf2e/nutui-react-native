@@ -6,7 +6,7 @@
 
 ### 安裝
 
-```ts
+```SnackPlayer
 import { ActionSheet } from '@nutui/nutui-react-native';
 ```
 
@@ -14,7 +14,7 @@ import { ActionSheet } from '@nutui/nutui-react-native';
 
 ### 基本用法
 
-```SnackPlayer name=ActionSheet
+```SnackPlayer
 import  React, { useState } from "react";
 import { ActionSheet,Cell } from '@nutui/nutui-react-native';
 import { View, Text } from 'react-native';
@@ -68,7 +68,7 @@ export default App;
 
 ### 展示取消按鈕
 
-```SnackPlayer name=ActionSheet
+```SnackPlayer
 import  React, { useState } from "react";
 import { ActionSheet,Cell } from '@nutui/nutui-react-native';
 import { View, Text } from 'react-native';
@@ -116,7 +116,7 @@ export default App;
 
 ### 展示描述資訊
 
-```SnackPlayer name=ActionSheet
+```SnackPlayer
 import  React, { useState } from "react";
 import { ActionSheet,Cell } from '@nutui/nutui-react-native';
 import { View, Text } from 'react-native';
@@ -166,7 +166,7 @@ export default App;
 
 ### 選項状态
 
-```SnackPlayer name=ActionSheet
+```SnackPlayer
 import  React, { useState } from "react";
 import { ActionSheet,Cell } from 'nutui-rn';
 

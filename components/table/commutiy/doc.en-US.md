@@ -5,6 +5,7 @@
 Used to display the basic table
 
 ### Install
+
 ```ts
 import { Table } from '@nutui/nutui-react-native';
 ```
@@ -12,8 +13,7 @@ import { Table } from '@nutui/nutui-react-native';
 
 ### Basic Usage
 
-:::demo
-```SnackPlayer name=Table&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React, { useState } from "react";
 import { Text } from 'react-native';
 import { Table } from '@nutui/nutui-react-native';
@@ -71,11 +71,9 @@ const App = () => {
 };
 export default App;
 ```
-:::
 
 ### Whether to display border and align text
-:::demo
-```SnackPlayer name=Table&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React, { useState } from "react";
 import { Table } from '@nutui/nutui-react-native';
 
@@ -130,12 +128,10 @@ const App = () => {
 };
 export default App;
 ```
-:::
 
 
 ### Show summary bar
-:::demo
-```SnackPlayer name=Table&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React, { useState } from "react";
 import { Text } from 'react-native';
 import { Table, Button, Icon } from '@nutui/nutui-react-native';
@@ -189,11 +185,9 @@ const App = () => {
 };
 export default App;
 ```
-:::
 
 ### Stripes, alternating light and shade
-:::demo
-```SnackPlayer name=Table&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React, { useState } from "react";
 import { Text } from 'react-native';
 import { Table } from '@nutui/nutui-react-native';
@@ -255,11 +249,9 @@ const App = () => {
 };
 export default App;
 ```
-:::
 
 ### No data is displayed by default, and customization is supported
-:::demo
-```SnackPlayer name=Table&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React, { useState } from "react";
 import { Text } from 'react-native';
 import { Table } from '@nutui/nutui-react-native';
@@ -310,11 +302,9 @@ const App = () => {
 };
 export default App;
 ```
-:::
 
 ### Custom cell
-:::demo
-```SnackPlayer name=Table&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React, { useState } from "react";
 import { Table, Button, Icon, Toast } from '@nutui/nutui-react-native';
 
@@ -386,11 +376,9 @@ const App = () => {
 };
 export default App;
 ```
-:::
 
 ### Support asynchronous rendering
-:::demo
-```SnackPlayer name=Table&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React, { useState } from "react";
 import { Table, Button, Icon, Toast } from '@nutui/nutui-react-native';
 
@@ -462,11 +450,9 @@ const App = () => {
 };
 export default App;
 ```
-:::
 
 ### Support sorting
-:::demo
-```SnackPlayer name=Table&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React, { useState } from "react";
 import { Table, Button, Icon, Toast } from '@nutui/nutui-react-native';
 
@@ -524,7 +510,6 @@ const App = () => {
 };
 export default App;
 ```
-:::
 
 
 ## API

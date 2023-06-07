@@ -18,8 +18,7 @@ import { Icon } from '@nutui/nutui-react-native';
 
 `Icon` 的 `name` 属性支持传入图标名称或图片链接。
 
-:::demo
-```SnackPlayer name=Icon&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React from "react";
 import { Icon } from '@nutui/nutui-react-native';
 
@@ -27,22 +26,20 @@ const App = () => {
   return <>
     <Icon name="dongdong" />
     <Icon name="JD"/>
-    <Icon 
-      size={40}  
+    <Icon
+      size={40}
       name="https://img11.360buyimg.com/imagetools/jfs/t1/137646/13/7132/1648/5f4c748bE43da8ddd/a3f06d51dcae7b60.png"/>
   </>
 }
 export default App;
 
 ```
-:::
 
 ### 图标颜色
 
 `Icon` 的 `color` 属性用来设置图标的颜色。
 
-:::demo
-```SnackPlayer name=Icon&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React from "react";
 import { Icon } from '@nutui/nutui-react-native';
 
@@ -56,14 +53,12 @@ const App = () => {
 
 export default App;
 ```
-:::
 
 ### 图标大小
 
 `Icon` 的 `size` 属性用来设置图标的尺寸大小。
 
-:::demo
-```SnackPlayer name=Icon&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React from "react";
 import { Icon } from '@nutui/nutui-react-native';
 
@@ -103,5 +98,5 @@ export default App;
 
 | 名称 | 默认值 |
 | --- | --- |
-| --nutui-icon-height | ` 20` |
-| --nutui-icon-width | ` 20` |
+| --nutui-icon-height | `20` |
+| --nutui-icon-width | `20` |

@@ -6,7 +6,7 @@
 
 ### 安裝
 
-```ts
+```SnackPlayer
 import { Tabbar, TabbarItem } from '@nutui/nutui-react';
 ```
 
@@ -14,8 +14,7 @@ import { Tabbar, TabbarItem } from '@nutui/nutui-react';
 
 ### 基礎語言
 
-:::demo
-```SnackPlayer name=Tabbar&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React from "react";
 import {  Tabbar, TabbarItem } from '@nutui/nutui-react';
 
@@ -35,11 +34,9 @@ const App = () => (
 
 export default App;
 ```
-:::
 ### 自定義選中
 
-:::demo
-```SnackPlayer name=Tabbar&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React from "react";
 import {  Tabbar, TabbarItem } from '@nutui/nutui-react';
 
@@ -55,11 +52,9 @@ const App = () => (
 
 export default App;
 ```
-:::
 ### 徽標提示
 
-:::demo
-```SnackPlayer name=Tabbar&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React from "react";
 import {  Tabbar, TabbarItem } from '@nutui/nutui-react';
 
@@ -75,12 +70,10 @@ const App = () => (
 
 export default App;
 ```
-:::
 
 ### 紅點
 
-:::demo
-```SnackPlayer name=Tabbar&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React from "react";
 import { Tabbar, TabbarItem } from '@nutui/nutui-react';
 
@@ -96,11 +89,9 @@ const App = () => (
 
 export default App;
 ```
-:::
 ### 自定義顏色
 
-:::demo
-```SnackPlayer name=Tabbar&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React from "react";
 import {  Tabbar, TabbarItem } from '@nutui/nutui-react';
 
@@ -116,11 +107,9 @@ const App = () => (
 
 export default App;
 ```
-:::
 ### 可自定義icon個數的tabbar
 
-:::demo
-```SnackPlayer name=Tabbar&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React from "react";
 import {  Tabbar, TabbarItem } from '@nutui/nutui-react';
 
@@ -130,15 +119,13 @@ const App = () => (
     <TabbarItem tabTitle="分類" icon="category" />
     <TabbarItem tabTitle="發現" icon="find" />
   </Tabbar>
-);  
+);
 
 export default App;
 ```
-:::
 ### 固定底部，可自由跳轉
 
-:::demo
-```SnackPlayer name=Tabbar&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React from "react";
 import {  Tabbar, TabbarItem } from '@nutui/nutui-react';
 
@@ -154,7 +141,6 @@ const App = () => (
 
 export default App;
 ```
-:::        
 
 ## API
 

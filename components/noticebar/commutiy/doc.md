@@ -14,9 +14,7 @@ import { NoticeBar } from '@nutui/nutui-react-native';
 
 ### 基本用法
 
-:::demo
-
-```SnackPlayer name=NoticeBar&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React, {useState} from "react";
 import { NoticeBar } from '@nutui/nutui-react-native';
 
@@ -30,14 +28,11 @@ const App = () => {
 }
 export default App
 ```
-:::
 
 ### 滚动播放
 通知栏的内容长度溢出时会自动开启滚动播放，可通过 scrollable 属性可以控制该行为
 
-:::demo
-
-```SnackPlayer name=NoticeBar&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React, {useState} from "react";
 import { NoticeBar } from '@nutui/nutui-react-native';
 
@@ -49,22 +44,19 @@ const App = () => {
             scrollable
         />
 
-        <NoticeBar 
-            text="NutUI 是京东风格的移动端组件库，使用 Vue 语言来编写可以在 H5，小程序平台上的应用，帮助研发人员提升开发效率，改善开发体验。" scrollable={false} 
+        <NoticeBar
+            text="NutUI 是京东风格的移动端组件库，使用 Vue 语言来编写可以在 H5，小程序平台上的应用，帮助研发人员提升开发效率，改善开发体验。" scrollable={false}
         />
       </>
     )
 }
 export default App
 ```
-:::
 
 
 ### 通告栏模式--关闭模式
 
-:::demo
-
-```SnackPlayer name=NoticeBar&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React, {useState} from "react";
 import { NoticeBar } from '@nutui/nutui-react-native';
 
@@ -90,7 +82,6 @@ const App = () => {
 }
 export default App
 ```
-:::
 
 
 
@@ -98,28 +89,23 @@ export default App
 
 文字较长时，可以通过设置 wrapable 属性来开启多行展示。默认为不滚动，可以通过设置 scrollable 控制为滚动。
 
-:::demo
-
-```SnackPlayer name=NoticeBar&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React, {useState} from "react";
 import { NoticeBar } from '@nutui/nutui-react-native';
 
 const App = () => {
     const text = 'NutUI 是京东风格的移动端组件库，使用 Vue 语言来编写可以在 H5，小程序平台上的应用，帮助研发人员提升开发效率，改善开发体验。'
-    
+
     return (
       <NoticeBar text={text} wrapable />
     )
 }
 export default App
 ```
-:::
 
 ### 纵向滚动
 
-:::demo
-
-```SnackPlayer name=NoticeBar&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React, {useState} from "react";
 import { NoticeBar } from '@nutui/nutui-react-native';
 
@@ -150,15 +136,12 @@ const App = () => {
 }
 export default App
 ```
-:::
 
 
 
 ### 复杂滚动动画
 
-:::demo
-
-```SnackPlayer name=NoticeBar&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React, {useState} from "react";
 import { NoticeBar } from '@nutui/nutui-react-native';
 
@@ -178,14 +161,11 @@ const App = () => {
 }
 export default App
 ```
-:::
 
 
 ### 自定义滚动内容
 
-:::demo
-
-```SnackPlayer name=NoticeBar&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React, {useState} from "react";
 import { Text } from 'react-native'
 import { NoticeBar } from '@nutui/nutui-react-native';
@@ -212,15 +192,12 @@ const App = () => {
 };
 export default App
 ```
-:::
 
 
 
 ### 纵向自定义右侧图标
 
-:::demo
-
-```SnackPlayer name=NoticeBar&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React, {useState} from "react";
 import { NoticeBar,Icon } from '@nutui/nutui-react-native';
 
@@ -246,7 +223,6 @@ const App = () => {
 };
 export default App
 ```
-:::
 
 
 ## API
@@ -280,11 +256,11 @@ export default App
 
 ### Slots
 
-| 参数         | 说明                             | 
+| 参数         | 说明                             |
 |--------------|----------------------------------|
-| default         | 通知文本的内容               | 
-| rightIcon        | 自定义右侧图标    | 
-| leftIcon        | 自定义左侧图标    | 
+| default         | 通知文本的内容               |
+| rightIcon        | 自定义右侧图标    |
+| leftIcon        | 自定义左侧图标    |
 ### Event
 
 | 字段  | 说明             | 回调参数     |

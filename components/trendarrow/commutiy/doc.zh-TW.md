@@ -16,9 +16,7 @@ import { TrendArrow } from '@nutui/nutui-react-native';
 
 ### 基礎用法
 
-:::demo
-
-```SnackPlayer name=TrendArrow&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React from "react"
 import { TrendArrow, Cell } from '@nutui/nutui-react-native'
 
@@ -33,13 +31,9 @@ const App = () => {
 export default App;
 ```
 
-:::
-
 ### 改變文字顏色
 
-:::demo
-
-```SnackPlayer name=TrendArrow&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React from "react"
 import { TrendArrow, Cell } from '@nutui/nutui-react-native'
 
@@ -54,13 +48,9 @@ const App = () => {
 export default App;
 ```
 
-:::
-
 ### 指定小數位
 
-:::demo
-
-```SnackPlayer name=TrendArrow&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React from "react"
 import { TrendArrow, Cell } from '@nutui/nutui-react-native'
 
@@ -75,13 +65,9 @@ const App = () => {
 export default App;
 ```
 
-:::
-
 ### 箭頭在前面
 
-:::demo
-
-```SnackPlayer name=TrendArrow&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React from "react"
 import { TrendArrow, Cell } from '@nutui/nutui-react-native'
 
@@ -96,13 +82,9 @@ const App = () => {
 export default App;
 ```
 
-:::
-
 ### 顯示正負號
 
-:::demo
-
-```SnackPlayer name=TrendArrow&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React from "react"
 import { TrendArrow, Cell } from '@nutui/nutui-react-native'
 
@@ -117,13 +99,9 @@ const App = () => {
 export default App;
 ```
 
-:::
-
 ### 是否展示0
 
-:::demo
-
-```SnackPlayer name=TrendArrow&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React from "react"
 import { TrendArrow, Cell } from '@nutui/nutui-react-native'
 
@@ -138,13 +116,9 @@ const App = () => {
 export default App;
 ```
 
-:::
-
 ### 自定義顏色
 
-:::demo
-
-```SnackPlayer name=TrendArrow&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React from "react"
 import { TrendArrow, Cell } from '@nutui/nutui-react-native'
 
@@ -166,13 +140,9 @@ const App = () => {
 export default App;
 ```
 
-:::
-
 ### 自定義圖標
 
-:::demo
-
-```SnackPlayer name=TrendArrow&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React from "react"
 import { TrendArrow, Cell, Icon } from '@nutui/nutui-react-native'
 
@@ -189,8 +159,6 @@ const App = () => {
 };
 export default App;
 ```
-
-:::
 
 
 ## API

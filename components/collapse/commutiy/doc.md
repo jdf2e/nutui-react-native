@@ -15,7 +15,7 @@ import { Collapse,CollapseItem } from '@nutui/nutui-react-native'
 
 ### 基础用法
 
-```SnackPlayer name=Collapse&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React from "react";
 import { Collapse,CollapseItem } from '@nutui/nutui-react-native';
 
@@ -40,7 +40,7 @@ export default App;
 ```
 ### 无icon样式，绑定点击事件
 
-```SnackPlayer name=Collapse&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React, { useState } from 'react'
 import { Collapse ,CollapseItem} from '@nutui/nutui-react-native'
 
@@ -48,7 +48,7 @@ const App = () => {
   const changeEnv = (isOpen: boolean, name: string) => {
     console.log(isOpen, name)
   }
-  return (  
+  return (
   <Collapse activeName={['1', '2']} change={(isOpen, name) => changeEnv(isOpen, name)}>
     <CollapseItem title="标题1" name="1">
       京东“厂直优品计划”首推“政府优品馆” 3年覆盖80%镇级政府
@@ -67,12 +67,12 @@ export default App;
 
 ### 手风琴模式
 
-```SnackPlayer name=Collapse&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React from 'react'
 import { Collapse ,CollapseItem} from '@nutui/nutui-react-native'
 
 const App = () => {
-  return (  
+  return (
   <Collapse activeName={['1']} accordion icon="arrow-down">
     <CollapseItem title="标题1" name="1" subTitle="文本内容">
       京东“厂直优品计划”首推“政府优品馆” 3年覆盖80%镇级政府
@@ -90,12 +90,12 @@ export default App;
 ```
 ### 自定义折叠图标
 
-```SnackPlayer name=Collapse&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React from 'react'
 import { Collapse ,CollapseItem} from '@nutui/nutui-react-native'
 
 const App = () => {
-  return (  
+  return (
   <Collapse activeName={['1']} accordion icon="arrow-right2" rotate={90}>
     <CollapseItem title="标题1" name="1" icon="arrow-down">
       京东“厂直优品计划”首推“政府优品馆” 3年覆盖80%镇级政府
@@ -113,12 +113,12 @@ export default App;
 ```
 ### 自定义title图标
 
-```SnackPlayer name=Collapse&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React from 'react'
 import { Collapse ,CollapseItem, Button} from '@nutui/nutui-react-native'
 
 const App = () => {
-  return (  
+  return (
     <Collapse activeName={['1']} accordion icon="arrow-down">
       <CollapseItem
         title="标题1"
@@ -149,7 +149,7 @@ export default App;
 ```
 ### 动态改变数据
 
-```SnackPlayer name=Collapse&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React, { useState } from 'react'
 import { Collapse ,CollapseItem,Button} from '@nutui/nutui-react-native'
 

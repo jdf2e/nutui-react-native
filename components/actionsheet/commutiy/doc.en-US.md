@@ -14,7 +14,7 @@ import { ActionSheet,Cell } from '@nutui/nutui-react-native';
 
 ### Basic usage
 
-```SnackPlayer name=ActionSheet
+```SnackPlayer
 import  React, { useState } from "react";
 import { ActionSheet,Cell } from '@nutui/nutui-react-native';
 import { View, Text } from 'react-native';
@@ -68,7 +68,7 @@ export default App;
 
 ### Show Cancel Button
 
-```SnackPlayer name=ActionSheet
+```SnackPlayer
 import  React, { useState } from "react";
 import { ActionSheet,Cell } from '@nutui/nutui-react-native';
 import { View, Text } from 'react-native';
@@ -116,7 +116,7 @@ export default App;
 
 ### Display Description Information
 
-```SnackPlayer name=ActionSheet
+```SnackPlayer
 import  React, { useState } from "react";
 import { ActionSheet,Cell } from '@nutui/nutui-react-native';
 import { View, Text } from 'react-native';
@@ -166,7 +166,7 @@ export default App;
 
 ### Option Status
 
-```SnackPlayer name=ActionSheet
+```SnackPlayer
 import  React, { useState } from "react";
 import { ActionSheet,Cell } from '@nutui/nutui-react-native';
 import { View, Text } from 'react-native';

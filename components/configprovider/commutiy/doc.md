@@ -14,9 +14,7 @@ import { ConfigProvider } from '@nutui/nutui-react-native';
 
 ### 基础用法
 
-:::demo
-
-```tsx
+```SnackPlayer
 import React from 'react';
 import { ConfigProvider } from "@nutui/nutui-react-native";
 import en from "@nutui/nutui-react/dist/locales/en-US";
@@ -31,8 +29,6 @@ const App = () => {
 
 export default App;
 ```
-
-:::
 
 ## API
 

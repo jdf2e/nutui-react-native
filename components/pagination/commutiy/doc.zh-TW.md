@@ -1,13 +1,13 @@
 #  Pagination 分頁
 
 ### 介紹
-    
+
 當數據量較多時，採用分頁的形式分隔長列表。
-    
+
 ### 安裝
 ``` javascript
 import { Pagination } from '@nutui/nutui-react-native';
-```    
+```
 
 ### 基礎用法
 通過modelValue來綁定當前頁碼時，組件為受控狀態，分頁顯示取決於傳入的modelValue，一般搭配onChange使用。
@@ -34,7 +34,6 @@ const App = () => {
 }
 export default App;
 ```
-:::
 ### 簡單模式
 將 mode 設置為 "simple" 來切換到簡單模式，此時分頁器不會展示具體的頁碼按鈕。
 :::demo
@@ -50,16 +49,15 @@ const App = () => {
   }
   return (
     <Pagination
-      modelValue={currentPage2} 
-      pageCount={12} 
-      mode="simple" 
-      onChange={pageChange2} 
+      modelValue={currentPage2}
+      pageCount={12}
+      mode="simple"
+      onChange={pageChange2}
     />
   )
 }
 export default App;
 ```
-:::
 
 ### 顯示省略號
 設置 force-ellipses 後會展示省略號按鈕，點擊後可以快速跳轉。
@@ -86,7 +84,6 @@ const App = () => {
 }
 export default App;
 ```
-:::
 ### 自定義按鈕
 通過pageNodeRender傳入自定義方法，入參數為page:{ number:頁數, text:"文本", active:"選中狀態" }
 :::demo
@@ -110,20 +107,19 @@ const App = () => {
       totalItems="500"
       showPageSize="5"
       onChange={pageChange4}
-      pageNodeRender={pageNodeRender} 
-      prevText={<Icon name="left"/>} 
+      pageNodeRender={pageNodeRender}
+      prevText={<Icon name="left"/>}
       nextText={<Icon name="right"/>}
     />
   )
 }
 export default App;
 ```
-:::
-    
+
 ## API
-    
+
 ### Props
-    
+
 | 屬性 | 說明 | 類型 | 預設值           |
 | -------------- | -------------------------------- | ------------------------- | ----------------- |
 | modelValue     | 當前頁碼                         | Number                    | -                 |
@@ -137,9 +133,9 @@ export default App;
 | showPageSize   | 顯示的頁碼個數                   | String \| Number          | 5                 |
 | forceEllipses  | 是否顯示省略號                   | Boolean                   | false             |
 | pageNodeRender | 用於自定義頁碼的結構             | (page) => React.ReactNode | -                 |
-    
+
 ### Events
-    
+
 | 事件名稱 | 說明 | 回調參數     |
 | -------- | -------------- | -------- |
 | onChange | 页码改变时触发 | value    |

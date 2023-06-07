@@ -15,10 +15,7 @@ import { Cell, CellGroup } from '@nutui/nutui-react-native'
 ## 代码演示
 
 ### 基本用法
-
-:::demo
-
-```SnackPlayer name=Cell&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React from "react";
 import { Cell } from '@nutui/nutui-react-native';
 
@@ -41,13 +38,9 @@ const App = () => {
 export default App;
 ```
 
-:::
-
 ### 尺寸设置 large
 
-:::demo
-
-```SnackPlayer name=Cell&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React from "react";
 import { Cell } from '@nutui/nutui-react-native';
 
@@ -67,13 +60,9 @@ const App = () => {
 export default App;
 ```
 
-:::
-
 ### 直接使用插槽
 
-:::demo
-
-```SnackPlayer name=Cell&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React from "react";
 import { Text } from 'react-native';
 import { Cell } from '@nutui/nutui-react-native';
@@ -90,13 +79,9 @@ const App = () => {
 export default App;
 ```
 
-:::
-
 ### 直接使用插槽(title slots)
 
-:::demo
-
-```SnackPlayer name=Cell&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React from "react";
 import { Text } from 'react-native';
 import { Cell } from '@nutui/nutui-react-native';
@@ -116,13 +101,9 @@ const App = () => {
 export default App;
 ```
 
-:::
-
 ### 链接 | 分组用法
 
-:::demo
-
-```SnackPlayer name=Cell&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React from "react";
 import { CellGroup,Cell } from '@nutui/nutui-react-native';
 
@@ -147,13 +128,9 @@ const App = () => {
 export default App;
 ```
 
-:::
-
 ### 自定义右侧箭头区域
 
-:::demo
-
-```SnackPlayer name=Cell&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React from "react";
 import { CellGroup,Cell,Switch } from '@nutui/nutui-react-native';
 
@@ -167,13 +144,9 @@ const App = () => {
 export default App;
 ```
 
-:::
-
 ### 自定义左侧 Icon 区域
 
-:::demo
-
-```SnackPlayer name=Cell&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React from "react";
 import { CellGroup,Cell, Image } from '@nutui/nutui-react-native';
 
@@ -200,13 +173,9 @@ const App = () => {
 export default App;
 ```
 
-:::
-
 ### 单元格展示图标
 
-:::demo
-
-```SnackPlayer name=Cell&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React from "react";
 import { Cell } from '@nutui/nutui-react-native';
 
@@ -218,13 +187,9 @@ const App = () => {
 export default App;
 ```
 
-:::
-
 ### 只展示 desc ，可通过 desc-text-align 调整内容位置
 
-:::demo
-
-```SnackPlayer name=Cell&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React from "react";
 import { Cell } from '@nutui/nutui-react-native';
 
@@ -236,15 +201,11 @@ const App = () => {
 export default App;
 ```
 
-:::
-
 ### 垂直居中
 
 通过 `center` 属性可以让 Cell 的左右内容都垂直居中。
 
-:::demo
-
-```SnackPlayer name=Cell&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React from "react";
 import { Cell } from '@nutui/nutui-react-native';
 
@@ -255,8 +216,6 @@ const App = () => {
 };
 export default App;
 ```
-
-:::
 
 ## API
 
@@ -315,9 +274,9 @@ export default App;
 | --nutui-cell-subtitle-color | ` $gray2` |
 | --nutui-cell-border-radius | ` 6` |
 | --nutui-cell-padding-top | ` 13` |
-| --nutui-cell-padding-bottom | ` 13` | 
+| --nutui-cell-padding-bottom | ` 13` |
 | --nutui-cell-padding-left | ` 16` |
-| --nutui-cell-padding-right | ` 16` | 
+| --nutui-cell-padding-right | ` 16` |
 | --nutui-cell-after-right | ` 16` |
 | --nutui-cell-after-border-bottom-width | `  2` |
 | --nutui-cell-after-border-bottom-color | ` #f5f6f7` |

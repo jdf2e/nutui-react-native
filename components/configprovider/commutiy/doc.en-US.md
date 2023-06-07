@@ -12,9 +12,7 @@ import { ConfigProvider } from '@nutui/nutui-react-native';
 
 ## Demo
 
-:::demo
-
-```tsx
+```SnackPlayer
 import React from 'react';
 import { ConfigProvider, Textarea } from "@nutui/nutui-react";
 import en from "@nutui/nutui-react/dist/locales/en-US";
@@ -29,8 +27,6 @@ const App = () => {
 
 export default App;
 ```
-
-:::
 
 ## API
 

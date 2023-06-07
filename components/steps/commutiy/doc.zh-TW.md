@@ -6,14 +6,13 @@
 
 ### 安裝
 
-```ts
+```SnackPlayer
 import { Steps } from '@nutui/nutui-react-native';
 ```
 
 ### 基本用法
 
-:::demo
-```tsx
+```SnackPlayer
 import React, { useState } from "react";
 import { Steps, Step, Button } from '@nutui/nutui-react-native';
 import { View, Text } from 'react-native';
@@ -57,12 +56,10 @@ const styles = StyleSheet.create({
   }
 });
 ```
-:::
 
 ### 標題和描述信息
 
-:::demo
-```tsx
+```SnackPlayer
 import React, { useState } from "react";
 import { Steps, Step, Button } from '@nutui/nutui-react-native';
 import { View, Text } from 'react-native';
@@ -108,12 +105,10 @@ const styles = StyleSheet.create({
   }
 });
 ```
-:::
 
 ### 自定義圖標
 
-:::demo
-```tsx
+```SnackPlayer
 import React, { useState } from "react";
 import { Steps, Step, Button } from '@nutui/nutui-react-native';
 import { View, Text } from 'react-native';
@@ -137,11 +132,9 @@ const App = () => {
 }
 export default App;
 ```
-:::
 
 ### 豎向步驟條
-:::demo
-```tsx
+```SnackPlayer
 import React, { useState } from "react";
 import { Steps, Step, Button } from '@nutui/nutui-react-native';
 import { View, Text } from 'react-native';
@@ -196,11 +189,9 @@ const styles = StyleSheet.create({
   }
 });
 ```
-:::
 
 ### 點狀步驟和垂直方向
-:::demo
-```tsx
+```SnackPlayer
 import React, { useState } from "react";
 import { Steps, Step, Button } from '@nutui/nutui-react-native';
 import { View, Text } from 'react-native';
@@ -260,7 +251,6 @@ const styles = StyleSheet.create({
   }
 });
 ```
-:::
 
 
 ## API
@@ -271,7 +261,7 @@ const styles = StyleSheet.create({
 
 | 參數                   | 說明                                                        | 類型           | 默認值      |
 | ---------------------- | ----------------------------------------------------------- | -------------- | ----------- |
-| direction	             | 	顯示方向，`horizontal`,`vertical`  | String        | 'horizontal'  | 
+| direction	             | 	顯示方向，`horizontal`,`vertical`  | String        | 'horizontal'  |
 | current	               | 	當前所在的步驟           | Number        | 0      |
 | progressDot            |  點狀步驟條     | Boolean | false         |
 | isStart               |  开始步驟     | Boolean | true         |

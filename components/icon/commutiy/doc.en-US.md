@@ -18,8 +18,7 @@ import { Icon } from '@nutui/nutui-react-native';
 
 The `name` attribute of `Icon` supports passing in icon names or image links.
 
-:::demo
-```SnackPlayer name=Icon&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React from "react";
 import { Icon } from '@nutui/nutui-react-native';
 
@@ -35,14 +34,12 @@ const App = () => {
 
 export default App;
 ```
-:::
 
 ### Color
 
 The 'color' property of 'Icon' is used to set the color of the icon.
 
-:::demo
-```SnackPlayer name=Icon&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React from "react";
 import { Icon } from '@nutui/nutui-react-native';
 
@@ -56,14 +53,12 @@ const App = () => {
 
 export default App;
 ```
-:::
 
 ### Size
 
 The 'size' property of 'Icon' is used to set the size of the icon
 
-:::demo
-```SnackPlayer name=Icon&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React from "react";
 import { Icon } from '@nutui/nutui-react-native';
 
@@ -103,5 +98,5 @@ The component provides the following CSS variables, which can be used to customi
 
 | Name | Default Value |
 | --- | --- |
-| --nutui-icon-height | ` 20` |
-| --nutui-icon-width | ` 20` |
+| --nutui-icon-height | `20` |
+| --nutui-icon-width | `20` |

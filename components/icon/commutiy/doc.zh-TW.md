@@ -18,8 +18,7 @@ import { Icon } from '@nutui/nutui-react-native';
 
 'Icon' 的 'name' 屬性支援傳入圖示名稱或圖片連結。
 
-:::demo
-```SnackPlayer name=Icon&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React from "react";
 import { Icon } from '@nutui/nutui-react-native';
 
@@ -27,9 +26,9 @@ const App = () => {
   return <>
     <Icon name="dongdong" />
     <Icon name="JD" />
-    <Icon 
+    <Icon
         size={40}
-        name="https://img11.360buyimg.com/imagetools/jfs/t1/137646/13/7132/1648/5f4c748bE43da8ddd/a3f06d51dcae7b60.png" 
+        name="https://img11.360buyimg.com/imagetools/jfs/t1/137646/13/7132/1648/5f4c748bE43da8ddd/a3f06d51dcae7b60.png"
     />
 
   </>
@@ -37,15 +36,13 @@ const App = () => {
 
 export default App;
 ```
-:::
 
 
 ### 圖示顏色
 
 'Icon' 的 'color' 屬性用來設置圖示的顏色。
 
-:::demo
-```SnackPlayer name=Icon&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React from "react";
 import { Icon } from '@nutui/nutui-react-native';
 
@@ -59,14 +56,12 @@ const App = () => {
 
 export default App;
 ```
-:::
 
 ### 圖示大小
 
 'Icon' 的 'size' 屬性用來設置圖示的尺寸大小。
 
-:::demo
-```SnackPlayer name=Icon&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React from "react";
 import { Icon } from '@nutui/nutui-react-native';
 
@@ -107,5 +102,5 @@ export default App;
 
 | 名稱 | 默認值 |
 | --- | --- |
-| --nutui-icon-height | ` 20` |
-| --nutui-icon-width | ` 20` |
+| --nutui-icon-height | `20` |
+| --nutui-icon-width | `20` |

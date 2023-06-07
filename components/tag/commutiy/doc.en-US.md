@@ -14,9 +14,7 @@ import { Tag } from '@nutui/nutui-react-native';
 
 ### Basic usage
 
-:::demo
-
-```SnackPlayer name=Tag&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React from "react";
 import { Tag } from '@nutui/nutui-react-native';
 
@@ -33,13 +31,9 @@ const App = () => {
 export default App;
 ```
 
-:::
-
 ### Hollow style
 
-:::demo
-
-```SnackPlayer name=Tag&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React from "react";
 import { Tag } from '@nutui/nutui-react-native';
 
@@ -53,13 +47,9 @@ const App = () => {
 export default App;
 ```
 
-:::
-
 ### Rounded style
 
-:::demo
-
-```SnackPlayer name=Tag&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React from "react";
 import { Tag } from '@nutui/nutui-react-native';
 
@@ -73,13 +63,9 @@ const App = () => {
 export default App;
 ```
 
-:::
-
 ### Label style
 
-:::demo
-
-```SnackPlayer name=Tag&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React from "react";
 import { Tag } from '@nutui/nutui-react-native';
 
@@ -93,13 +79,9 @@ const App = () => {
 export default App;
 ```
 
-:::
-
 ### Can close label
 
-:::demo
-
-```SnackPlayer name=Tag&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React from "react";
 import { Tag } from '@nutui/nutui-react-native';
 
@@ -113,13 +95,9 @@ const App = () => {
 export default App;
 ```
 
-:::
-
 ### Custom color
 
-:::demo
-
-```SnackPlayer name=Tag&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React from "react";
 import { Tag } from '@nutui/nutui-react-native';
 
@@ -135,13 +113,9 @@ const App = () => {
 export default App;
 ```
 
-:::
-
 ### Click event
 
-:::demo
-
-```SnackPlayer name=Tag&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React from "react";
 import { Tag } from '@nutui/nutui-react-native';
 
@@ -155,13 +129,9 @@ const App = () => {
 export default App;
 ```
 
-:::
-
 ### Display control
 
-:::demo
-
-```SnackPlayer name=Tag&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React, {useState} from "react";
 import { Tag,Button } from '@nutui/nutui-react-native';
 
@@ -173,16 +143,14 @@ const App = () => {
       isShow? (
         <Tag type='primary' onClick={()=>alert('Tag clicked')}>Label</Tag>
       ):null
-    }  
+    }
     <Button type='default' size="small" onClick={()=>{setIsShow(false)}} >delete</Button>
     </>
   )
-  
+
 }
 export default App;
 ```
-
-:::
 
 ## API
 

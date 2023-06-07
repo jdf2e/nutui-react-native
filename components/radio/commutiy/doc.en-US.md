@@ -15,9 +15,7 @@ import { Radio,RadioGroup } from '@nutui/nutui-react-native';
 Tie the value of the current option by the label. And must be used in
 conjunction with RadioGroup and Radio
 
-:::demo
-
-```SnackPlayer name=Radio&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React, { useState } from 'react';
 import { Radio, RadioGroup } from '@nutui/nutui-react-native';
 
@@ -44,13 +42,9 @@ const RadioGroupLast = () => {
 export default RadioGroupLast;
 ```
 
-:::
-
 ## Horizontal use
 
-:::demo
-
-```SnackPlayer name=Radio&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React, { useState } from 'react';
 import { Radio, RadioGroup } from '@nutui/nutui-react-native';
 
@@ -77,13 +71,9 @@ const RadioGroupLast = () => {
 export default RadioGroupLast;
 ```
 
-:::
-
 ## Custom sizes
 
-:::demo
-
-```SnackPlayer name=Radio&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React, { useState } from 'react';
 import { Radio, RadioGroup } from '@nutui/nutui-react-native';
 
@@ -99,15 +89,11 @@ const RadioGroupLast = () => {
 export default RadioGroupLast;
 ```
 
-:::
-
 ## Customize the icon
 
 It is recommended that 'iconName' and 'iconActiveName' be modified together
 
-:::demo
-
-```SnackPlayer name=Radio&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React, { useState } from 'react';
 import { Radio, RadioGroup } from '@nutui/nutui-react-native';
 
@@ -125,13 +111,9 @@ const RadioGroupLast = () => {
 export default RadioGroupLast;
 ```
 
-:::
-
 ## Trigger the change event
 
-:::demo
-
-```SnackPlayer name=Radio&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React, { useState } from 'react';
 import { Radio, RadioGroup } from '@nutui/nutui-react-native';
 
@@ -149,8 +131,6 @@ const RadioGroupLast = () => {
 }
 export default RadioGroupLast;
 ```
-
-:::
 
 ## Prop
 

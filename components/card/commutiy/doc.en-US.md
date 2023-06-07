@@ -1,4 +1,4 @@
-#  Card 
+#  Card
 
 ### Intro
 
@@ -13,9 +13,7 @@ import { Card,Price, Tag} from '@nutui/nutui-react-native';
 
 ### Basic Usage
 
-:::demo
-
-```SnackPlayer name=Card&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React from "react";
 import { Card,Price, Tag } from '@nutui/nutui-react-native';
 
@@ -45,13 +43,9 @@ const App = () => {
 export default App;
 ```
 
-:::
-
 ### Custom prolist
 
-:::demo
-
-```SnackPlayer name=Card&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React from "react";
 import { View, Text } from 'react-native';
 import { Card,Price, Tag } from '@nutui/nutui-react-native';
@@ -103,13 +97,9 @@ export default App;
 
 ```
 
-:::
-
 ### Price after custom tag
 
-:::demo
-
-```SnackPlayer name=Card&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React from "react";
 import { Card,Price, Tag, Image } from '@nutui/nutui-react-native';
 
@@ -154,12 +144,9 @@ const App = () => {
 export default App;
 ```
 
-:::
-
 ### Custom Content
 
-:::demo
-```SnackPlayer name=Card&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React from "react";
 import { Text } from 'react-native';
 import { Card,Price, Tag } from '@nutui/nutui-react-native';
@@ -196,13 +183,9 @@ const App = () => {
 export default App;
 ```
 
-:::
-
 ### Customize bottom right content
 
-:::demo
-
-```SnackPlayer name=Card&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React from "react";
 import { Text } from 'react-native';
 import { Card,Price, Tag } from '@nutui/nutui-react-native';
@@ -218,7 +201,7 @@ const App = () => {
     delivery: 'delivery',
     shopName: 'shopName>',
   }
-  
+
   return (
     <Card
         imgUrl={imgUrl}
@@ -240,8 +223,6 @@ const App = () => {
 };
 export default App;
 ```
-
-:::
 
 
 ## API

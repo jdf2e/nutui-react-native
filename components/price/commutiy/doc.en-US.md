@@ -1,4 +1,4 @@
-# Price 
+# Price
 
 ### Intro
 
@@ -14,7 +14,7 @@ import { Price } from '@nutui/nutui-react-native'
 
 ### Support three sizes：small、normal、large
 
-```SnackPlayer name=Price&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React from "react"
 import { Price, Cell } from '@nutui/nutui-react-native'
 
@@ -38,7 +38,7 @@ export default App;
 
 
 ### No decimals
-```SnackPlayer name=Price&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React from "react"
 import { Price, Cell } from '@nutui/nutui-react-native'
 
@@ -61,7 +61,7 @@ export default App;
 
 ### With RMB symbol, no thousands separator
 
-```SnackPlayer name=Price&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React from "react"
 import { Price, Cell } from '@nutui/nutui-react-native'
 
@@ -78,7 +78,7 @@ export default App;
 
 ### With RMB symbol, separated by thousands, keep three decimal places
 
-```SnackPlayer name=Price&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React from "react"
 import { Price, Cell } from '@nutui/nutui-react-native'
 
@@ -101,7 +101,7 @@ export default App;
 
 ### Adjust the symbol position
 
-```SnackPlayer name=Price&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React from "react"
 import { Price, Cell } from '@nutui/nutui-react-native'
 
@@ -125,7 +125,7 @@ export default App;
 
 ### Asynchronous random changes
 
-```SnackPlayer name=Price&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React, { useState, useEffect } from 'react'
 import { Price, Cell } from '@nutui/nutui-react-native'
 

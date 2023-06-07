@@ -6,7 +6,7 @@
 
 ### 安裝
 
-```ts
+```SnackPlayer
 import { OverLay } from '@nutui/nutui-react-native';
 ```
 

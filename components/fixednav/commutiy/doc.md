@@ -5,7 +5,7 @@
 悬浮收齐体验交互，用于快捷导航
 
 ### 安装
-    
+
 ``` javascript
 import { FixedNav } from '@nutui/nutui-react-native';
 ```
@@ -13,7 +13,7 @@ import { FixedNav } from '@nutui/nutui-react-native';
 
 ### 基础用法
 
-```SnackPlayer name=FixedNav&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React, { useState } from "react";
 import { FixedNav } from '@nutui/nutui-react-native';
 
@@ -67,7 +67,7 @@ export default App;
 
 ### 左侧效果
 
-```SnackPlayer name=FixedNav&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React, { useState } from "react";
 import { FixedNav } from '@nutui/nutui-react-native';
 
@@ -124,7 +124,7 @@ export default App;
 
 ### 取消背景遮罩
 
-```SnackPlayer name=FixedNav&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React, { useState } from "react";
 import { FixedNav } from '@nutui/nutui-react-native';
 
@@ -178,7 +178,7 @@ export default App;
 
 ### 自定义使用
 
-```SnackPlayer name=FixedNav&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React, { useState } from "react";
 import { Icon, FixedNav } from '@nutui/nutui-react-native';
 
@@ -246,7 +246,7 @@ export default App;
 
 ### 支持拖拽
 
-```SnackPlayer name=FixedNav&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React, { useState } from "react";
 import { Drag, FixedNav } from '@nutui/nutui-react-native';
 
@@ -287,7 +287,7 @@ const App = () => {
         <FixedNav
           navList={navList}
           unActiveText="支持拖拽"
-          visible={visible} 
+          visible={visible}
           onChange={change}
           onSelected={selected} />
       </Drag>
@@ -322,4 +322,3 @@ export default App;
 | onSelected | 选择之后触发 | item,event:MouseEvent |
 
 
-    

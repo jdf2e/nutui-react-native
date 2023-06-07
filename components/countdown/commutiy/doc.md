@@ -14,9 +14,7 @@ import { CountDown } from '@nutui/nutui-react-native'
 
 ### 基础用法
 
-:::demo
-
-```tsx
+```SnackPlayer
 import  React, {useRef }from "react";
 import { Cell, CountDown } from '@nutui/nutui-react-native';
 
@@ -35,13 +33,9 @@ const App = () => {
 };
 export default App;
 ```
-
-:::
 ### 自定义格式
 
-:::demo
-
-```tsx
+```SnackPlayer
 import  React, {useRef }from "react";
 import { Cell, CountDown } from '@nutui/nutui-react-native';
 
@@ -58,13 +52,9 @@ const App = () => {
 export default App;
 ```
 
-:::
-
 ### 毫秒级渲染
 
-:::demo
-
-```tsx
+```SnackPlayer
 import  React, {useRef }from "react";
 import { Cell, CountDown } from '@nutui/nutui-react-native';
 
@@ -82,15 +72,11 @@ const App = () => {
 export default App;
 ```
 
-:::
-
 
 
 ### 以服务端的时间为准
 
-:::demo
-
-```tsx
+```SnackPlayer
 import  React, {useRef }from "react";
 import { Cell, CountDown } from '@nutui/nutui-react-native';
 
@@ -108,13 +94,9 @@ const App = () => {
 export default App;
 ```
 
-:::
-
 ### 异步更新结束时间
 
-:::demo
-
-```tsx
+```SnackPlayer
 import React, { useEffect, useRef, useState } from 'react'
 import { Cell, CountDown } from '@nutui/nutui-react-native';
 
@@ -144,9 +126,7 @@ export default App;
 
 ### 自定义展示
 
-:::demo
-
-```SnackPlayer name=CountDown&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React, {  useRef, useState } from 'react'
 import { View, Text } from 'react-native';
 import { Cell, CountDown } from '@nutui/nutui-react-native';
@@ -197,7 +177,7 @@ const App = () => {
                   backgroundColor: '#e8220e'
                 }}
               >
-  
+
                 <Text style={
                   {
                     color: '#fff',
@@ -207,9 +187,9 @@ const App = () => {
                 >
                   {resetTime.h}
                 </Text>
-  
+
               </View>
-  
+
               <Text
                 style={[
                   {
@@ -221,7 +201,7 @@ const App = () => {
               >
                   :
               </Text>
-  
+
               <View
                 style={{
                   flexShrink: 0,
@@ -233,7 +213,7 @@ const App = () => {
                   backgroundColor: '#e8220e'
                 }}
               >
-  
+
                 <Text style={{
                   color: '#fff',
                   fontSize: 14
@@ -242,7 +222,7 @@ const App = () => {
                   {resetTime.m}
                 </Text>
               </View>
-  
+
               <Text
                 style={[
                   {
@@ -265,7 +245,7 @@ const App = () => {
                   backgroundColor: '#e8220e'
                 }}
               >
-  
+
                 <Text style={{
                   color: '#fff',
                   fontSize: 14
@@ -274,7 +254,7 @@ const App = () => {
                   {resetTime.s}
                 </Text>
               </View>
-  
+
             </View>
           </CountDown>
     </Cell>
@@ -302,20 +282,20 @@ export default App;
 
 ### format 格式
 
-| 格式 | 说明 | 
-| ----- | ----- | 
-| DD | 天数 | 
-| HH | 小时 | 
-| mm | 分钟 | 
-| ss | 秒数 | 
-| S | 毫秒（1位） | 
-| SS | 毫秒（2位） | 
-| SSS | 毫秒（3位） | 
+| 格式 | 说明 |
+| ----- | ----- |
+| DD | 天数 |
+| HH | 小时 |
+| mm | 分钟 |
+| ss | 秒数 |
+| S | 毫秒（1位） |
+| SS | 毫秒（2位） |
+| SSS | 毫秒（3位） |
 
 ### Event
 
 | 字段 | 说明 | 回调参数
-| ----- | ----- | ----- 
+| ----- | ----- | -----
 | onEnd | 倒计时结束时回调函数 | 无
 | onUpdate | 自定义展示内容时，实时更新倒计时数据回调函数 | 倒计时实时数据
 

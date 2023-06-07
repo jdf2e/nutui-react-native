@@ -14,8 +14,7 @@ import { Swipe } from '@nutui/nutui-react-native';
 
 ### 基礎用法
 
-:::demo
-```SnackPlayer name=Swipe&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React from "react";
 import { View, Text } from 'react-native'
 import { Swipe,  Button } from '@nutui/nutui-react-native';
@@ -52,12 +51,10 @@ const App = () => {
 }
 export default App;
 ```
-:::
 
 ### 禁用滑動
 
-:::demo
-```SnackPlayer name=Swipe&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React from "react";
 import { View, Text } from 'react-native';
 import { Swipe, Button } from '@nutui/nutui-react-native';
@@ -84,12 +81,10 @@ const App = () => {
 }
 export default App;
 ```
-:::
 
 ### 事件監聽
 
-:::demo
-```SnackPlayer name=Swipe&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React from "react";
 import { View, Text } from 'react-native'
 import { Swipe, Button, Toast } from '@nutui/nutui-react-native';
@@ -152,12 +147,10 @@ const App = () => {
 }
 export default App;
 ```
-:::
 
 ### 非同步控制
 
-:::demo
-```SnackPlayer name=Swipe&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React, { useRef } from "react";
 import { View, Text } from 'react-native';
 import { Swipe, Button } from '@nutui/nutui-react-native';
@@ -204,12 +197,10 @@ const App = () => {
 }
 export default App;
 ```
-:::
 
 ### 自定義內容
 
-:::demo
-```SnackPlayer name=Swipe&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React from "react";
 import { View,Text } from 'react-native';
 import { Swipe, Cell, Button, InputNumber } from '@nutui/nutui-react-native';
@@ -247,7 +238,6 @@ const App = () => {
 }
 export default App;
 ```
-:::
 
 ## API
 

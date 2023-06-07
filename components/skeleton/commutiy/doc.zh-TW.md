@@ -14,8 +14,7 @@ import { Skeleton } from '@nutui/nutui-react-native';
 
 ### 基礎用法
 
-:::demo
-```SnackPlayer name=Skeleton&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React from "react";
 import { Skeleton } from '@nutui/nutui-react-native';
 
@@ -28,12 +27,10 @@ const App = () => {
 }
 export default App;
 ```
-:::
 
 ### 傳入多行
 
-:::demo
-```SnackPlayer name=Skeleton&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React from "react";
 import { Skeleton } from '@nutui/nutui-react-native';
 
@@ -46,12 +43,10 @@ const App = () => {
 }
 export default App;
 ```
-:::
 
 ### 顯示頭像
 
-:::demo
-```SnackPlayer name=Skeleton&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React from "react";
 import { Skeleton } from '@nutui/nutui-react-native';
 
@@ -64,12 +59,10 @@ const App = () => {
 }
 export default App;
 ```
-:::
 
 ### 標題段落圓角風格
 
-:::demo
-```SnackPlayer name=Skeleton&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React from "react";
 import { Skeleton } from '@nutui/nutui-react-native';
 
@@ -86,11 +79,11 @@ export default App;
 
 ## API
 
-### Prop  
+### Prop
 
 | 字段       | 說明                                             | 類型    | 默認值    |
 |------------|-------------------------------------------------|---------|----------|
-| loading    | 是否顯示骨架屏                                    | Boolean | `false`    | 
+| loading    | 是否顯示骨架屏                                    | Boolean | `false`    |
 | width       | 每行寬度                                        | Number  | 100 |
 | height      | 每行高度                                        | Number  | 100   |
 | animated    | 是否開啟骨架屏動畫                                | Boolean  | `false`  |

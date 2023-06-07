@@ -16,39 +16,36 @@ import { Avatar } from '@nutui/nutui-react-native';
 
 支持三种尺寸：small、normal、large
 
-:::demo
-``` SnackPlayer name=Avatar&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React from "react";
 import { Avatar } from '@nutui/nutui-react-native';
 
 const App = () => {
   return (
     <>
-      <Avatar 
-        size="large" 
+      <Avatar
+        size="large"
         icon="https://img12.360buyimg.com/imagetools/jfs/t1/143702/31/16654/116794/5fc6f541Edebf8a57/4138097748889987.png"
        />
-      <Avatar 
-        size="normal" 
+      <Avatar
+        size="normal"
         icon="https://img12.360buyimg.com/imagetools/jfs/t1/143702/31/16654/116794/5fc6f541Edebf8a57/4138097748889987.png"
        />
-      <Avatar 
-        size="small" 
+      <Avatar
+        size="small"
         icon="https://img12.360buyimg.com/imagetools/jfs/t1/143702/31/16654/116794/5fc6f541Edebf8a57/4138097748889987.png"
-       />  
+       />
     </>
   )
 }
 export default App;
 ```
-:::
 
 ### 头像形状
 
 支持两种形状：square、round
 
-:::demo
-``` SnackPlayer name=Avatar&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React from "react";
 import { Avatar } from '@nutui/nutui-react-native';
 
@@ -62,21 +59,19 @@ const App = () => {
 }
 export default App;
 ```
-:::
 
 ### 头像类型
 
 支持三种类型：图片、Icon 以及字符
 
-:::demo
-``` SnackPlayer name=Avatar&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React from "react";
 import { Avatar } from '@nutui/nutui-react-native';
 
 const App = () => {
   return (
     <>
-      <Avatar 
+      <Avatar
         source={{
           uri: 'https://img12.360buyimg.com/imagetools/jfs/t1/143702/31/16654/116794/5fc6f541Edebf8a57/4138097748889987.png'
         }}
@@ -88,14 +83,12 @@ const App = () => {
 }
 export default App;
 ```
-:::
 
 ### 自定义颜色及背景色
 
 Icon 和字符型可以自定义图标颜色及背景色
 
-:::demo
-``` SnackPlayer name=Avatar&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React from "react";
 import { Avatar } from '@nutui/nutui-react-native';
 
@@ -109,7 +102,6 @@ const App = () => {
 }
 export default App;
 ```
-:::
 
 
 

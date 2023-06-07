@@ -15,7 +15,7 @@ import { TextArea } from '@nutui/nutui-react-native';
 
 ### 基础用法
 
-```SnackPlayer name=TextArea&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React, {useState} from "react";
 import { TextArea } from '@nutui/nutui-react-native';
 
@@ -48,7 +48,7 @@ export default App
 
 ### 显示字数统计
 
-```SnackPlayer name=TextArea&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React, {useState} from "react";
 import { TextArea } from '@nutui/nutui-react-native';
 
@@ -65,7 +65,7 @@ export default App
 
 ### 高度自定义，拉伸
 
-```SnackPlayer name=TextArea&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React, {useState} from "react";
 import { TextArea } from '@nutui/nutui-react-native';
 
@@ -82,7 +82,7 @@ export default App
 
 ### 只读、禁用
 
-```SnackPlayer name=TextArea&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React, {useState} from "react";
 import { TextArea } from '@nutui/nutui-react-native';
 
@@ -99,7 +99,7 @@ export default App
 
 ### 文本位置
 
-```SnackPlayer name=TextArea&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React, {useState} from "react";
 import { TextArea } from '@nutui/nutui-react-native';
 

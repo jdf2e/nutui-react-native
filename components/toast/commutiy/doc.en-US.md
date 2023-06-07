@@ -1,4 +1,4 @@
-# Toast 
+# Toast
 
 ### Intro
 
@@ -16,9 +16,7 @@ import { Toast } from '@nutui/nutui-react-native';
 
 #### Text
 
-:::demo
-
-```SnackPlayer name=Toast&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React, {useState} from "react";
 import { Toast, Cell } from '@nutui/nutui-react-native';
 
@@ -40,13 +38,10 @@ const App = () => {
 }
 export default App
 ```
-:::
 
 #### Title
 
-:::demo
-
-```SnackPlayer name=Toast&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React, {useState} from "react";
 import { Toast, Cell } from '@nutui/nutui-react-native';
 
@@ -68,13 +63,10 @@ const App = () => {
 }
 export default App
 ```
-:::
 
 #### Success
 
-:::demo
-
-```SnackPlayer name=Toast&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React, {useState} from "react";
 import { Toast, Cell } from '@nutui/nutui-react-native';
 
@@ -96,14 +88,11 @@ const App = () => {
 }
 export default App
 ```
-:::
 
 
 #### Fail
 
-:::demo
-
-```SnackPlayer name=Toast&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React, {useState} from "react";
 import { Toast, Cell } from '@nutui/nutui-react-native';
 
@@ -125,14 +114,11 @@ const App = () => {
 }
 export default App
 ```
-:::
 
 
 #### Warn
 
-:::demo
-
-```SnackPlayer name=Toast&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React, {useState} from "react";
 import { Toast, Cell } from '@nutui/nutui-react-native';
 
@@ -154,14 +140,11 @@ const App = () => {
 }
 export default App
 ```
-:::
 
 
 #### Loading
 
-:::demo
-
-```SnackPlayer name=Toast&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React, {useState} from "react";
 import { Toast, Cell } from '@nutui/nutui-react-native';
 
@@ -183,14 +166,11 @@ const App = () => {
 }
 export default App
 ```
-:::
 
 
 #### Set Display Duration
 
-:::demo
-
-```SnackPlayer name=Toast&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React, {useState} from "react";
 import { Toast, Cell, Button } from '@nutui/nutui-react-native';
 
@@ -227,13 +207,10 @@ const App = () => {
 }
 export default App
 ```
-:::
 
 #### Custom Bottom Height
 
-:::demo
-
-```SnackPlayer name=Toast&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React, {useState} from "react";
 import { Toast, Cell } from '@nutui/nutui-react-native';
 
@@ -256,24 +233,21 @@ const App = () => {
 }
 export default App
 ```
-:::
 
 
 
 #### Loading with transparent cover
 
-:::demo
-
-```SnackPlayer name=Toast&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React, {useState} from "react";
 import { Toast, Cell } from '@nutui/nutui-react-native';
 
 const App = () => {
     const iconToast = (msg) => {
         Toast.loading(msg, {
-            cover: true, 
-            coverColor: 'rgba(0, 0, 0, 0)', 
-            closeOnClickOverlay: true, 
+            cover: true,
+            coverColor: 'rgba(0, 0, 0, 0)',
+            closeOnClickOverlay: true,
             onClose: () => {
                 console.log('closeToast')
             },
@@ -293,7 +267,6 @@ const App = () => {
 }
 export default App
 ```
-:::
 
 
 

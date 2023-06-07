@@ -1,4 +1,4 @@
-# Divider 
+# Divider
 
 ### Introduce
 
@@ -14,9 +14,7 @@ import { Divider } from '@nutui/nutui-react-native';
 
 Default render one horizontal divider line.
 
-:::demo
-
-```SnackPlayer name=Divider&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React from "react";
 import { Divider } from '@nutui/nutui-react-native';
 
@@ -29,16 +27,13 @@ const App = () => {
 };
 export default App;
 ```
-:::
 
 
 ### With Text
 
 Insert text into divider with default slot.
 
-:::demo
-
-```SnackPlayer name=Divider&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React from "react";
 import { Divider } from '@nutui/nutui-react-native';
 
@@ -51,16 +46,13 @@ const App = () => {
 };
 export default App;
 ```
-:::
 
 
 ### Content Position
 
 Set Content Position with `contentPosition` attribute.
 
-:::demo
-
-```SnackPlayer name=Divider&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React from "react";
 import { Divider } from '@nutui/nutui-react-native';
 
@@ -74,16 +66,13 @@ const App = () => {
 };
 export default App;
 ```
-:::
 
 
 ### Dashed
 
 Render dashed divider line with `dashed` attribute.
 
-:::demo
-
-```SnackPlayer name=Divider&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React from "react";
 import { Divider } from '@nutui/nutui-react-native';
 
@@ -96,25 +85,22 @@ const App = () => {
 };
 export default App;
 ```
-:::
 
 
 ### Custom Style
 
 User can custom divider style with `styles` attribute.
 
-:::demo
-
-```SnackPlayer name=Divider&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React from "react";
 import { Divider } from '@nutui/nutui-react-native';
 
 const App = () => {
   return (
     <>
-        <Divider 
-          styles={{ 
-            color: '#1989fa', 
+        <Divider
+          styles={{
+            color: '#1989fa',
             borderColor: '#1989fa',
             paddingLeft: 10,
             paddingRight: 10,
@@ -128,13 +114,10 @@ const App = () => {
 };
 export default App;
 ```
-:::
 
 ### Vertical Divider
 
-:::demo
-
-```SnackPlayer name=Divider&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React from "react";
 import { View, Text } from 'react-native';
 import { Divider } from '@nutui/nutui-react-native';
@@ -156,7 +139,6 @@ const App = () => {
 };
 export default App;
 ```
-:::
 
 
 ## API

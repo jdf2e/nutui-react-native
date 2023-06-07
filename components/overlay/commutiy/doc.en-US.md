@@ -6,7 +6,7 @@ Create a mask layer that is typically used to prevent users from doing other thi
 
 ### Installation
 
-```ts
+```SnackPlayer
 import { OverLay } from '@nutui/nutui-react-native';
 ```
 

@@ -14,9 +14,7 @@ import { CountDown } from '@nutui/nutui-react-native'
 
 ### Basic Usage
 
-:::demo
-
-```SnackPlayer name=CountDown&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React, {useRef }from "react";
 import { Cell, CountDown } from '@nutui/nutui-react-native';
 
@@ -35,13 +33,9 @@ const App = () => {
 };
 export default App;
 ```
-
-:::
 ### Custom format
 
-:::demo
-
-```SnackPlayer name=CountDown&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React, {useRef }from "react";
 import { Cell, CountDown } from '@nutui/nutui-react-native';
 
@@ -58,13 +52,9 @@ const App = () => {
 export default App;
 ```
 
-:::
-
 ### Millisecond
 
-:::demo
-
-```SnackPlayer name=CountDown&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React, {useRef }from "react";
 import { Cell, CountDown } from '@nutui/nutui-react-native';
 
@@ -82,14 +72,10 @@ const App = () => {
 export default App;
 ```
 
-:::
-
 
 ### Server Time Prevails
 
-:::demo
-
-```SnackPlayer name=CountDown&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import  React, {useRef }from "react";
 import { Cell, CountDown } from '@nutui/nutui-react-native';
 
@@ -107,13 +93,9 @@ const App = () => {
 export default App;
 ```
 
-:::
-
 ### End-Time of Asyn Update
 
-:::demo
-
-```SnackPlayer name=CountDown&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React, { useEffect, useRef, useState } from 'react'
 import { Cell, CountDown } from '@nutui/nutui-react-native';
 
@@ -143,9 +125,7 @@ export default App;
 
 ### Custom Presentation
 
-:::demo
-
-```SnackPlayer name=CountDown&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React, {  useRef, useState } from 'react'
 import { View, Text } from 'react-native';
 import { Cell, CountDown } from '@nutui/nutui-react-native';
@@ -196,7 +176,7 @@ const App = () => {
                   backgroundColor: '#e8220e'
                 }}
               >
-  
+
                 <Text style={
                   {
                     color: '#fff',
@@ -206,9 +186,9 @@ const App = () => {
                 >
                   {resetTime.h}
                 </Text>
-  
+
               </View>
-  
+
               <Text
                 style={[
                   {
@@ -220,7 +200,7 @@ const App = () => {
               >
                   :
               </Text>
-  
+
               <View
                 style={{
                   flexShrink: 0,
@@ -232,7 +212,7 @@ const App = () => {
                   backgroundColor: '#e8220e'
                 }}
               >
-  
+
                 <Text style={{
                   color: '#fff',
                   fontSize: 14
@@ -241,7 +221,7 @@ const App = () => {
                   {resetTime.m}
                 </Text>
               </View>
-  
+
               <Text
                 style={[
                   {
@@ -264,7 +244,7 @@ const App = () => {
                   backgroundColor: '#e8220e'
                 }}
               >
-  
+
                 <Text style={{
                   color: '#fff',
                   fontSize: 14
@@ -273,7 +253,7 @@ const App = () => {
                   {resetTime.s}
                 </Text>
               </View>
-  
+
             </View>
           </CountDown>
     </Cell>
@@ -301,19 +281,19 @@ export default App;
 
 ### Format
 
-| Name | Description | 
-| ----- | ----- | 
-| DD | Day | 
-| HH | Hour | 
-| mm | Minute | 
-| ss | Second | 
-| S | Millisecond, 1-digit | 
-| SS | Millisecond, 2-digits | 
-| SSS | Millisecond, 3-digits | 
+| Name | Description |
+| ----- | ----- |
+| DD | Day |
+| HH | Hour |
+| mm | Minute |
+| ss | Second |
+| S | Millisecond, 1-digit |
+| SS | Millisecond, 2-digits |
+| SSS | Millisecond, 3-digits |
 
 ### Event
 
 | Event | Description | Arguments
-| ----- | ----- | ----- 
+| ----- | ----- | -----
 | onEnd | Emitted when count down end | Residual Timestamp
 | onUpdate | Real-time update of the countdown data callback function | Real-time countdown data

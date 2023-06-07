@@ -13,7 +13,7 @@ import { FixedNav } from '@nutui/nutui-react-native';
 
 ### Basic usage
 
-```SnackPlayer name=FixedNav&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React, { useState } from "react";
 import { FixedNav } from '@nutui/nutui-react-native';
 
@@ -178,7 +178,7 @@ export default App;
 
 ### Custom use
 
-```SnackPlayer name=FixedNav&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React, { useState } from "react";
 import { Icon, FixedNav } from '@nutui/nutui-react-native';
 
@@ -246,7 +246,7 @@ export default App;
 
 ### Support drag and drop
 
-```SnackPlayer name=FixedNav&dependencies=@nutui/nutui-react-native
+```SnackPlayer
 import React, { useState } from "react";
 import { Drag, FixedNav } from '@nutui/nutui-react-native';
 
@@ -318,4 +318,3 @@ export default App;
 | onSelected | Fired after selection | {item:item, event:MouseEvent} |
 
 
-    
