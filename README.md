@@ -107,7 +107,7 @@ Thanks to all the following [developers](https://github.com/jdf2e/nutui-react-na
 
 ## Forkers
 
-[![Forkers repo roster for @jdf2e/nutui-react](https://reporoster.com/forks/jdf2e/nutui-react-native)](https://github.com/jdf2e/nutui-react-native/network/members) -->
+[![Forkers repo roster for @jdf2e/nutui-react-native](https://reporoster.com/forks/jdf2e/nutui-react-native)](https://github.com/jdf2e/nutui-react-native/network/members) -->
 
 ## Milestones
 

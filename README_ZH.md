@@ -115,11 +115,11 @@ yarn dev
 
 ## Stargazers
 
-[![Stargazers repo roster for @jdf2e/nutui-react](https://reporoster.com/stars/jdf2e/nutui-react-native)](https://github.com/jdf2e/nutui-react-native/stargazers)
+[![Stargazers repo roster for @jdf2e/nutui-react-native](https://reporoster.com/stars/jdf2e/nutui-react-native)](https://github.com/jdf2e/nutui-react-native/stargazers)
 
 <!-- ## Forkers
 
-[![Forkers repo roster for @jdf2e/nutui-react](https://reporoster.com/forks/jdf2e/nutui-react-native)](https://github.com/jdf2e/nutui-react-native/network/members)
+[![Forkers repo roster for @jdf2e/nutui-react-native](https://reporoster.com/forks/jdf2e/nutui-react-native)](https://github.com/jdf2e/nutui-react-native/network/members)
 
 ## 开发计划
 

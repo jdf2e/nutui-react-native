@@ -34,7 +34,7 @@ const Issue = () => {
       <div className='doc-content-issue'>
         <a
           className='issue-item'
-          href='https://github.com/jdf2e/nutui-react/issues'
+          href='https://github.com/jdf2e/nutui-react-native/issues'
           target='_blank'
         >
           <Icon name='uploader'></Icon>
@@ -42,7 +42,7 @@ const Issue = () => {
         </a>
         <a
           className='issue-item'
-          href='https://github.com/jdf2e/nutui-react/issues?q=is:issue+is:open'
+          href='https://github.com/jdf2e/nutui-react-native/issues?q=is:issue+is:open'
           target='_blank'
         >
           <Icon name='issue'></Icon>
@@ -50,7 +50,7 @@ const Issue = () => {
         </a>
         <a
           className='issue-item'
-          href={`https://github.com/jdf2e/nutui-react/issues?q=is:issue+is:closed+${componentName.name}`}
+          href={`https://github.com/jdf2e/nutui-react-native/issues?q=is:issue+is:closed+${componentName.name}`}
           target='_blank'
         >
           <Icon name='checklist'></Icon>
