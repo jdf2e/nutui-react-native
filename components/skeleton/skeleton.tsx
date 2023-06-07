@@ -4,7 +4,7 @@ import { View, ViewStyle, StyleProp, Animated, Platform } from 'react-native';
 
 import Avatar from '../avatar';
 
-import * as LinearGradient from 'react-native-linear-gradient';
+import * as LinearGradient from 'expo-linear-gradient';
 
 import fConStyle from '../utils/filter-container-style';
 import toObj from '../utils/style-to-obj';

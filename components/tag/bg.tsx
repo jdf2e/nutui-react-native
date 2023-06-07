@@ -54,7 +54,7 @@ import { isLinearGradient, getLinearParam } from '../utils/color';
 
 import toObj from '../utils/style-to-obj';
 
-import * as LinearGradient from 'react-native-linear-gradient';
+import * as LinearGradient from 'expo-linear-gradient';
 
 // 位置坐标
 type Pos = {

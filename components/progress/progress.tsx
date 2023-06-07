@@ -11,7 +11,7 @@ import Icon from '../icon';
 
 import { IComponent, ComponentDefaults } from '../utils/typings';
 import pt from '../utils/pt';
-import * as LinearGradient from 'react-native-linear-gradient';
+import * as LinearGradient from 'expo-linear-gradient';
 
 export type ProgressSize = 'small' | 'base' | 'large';
 export type TextType = 'icon' | 'text';

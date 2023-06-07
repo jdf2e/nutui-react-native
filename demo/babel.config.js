@@ -14,7 +14,7 @@ module.exports = function (api) {
           alias: {
             // For development, we want to alias the library to the source
             [pak.name]: path.join(__dirname, '..', pak.source),
-            'react-native-linear-gradient': path.join(__dirname, './node_modules', 'expo-linear-gradient')
+            // 'expo-linear-gradient': path.join(__dirname, './node_modules', 'react-native-linear-gradient')
           },
         },
       ],

@@ -49,7 +49,7 @@
 import React, { FunctionComponent, ReactNode } from 'react';
 import { View, Platform } from 'react-native';
 import { isLinearGradient, getLinearParam } from '../utils/color';
-import * as LinearGradient from 'react-native-linear-gradient';
+import * as LinearGradient from 'expo-linear-gradient';
 
 // 位置坐标
 type Pos = {

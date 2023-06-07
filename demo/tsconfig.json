@@ -4,7 +4,7 @@
     "strict": true,
     "baseUrl": ".",
     "paths": {
-      "react-native-linear-gradient": ["node_modules/expo-linear-gradient/build/index.js"],
+      // "react-native-linear-gradient": ["node_modules/expo-linear-gradient/build/index.js"],
     }
   }
 }
