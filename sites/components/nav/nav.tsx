@@ -18,9 +18,9 @@ const Nav = () => {
       setFixed(false);
     }
   };
-  // useEffect(() => {
-  //   document.addEventListener('scroll', scrollNav);
-  // }, []);
+  useEffect(() => {
+    document.addEventListener('scroll', scrollNav);
+  }, []);
   return (
     <div className={`doc-nav ${fixed ? 'fixed' : ''}`}>
       <ol>

@@ -1,4 +1,4 @@
-import { memo } from 'react';
+import { memo, useEffect } from 'react';
 import ReactMarkdown from 'react-markdown';
 import rehypeRaw from 'rehype-raw';
 import remarkDirective from 'remark-directive';
@@ -20,6 +20,10 @@ const Remark = ({ ru }: { ru: any }) => {
       return raws[`${ru}${lang.replace('-', '')}`];
     }
   };
+  useEffect(() => {
+    window.ExpoSnack?.initialize();
+    window.scrollTo(0, 0);
+  }, [])
   return (
     <ReactMarkdown
       children={getMarkdownByLang(ru)}

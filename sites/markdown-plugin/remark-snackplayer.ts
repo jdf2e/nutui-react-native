@@ -18,24 +18,24 @@ const processNode = (node: any, parent: any) => {
   try {
     const params = parseParams(node.meta);
 
-    const name = params.name ? decodeURIComponent(params.name) : 'Example';
+    const name = params.name ? decodeURIComponent(params.name) : parent.children[0]?.children[0]?.value || 'Example';
     const description = params.description
       ? decodeURIComponent(params.description)
       : 'Example usage';
     const sampleCode = node.value;
     const encodedSampleCode = encodeURIComponent(sampleCode);
-    const dependencies = params.dependencies || '';
-    const platform = params.platform || 'web';
-    const supportedPlatforms = params.supportedPlatforms || 'ios,android,web';
+    const dependencies = params.dependencies || '@nutui/nutui-react-native,expo-linear-gradient';
+    const platform = params.platform || 'mydevice';
+    const supportedPlatforms = params.supportedPlatforms || 'mydevice,ios,android,web';
     const theme = params.theme || 'light';
-    const preview = params.preview || 'true';
+    const preview = params.preview || 'false';
     const loading = params.loading || 'lazy';
-    
+
     // Generate Node for SnackPlayer
     // See https://github.com/expo/snack/blob/main/docs/embedding-snacks.md
-    console.log( 'dependencies', dependencies, params, node.meta)
     const snackPlayerDiv = u('html', {
       value: dedent`<div
+        id="snack-player-${Math.random()}"
         class="snack-player"
         data-snack-name="${name}"
         data-snack-description="${description}"

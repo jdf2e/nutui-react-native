@@ -16,7 +16,7 @@ const DemoPreview = (props: any) => {
 
   return (
     <div className={`doc-demo-preview ${props.className}`}>
-      <iframe src={`https://nutui.jd.com/react/demo.html#${URL}`} frameBorder='0'></iframe>
+      <iframe src={`https://nutui.jd.com/h5/react/1x/demo.html#${URL}`} frameBorder='0'></iframe>
     </div>
   );
 };
