@@ -9,7 +9,7 @@
     "doc:jd": "npm run generate:jd:docs && vite --open --force",
     "generate:docs": "node scripts/generate-nutui.js",
     "generate:jd:docs": "node scripts/generate-jd-nutui.js",
-    "build:docs": "npm run generate:docs && vite build",
+    "build:docs": "npm run generate:docs && vite build --base=/react-native/",
     "lint": "eslint \"**/*.{js,ts,tsx}\"",
     "preview": "vite preview",
     "prepack": "bob build",

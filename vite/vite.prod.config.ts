@@ -5,7 +5,7 @@ import packageJson from '../package.json';
 
 const banner = `/*!
 * ${packageJson.name} v${packageJson.version} ${new Date()}
-* (c) 2022 @jdf2e.
+* (c) 2023 @jdf2e.
 * Released under the MIT License.
 */`;
 

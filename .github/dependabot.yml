@@ -1,0 +1,56 @@
+version: 2
+updates:
+  #  Maintain dependencies for GitHub Actions
+  - package-ecosystem: 'github-actions'
+    directory: '/'
+    schedule:
+      interval: 'weekly'
+    assignees:
+      - 'soulhat'
+    commit-message:
+      # Prefix all commit messages with "github-actions: "
+      prefix: "github-actions"
+    # Specify labels for npm pull requests
+    labels:
+      - "github-actions"
+      - "dependencies"
+
+  #  Maintain dependencies for npm (demo)
+  - package-ecosystem: 'npm'
+    directory: '/demo'
+    schedule:
+      interval: 'weekly'
+    allow:
+      - dependency-name: 'react*'
+      - dependency-name: 'expo*'
+      - dependency-name: '@react*'
+      - dependency-name: '@expo*'
+      - dependency-name: '@types*'
+      - dependency-name: 'resize-observer-polyfill'
+    assignees:
+      - 'soulhat'
+    commit-message:
+      # Prefix all commit messages with "npm: "
+      prefix: "npm"
+    # Specify labels for npm pull requests
+    labels:
+      - "npm"
+      - "dependencies"
+
+  #  Maintain dependencies for npm (root)
+  - package-ecosystem: 'npm'
+    directory: '/'
+    schedule:
+      interval: 'weekly'
+    allow:
+      - dependency-name: 'react*'
+      - dependency-name: 'expo*'
+    assignees:
+      - 'soulhat'
+    commit-message:
+      # Prefix all commit messages with "npm: "
+      prefix: "npm"
+    # Specify labels for npm pull requests
+    labels:
+      - "npm"
+      - "dependencies"
