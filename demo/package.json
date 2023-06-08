@@ -18,7 +18,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-native": "^0.71.8",
-    "react-native-safe-area-context": "4.5.0",
+    "react-native-safe-area-context": "4.5.3",
     "react-native-screens": "^3.20.0",
     "react-native-web": "~0.18.9",
     "resize-observer-polyfill": "^1.5.1"
