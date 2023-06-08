@@ -29,12 +29,12 @@
     "@types/react": "~18.2.8",
     "@types/react-native": "~0.72.2",
     "babel-loader": "^8.1.0",
-    "react-error-overlay": "6.0.9",
+    "react-error-overlay": "6.0.11",
     "typescript": "^4.6.3"
   },
   "resolutions": {
     "//": "See https://github.com/facebook/create-react-app/issues/11773",
-    "react-error-overlay": "6.0.9"
+    "react-error-overlay": "6.0.11"
   },
   "private": true
 }
