@@ -21,12 +21,7 @@ updates:
     schedule:
       interval: 'weekly'
     allow:
-      - dependency-name: 'react*'
       - dependency-name: 'expo*'
-      - dependency-name: '@react*'
-      - dependency-name: '@expo*'
-      - dependency-name: '@types*'
-      - dependency-name: 'resize-observer-polyfill'
     assignees:
       - 'soulhat'
     commit-message:
