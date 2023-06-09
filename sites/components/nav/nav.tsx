@@ -32,15 +32,13 @@ const Nav = () => {
                 {cn.packages.map((cp: any) => {
                   if (!cp.show) return null;
                   return (
-                    <NavLink
-                      key={cp.name}
-                      activeClassName='selected'
-                      to={`${lang ? `/${lang}` : ''}/component/${cp.name}`}
-                    >
-                      <li>
+                    <li key={cp.name}>
+                      <NavLink
+                        to={`${lang ? `/${lang}` : ''}/component/${cp.name}`}
+                      >
                         {cp.name}&nbsp;&nbsp;<b>{cp.cName}</b>
-                      </li>
-                    </NavLink>
+                      </NavLink>
+                    </li>
                   );
                 })}
               </ul>

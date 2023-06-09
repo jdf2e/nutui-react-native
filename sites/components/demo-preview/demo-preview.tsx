@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import { useHistory, useLocation } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 
 import './demo-preview.scss';
 
 const DemoPreview = (props: any) => {
-  const history = useHistory();
   const location = useLocation();
   const path = location.pathname.split('/');
   const [URL, setURL] = useState(path[path.length - 1]);

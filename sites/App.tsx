@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { HashRouter, Switch, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 
 import useLocale from './assets/locale/useLocale';
 import { routers } from './docs';
@@ -56,18 +56,18 @@ function App() {
         </div>
 
         <div className='doc-content-document isComponent'>
-          <Switch>
+          <Routes>
             {routers.map((ru, k) => {
               return (
                 <Route
                   key={k}
                   path={`${lang ? `/${lang}` : ''}/component/${ru}`}
+                  element={<Remark ru={ru} />}
                 >
-                  <Remark ru={ru} />
                 </Route>
               );
             })}
-          </Switch>
+          </Routes>
         </div>
         <div className='markdown-body'>
           <DemoPreview className={`${fixed ? 'fixed' : ''}`}></DemoPreview>

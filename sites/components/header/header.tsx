@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useHistory, useLocation } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 
 import { nav } from '../../config.json';
 import config from '../../config/env';
@@ -8,11 +8,11 @@ import { version } from '../../../package.json';
 import './header.scss';
 
 const Header = () => {
-  const history = useHistory();
+  const navigate = useNavigate();
   const location = useLocation();
   const [currLang, setCurrLang] = useState({});
   const toHome = () => {
-    history.replace('/');
+    navigate('/', { replace: true });
   };
   const langs = [
     { name: '中文', locale: 'zh-CN' },

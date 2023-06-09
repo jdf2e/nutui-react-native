@@ -78,6 +78,7 @@
               }
             }
 
+            display: block;
             height: 100%;
             b {
               font-weight: normal;
@@ -85,12 +86,6 @@
             }
           }
         }
-      }
-    }
-    .selected {
-      color: #fa2c19 !important;
-      li {
-        color: #fa2c19 !important;
       }
     }
   }
