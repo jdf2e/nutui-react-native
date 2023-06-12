@@ -6,7 +6,7 @@ Used to show the current progress of the operation.
 
 ### Install
 
-```js
+```tsx
 import { Progress, Icon } from '@nutui/nutui-react-native';
 ```
 
@@ -15,7 +15,8 @@ import { Progress, Icon } from '@nutui/nutui-react-native';
 ### Basic Usage
 
 :::demo
-```jsx
+
+```tsx
 import  React from "react";
 import { Progress, Cell } from '@nutui/nutui-react-native';
 
@@ -31,10 +32,13 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### Custom Style
 
 :::demo
-```jsx
+
+```tsx
 import  React from "react";
 import { Progress, Cell } from '@nutui/nutui-react-native';
 
@@ -53,10 +57,13 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### Don't Show Percentage
 
 :::demo
-```jsx
+
+```tsx
 import  React from "react";
 import { Progress, Cell } from '@nutui/nutui-react-native';
 
@@ -73,10 +80,13 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### Show Percentage
 
 :::demo
-```jsx
+
+```tsx
 import  React from "react";
 import { Progress, Cell } from '@nutui/nutui-react-native';
 
@@ -92,10 +102,13 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### Text Inside
 
 :::demo
-```jsx
+
+```tsx
 import  React from "react";
 import { Progress, Cell } from '@nutui/nutui-react-native';
 
@@ -112,10 +125,13 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### Custom Content
 
 :::demo
-```jsx
+
+```tsx
 import  React from "react";
 import { Progress, Icon, Cell } from '@nutui/nutui-react-native';
 
@@ -137,10 +153,13 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ## Custom Size
 
 :::demo
-```jsx
+
+```tsx
 import  React from "react";
 import { Progress, Cell } from '@nutui/nutui-react-native';
 import { View } from 'react-native';
@@ -175,10 +194,13 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### Status Display
 
 :::demo
-```jsx
+
+```tsx
 import  React from "react";
 import { Progress, Icon, Cell } from '@nutui/nutui-react-native';
 import { View } from 'react-native';
@@ -209,10 +231,13 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### Dynamic Change
 
 :::demo
-```jsx
+
+```tsx
 import  React from "react";
 import { Progress, Cell, Button } from '@nutui/nutui-react-native';
 import { View } from 'react-native';
@@ -261,25 +286,26 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ## API
 
 ### Props
 
-| Props | Description | Type | Default
-|----- | ----- | ----- | -----
-| percentage | percentage | Number | 0
-| isShowPercentage | Whether to display the percent sign | Boolean | true
-| fillColor | Progress bar background color | String | #f3f3f3
-| strokeColor | Stroke color | String | linear-gradient(135deg, #fa2c19 0%, #fa6419 100%)
-| strokeWidth | Stroke width | String | -
-| size | Progress bar and text size, eg `small` `base` `large` | String | base
-| showText | Whether to show text | Boolean | true
-| textInside | Progress bar text display position(`false`外显，`true`内显) | Boolean | false
-| textColor | Progress bar text color setting | String | 外显`#333` 内显`#fff`
-| textWidth | Progress bar text width setting | String | 35px
-| textBackground | Progress bar text background color setting | String | 同进度条颜色
-| textType | Progress bar text type setting，`text`(展示文字)/`icon`(展示icon标签) | String | text
-| iconName | Icon Name | String | checked
-| iconColor | Icon Color | String | #439422
-| iconSize | Icon Size | String | 16px
-
+| Props            | Description                                                             | Type    | Default                                           |
+| ---------------- | ----------------------------------------------------------------------- | ------- | ------------------------------------------------- |
+| percentage       | percentage                                                              | Number  | 0                                                 |
+| isShowPercentage | Whether to display the percent sign                                     | Boolean | true                                              |
+| fillColor        | Progress bar background color                                           | String  | #f3f3f3                                           |
+| strokeColor      | Stroke color                                                            | String  | linear-gradient(135deg, #fa2c19 0%, #fa6419 100%) |
+| strokeWidth      | Stroke width                                                            | String  | -                                                 |
+| size             | Progress bar and text size, eg `small` `base` `large`                   | String  | base                                              |
+| showText         | Whether to show text                                                    | Boolean | true                                              |
+| textInside       | Progress bar text display position(`false`外显，`true`内显)             | Boolean | false                                             |
+| textColor        | Progress bar text color setting                                         | String  | 外显`#333` 内显`#fff`                             |
+| textWidth        | Progress bar text width setting                                         | String  | 35px                                              |
+| textBackground   | Progress bar text background color setting                              | String  | 同进度条颜色                                      |
+| textType         | Progress bar text type setting，`text`(展示文字)/`icon`(展示 icon 标签) | String  | text                                              |
+| iconName         | Icon Name                                                               | String  | checked                                           |
+| iconColor        | Icon Color                                                              | String  | #439422                                           |
+| iconSize         | Icon Size                                                               | String  | 16px                                              |

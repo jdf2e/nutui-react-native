@@ -6,10 +6,9 @@
 
 ### 安裝
 
-``` javascript
+```tsx
 // react
 import { Icon } from '@nutui/nutui-react-native';
-
 ```
 
 ## 代碼演示
@@ -18,7 +17,9 @@ import { Icon } from '@nutui/nutui-react-native';
 
 'Icon' 的 'name' 屬性支援傳入圖示名稱或圖片連結。
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React from "react";
 import { Icon } from '@nutui/nutui-react-native';
 
@@ -37,12 +38,15 @@ const App = () => {
 export default App;
 ```
 
+:::
 
 ### 圖示顏色
 
 'Icon' 的 'color' 屬性用來設置圖示的顏色。
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React from "react";
 import { Icon } from '@nutui/nutui-react-native';
 
@@ -57,11 +61,15 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### 圖示大小
 
 'Icon' 的 'size' 屬性用來設置圖示的尺寸大小。
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React from "react";
 import { Icon } from '@nutui/nutui-react-native';
 
@@ -76,23 +84,23 @@ const App = () => {
 export default App;
 ```
 
+:::
 
 ## API
 
 ### Props
 
-| 屬性         | 說明                             | 類型             | 預設值           |
-|--------------|----------------------------------|------------------|------------------|
-| name         | 圖示名稱或圖片連結               | String           | -                |
-| color        | 圖示顏色                         | String           | -                |
-| size         | 圖示大小，如 `20` | Number | -                |
+| 屬性  | 說明               | 類型   | 預設值 |
+| ----- | ------------------ | ------ | ------ |
+| name  | 圖示名稱或圖片連結 | String | -      |
+| color | 圖示顏色           | String | -      |
+| size  | 圖示大小，如 `20`  | Number | -      |
 
 ### Events
 
-| 事件名稱 | 說明           | 回調參數     |
-|--------|----------------|--------------|
-| onClick`v1.3.8`  | 點擊圖示時觸發 | event: Event |
-
+| 事件名稱        | 說明           | 回調參數     |
+| --------------- | -------------- | ------------ |
+| onClick`v1.3.8` | 點擊圖示時觸發 | event: Event |
 
 ## 主題定制
 
@@ -100,7 +108,7 @@ export default App;
 
 組件提供了下列 CSS 變量，可用於自定義樣式，使用方法請參考 [ConfigProvider 組件](#/zh-CN/component/configprovider)。
 
-| 名稱 | 默認值 |
-| --- | --- |
-| --nutui-icon-height | `20` |
-| --nutui-icon-width | `20` |
+| 名稱                | 默認值 |
+| ------------------- | ------ |
+| --nutui-icon-height | `20`   |
+| --nutui-icon-width  | `20`   |

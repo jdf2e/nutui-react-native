@@ -6,17 +6,18 @@
 
 ### Install
 
-``` javascript
+```tsx
 // react
 import { Badge } from '@nutui/nutui-react-native';
-
 ```
 
 ## Demo
 
 ### Basic usage
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React from "react";
 import { Badge, Avatar } from '@nutui/nutui-react-native';
 
@@ -41,9 +42,13 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### Max Size
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React from "react";
 import { Badge, Avatar } from '@nutui/nutui-react-native';
 
@@ -65,10 +70,13 @@ const App = () => {
 export default App;
 ```
 
+:::
 
 ### Custom context
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React from "react";
 import { Badge, Avatar } from '@nutui/nutui-react-native';
 
@@ -90,9 +98,13 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### Custom Position
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React from "react";
 import { Badge, Avatar } from '@nutui/nutui-react-native';
 
@@ -114,9 +126,13 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### Display Alone
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React from "react";
 import { Badge } from '@nutui/nutui-react-native';
 
@@ -132,23 +148,21 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ## API
 
 ### Props
 
-| Attribute    | Description                                       | Type    | Default    |
-|---------|--------------------------------------------|---------|-----------|
-| value   | value to show                                 | String  | -         |
-| max     | when value is number, it's the max size                     | Number  | `10000`   |
-| zIndex |  z-index                          | Number  | `10`      |
-| dot     | Is dotted    | Boolean | `false`   |
-| top     | Up and down offset, support unit setting, can be set to: 5, etc. | Number  | `0`       |
-| right   | Left and right offset, support unit setting, can be set to: 5, etc. | Number  | `0`       |
-| icons   | custom icons                               | String  | - |
-
-
-
-
+| Attribute | Description                                                         | Type    | Default |
+| --------- | ------------------------------------------------------------------- | ------- | ------- |
+| value     | value to show                                                       | String  | -       |
+| max       | when value is number, it's the max size                             | Number  | `10000` |
+| zIndex    | z-index                                                             | Number  | `10`    |
+| dot       | Is dotted                                                           | Boolean | `false` |
+| top       | Up and down offset, support unit setting, can be set to: 5, etc.    | Number  | `0`     |
+| right     | Left and right offset, support unit setting, can be set to: 5, etc. | Number  | `0`     |
+| icons     | custom icons                                                        | String  | -       |
 
 ## Theming
 
@@ -156,18 +170,18 @@ export default App;
 
 The component provides the following CSS variables, which can be used to customize styles. Please refer to [ConfigProvider component](#/en-US/component/configprovider).
 
-| Name | Default Value |
-| --- | --- |
-| --nutui-badge-color | ` #fff` |
-| --nutui-badge-font-size | ` $font-size-1` |
+| Name                                   | Default Value              |
+| -------------------------------------- | -------------------------- |
+| --nutui-badge-color                    | ` #fff`                    |
+| --nutui-badge-font-size                | ` $font-size-1`            |
 | --nutui-badge-default-background-color | `  rgba(255, 255, 255, 1)` |
-| --nutui-badge-border-radius | ` 14` |
-| --nutui-badge-padding-top | ` 0` |
-| --nutui-badge-padding-bottom | ` 0` |
-| --nutui-badge-padding-left | ` 5` |
-| --nutui-badge-padding-right | ` 5` |
-| --nutui-badge-z-index | ` 1` |
-| --nutui-badge-dot-width | ` 7` |
-| --nutui-badge-dot-height | ` 7` |
-| --nutui-badge-dot-border-radius | ` 7` |
-| --nutui-badge-dot-padding | ` 0` |
+| --nutui-badge-border-radius            | ` 14`                      |
+| --nutui-badge-padding-top              | ` 0`                       |
+| --nutui-badge-padding-bottom           | ` 0`                       |
+| --nutui-badge-padding-left             | ` 5`                       |
+| --nutui-badge-padding-right            | ` 5`                       |
+| --nutui-badge-z-index                  | ` 1`                       |
+| --nutui-badge-dot-width                | ` 7`                       |
+| --nutui-badge-dot-height               | ` 7`                       |
+| --nutui-badge-dot-border-radius        | ` 7`                       |
+| --nutui-badge-dot-padding              | ` 0`                       |

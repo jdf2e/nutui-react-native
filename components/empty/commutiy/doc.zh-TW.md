@@ -1,4 +1,4 @@
-#  Empty组件
+# Empty 组件
 
 ### 介紹
 
@@ -6,15 +6,17 @@
 
 ### 安裝
 
-```javascript
-import { Empty } from '@nutui/nutui-react-native'
+```tsx
+import { Empty } from '@nutui/nutui-react-native';
 ```
-
 
 ## 代碼演示
 
 ### 基礎用法
-```SnackPlayer
+
+:::demo
+
+```tsx
 import  React from "react";
 import { Empty } from '@nutui/nutui-react-native';
 
@@ -26,8 +28,13 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### 自定義內容大小
-```SnackPlayer
+
+:::demo
+
+```tsx
 import  React from "react";
 import { Empty } from '@nutui/nutui-react-native';
 
@@ -39,8 +46,13 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### 圖片類型，內置 3 個
-```SnackPlayer
+
+:::demo
+
+```tsx
 import  React from "react";
 import { Empty } from '@nutui/nutui-react-native';
 
@@ -56,8 +68,13 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### 自定義圖片
-```SnackPlayer
+
+:::demo
+
+```tsx
 import  React from "react";
 import { Empty } from '@nutui/nutui-react-native';
 
@@ -72,9 +89,13 @@ const App = () => {
 export default App;
 ```
 
+:::
 
 ### 底部內容
-```SnackPlayer
+
+:::demo
+
+```tsx
 import  React from "react";
 import { Empty } from '@nutui/nutui-react-native';
 
@@ -89,14 +110,15 @@ const App = () => {
 };
 export default App;
 ```
+
+:::
+
 ## API
 
 ### Props
 
-| 屬性 | 說明 | 類型 | 預設值           |
-|--------------|----------------------------------|--------|------------------|
-| image         | 圖片類型，可選值為 error network empty，支持傳入圖片 URL              | ReactNode       |
-| imageSize        | 圖片大小，Number 類型單位為 px                    | Number \| String | -       |
-| description         | 圖片下方的描述文字  | ReactNode |    無數據             |
-
-
+| 屬性        | 說明                                                     | 類型             | 預設值 |
+| ----------- | -------------------------------------------------------- | ---------------- | ------ |
+| image       | 圖片類型，可選值為 error network empty，支持傳入圖片 URL | ReactNode        |
+| imageSize   | 圖片大小，Number 類型單位為 px                           | Number \| String | -      |
+| description | 圖片下方的描述文字                                       | ReactNode        | 無數據 |

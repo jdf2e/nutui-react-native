@@ -6,7 +6,7 @@ Control the number increase or decrease by clicking the button.
 
 ### Install
 
-``` ts
+```tsx
 import { InputNumber } from '@nutui/nutui-react-native';
 ```
 
@@ -14,7 +14,9 @@ import { InputNumber } from '@nutui/nutui-react-native';
 
 Initialize a default value
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React, { useState } from "react";
 import { InputNumber } from '@nutui/nutui-react-native';
 
@@ -31,11 +33,15 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### Step size setting
 
-Set step  `step` 5
+Set step `step` 5
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React, { useState } from "react";
 import { InputNumber } from '@nutui/nutui-react-native';
 
@@ -52,11 +58,15 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### Limit input range
 
 `min` and `max` attributes represent the minimum and maximum values respectively
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React, { useState } from "react";
 import { InputNumber,Toast } from '@nutui/nutui-react-native';
 
@@ -77,11 +87,15 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### Disabled state
 
 `disabled` When disabled, you cannot click the button or modify the input box.
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React, { useState } from "react";
 import { InputNumber } from '@nutui/nutui-react-native';
 
@@ -98,11 +112,15 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### Read only disable input box
 
 `readonly` Set read-only disable input box input behavior
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React, { useState } from "react";
 import { InputNumber } from '@nutui/nutui-react-native';
 
@@ -119,11 +137,15 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### Support decimal point
 
-Set step size `step` 0.1  `decimal-places` keep 1 decimal place
+Set step size `step` 0.1 `decimal-places` keep 1 decimal place
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React, { useState } from "react";
 import { InputNumber } from '@nutui/nutui-react-native';
 
@@ -139,11 +161,16 @@ const App = () => {
 }
 export default App;
 ```
+
+:::
+
 ### Support asynchronous modification
 
 Asynchronous modification through `change` event and `model-value`
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React, { useState } from "react";
 import { InputNumber, Toast } from '@nutui/nutui-react-native';
 
@@ -167,9 +194,13 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### Custom button size
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React, { useState } from "react";
 import { InputNumber, Toast } from '@nutui/nutui-react-native';
 
@@ -186,30 +217,32 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ## API
 
 ### Props
 
-| Attribute           | Description                       | Type           | Default     |
-|----------------|----------------------------|----------------|------------|
-| modelValue        | Initial value                     | String、Number | -          |
-| inputWidth    | Input box width                 | String         | `40`     |
-| buttonSize    | Operators +, - Dimensions             | String         | `20`     |
-| min            | Minimum limit                 | String、Number | `1`        |
-| max            | Maximum limit                 | String、Number | `9999` |
-| step           | step                       | String、Number | `1`        |
-| decimalPlaces | Set reserved decimal places           | String、Number | `0`        |
-| disabled       | Disable all features               | Boolean        | false      |
-| readonly       | Read only status disables input box operation behavior | Boolean        | false      |
-| isAsync       | Support for asynchronous modification | Boolean        | false      |
+| Attribute     | Description                                            | Type           | Default |
+| ------------- | ------------------------------------------------------ | -------------- | ------- |
+| modelValue    | Initial value                                          | String、Number | -       |
+| inputWidth    | Input box width                                        | String         | `40`    |
+| buttonSize    | Operators +, - Dimensions                              | String         | `20`    |
+| min           | Minimum limit                                          | String、Number | `1`     |
+| max           | Maximum limit                                          | String、Number | `9999`  |
+| step          | step                                                   | String、Number | `1`     |
+| decimalPlaces | Set reserved decimal places                            | String、Number | `0`     |
+| disabled      | Disable all features                                   | Boolean        | false   |
+| readonly      | Read only status disables input box operation behavior | Boolean        | false   |
+| isAsync       | Support for asynchronous modification                  | Boolean        | false   |
 
 ### Events
 
-| Event    | Description                   | Arguments                       |
-|-----------|------------------------|--------------------------------|
-| onAdd    | Triggered when the Add button is clicked     | event: Event                   |
-| onReduce   | Triggered when the decrease button is clicked     | event: Event                   |
-| onOverlimit  | Triggered when an unavailable button is clicked | event: Event                   |
-| onChangeFuc    | Triggered when the value changes           | value:  number , event : Event |
-| onBlurFuc     | Triggered when the input box blur   | event: Event                   |
-| onFocus    | Triggered when the input box focus   | event: Event                   |
+| Event       | Description                                     | Arguments                     |
+| ----------- | ----------------------------------------------- | ----------------------------- |
+| onAdd       | Triggered when the Add button is clicked        | event: Event                  |
+| onReduce    | Triggered when the decrease button is clicked   | event: Event                  |
+| onOverlimit | Triggered when an unavailable button is clicked | event: Event                  |
+| onChangeFuc | Triggered when the value changes                | value: number , event : Event |
+| onBlurFuc   | Triggered when the input box blur               | event: Event                  |
+| onFocus     | Triggered when the input box focus              | event: Event                  |

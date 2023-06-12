@@ -1,4 +1,4 @@
-#  Empty组件
+# Empty 组件
 
 ### 介绍
 
@@ -6,15 +6,17 @@
 
 ### 安装
 
-```javascript
-import { Empty } from '@nutui/nutui-react-native'
+```tsx
+import { Empty } from '@nutui/nutui-react-native';
 ```
-
 
 ## 代码演示
 
 ### 基础用法
-```SnackPlayer
+
+:::demo
+
+```tsx
 import  React from "react";
 import { Empty } from '@nutui/nutui-react-native';
 
@@ -26,8 +28,13 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### 自定义内容大小
-```SnackPlayer
+
+:::demo
+
+```tsx
 import  React from "react";
 import { Empty } from '@nutui/nutui-react-native';
 
@@ -39,8 +46,13 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### 图片类型，内置 3 个
-```SnackPlayer
+
+:::demo
+
+```tsx
 import  React from "react";
 import { Empty } from '@nutui/nutui-react-native';
 
@@ -56,8 +68,13 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### 自定义图片
-```SnackPlayer
+
+:::demo
+
+```tsx
 import  React from "react";
 import { Empty } from '@nutui/nutui-react-native';
 
@@ -72,9 +89,13 @@ const App = () => {
 export default App;
 ```
 
+:::
 
 ### 底部内容
-```SnackPlayer
+
+:::demo
+
+```tsx
 import  React from "react";
 import { Empty } from '@nutui/nutui-react-native';
 
@@ -89,14 +110,15 @@ const App = () => {
 };
 export default App;
 ```
+
+:::
+
 ## API
 
 ### Props
 
-| 参数         | 说明                             | 类型   | 默认值           |
-|--------------|----------------------------------|--------|------------------|
-| image         | 图片类型，可选值为 error network empty，支持传入图片 URL              | ReactNode       |
-| imageSize        | 图片大小，Number 类型单位为 px                         | Number \| String | -       |
-| description         | 图片下方的描述文字 | ReactNode | 无数据                |
-
-
+| 参数        | 说明                                                     | 类型             | 默认值 |
+| ----------- | -------------------------------------------------------- | ---------------- | ------ |
+| image       | 图片类型，可选值为 error network empty，支持传入图片 URL | ReactNode        |
+| imageSize   | 图片大小，Number 类型单位为 px                           | Number \| String | -      |
+| description | 图片下方的描述文字                                       | ReactNode        | 无数据 |

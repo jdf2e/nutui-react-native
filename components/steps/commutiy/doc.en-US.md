@@ -6,13 +6,15 @@ Split and display the steps of a process, guide users to complete tasks accordin
 
 ### Install
 
-```ts
+```tsx
 import { Steps } from '@nutui/nutui-react-native';
 ```
 
 ### Basic Usage
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React, { useState } from "react";
 import { Steps, Step, Button } from '@nutui/nutui-react-native';
 import { View, Text } from 'react-native';
@@ -45,7 +47,6 @@ const App = () => {
     </View>
   )
 }
-export default App;
 
 const styles = StyleSheet.create({
   items: {
@@ -55,11 +56,17 @@ const styles = StyleSheet.create({
     paddingVertical: 20
   }
 });
+
+export default App;
 ```
+
+:::
 
 ### Title and description information
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React, { useState } from "react";
 import { Steps, Step, Button } from '@nutui/nutui-react-native';
 import { View, Text } from 'react-native';
@@ -94,7 +101,6 @@ const App = () => {
     </>
   )
 }
-export default App;
 
 const styles = StyleSheet.create({
   items: {
@@ -104,11 +110,17 @@ const styles = StyleSheet.create({
     paddingVertical: 20
   }
 });
+
+export default App;
 ```
+
+:::
 
 ### Custom icon
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React, { useState } from "react";
 import { Steps, Step, Button } from '@nutui/nutui-react-native';
 import { View, Text } from 'react-native';
@@ -133,8 +145,13 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### Vertical step bar
-```SnackPlayer
+
+:::demo
+
+```tsx
 import React, { useState } from "react";
 import { Steps, Step, Button } from '@nutui/nutui-react-native';
 import { View, Text } from 'react-native';
@@ -177,7 +194,6 @@ const App = () => {
     </View>
   )
 }
-export default App;
 
 const styles = StyleSheet.create({
   itemsHeight: {
@@ -188,10 +204,17 @@ const styles = StyleSheet.create({
       paddingVertical: 20
   }
 });
+
+export default App;
 ```
 
+:::
+
 ### Point step and vertical direction
-```SnackPlayer
+
+:::demo
+
+```tsx
 import React, { useState } from "react";
 import { Steps, Step, Button } from '@nutui/nutui-react-native';
 import { View, Text } from 'react-native';
@@ -239,7 +262,6 @@ const App = () => {
     </View>
   )
 }
-export default App;
 
 const styles = StyleSheet.create({
   itemsHeight: {
@@ -250,8 +272,11 @@ const styles = StyleSheet.create({
       paddingVertical: 20
   }
 });
+
+export default App;
 ```
 
+:::
 
 ## API
 
@@ -259,22 +284,21 @@ const styles = StyleSheet.create({
 
 #### Steps
 
-| Attribute                   | Description                                                        | Type           | Default      |
-| ---------------------- | ----------------------------------------------------------- | -------------- | ----------- |
-| direction	             | 	Show direction，`horizontal`,`vertical`  | String        | 'horizontal'  |
-| current	               | 	Current step           | Number        | 0      |
-| progressDot            |  Dot step bar     | Boolean | false         |
-| isStart               |  start step need     | Boolean | true         |
-| isEnd               |  end step need      | Boolean | true         |
-
+| Attribute   | Description                             | Type    | Default      |
+| ----------- | --------------------------------------- | ------- | ------------ |
+| direction   | Show direction，`horizontal`,`vertical` | String  | 'horizontal' |
+| current     | Current step                            | Number  | 0            |
+| progressDot | Dot step bar                            | Boolean | false        |
+| isStart     | start step need                         | Boolean | true         |
+| isEnd       | end step need                           | Boolean | true         |
 
 #### Step
 
-| Attribute           | Description                   | Type     | Default      |
-| ---------------- | ---------------------- | ------------ | ----------- |
-| title            | Title of the process step         | String | '' |
-| content          | Descriptive text of process steps (supporting HTML structure)       | String | '' |
-| icon          | Icon       | String | '' |
-| size          | Icon size       | String | '' |
-| activeIndex          | Index of process steps       | Number | 0 |
-| renderContent         | The html structure of the descriptive text of the process steps      | React.ReactNode | - |
+| Attribute     | Description                                                     | Type            | Default |
+| ------------- | --------------------------------------------------------------- | --------------- | ------- |
+| title         | Title of the process step                                       | String          | ''      |
+| content       | Descriptive text of process steps (supporting HTML structure)   | String          | ''      |
+| icon          | Icon                                                            | String          | ''      |
+| size          | Icon size                                                       | String          | ''      |
+| activeIndex   | Index of process steps                                          | Number          | 0       |
+| renderContent | The html structure of the descriptive text of the process steps | React.ReactNode | -       |

@@ -6,10 +6,9 @@ Icon set based on IconFont fonts, which can be used through the Icon component.
 
 ### Install
 
-``` javascript
+```tsx
 // react
 import { Icon } from '@nutui/nutui-react-native';
-
 ```
 
 ## Demo
@@ -18,7 +17,9 @@ import { Icon } from '@nutui/nutui-react-native';
 
 The `name` attribute of `Icon` supports passing in icon names or image links.
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React from "react";
 import { Icon } from '@nutui/nutui-react-native';
 
@@ -35,11 +36,15 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### Color
 
 The 'color' property of 'Icon' is used to set the color of the icon.
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React from "react";
 import { Icon } from '@nutui/nutui-react-native';
 
@@ -54,11 +59,15 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### Size
 
 The 'size' property of 'Icon' is used to set the size of the icon
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React from "react";
 import { Icon } from '@nutui/nutui-react-native';
 
@@ -73,22 +82,23 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ## API
 
 ### Props
 
-| Props        | Description                                                  | Type             | Default          |
-|--------------|-----------------------------------------------------|------------------|------------------|
-| name         | Icon name or picture link                           | String           | -                |
-| color        | Icon color                                          | String           | -                |
-| size         | Icon size, such as:  `20`   | Number | -                |
+| Props | Description               | Type   | Default |
+| ----- | ------------------------- | ------ | ------- |
+| name  | Icon name or picture link | String | -       |
+| color | Icon color                | String | -       |
+| size  | Icon size, such as: `20`  | Number | -       |
 
 ### Events
 
-| Event | Description           | callback parameters |
-|-------|----------------|---------------------|
+| Event           | Description                       | callback parameters |
+| --------------- | --------------------------------- | ------------------- |
 | onClick`v1.3.8` | Triggered when the icon is tapped | event: Event        |
-
 
 ## Theming
 
@@ -96,7 +106,7 @@ export default App;
 
 The component provides the following CSS variables, which can be used to customize styles. Please refer to [ConfigProvider component](#/en-US/component/configprovider).
 
-| Name | Default Value |
-| --- | --- |
-| --nutui-icon-height | `20` |
-| --nutui-icon-width | `20` |
+| Name                | Default Value |
+| ------------------- | ------------- |
+| --nutui-icon-height | `20`          |
+| --nutui-icon-width  | `20`          |

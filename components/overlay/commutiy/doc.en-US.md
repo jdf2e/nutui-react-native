@@ -6,7 +6,7 @@ Create a mask layer that is typically used to prevent users from doing other thi
 
 ### Installation
 
-```SnackPlayer
+```tsx
 import { OverLay } from '@nutui/nutui-react-native';
 ```
 
@@ -14,7 +14,9 @@ import { OverLay } from '@nutui/nutui-react-native';
 
 ### Basic usage
 
-```SnackPlayer name=Overlay
+:::demo
+
+```tsx
 import React, { useState } from "react";
 import { Button, Overlay } from '@nutui/nutui-react-native';
 
@@ -38,9 +40,13 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### Nested content
 
-```SnackPlayer name=Overlay
+:::demo
+
+```tsx
 import React, { useState } from "react";
 import { Button, Overlay } from '@nutui/nutui-react-native';
 import { View, Text } from 'react-native';
@@ -84,6 +90,8 @@ const App = () => {
 }
 export default App;
 ```
+
+:::
 
 ## API
 

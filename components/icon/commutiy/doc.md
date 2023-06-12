@@ -6,10 +6,9 @@
 
 ### 安装
 
-``` javascript
+```tsx
 // react
 import { Icon } from '@nutui/nutui-react-native';
-
 ```
 
 ## 代码演示
@@ -18,7 +17,9 @@ import { Icon } from '@nutui/nutui-react-native';
 
 `Icon` 的 `name` 属性支持传入图标名称或图片链接。
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React from "react";
 import { Icon } from '@nutui/nutui-react-native';
 
@@ -32,14 +33,17 @@ const App = () => {
   </>
 }
 export default App;
-
 ```
+
+:::
 
 ### 图标颜色
 
 `Icon` 的 `color` 属性用来设置图标的颜色。
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React from "react";
 import { Icon } from '@nutui/nutui-react-native';
 
@@ -54,11 +58,15 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### 图标大小
 
 `Icon` 的 `size` 属性用来设置图标的尺寸大小。
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React from "react";
 import { Icon } from '@nutui/nutui-react-native';
 
@@ -73,22 +81,23 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ## API
 
 ### Props
 
-| 参数          | 说明                             | 类型             | 默认值           |
-|-------------|----------------------------------|------------------|------------------|
-| name        | 图标名称或图片链接               | String           | -                |
-| color       | 图标颜色                         | String           | -                |
-| size        | 图标大小，如 `20`|  Number | -                |
+| 参数  | 说明               | 类型   | 默认值 |
+| ----- | ------------------ | ------ | ------ |
+| name  | 图标名称或图片链接 | String | -      |
+| color | 图标颜色           | String | -      |
+| size  | 图标大小，如 `20`  | Number | -      |
 
 ### Events
 
-| 事件名           | 说明           | 回调参数     |
-|---------------|----------------|--------------|
+| 事件名          | 说明           | 回调参数     |
+| --------------- | -------------- | ------------ |
 | onClick`v1.3.8` | 点击图标时触发 | event: Event |
-
 
 ## 主题定制
 
@@ -96,7 +105,7 @@ export default App;
 
 组件提供了下列 CSS 变量，可用于自定义样式，使用方法请参考 [ConfigProvider 组件](#/zh-CN/component/configprovider)。
 
-| 名称 | 默认值 |
-| --- | --- |
-| --nutui-icon-height | `20` |
-| --nutui-icon-width | `20` |
+| 名称                | 默认值 |
+| ------------------- | ------ |
+| --nutui-icon-height | `20`   |
+| --nutui-icon-width  | `20`   |

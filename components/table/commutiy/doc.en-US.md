@@ -1,4 +1,4 @@
-#  Table
+# Table
 
 ### Intro
 
@@ -6,14 +6,15 @@ Used to display the basic table
 
 ### Install
 
-```ts
+```tsx
 import { Table } from '@nutui/nutui-react-native';
 ```
 
-
 ### Basic Usage
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React, { useState } from "react";
 import { Text } from 'react-native';
 import { Table } from '@nutui/nutui-react-native';
@@ -72,8 +73,13 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### Whether to display border and align text
-```SnackPlayer
+
+:::demo
+
+```tsx
 import  React, { useState } from "react";
 import { Table } from '@nutui/nutui-react-native';
 
@@ -129,9 +135,13 @@ const App = () => {
 export default App;
 ```
 
+:::
 
 ### Show summary bar
-```SnackPlayer
+
+:::demo
+
+```tsx
 import  React, { useState } from "react";
 import { Text } from 'react-native';
 import { Table, Button, Icon } from '@nutui/nutui-react-native';
@@ -186,8 +196,13 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### Stripes, alternating light and shade
-```SnackPlayer
+
+:::demo
+
+```tsx
 import  React, { useState } from "react";
 import { Text } from 'react-native';
 import { Table } from '@nutui/nutui-react-native';
@@ -250,8 +265,13 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### No data is displayed by default, and customization is supported
-```SnackPlayer
+
+:::demo
+
+```tsx
 import  React, { useState } from "react";
 import { Text } from 'react-native';
 import { Table } from '@nutui/nutui-react-native';
@@ -303,8 +323,13 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### Custom cell
-```SnackPlayer
+
+:::demo
+
+```tsx
 import  React, { useState } from "react";
 import { Table, Button, Icon, Toast } from '@nutui/nutui-react-native';
 
@@ -376,9 +401,14 @@ const App = () => {
 };
 export default App;
 ```
+
+:::
 
 ### Support asynchronous rendering
-```SnackPlayer
+
+:::demo
+
+```tsx
 import  React, { useState } from "react";
 import { Table, Button, Icon, Toast } from '@nutui/nutui-react-native';
 
@@ -451,8 +481,13 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### Support sorting
-```SnackPlayer
+
+:::demo
+
+```tsx
 import  React, { useState } from "react";
 import { Table, Button, Icon, Toast } from '@nutui/nutui-react-native';
 
@@ -511,34 +546,33 @@ const App = () => {
 export default App;
 ```
 
+:::
 
 ## API
 
 ### Props
 
-| Attribute         | Description                             | Type   | Default           |
-|--------------|----------------------------------|--------|------------------|
-| bordered         | Show border | 	Boolean | true                |
-| columns         | Header data | 	TableColumnProps[] | []                |
-| data         | Table data | 	Object[] | []                |
-| summary         | Show profile | 	React.ReactNode | -                |
-| striped         | Whether the stripes alternate light and dark | 	Boolean | false                |
-| noData         | Custom noData | 	React.ReactNode | -                |
+| Attribute | Description                                  | Type               | Default |
+| --------- | -------------------------------------------- | ------------------ | ------- |
+| bordered  | Show border                                  | Boolean            | true    |
+| columns   | Header data                                  | TableColumnProps[] | []      |
+| data      | Table data                                   | Object[]           | []      |
+| summary   | Show profile                                 | React.ReactNode    | -       |
+| striped   | Whether the stripes alternate light and dark | Boolean            | false   |
+| noData    | Custom noData                                | React.ReactNode    | -       |
 
 ### TableColumnProps
 
-| Attribute         | Description                             | Type   | Default           |
-|--------------|----------------------------------|--------|------------------|
-| key         | Unique identification of the column | 	String | ''                |
-| title         | Header title | 	String | ''                |
-| align         |Alignment of columns, optional values`left`,`center`,`right`  | 	String | left                |
-| sorter         | sort，optional values `true`,`function`, `default`, Where `default` means that you may depend on the interface after clicking, `function` you can return a specific sorting function, `default` indicates that the default sorting algorithm is adopted | 	Boolean、Function、String | -                |
-| render         | Custom render column data, high priority | 	Function(record) | -                |
-
-
+| Attribute | Description                                                                                                                                                                                                                                             | Type                      | Default |
+| --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------- | ------- |
+| key       | Unique identification of the column                                                                                                                                                                                                                     | String                    | ''      |
+| title     | Header title                                                                                                                                                                                                                                            | String                    | ''      |
+| align     | Alignment of columns, optional values`left`,`center`,`right`                                                                                                                                                                                            | String                    | left    |
+| sorter    | sort，optional values `true`,`function`, `default`, Where `default` means that you may depend on the interface after clicking, `function` you can return a specific sorting function, `default` indicates that the default sorting algorithm is adopted | Boolean、Function、String | -       |
+| render    | Custom render column data, high priority                                                                                                                                                                                                                | Function(record)          | -       |
 
 ### Events
 
-| Event | Description           | Arguments     |
-|--------|----------------|--------------|
-| onSorter  | Click the sort button to trigger | `item: TableColumnProps, data: Array<any>` |
+| Event    | Description                      | Arguments                                  |
+| -------- | -------------------------------- | ------------------------------------------ |
+| onSorter | Click the sort button to trigger | `item: TableColumnProps, data: Array<any>` |

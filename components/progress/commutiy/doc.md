@@ -6,7 +6,7 @@
 
 ### 安装
 
-```js
+```tsx
 import { Progress, Icon } from '@nutui/nutui-react-native';
 ```
 
@@ -15,7 +15,8 @@ import { Progress, Icon } from '@nutui/nutui-react-native';
 ### 基础用法
 
 :::demo
-```jsx
+
+```tsx
 import  React from "react";
 import { Progress, Cell } from '@nutui/nutui-react-native';
 
@@ -31,10 +32,13 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### 设置高度和颜色
 
 :::demo
-```jsx
+
+```tsx
 import  React from "react";
 import { Progress, Cell } from '@nutui/nutui-react-native';
 
@@ -53,10 +57,13 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### 设置百分比不显示
 
 :::demo
-```jsx
+
+```tsx
 import  React from "react";
 import { Progress, Cell } from '@nutui/nutui-react-native';
 
@@ -73,10 +80,13 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### 设置百分比外显
 
 :::demo
-```jsx
+
+```tsx
 import  React from "react";
 import { Progress, Cell } from '@nutui/nutui-react-native';
 
@@ -92,10 +102,13 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### 设置百分比内显
 
 :::demo
-```jsx
+
+```tsx
 import  React from "react";
 import { Progress, Cell } from '@nutui/nutui-react-native';
 
@@ -112,10 +125,13 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### 设置内显自定义内容
 
 :::demo
-```jsx
+
+```tsx
 import  React from "react";
 import { Progress, Icon, Cell } from '@nutui/nutui-react-native';
 
@@ -137,10 +153,13 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### 自定义尺寸
 
 :::demo
-```jsx
+
+```tsx
 import  React from "react";
 import { Progress, Cell } from '@nutui/nutui-react-native';
 import { View } from 'react-native';
@@ -175,10 +194,13 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### 设置状态显示
 
 :::demo
-```jsx
+
+```tsx
 import  React from "react";
 import { Progress, Icon, Cell } from '@nutui/nutui-react-native';
 import { View } from 'react-native';
@@ -209,10 +231,13 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### 动态改变
 
 :::demo
-```jsx
+
+```tsx
 import  React from "react";
 import { Progress, Cell, Button } from '@nutui/nutui-react-native';
 import { View } from 'react-native';
@@ -261,24 +286,25 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ## API
 
 ### Props
 
-| 字段 | 说明 | 类型 | 默认值
-|----- | ----- | ----- | -----
-| percentage | 百分比 | Number | 0
-| isShowPercentage | 是否需要展示百分号 | Boolean | true
-| fillColor | 进度条填充颜色 | String | #f3f3f3
-| strokeColor | 进度条线条背景色 | String | linear-gradient(135deg, #fa2c19 0%, #fa6419 100%)
-| strokeWidth | 进度条宽度 | String | -
-| size | 进度条及文字尺寸，可选值`small` `base` `large` | String | base
-| showText | 是否显示进度条文字内容 | Boolean | true
-| textInside | 进度条文字显示位置(`false`外显，`true`内显) | Boolean | false
-| textColor | 进度条文字颜色设置 | String | 外显`#333` 内显`#fff`
-| textWidth | 进度条文字宽度 | String | 35px
-| textBackground | 进度条文字背景颜色设置 | String | 同进度条颜色
-| textType | 进度条文字类型，`text`(展示文字)/`icon`(展示icon标签) | String | text
-| iconName | Icon 名称 | String | checked
-| iconSize | Icon 大小 | String | 16px
-
+| 字段             | 说明                                                    | 类型    | 默认值                                            |
+| ---------------- | ------------------------------------------------------- | ------- | ------------------------------------------------- |
+| percentage       | 百分比                                                  | Number  | 0                                                 |
+| isShowPercentage | 是否需要展示百分号                                      | Boolean | true                                              |
+| fillColor        | 进度条填充颜色                                          | String  | #f3f3f3                                           |
+| strokeColor      | 进度条线条背景色                                        | String  | linear-gradient(135deg, #fa2c19 0%, #fa6419 100%) |
+| strokeWidth      | 进度条宽度                                              | String  | -                                                 |
+| size             | 进度条及文字尺寸，可选值`small` `base` `large`          | String  | base                                              |
+| showText         | 是否显示进度条文字内容                                  | Boolean | true                                              |
+| textInside       | 进度条文字显示位置(`false`外显，`true`内显)             | Boolean | false                                             |
+| textColor        | 进度条文字颜色设置                                      | String  | 外显`#333` 内显`#fff`                             |
+| textWidth        | 进度条文字宽度                                          | String  | 35px                                              |
+| textBackground   | 进度条文字背景颜色设置                                  | String  | 同进度条颜色                                      |
+| textType         | 进度条文字类型，`text`(展示文字)/`icon`(展示 icon 标签) | String  | text                                              |
+| iconName         | Icon 名称                                               | String  | checked                                           |
+| iconSize         | Icon 大小                                               | String  | 16px                                              |

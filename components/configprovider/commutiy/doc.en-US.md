@@ -6,13 +6,15 @@ Used to configure NutUI-React components globally, providing internationalizatio
 
 ### Install
 
-``` javascript
+```tsx
 import { ConfigProvider } from '@nutui/nutui-react-native';
 ```
 
 ## Demo
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React from 'react';
 import { ConfigProvider, Textarea } from "@nutui/nutui-react";
 import en from "@nutui/nutui-react/dist/locales/en-US";
@@ -28,10 +30,12 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ## API
 
 ### Props
 
-| Props    | Description                             | Type   | Default          |
-|--------------|----------------------------|--------|-----------------|
-| locale         | Set up multilingual packs                     | BaseLang | zhCN                |
+| Props  | Description               | Type     | Default |
+| ------ | ------------------------- | -------- | ------- |
+| locale | Set up multilingual packs | BaseLang | zhCN    |

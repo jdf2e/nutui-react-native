@@ -1,4 +1,4 @@
-#  Collapse 折叠面板
+# Collapse 折叠面板
 
 ### Intro
 
@@ -6,16 +6,17 @@ Place the content in multiple folded panels, and click the panel title to expand
 
 ### Install
 
-```ts
-import { Collapse,CollapseItem } from '@nutui/nutui-react-native';
+```tsx
+import { Collapse, CollapseItem } from '@nutui/nutui-react-native';
 ```
-
 
 ## Code demonstration
 
 ### Basic Usage
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React from "react";
 import { Collapse,CollapseItem } from '@nutui/nutui-react-native';
 
@@ -38,9 +39,14 @@ const App = () => {
 };
 export default App;
 ```
+
+:::
+
 ### No icon style
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React, { useState } from 'react'
 import { Collapse ,CollapseItem} from '@nutui/nutui-react-native'
 
@@ -65,9 +71,13 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### accordion Mode
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React from 'react'
 import { Collapse ,CollapseItem} from '@nutui/nutui-react-native'
 
@@ -88,9 +98,14 @@ const App = () => {
 }
 export default App;
 ```
+
+:::
+
 ### Custom collapse Icon
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React from 'react'
 import { Collapse ,CollapseItem} from '@nutui/nutui-react-native'
 
@@ -111,9 +126,14 @@ const App = () => {
 }
 export default App;
 ```
+
+:::
+
 ### Custom title Icon
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React from 'react'
 import { Collapse ,CollapseItem} from '@nutui/nutui-react-native'
 
@@ -147,9 +167,14 @@ const App = () => {
 }
 export default App;
 ```
+
+:::
+
 ### Change Data
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React, { useState } from 'react'
 import { Collapse ,CollapseItem} from '@nutui/nutui-react-native'
 
@@ -214,44 +239,42 @@ const App = () => {
   export default App;
 ```
 
+:::
 
 ## API
 
 ### Collapse Prop
 
-| Attribute         | Description                             | Type   | Default           |
-|--------------|----------------------------------|--------|------------------|
-| activeName   | Of the currently expanded panel name  | Accordion mode：string | number
-Non accordion mode：(string | number)[] | - |
-| accordion    | Whether to turn on accordion mode | boolean | false  |
-| icon         | Icon link and / or icon using nutui | String | -                |
-| iconSize     | Icon size                          | String      | 16 |
-| iconColor    | Icon color                          | String | ''              |
-| rotate       | Click the rotation angle of collapse and expansion to take effect in the custom icon mode| string/number | 180 |
-
+| Attribute                   | Description                                                                               | Type                   | Default |
+| --------------------------- | ----------------------------------------------------------------------------------------- | ---------------------- | ------- |
+| activeName                  | Of the currently expanded panel name                                                      | Accordion mode：string | number  |
+| Non accordion mode：(string | number)[]                                                                                 | -                      |
+| accordion                   | Whether to turn on accordion mode                                                         | boolean                | false   |
+| icon                        | Icon link and / or icon using nutui                                                       | String                 | -       |
+| iconSize                    | Icon size                                                                                 | String                 | 16      |
+| iconColor                   | Icon color                                                                                | String                 | ''      |
+| rotate                      | Click the rotation angle of collapse and expansion to take effect in the custom icon mode | string/number          | 180     |
 
 ### CollapseItem Prop
 
-| Attribute         | Description                             | Type   | Default           |
-|--------------|----------------------------------|--------|------------------|
-| name   | unique identifier, required                         |string \ number | - |
-| isOpen    | On or off state                 | boolean | false  |
-| icon    | Icon link and / or icon using nutui                 | string | ''  |
-| iconSize     |  Icon size  of title                          | number      | '' |
-| iconColor    | Icon color  of title                         | String | ''              |
-| title    | the content on the left side of the title bar supports slot incoming (props incoming has higher priority)  | string | ''  |
-| disabled    | whether the title bar is disabled                 | boolean | false  |
-| rotate       | Click the rotation angle of collapse and expansion to take effect in the custom icon mode| string/number| number | 180 |
-| subTitle    | subtitle of title bar, support slot incoming (props incoming has higher priority)     | string | ''  |
-| titleIcon    | Icon link and / or icon using nutui           | string | ''  |
-| titleIconColor    | Icon color  of title     | string | ''  |
-| titleIconSize    | Icon size  of title        | string | ''  |
-| titleIconPosition    | Icon  position of title      | string | ''  |
-
-
+| Attribute         | Description                                                                                               | Type            | Default |
+| ----------------- | --------------------------------------------------------------------------------------------------------- | --------------- | ------- | --- |
+| name              | unique identifier, required                                                                               | string \ number | -       |
+| isOpen            | On or off state                                                                                           | boolean         | false   |
+| icon              | Icon link and / or icon using nutui                                                                       | string          | ''      |
+| iconSize          | Icon size of title                                                                                        | number          | ''      |
+| iconColor         | Icon color of title                                                                                       | String          | ''      |
+| title             | the content on the left side of the title bar supports slot incoming (props incoming has higher priority) | string          | ''      |
+| disabled          | whether the title bar is disabled                                                                         | boolean         | false   |
+| rotate            | Click the rotation angle of collapse and expansion to take effect in the custom icon mode                 | string/number   | number  | 180 |
+| subTitle          | subtitle of title bar, support slot incoming (props incoming has higher priority)                         | string          | ''      |
+| titleIcon         | Icon link and / or icon using nutui                                                                       | string          | ''      |
+| titleIconColor    | Icon color of title                                                                                       | string          | ''      |
+| titleIconSize     | Icon size of title                                                                                        | string          | ''      |
+| titleIconPosition | Icon position of title                                                                                    | string          | ''      |
 
 ### Events
 
-| Attribute | Description  | Callback Arguments     |
-|--------|----------------|--------------|
+| Attribute | Description                          | Callback Arguments                                                   |
+| --------- | ------------------------------------ | -------------------------------------------------------------------- |
 | onToggle  | Triggered when the panel is switched | isOpen:Whether it is open status；name：Name value currently clicked |

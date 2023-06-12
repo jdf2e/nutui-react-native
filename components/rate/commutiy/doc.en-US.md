@@ -1,4 +1,4 @@
-#  Rate
+# Rate
 
 ### introduce
 
@@ -6,7 +6,7 @@ Use for quick rating actions, or to showcase reviews.
 
 ### Install
 
-```ts
+```tsx
 import { Rate } from '@nutui/nutui-react-native';
 ```
 
@@ -14,7 +14,9 @@ import { Rate } from '@nutui/nutui-react-native';
 
 ### Basic usage
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React from "react";
 import { Rate } from '@nutui/nutui-react-native';
 import { View } from 'react-native';
@@ -27,12 +29,15 @@ const App = () => {
   );
 };
 export default App;
-
 ```
+
+:::
 
 ### half star
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React from "react";
 import { Rate } from '@nutui/nutui-react-native';
 import { View } from 'react-native';
@@ -45,11 +50,15 @@ const App = () => {
   );
 };
 export default App;
-
 ```
+
+:::
+
 ### customize icon
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React from "react";
 import { Rate } from '@nutui/nutui-react-native';
 import { View } from 'react-native';
@@ -62,11 +71,15 @@ const App = () => {
   );
 };
 export default App;
-
 ```
+
+:::
+
 ### custom quantity
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React from "react";
 import { Rate } from '@nutui/nutui-react-native';
 import { View } from 'react-native';
@@ -79,11 +92,15 @@ const App = () => {
   );
 };
 export default App;
-
 ```
+
+:::
+
 ### Select the minimum quantity (support half star)
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React from "react";
 import { Rate } from '@nutui/nutui-react-native';
 import { View } from 'react-native';
@@ -96,11 +113,15 @@ const App = () => {
   );
 };
 export default App;
-
 ```
+
+:::
+
 ### disabled state
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React from "react";
 import { Rate } from '@nutui/nutui-react-native';
 import { View } from 'react-native';
@@ -113,11 +134,15 @@ const App = () => {
   );
 };
 export default App;
-
 ```
+
+:::
+
 ### readonly state
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React from "react";
 import { Rate } from '@nutui/nutui-react-native';
 import { View } from 'react-native';
@@ -130,11 +155,15 @@ const App = () => {
   );
 };
 export default App;
-
 ```
+
+:::
+
 ### bind event
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React from "react";
 import { Rate } from '@nutui/nutui-react-native';
 import { View } from 'react-native';
@@ -150,11 +179,15 @@ const App = () => {
   );
 };
 export default App;
-
 ```
+
+:::
+
 ### custom iconSize 35px
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React from "react";
 import { Rate } from '@nutui/nutui-react-native';
 import { View } from 'react-native';
@@ -167,30 +200,32 @@ const App = () => {
   );
 };
 export default App;
-
 ```
+
+:::
 
 ## API
 
 ## Prop
 
-| field           | explain                                 | type    | default    |
-|----------------|-------------------------------------------|---------|-------------|
-| modelValue     | The current number of stars <= count     | Number    | -           |
-| count          | total number of stars                    | Number  | 5           |
-| minimizeValue  | At least the number of STAR              | Number  | 0           |
-| iconSize      | size of star                              | Number  | 18          |
-| activeColor   | Icon selection color                      | String  | #fa200c     |
-| voidColor     | Icon unselected color                    | String  | #ccc        |
-| uncheckedIcon | Use icon (unchecked)                    | String  | star-n      |
-| checkedIcon   | Use icon (checked)                       | String  | star-fill-n |
-| halfcheckedIcon | Use icon(half icon)                     | String  |  |
-| allowHalf     | Half star or not                         | Boolean | false       |
-| readonly       |Read only                              | Boolean | false       |
-| disabled       | Disable or not                          | Boolean | false       |
-| spacing        | spacing                                  | Number  | 20          |
+| field           | explain                              | type    | default     |
+| --------------- | ------------------------------------ | ------- | ----------- |
+| modelValue      | The current number of stars <= count | Number  | -           |
+| count           | total number of stars                | Number  | 5           |
+| minimizeValue   | At least the number of STAR          | Number  | 0           |
+| iconSize        | size of star                         | Number  | 18          |
+| activeColor     | Icon selection color                 | String  | #fa200c     |
+| voidColor       | Icon unselected color                | String  | #ccc        |
+| uncheckedIcon   | Use icon (unchecked)                 | String  | star-n      |
+| checkedIcon     | Use icon (checked)                   | String  | star-fill-n |
+| halfcheckedIcon | Use icon(half icon)                  | String  |             |
+| allowHalf       | Half star or not                     | Boolean | false       |
+| readonly        | Read only                            | Boolean | false       |
+| disabled        | Disable or not                       | Boolean | false       |
+| spacing         | spacing                              | Number  | 20          |
 
 ## Event
-| field   | explain                                          | Callback Arguments  |
-|--------|----------------------------|----------|
-| onChange  | Event triggered when the current score is modified | Current value   |
+
+| field    | explain                                            | Callback Arguments |
+| -------- | -------------------------------------------------- | ------------------ |
+| onChange | Event triggered when the current score is modified | Current value      |

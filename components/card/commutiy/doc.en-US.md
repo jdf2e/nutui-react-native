@@ -1,4 +1,4 @@
-#  Card
+# Card
 
 ### Intro
 
@@ -6,14 +6,17 @@ Used to display product pictures, prices and other information.
 
 ### Install
 
+```tsx
 import { Card,Price, Tag} from '@nutui/nutui-react-native';
-
+```
 
 ## Demo
 
 ### Basic Usage
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React from "react";
 import { Card,Price, Tag } from '@nutui/nutui-react-native';
 
@@ -43,9 +46,13 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### Custom prolist
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React from "react";
 import { View, Text } from 'react-native';
 import { Card,Price, Tag } from '@nutui/nutui-react-native';
@@ -94,12 +101,15 @@ const App = () => {
   );
 };
 export default App;
-
 ```
+
+:::
 
 ### Price after custom tag
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React from "react";
 import { Card,Price, Tag, Image } from '@nutui/nutui-react-native';
 
@@ -144,9 +154,13 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### Custom Content
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React from "react";
 import { Text } from 'react-native';
 import { Card,Price, Tag } from '@nutui/nutui-react-native';
@@ -183,9 +197,13 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### Customize bottom right content
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React from "react";
 import { Text } from 'react-native';
 import { Card,Price, Tag } from '@nutui/nutui-react-native';
@@ -224,25 +242,22 @@ const App = () => {
 export default App;
 ```
 
+:::
 
 ## API
 
 ### Props
 
-
-| Attribute            | Description               | Type   | Default  |
-|---------|--------------------------------------------|---------|-----------|
-| imgUrl   | Left thumb image                                  | String  | -         |
-| title     | Title                   | String  | -    |
-| price | Price                         | String  | -      |
-| vipPrice     | vip-price                               | String | -    |
-| shopDesc  | shop-desc                                   | String | -    |
-| delivery     | delivery | String  | -      |
-| shopName   | shop-name| String  | -      |
-| prolistTpl   | Custom product introduction| React.ReactNode  | -      |
-| originTpl   | Custom content behind the price| React.ReactNode  | -      |
-| shopTagTpl   | Custom shop introduction| React.ReactNode  | -      |
-| footerTpl   | Customize bottom right content| React.ReactNode  | -      |
-
-
-
+| Attribute  | Description                     | Type            | Default |
+| ---------- | ------------------------------- | --------------- | ------- |
+| imgUrl     | Left thumb image                | String          | -       |
+| title      | Title                           | String          | -       |
+| price      | Price                           | String          | -       |
+| vipPrice   | vip-price                       | String          | -       |
+| shopDesc   | shop-desc                       | String          | -       |
+| delivery   | delivery                        | String          | -       |
+| shopName   | shop-name                       | String          | -       |
+| prolistTpl | Custom product introduction     | React.ReactNode | -       |
+| originTpl  | Custom content behind the price | React.ReactNode | -       |
+| shopTagTpl | Custom shop introduction        | React.ReactNode | -       |
+| footerTpl  | Customize bottom right content  | React.ReactNode | -       |

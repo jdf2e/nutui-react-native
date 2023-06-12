@@ -6,8 +6,8 @@
 
 ### 安装
 
-```javascript
-import { Swiper,SwiperItem } from '@nutui/nutui-react-native';
+```tsx
+import { Swiper, SwiperItem } from '@nutui/nutui-react-native';
 ```
 
 ## 代码演示
@@ -20,7 +20,9 @@ import { Swiper,SwiperItem } from '@nutui/nutui-react-native';
 `paginationColor` 指示器颜色自定义
 `onChange` 当卡片发生变化
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React, { useState } from 'react'
 import { Swiper,SwiperItem, Image } from '@nutui/nutui-react-native';
 
@@ -80,9 +82,14 @@ const App = () => {
 }
 export default App;
 ```
+
+:::
+
 ### 异步加载
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React, { useState, useEffect } from 'react'
 import { Swiper,SwiperItem, Image } from '@nutui/nutui-react-native';
 
@@ -128,11 +135,15 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### 动态加载
 
 支持动态增加/删除图片
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React, { useState, useEffect } from 'react'
 import { Swiper,SwiperItem, Image } from '@nutui/nutui-react-native';
 
@@ -179,10 +190,15 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### 自定义大小
 
 `width` 自定义轮播大小
-```SnackPlayer
+
+:::demo
+
+```tsx
 import React, { useState } from 'react'
 import { Swiper,SwiperItem, Image } from '@nutui/nutui-react-native';
 
@@ -244,11 +260,15 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### 自定义分页指示器
 
 `pageContent` 表示自定义指示器
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React, { useState } from 'react'
 import {
   View,
@@ -334,11 +354,15 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### 手动切换
 
 可通过 `API`(`prev`,`next`)进行手动切换
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React, { useState, useRef } from 'react'
 import {
   View,
@@ -463,11 +487,15 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### 垂直方向
 
 `direction` 自定义轮播方向
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React, { useState } from 'react'
 import { Swiper,SwiperItem, Image } from '@nutui/nutui-react-native';
 
@@ -525,6 +553,8 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ## API
 
 ### Props
@@ -537,21 +567,18 @@ export default App;
 | paginationVisible | 分页指示器是否展示                     | Boolean                   | false             |
 | paginationColor   | 分页指示器选中的颜色                   | String                    | '#fff'            |
 | loop              | 是否循环轮播                           | Boolean                   | true              |
-| duration          | 动画时长（单位是ms）                   | Number \| String          | 500               |
-| autoPlay          | 自动轮播时长，0表示不会自动轮播        | Number \| String          | 0                 |
+| duration          | 动画时长（单位是 ms）                  | Number \| String          | 500               |
+| autoPlay          | 自动轮播时长，0 表示不会自动轮播       | Number \| String          | 0                 |
 | initPage          | 初始化索引值                           | Number \| String          | 0                 |
 | touchable         | 是否可触摸滑动                         | Boolean                   | true              |
 | pageContent       | 自定义指示器                           | String \| React.ReactNode |
--                 |
-
+| -                 |
 
 ### Events
 
-| 事件名   | 说明             | 回调参数        |
-| -------- | ---------------- | --------------- |
-| onChange | 卡片切换后的回调 | 当前索引值index |
-
-
+| 事件名   | 说明             | 回调参数         |
+| -------- | ---------------- | ---------------- |
+| onChange | 卡片切换后的回调 | 当前索引值 index |
 
 ### API
 

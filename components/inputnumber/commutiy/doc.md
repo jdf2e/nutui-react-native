@@ -6,14 +6,17 @@
 
 ### 安装
 
-``` ts
+```tsx
 import { InputNumber } from '@nutui/nutui-react-native';
 ```
+
 ### 基础用法
 
 初始化一个默认值
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React, { useState } from "react";
 import { InputNumber } from '@nutui/nutui-react-native';
 
@@ -30,11 +33,15 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### 步长设置
 
 设置步长 `step` 5
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React, { useState } from "react";
 import { InputNumber } from '@nutui/nutui-react-native';
 
@@ -51,11 +58,15 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### 限制输入范围
 
 `min` 和 `max` 属性分别表示最小值和最大值
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React, { useState } from "react";
 import { InputNumber,Toast } from '@nutui/nutui-react-native';
 
@@ -76,11 +87,15 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### 禁用状态
 
 `disabled` 禁用状态下无法点击按钮或修改输入框。
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React, { useState } from "react";
 import { InputNumber } from '@nutui/nutui-react-native';
 
@@ -97,11 +112,15 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### 只读禁用输入框
 
 `readonly` 设置只读禁用输入框输入行为
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React, { useState } from "react";
 import { InputNumber } from '@nutui/nutui-react-native';
 
@@ -118,11 +137,15 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### 支持小数点
 
-设置步长 `step` 0.1  `decimal-places` 小数保留1位
+设置步长 `step` 0.1 `decimal-places` 小数保留 1 位
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React, { useState } from "react";
 import { InputNumber } from '@nutui/nutui-react-native';
 
@@ -138,11 +161,16 @@ const App = () => {
 }
 export default App;
 ```
+
+:::
+
 ### 支持异步修改
 
 通过 `change` 事件和 `model-value` 进行异步修改
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React, { useState } from "react";
 import { InputNumber, Toast } from '@nutui/nutui-react-native';
 
@@ -166,9 +194,13 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### 自定义按钮大小
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React, { useState } from "react";
 import { InputNumber, Toast } from '@nutui/nutui-react-native';
 
@@ -185,30 +217,32 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ## API
 
 ### Props
 
-| 参数           | 说明                       | 类型           | 默认值     |
-|----------------|----------------------------|----------------|------------|
-| modelValue        | 初始值                     | String、Number | -          |
-| inputWidth    | 输入框宽度                 | String         | `40`     |
-| buttonSize    | 操作符+、-尺寸             | String         | `20`     |
-| min            | 最小值限制                 | String、Number | `1`        |
-| max            | 最大值限制                 | String、Number | `9999` |
-| step           | 步长                       | String、Number | `1`        |
-| decimalPlaces | 设置保留的小数位           | String、Number | `0`        |
-| disabled       | 禁用所有功能               | Boolean        | false      |
-| readonly       | 只读状态禁用输入框操作行为 | Boolean        | false      |
-| isAsync       | 支持异步修改 | Boolean        | false      |
+| 参数          | 说明                       | 类型           | 默认值 |
+| ------------- | -------------------------- | -------------- | ------ |
+| modelValue    | 初始值                     | String、Number | -      |
+| inputWidth    | 输入框宽度                 | String         | `40`   |
+| buttonSize    | 操作符+、-尺寸             | String         | `20`   |
+| min           | 最小值限制                 | String、Number | `1`    |
+| max           | 最大值限制                 | String、Number | `9999` |
+| step          | 步长                       | String、Number | `1`    |
+| decimalPlaces | 设置保留的小数位           | String、Number | `0`    |
+| disabled      | 禁用所有功能               | Boolean        | false  |
+| readonly      | 只读状态禁用输入框操作行为 | Boolean        | false  |
+| isAsync       | 支持异步修改               | Boolean        | false  |
 
 ### Events
 
-| 事件名    | 说明                   | 回调参数                       |
-|-----------|------------------------|--------------------------------|
-| onAdd     | 点击增加按钮时触发     | event: Event                   |
-| onReduce   | 点击减少按钮时触发     | event: Event                   |
-| onOverlimit  | 点击不可用的按钮时触发 | event: Event                   |
-| onChangeFuc   | 值改变时触发           | value:  number , event : Event |
-| onBlurFuc     | 输入框失去焦点时触发   | event: Event                   |
-| onFocus    | 输入框获得焦点时触发   | event: Event                   |
+| 事件名      | 说明                   | 回调参数                      |
+| ----------- | ---------------------- | ----------------------------- |
+| onAdd       | 点击增加按钮时触发     | event: Event                  |
+| onReduce    | 点击减少按钮时触发     | event: Event                  |
+| onOverlimit | 点击不可用的按钮时触发 | event: Event                  |
+| onChangeFuc | 值改变时触发           | value: number , event : Event |
+| onBlurFuc   | 输入框失去焦点时触发   | event: Event                  |
+| onFocus     | 输入框获得焦点时触发   | event: Event                  |

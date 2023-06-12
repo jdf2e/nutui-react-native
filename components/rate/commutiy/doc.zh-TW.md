@@ -6,7 +6,7 @@
 
 ### 安裝
 
-```SnackPlayer
+```tsx
 import { Rate } from '@nutui/nutui-react-native';
 ```
 
@@ -14,7 +14,9 @@ import { Rate } from '@nutui/nutui-react-native';
 
 ### 基礎用法
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React from "react";
 import { Rate } from '@nutui/nutui-react-native';
 import { View } from 'react-native';
@@ -27,12 +29,15 @@ const App = () => {
   );
 };
 export default App;
-
 ```
+
+:::
 
 ### 半星
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React from "react";
 import { Rate } from '@nutui/nutui-react-native';
 import { View } from 'react-native';
@@ -45,11 +50,14 @@ const App = () => {
   );
 };
 export default App;
-
 ```
+
+:::
 ### 自定義 icon
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React from "react";
 import { Rate } from '@nutui/nutui-react-native';
 import { View } from 'react-native';
@@ -62,11 +70,14 @@ const App = () => {
   );
 };
 export default App;
-
 ```
+
+:::
 ### 自定義數量
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React from "react";
 import { Rate } from '@nutui/nutui-react-native';
 import { View } from 'react-native';
@@ -79,11 +90,14 @@ const App = () => {
   );
 };
 export default App;
-
 ```
+
+:::
 ### 最少選中數量（支持半星）
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React from "react";
 import { Rate } from '@nutui/nutui-react-native';
 import { View } from 'react-native';
@@ -96,11 +110,14 @@ const App = () => {
   );
 };
 export default App;
-
 ```
+
+:::
 ### 禁用狀態
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React from "react";
 import { Rate } from '@nutui/nutui-react-native';
 import { View } from 'react-native';
@@ -113,11 +130,14 @@ const App = () => {
   );
 };
 export default App;
-
 ```
+
+:::
 ### 只讀狀態
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React from "react";
 import { Rate } from '@nutui/nutui-react-native';
 import { View } from 'react-native';
@@ -130,11 +150,14 @@ const App = () => {
   );
 };
 export default App;
-
 ```
+
+:::
 ### 綁定事件
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React from "react";
 import { Rate } from '@nutui/nutui-react-native';
 import { View } from 'react-native';
@@ -150,11 +173,14 @@ const App = () => {
   );
 };
 export default App;
-
 ```
+
+:::
 ### 自定義尺寸 35px
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React from "react";
 import { Rate } from '@nutui/nutui-react-native';
 
@@ -166,8 +192,9 @@ const App = () => {
   );
 };
 export default App;
-
 ```
+
+:::
 
 ## API
 

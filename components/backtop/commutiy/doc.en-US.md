@@ -6,14 +6,15 @@ Provides a quick return to the top function for long pages.
 
 ### Install
 
-```javascript
+```tsx
 import { BackTop } from '@nutui/nutui-react-native';
 ```
 
-
 ### Basic Usage
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React from "react";
 import { BackTop } from '@nutui/nutui-react-native';
 import { View } from 'react-native';
@@ -32,9 +33,13 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### Distance
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React from "react";
 import { BackTop } from '@nutui/nutui-react-native';
 import { View } from 'react-native';
@@ -61,9 +66,14 @@ const App = () => {
 };
 export default App;
 ```
+
+:::
+
 ### Custom Style
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React from "react";
 import { BackTop } from '@nutui/nutui-react-native';
 import { View ,Text} from 'react-native';
@@ -93,9 +103,13 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### Click
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React from "react";
 import { BackTop } from '@nutui/nutui-react-native';
 import { View } from 'react-native';
@@ -121,18 +135,20 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ## API
 
 ### Props
 
-| Attribute        | Description                            | Type    | Default |
-| ----------- | ------------------------------- | ------- | ------ |
-| bottom      | Distance from bottom of page                | Number  | `20`   |
-| right       | Distance from the right side of the page                | Number  | `10`   |
-| zIndex      | Set the component z-index                | Number  | `10`   |
+| Attribute | Description                              | Type   | Default |
+| --------- | ---------------------------------------- | ------ | ------- |
+| bottom    | Distance from bottom of page             | Number | `20`    |
+| right     | Distance from the right side of the page | Number | `10`    |
+| zIndex    | Set the component z-index                | Number | `10`    |
 
 ### Event
 
-| Event         | Description               | Arguments          |
-| ------------ | ------------------ | ----------------- |
+| Event   | Description                       | Arguments         |
+| ------- | --------------------------------- | ----------------- |
 | onClick | Emitted when component is clicked | event: MouseEvent |

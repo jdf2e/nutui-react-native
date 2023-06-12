@@ -1,4 +1,4 @@
-#  Switch
+# Switch
 
 ### Introduction
 
@@ -6,7 +6,7 @@ Used to open or close the options.
 
 ### Install
 
-```ts
+```tsx
 import { Switch } from '@nutui/nutui-react-native';
 ```
 
@@ -14,7 +14,9 @@ import { Switch } from '@nutui/nutui-react-native';
 
 ### Basic usage
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React from "react";
 import { Switch } from '@nutui/nutui-react-native';
 
@@ -26,13 +28,15 @@ const App = () => {
   );
 };
 export default App;
-
 ```
 
+:::
 
 ### disable status
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React from "react";
 import { Switch } from '@nutui/nutui-react-native';
 
@@ -44,12 +48,15 @@ const App = () => {
   );
 };
 export default App;
-
 ```
+
+:::
 
 ### change event
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React from "react";
 import { Switch } from '@nutui/nutui-react-native';
 
@@ -64,11 +71,15 @@ const App = () => {
   );
 };
 export default App;
-
 ```
+
+:::
+
 ### Asynchronous control
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React, { useState } from "react";
 import { Switch } from '@nutui/nutui-react-native';
 
@@ -92,11 +103,15 @@ const App = () => {
   );
 };
 export default App;
-
 ```
+
+:::
+
 ### Custom color
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React from "react";
 import { Switch } from '@nutui/nutui-react-native';
 
@@ -108,11 +123,15 @@ const App = () => {
   );
 };
 export default App;
-
 ```
+
+:::
+
 ### Support text
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React from "react";
 import { Switch } from '@nutui/nutui-react-native';
 
@@ -124,29 +143,26 @@ const App = () => {
   );
 };
 export default App;
-
 ```
 
-
-
+:::
 
 ## API
 
 ### Props
 
-| parameter            | illustrate             | type    | Defaults   |
-|----------------|------------------|---------|-----------------------|
-| checked        | switch status              | Boolean | `false`    |
-| disable        | Disable                     | Boolean | `false`   |
-| activeColor   | Background color when opening | String  | `#fa2c19`|
-| inactiveColor | Background color when closed | String  | `#ebebeb` |
-| activeText    | Text description when opening | String  | -        |
-| inactiveText  | Text description when closed  | String  | -        |
-| isAsync  | Whether the switch state is modified asynchronous   | Boolean  | `false`                     |
-
+| parameter     | illustrate                                        | type    | Defaults  |
+| ------------- | ------------------------------------------------- | ------- | --------- |
+| checked       | switch status                                     | Boolean | `false`   |
+| disable       | Disable                                           | Boolean | `false`   |
+| activeColor   | Background color when opening                     | String  | `#fa2c19` |
+| inactiveColor | Background color when closed                      | String  | `#ebebeb` |
+| activeText    | Text description when opening                     | String  | -         |
+| inactiveText  | Text description when closed                      | String  | -         |
+| isAsync       | Whether the switch state is modified asynchronous | Boolean | `false`   |
 
 ### Events
 
-| Incident name | illustrate           | Callback parameter       |
-|--------|----------------|-------------------------------|
-| change | Trigger when switching switches | (value: boolean,event: Event) |
+| Incident name | illustrate                      | Callback parameter            |
+| ------------- | ------------------------------- | ----------------------------- |
+| change        | Trigger when switching switches | (value: boolean,event: Event) |

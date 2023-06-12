@@ -6,7 +6,7 @@
 
 ### 安装
 
-```javascript
+```tsx
 import { BackTop } from '@nutui/nutui-react-native';
 ```
 
@@ -14,7 +14,9 @@ import { BackTop } from '@nutui/nutui-react-native';
 
 ### 基础用法
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React from "react";
 import { BackTop } from '@nutui/nutui-react-native';
 import { View } from 'react-native';
@@ -33,9 +35,13 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### 设置出现位置
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React from "react";
 import { BackTop } from '@nutui/nutui-react-native';
 import { View } from 'react-native';
@@ -62,9 +68,14 @@ const App = () => {
 };
 export default App;
 ```
+
+:::
+
 ### 自定义样式
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React from "react";
 import { BackTop } from '@nutui/nutui-react-native';
 import { View ,Text} from 'react-native';
@@ -94,9 +105,13 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### click 事件
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React from "react";
 import { BackTop } from '@nutui/nutui-react-native';
 import { View } from 'react-native';
@@ -122,18 +137,20 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ## API
 
 ### Props
 
-| 字段        | 说明                            | 类型    | 默认值 |
-| ----------- | ------------------------------- | ------- | ------ |
-| bottom      | 距离页面底部距离                | Number  | `20`   |
-| right       | 距离页面右侧距离                | Number  | `10`   |
-| zIndex      | 设置组件页面层级                | Number  | `10`   |
+| 字段   | 说明             | 类型   | 默认值 |
+| ------ | ---------------- | ------ | ------ |
+| bottom | 距离页面底部距离 | Number | `20`   |
+| right  | 距离页面右侧距离 | Number | `10`   |
+| zIndex | 设置组件页面层级 | Number | `10`   |
 
 ### Events
 
-| 名称         | 说明               | 回调参数          |
-| ------------ | ------------------ | ----------------- |
+| 名称    | 说明               | 回调参数          |
+| ------- | ------------------ | ----------------- |
 | onClick | 按钮点击时触发事件 | event: MouseEvent |

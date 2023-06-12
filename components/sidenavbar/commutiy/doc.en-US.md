@@ -1,5 +1,4 @@
-
-#  SideNavBar组件
+# SideNavBar 组件
 
 ### Intro
 
@@ -7,13 +6,19 @@ For content selection and switching
 
 ### Install
 
-```ts
-import { SideNavBar,SubSideNavBar,SideNavBarItem } from '@nutui/nutui-react-native';
+```tsx
+import {
+  SideNavBar,
+  SubSideNavBar,
+  SideNavBarItem,
+} from '@nutui/nutui-react-native';
 ```
 
 ### Basic Usage
 
-```SnackPlayer name=SideNavBar
+:::demo
+
+```tsx
 import  React,{useState} from "react";
 import {Cell, SideNavBar,SubSideNavBar,SideNavBarItem } from '@nutui/nutui-react-native';
 
@@ -66,12 +71,15 @@ const App = () => {
   );
 };
 export default App;
-
 ```
+
+:::
 
 ### Nesting (up to three layers recommended)
 
-```SnackPlayer name=SideNavBar
+:::demo
+
+```tsx
 import  React,{useState} from "react";
 import {Cell,SideNavBar,SubSideNavBar,SideNavBarItem } from '@nutui/nutui-react-native';
 
@@ -120,52 +128,53 @@ const App = () => {
   );
 };
 export default App;
-
 ```
 
-
+:::
 
 ## API
 
 ### 1、SideNavBar
 
-| Attribute    | Description                      | Type   | Default          |
-|--------------|----------------------------------|--------|------------------|
-| visible      |Whether the current component is displayed | boolean | false   |
-| title        | Navigation title                           | String  | -               |
-| width        | Eject width  -percentage          | String   | '80%'          |
-| position     | Eject position                    | 'left'、'right' | 'left'  |
-| offset       | Navigation indent width           | number  | 20              |
+| Attribute | Description                                | Type            | Default |
+| --------- | ------------------------------------------ | --------------- | ------- |
+| visible   | Whether the current component is displayed | boolean         | false   |
+| title     | Navigation title                           | String          | -       |
+| width     | Eject width -percentage                    | String          | '80%'   |
+| position  | Eject position                             | 'left'、'right' | 'left'  |
+| offset    | Navigation indent width                    | number          | 20      |
 
 ### 2、SubSideNavBar
 
-| Attribute    | Description                      | Type   | Default         |
-|--------------|----------------------------------|--------|------------------|
-| ikey         | Navigation unique identifier     | String、Number |          |
-| title        | Navigation title                 | String  | -              |
-| open         | Whether navigation is expanded by default | Boolean  | true  |
+| Attribute | Description                               | Type           | Default |
+| --------- | ----------------------------------------- | -------------- | ------- |
+| ikey      | Navigation unique identifier              | String、Number |         |
+| title     | Navigation title                          | String         | -       |
+| open      | Whether navigation is expanded by default | Boolean        | true    |
+
 ### 3、SideNavBarItem
 
-| Attribute    | Description                      | Type   | Default          |
-|--------------|----------------------------------|--------|------------------|
-| ikey         | Navigation unique identifier     | String、Number |          |
-| title        | Navigation title                 | String  | -               |
+| Attribute | Description                  | Type           | Default |
+| --------- | ---------------------------- | -------------- | ------- |
+| ikey      | Navigation unique identifier | String、Number |         |
+| title     | Navigation title             | String         | -       |
 
 ## Events
+
 ### 1、SideNavBar Events
 
-| Event | Description            | Arguments     |
-|-------|------------------------|--------------|
-| onClose     | Click mask trigger     | -           |
+| Event   | Description        | Arguments |
+| ------- | ------------------ | --------- |
+| onClose | Click mask trigger | -         |
 
 ### 2、SubSideNavBar Events
 
-| Event | Description                                | Arguments    |
-|-------|--------------------------------------------|--------------|
-| onPress     | Navigation Click,return{ title,ikey,isShow}| -           |
+| Event   | Description                                 | Arguments |
+| ------- | ------------------------------------------- | --------- |
+| onPress | Navigation Click,return{ title,ikey,isShow} | -         |
 
 ### 3、SideNavBarItem Events
 
-| Event  | Description                                | Arguments    |
-|--------|--------------------------------------------|--------------|
-| onPress | Navigation Click,return{ title,ikey}       | -           |
+| Event   | Description                          | Arguments |
+| ------- | ------------------------------------ | --------- |
+| onPress | Navigation Click,return{ title,ikey} | -         |

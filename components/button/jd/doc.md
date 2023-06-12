@@ -4,12 +4,14 @@
 
 按钮用于触发一个操作，如提交表单。
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React, { PureComponent } from 'react';
 import { View, Text } from 'react-native';
 import { Button } from '@nutui/nutui-react-native';
 
-export default class extends PureComponent {
+class App extends PureComponent {
   render() {
     return (
       <View
@@ -627,11 +629,15 @@ export default class extends PureComponent {
     );
   }
 }
+
+export default App;
 ```
+
+:::
 
 ### 安装
 
-```javascript
+```tsx
 import { Button } from '@nutui/nutui-react-native';
 ```
 
@@ -641,7 +647,9 @@ import { Button } from '@nutui/nutui-react-native';
 
 按钮支持 `default`、`primary`、`info`、`warning`、`danger`、`success` 六种类型，默认为 `default`。
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React from "react";
 import { Button } from '@nutui/nutui-react-native';
 
@@ -660,11 +668,15 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### 朴素按钮
 
 通过 `plain` 属性将按钮设置为朴素按钮，朴素按钮的文字为按钮颜色，背景为白色。
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React from "react";
 import { Button } from '@nutui/nutui-react-native';
 
@@ -679,11 +691,15 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### 禁用状态
 
 通过 `disabled` 属性来禁用按钮，禁用状态下按钮不可点击。
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React from "react";
 import { Button } from '@nutui/nutui-react-native';
 
@@ -699,11 +715,15 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### 按钮形状
 
 通过 `shape` 属性设置按钮形状，支持圆形、方形按钮，默认为圆形。
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React from "react";
 import { Button } from '@nutui/nutui-react-native';
 
@@ -718,9 +738,13 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### 加载状态
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React ,{useState} from "react";
 import { Button } from '@nutui/nutui-react-native';
 
@@ -749,9 +773,13 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### 图标按钮
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React from "react";
 import { Button } from '@nutui/nutui-react-native';
 
@@ -766,11 +794,15 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### 按钮尺寸
 
 支持 `large`、`normal`、`small` 三种尺寸，默认为 `normal`。
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React from "react";
 import { Button } from '@nutui/nutui-react-native';
 
@@ -786,11 +818,15 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### 块级元素
 
 按钮在默认情况下为行内块级元素，通过 `block` 属性可以将按钮的元素类型设置为块级元素，常用来实现通栏按钮。
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React from "react";
 import { Button } from '@nutui/nutui-react-native';
 
@@ -804,11 +840,15 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### 自定义颜色
 
 通过 color 属性可以自定义按钮的颜色。
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React from "react";
 import { Button } from '@nutui/nutui-react-native';
 
@@ -825,6 +865,8 @@ const App = () => {
 };
 export default App;
 ```
+
+:::
 
 ## API
 

@@ -1,4 +1,4 @@
-#  CountDown
+# CountDown
 
 ### Introduce
 
@@ -6,15 +6,17 @@ Used to display the countdown value in real time, and precision supports millise
 
 ### Install
 
-```javascript
-import { CountDown } from '@nutui/nutui-react-native'
+```tsx
+import { CountDown } from '@nutui/nutui-react-native';
 ```
 
 ## Demo
 
 ### Basic Usage
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React, {useRef }from "react";
 import { Cell, CountDown } from '@nutui/nutui-react-native';
 
@@ -33,9 +35,14 @@ const App = () => {
 };
 export default App;
 ```
+
+:::
+
 ### Custom format
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React, {useRef }from "react";
 import { Cell, CountDown } from '@nutui/nutui-react-native';
 
@@ -52,9 +59,13 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### Millisecond
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React, {useRef }from "react";
 import { Cell, CountDown } from '@nutui/nutui-react-native';
 
@@ -72,10 +83,13 @@ const App = () => {
 export default App;
 ```
 
+:::
 
 ### Server Time Prevails
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React, {useRef }from "react";
 import { Cell, CountDown } from '@nutui/nutui-react-native';
 
@@ -93,9 +107,13 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### End-Time of Asyn Update
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React, { useEffect, useRef, useState } from 'react'
 import { Cell, CountDown } from '@nutui/nutui-react-native';
 
@@ -122,10 +140,13 @@ const App = () => {
 export default App;
 ```
 
+:::
 
 ### Custom Presentation
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React, {  useRef, useState } from 'react'
 import { View, Text } from 'react-native';
 import { Cell, CountDown } from '@nutui/nutui-react-native';
@@ -262,38 +283,39 @@ const App = () => {
 export default App;
 ```
 
+:::
 
 ## API
 
 ### Props
 
-| Attribute | Description | Type | Default
-| ----- | ----- | ----- | -----
-| startTime | Start Time |  Number | Date.now()
-| endTime | End Time | Number | Date.now()
-| paused | Paused | Boolean | false
-| format `v1.3.3` |  Format Time | String | HH:mm:ss
-| millisecond `v1.3.3` |  Whether to enable millisecond render | Boolean | false
-| autoStart `v1.3.3` |  Whether to auto start count down | Boolean | true
-| time `v1.3.3` | Total time, unit milliseconds | Number | 0
-| showDays `v1.3.3(Abandon)` | Show Text Day | Boolean | false
-| showPlainText `v1.3.3(Abandon)` | Show Text | Boolean | false
+| Attribute                       | Description                          | Type    | Default    |
+| ------------------------------- | ------------------------------------ | ------- | ---------- |
+| startTime                       | Start Time                           | Number  | Date.now() |
+| endTime                         | End Time                             | Number  | Date.now() |
+| paused                          | Paused                               | Boolean | false      |
+| format `v1.3.3`                 | Format Time                          | String  | HH:mm:ss   |
+| millisecond `v1.3.3`            | Whether to enable millisecond render | Boolean | false      |
+| autoStart `v1.3.3`              | Whether to auto start count down     | Boolean | true       |
+| time `v1.3.3`                   | Total time, unit milliseconds        | Number  | 0          |
+| showDays `v1.3.3(Abandon)`      | Show Text Day                        | Boolean | false      |
+| showPlainText `v1.3.3(Abandon)` | Show Text                            | Boolean | false      |
 
 ### Format
 
-| Name | Description |
-| ----- | ----- |
-| DD | Day |
-| HH | Hour |
-| mm | Minute |
-| ss | Second |
-| S | Millisecond, 1-digit |
-| SS | Millisecond, 2-digits |
-| SSS | Millisecond, 3-digits |
+| Name | Description           |
+| ---- | --------------------- |
+| DD   | Day                   |
+| HH   | Hour                  |
+| mm   | Minute                |
+| ss   | Second                |
+| S    | Millisecond, 1-digit  |
+| SS   | Millisecond, 2-digits |
+| SSS  | Millisecond, 3-digits |
 
 ### Event
 
-| Event | Description | Arguments
-| ----- | ----- | -----
-| onEnd | Emitted when count down end | Residual Timestamp
-| onUpdate | Real-time update of the countdown data callback function | Real-time countdown data
+| Event    | Description                                              | Arguments                |
+| -------- | -------------------------------------------------------- | ------------------------ |
+| onEnd    | Emitted when count down end                              | Residual Timestamp       |
+| onUpdate | Real-time update of the countdown data callback function | Real-time countdown data |

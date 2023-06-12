@@ -1,4 +1,4 @@
-#  NoticeBar
+# NoticeBar
 
 ### Intro
 
@@ -6,7 +6,7 @@ Used to display a group of message notifications in a continuons loop.
 
 ### Install
 
-```javascript
+```tsx
 import { NoticeBar } from '@nutui/nutui-react-native';
 ```
 
@@ -14,7 +14,9 @@ import { NoticeBar } from '@nutui/nutui-react-native';
 
 ### Basic Usage
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React, {useState} from "react";
 import { NoticeBar } from '@nutui/nutui-react-native';
 
@@ -26,13 +28,18 @@ const App = () => {
       </>
     )
 }
-export default App
+export default App;
 ```
 
+:::
+
 ### Scrollable
+
 Scrolling is automatically enabled when the content length of the notification bar overflows, which can be controlled through the scrollable property.
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React, {useState} from "react";
 import { NoticeBar } from '@nutui/nutui-react-native';
 
@@ -51,13 +58,16 @@ const App = () => {
       </>
     )
 }
-export default App
+export default App;
 ```
 
+:::
 
 ### Mode
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React, {useState} from "react";
 import { NoticeBar } from '@nutui/nutui-react-native';
 
@@ -83,15 +93,18 @@ const App = () => {
       </>
     )
 }
-export default App
+export default App;
 ```
 
+:::
 
 ### Wrapable
 
 When text is long, you can enable multi-line display by setting the wrapable property.
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React, {useState} from "react";
 import { NoticeBar } from '@nutui/nutui-react-native';
 
@@ -102,12 +115,16 @@ const App = () => {
       <NoticeBar text={text} wrapable />
     )
 }
-export default App
+export default App;
 ```
+
+:::
 
 ### Vertical Scroll
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React, {useState} from "react";
 import { NoticeBar } from '@nutui/nutui-react-native';
 
@@ -131,14 +148,16 @@ const App = () => {
         </>
     )
 }
-export default App
+export default App;
 ```
 
-
+:::
 
 ### Vertical Scroll Complex Animation
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React, {useState} from "react";
 import { NoticeBar } from '@nutui/nutui-react-native';
 
@@ -156,13 +175,16 @@ const App = () => {
       </>
     )
 }
-export default App
+export default App;
 ```
 
+:::
 
 ### Vertical Scroll Custom Style
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React, {useState} from "react";
 import { Text } from 'react-native';
 import { NoticeBar } from '@nutui/nutui-react-native';
@@ -187,14 +209,16 @@ const App = () => {
       </>
     )
 };
-export default App
+export default App;
 ```
 
-
+:::
 
 ### Vertical Scroll Custom Right Icon
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React, {useState} from "react";
 import { NoticeBar,Icon } from '@nutui/nutui-react-native';
 
@@ -213,50 +237,51 @@ const App = () => {
         </>
     )
 };
-export default App
+export default App;
 ```
 
+:::
 
 ## API
 
 ### Prop
 
-| Attribute     | Description                                               | Type          | Default |
-| ---------- | ---------------------------------------------------------- | ------------- | ------ |
-| direction  | Rolling direction                                  | String        | across  |
-| text       | Notice text content                                | String        |  -      |
-| closeMode  | Whether to enable the off mode                     | Boolean       | false   |
-| leftIcon   | Left Icon                                          | String        | -       |
-| rightIcon  | Right Icon                                         | String        | -       |
-| color      | Text Color                                         | String        | -       |
-| background | Background                                         | String        | -       |
-| delay      | Delay time                                         | String/Number | 1       |
-| scrollable | Whether to scroll content                          | Boolean       | true    |
-| speed      | Scrolling speed (px/s)                             | Number         | 50      |
-| wrapable`v1.3.0` | Whether to enable text wrap                        | Boolean       | false    |
+| Attribute        | Description                    | Type          | Default |
+| ---------------- | ------------------------------ | ------------- | ------- |
+| direction        | Rolling direction              | String        | across  |
+| text             | Notice text content            | String        | -       |
+| closeMode        | Whether to enable the off mode | Boolean       | false   |
+| leftIcon         | Left Icon                      | String        | -       |
+| rightIcon        | Right Icon                     | String        | -       |
+| color            | Text Color                     | String        | -       |
+| background       | Background                     | String        | -       |
+| delay            | Delay time                     | String/Number | 1       |
+| scrollable       | Whether to scroll content      | Boolean       | true    |
+| speed            | Scrolling speed (px/s)         | Number        | 50      |
+| wrapable`v1.3.0` | Whether to enable text wrap    | Boolean       | false   |
 
 ### Prop（direction=vertical）
 
-| Attribute    | Description                             | Type     | Default          |
-|--------------|-----------------------------------------|----------|------------------|
-| list         | List                                    | Array    | []               |
-| speed        | Scrolling speed                         | Number   | 50               |
-| standTime    | Show time(millisecond)                  | Number   | 1000             |
-| complexAm    | Complex animation                       | Boolean  | false            |
-| height       | height                                  | Number   | 40               |
-| closeMode    | Whether to enable the off mode          | Boolean  | false            |
+| Attribute | Description                    | Type    | Default |
+| --------- | ------------------------------ | ------- | ------- |
+| list      | List                           | Array   | []      |
+| speed     | Scrolling speed                | Number  | 50      |
+| standTime | Show time(millisecond)         | Number  | 1000    |
+| complexAm | Complex animation              | Boolean | false   |
+| height    | height                         | Number  | 40      |
+| closeMode | Whether to enable the off mode | Boolean | false   |
 
 ### Slots
 
-| Attribute         | Description                      |
-|-------------------|----------------------------------|
-| default           | Notice text content              |
-| rightIcon        | Custom right icon                |
-| leftIcon         | Custom left icon                 |
+| Attribute | Description         |
+| --------- | ------------------- |
+| default   | Notice text content |
+| rightIcon | Custom right icon   |
+| leftIcon  | Custom left icon    |
+
 ### Event
 
-| Attribute  | Description                             | Arguments     |
-| ---------- | --------------------------------------- | ------------ |
-| onClick      | Emitted when NoticeBar is clicked       | event: Event |
-| onClose      | Emitted when NoticeBar is closed        | event: Event |
-
+| Attribute | Description                       | Arguments    |
+| --------- | --------------------------------- | ------------ |
+| onClick   | Emitted when NoticeBar is clicked | event: Event |
+| onClose   | Emitted when NoticeBar is closed  | event: Event |

@@ -6,10 +6,9 @@ Often used in a group of pictures or card rotation.
 
 ### Install
 
-```javascript
-import { Swiper,SwiperItem } from '@nutui/nutui-react-native';
+```tsx
+import { Swiper, SwiperItem } from '@nutui/nutui-react-native';
 ```
-
 
 ### Basic Usage
 
@@ -19,7 +18,9 @@ import { Swiper,SwiperItem } from '@nutui/nutui-react-native';
 `paginationColor` Indicator color customization
 `onChange` When the card changes
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React, { useState } from 'react'
 import { Swiper,SwiperItem, Image } from '@nutui/nutui-react-native';
 
@@ -79,9 +80,14 @@ const App = () => {
 }
 export default App;
 ```
+
+:::
+
 ### Asynchronous loading
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React, { useState, useEffect } from 'react'
 import { Swiper,SwiperItem, Image } from '@nutui/nutui-react-native';
 
@@ -127,11 +133,15 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### Dynamic loading
 
 Support dynamic addition / deletion of pictures
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React, { useState, useEffect } from 'react'
 import { Swiper,SwiperItem, Image } from '@nutui/nutui-react-native';
 
@@ -178,10 +188,15 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### Custom size
+
 `width` Custom rotation size
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React, { useState } from 'react'
 import { Swiper,SwiperItem, Image } from '@nutui/nutui-react-native';
 
@@ -243,11 +258,15 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### Custom paging indicator
 
 `pageContent` Custom indicator
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React, { useState } from 'react'
 import {
   View,
@@ -333,11 +352,15 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### Manual switching
 
 You can manually switch through `api` (`prev`, `next`)
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React, { useState, useRef } from 'react'
 import {
   View,
@@ -462,11 +485,15 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### Vertical direction
 
 `direction` Custom rotation direction
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React, { useState } from 'react'
 import { Swiper,SwiperItem, Image } from '@nutui/nutui-react-native';
 
@@ -523,38 +550,37 @@ const App = () => {
 }
 export default App;
 ```
+
+:::
+
 ## API
 
 ### Props
 
-| Attribute                   | Description          | Type           | Default      |
-| ----------------- | -------------------------------------- | ------------------------- | ----------------- |
-| width             | Width of rotation car                         | Number \| String          | window.innerWidth |
-| height            | Height of rotation card                         | String \| Number          | 0                 |
+| Attribute         | Description                                                 | Type                      | Default           |
+| ----------------- | ----------------------------------------------------------- | ------------------------- | ----------------- |
+| width             | Width of rotation car                                       | Number \| String          | window.innerWidth |
+| height            | Height of rotation card                                     | String \| Number          | 0                 |
 | direction         | Rotation direction, optional value：`horizontal`,`vertical` | String                    | 'horizontal'      |
-| paginationVisible | Whether the pagination indicator is displayed                     | Boolean                   | false             |
-| paginationColor   | Pagination indicator selected color                   | String                    | '#fff'            |
-| loop              | Whether to rotate                             | Boolean                   | true              |
-| duration          | Animation duration（Unit ms                 | Number \| String          | 500               |
-| autoPlay          | Automatic rotation duration, 0 means no automatic        | Number \| String          | 0                 |
-| initPage          | Initialize index value                          | Number \| String          | 0                 |
-| touchable         | Is it possible to touch swipe                         | Boolean                   | true              |
-| pageContent       | Custom indicator                           | String \| React.ReactNode | -                 |
-
-
+| paginationVisible | Whether the pagination indicator is displayed               | Boolean                   | false             |
+| paginationColor   | Pagination indicator selected color                         | String                    | '#fff'            |
+| loop              | Whether to rotate                                           | Boolean                   | true              |
+| duration          | Animation duration（Unit ms                                 | Number \| String          | 500               |
+| autoPlay          | Automatic rotation duration, 0 means no automatic           | Number \| String          | 0                 |
+| initPage          | Initialize index value                                      | Number \| String          | 0                 |
+| touchable         | Is it possible to touch swipe                               | Boolean                   | true              |
+| pageContent       | Custom indicator                                            | String \| React.ReactNode | -                 |
 
 ### Events
 
-| Event           | Description                   | Arguments     |
-| -------- | ---------------- | --------------- |
+| Event    | Description                   | Arguments           |
+| -------- | ----------------------------- | ------------------- |
 | onChange | Callback after card switching | Current index value |
-
-
 
 ### API
 
-| Event           | Description                   | Arguments     |
-| ------ | -------------- | ------------ |
-| prev   | Switch to previous page   | -            |
-| next   | Switch to next page    | -            |
-| to     | Switch to the specified rotation | index:number |
+| Event | Description                      | Arguments    |
+| ----- | -------------------------------- | ------------ |
+| prev  | Switch to previous page          | -            |
+| next  | Switch to next page              | -            |
+| to    | Switch to the specified rotation | index:number |

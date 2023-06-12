@@ -1,4 +1,4 @@
-#  Table组件
+# Table 组件
 
 ### 介绍
 
@@ -6,16 +6,17 @@
 
 ### 安装
 
-```ts
+```tsx
 import { Table } from '@nutui/nutui-react-native';
 ```
-
 
 ## 代码演示
 
 ### 基本用法
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React, { useState } from "react";
 import { Text } from 'react-native';
 import { Table } from '@nutui/nutui-react-native';
@@ -74,8 +75,13 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### 是否显示边框，文字对齐
-```SnackPlayer
+
+:::demo
+
+```tsx
 import  React, { useState } from "react";
 import { Table } from '@nutui/nutui-react-native';
 
@@ -131,9 +137,13 @@ const App = () => {
 export default App;
 ```
 
+:::
 
 ### 显示总结栏
-```SnackPlayer
+
+:::demo
+
+```tsx
 import  React, { useState } from "react";
 import { Text } from 'react-native';
 import { Table } from '@nutui/nutui-react-native';
@@ -196,8 +206,13 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### 条纹、明暗交替
-```SnackPlayer
+
+:::demo
+
+```tsx
 import  React, { useState } from "react";
 import { Text } from 'react-native';
 import { Table } from '@nutui/nutui-react-native';
@@ -260,8 +275,13 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### 无数据默认展示，支持自定义
-```SnackPlayer
+
+:::demo
+
+```tsx
 import  React, { useState } from "react";
 import { Text } from 'react-native';
 import { Table } from '@nutui/nutui-react-native';
@@ -313,8 +333,13 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### 自定义单元格
-```SnackPlayer
+
+:::demo
+
+```tsx
 import  React, { useState } from "react";
 import { Table, Button, Icon, Toast } from '@nutui/nutui-react-native';
 
@@ -387,8 +412,13 @@ const App = () => {
 export default App;
 ```
 
-### 支持异步渲染(5s之后看效果)
-```SnackPlayer
+:::
+
+### 支持异步渲染(5s 之后看效果)
+
+:::demo
+
+```tsx
 import  React, { useState } from "react";
 import { Table, Button, Icon, Toast } from '@nutui/nutui-react-native';
 
@@ -460,9 +490,14 @@ const App = () => {
 };
 export default App;
 ```
+
+:::
 
 ### 支持排序
-```SnackPlayer
+
+:::demo
+
+```tsx
 import  React, { useState } from "react";
 import { Table, Button, Icon, Toast } from '@nutui/nutui-react-native';
 
@@ -521,34 +556,33 @@ const App = () => {
 export default App;
 ```
 
+:::
 
 ## API
 
 ### Props
 
-| 参数         | 说明                             | 类型   | 默认值           |
-|--------------|----------------------------------|--------|------------------|
-| bordered         | 是否显示边框 | 	Boolean | true                |
-| columns         | 表头数据 | 	TableColumnProps[] | []                |
-| data         | 表格数据 | 	Object[] | []                |
-| summary         | 是否显示简介 | 	React.ReactNode | -                |
-| striped         | 条纹是否明暗交替 | 	Boolean | false                |
-| noData         | 自定义无数据 | 	React.ReactNode | -                |
+| 参数     | 说明             | 类型               | 默认值 |
+| -------- | ---------------- | ------------------ | ------ |
+| bordered | 是否显示边框     | Boolean            | true   |
+| columns  | 表头数据         | TableColumnProps[] | []     |
+| data     | 表格数据         | Object[]           | []     |
+| summary  | 是否显示简介     | React.ReactNode    | -      |
+| striped  | 条纹是否明暗交替 | Boolean            | false  |
+| noData   | 自定义无数据     | React.ReactNode    | -      |
 
 ### TableColumnProps
 
-| 参数         | 说明                             | 类型   | 默认值           |
-|--------------|----------------------------------|--------|------------------|
-| key         | 列的唯一标识 | 	String | ''                |
-| title         | 表头标题 | 	String | ''                |
-| align         | 列的对齐方式，可选值left,center,right | 	String | left                |
-| sorter         | 排序，可选值有 true,function, default, 其中 default表示点击之后可能会依赖接口, function可以返回具体的排序函数, default表示采用默认的排序算法 | 	Boolean、Function、String | -                |
-| render         | 自定义渲染列数据，优先级高 | 	Function(record) | -                |
-
-
+| 参数   | 说明                                                                                                                                            | 类型                      | 默认值 |
+| ------ | ----------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------- | ------ |
+| key    | 列的唯一标识                                                                                                                                    | String                    | ''     |
+| title  | 表头标题                                                                                                                                        | String                    | ''     |
+| align  | 列的对齐方式，可选值 left,center,right                                                                                                          | String                    | left   |
+| sorter | 排序，可选值有 true,function, default, 其中 default 表示点击之后可能会依赖接口, function 可以返回具体的排序函数, default 表示采用默认的排序算法 | Boolean、Function、String | -      |
+| render | 自定义渲染列数据，优先级高                                                                                                                      | Function(record)          | -      |
 
 ### Events
 
-| 事件名 | 说明           | 回调参数     |
-|--------|----------------|--------------|
-| onSorter  | 点击排序按钮触发 | `item: TableColumnProps, data: Array<any>` |
+| 事件名   | 说明             | 回调参数                                   |
+| -------- | ---------------- | ------------------------------------------ |
+| onSorter | 点击排序按钮触发 | `item: TableColumnProps, data: Array<any>` |

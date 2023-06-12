@@ -6,7 +6,7 @@
 
 ### 安裝
 
-```javascript
+```tsx
 import { Grid, GridItem } from '@nutui/nutui-react-native';
 ```
 
@@ -14,7 +14,9 @@ import { Grid, GridItem } from '@nutui/nutui-react-native';
 
 ### 基礎用法
 
-```SnackPlayer name=Grid
+:::demo
+
+```tsx
 import React from 'react'
 import { Grid,GridItem } from '@nutui/nutui-react-native'
 
@@ -32,12 +34,16 @@ const App = () => {
     </Grid>
   )
 }
-export default App
+export default App;
 ```
+
+:::
 
 ### 自定義列數
 
-```SnackPlayer name=Grid
+:::demo
+
+```tsx
 import React from 'react'
 import { Grid,GridItem } from '@nutui/nutui-react-native'
 
@@ -53,12 +59,16 @@ const App = () => {
     </Grid>
   )
 }
-export default App
+export default App;
 ```
+
+:::
 
 ### 正方形格子
 
-```SnackPlayer name=Grid
+:::demo
+
+```tsx
 import React from 'react'
 import { Grid,GridItem } from '@nutui/nutui-react-native'
 
@@ -71,12 +81,16 @@ const App = () => {
     </Grid>
   )
 }
-export default App
+export default App;
 ```
+
+:::
 
 ### 格子間距
 
-```SnackPlayer name=Grid
+:::demo
+
+```tsx
 import React from 'react'
 import { Grid,GridItem } from '@nutui/nutui-react-native'
 
@@ -94,12 +108,16 @@ const App = () => {
     </Grid>
   )
 }
-export default App
+export default App;
 ```
+
+:::
 
 ### 內容翻轉
 
-```SnackPlayer name=Grid
+:::demo
+
+```tsx
 import React from 'react'
 import { Grid,GridItem } from '@nutui/nutui-react-native'
 
@@ -113,12 +131,16 @@ const App = () => {
     </Grid>
   )
 }
-export default App
+export default App;
 ```
+
+:::
 
 ### 內容橫向
 
-```SnackPlayer name=Grid
+:::demo
+
+```tsx
 import React from 'react'
 import { Grid,GridItem } from '@nutui/nutui-react-native'
 
@@ -132,12 +154,16 @@ const App = () => {
     </Grid>
   )
 }
-export default App
+export default App;
 ```
+
+:::
 
 ### 圖標顏色/大小
 
-```SnackPlayer name=Grid
+:::demo
+
+```tsx
 import React from 'react'
 import { Grid,GridItem } from '@nutui/nutui-react-native'
 
@@ -155,12 +181,16 @@ const App = () => {
     </Grid>
   )
 }
-export default App
+export default App;
 ```
+
+:::
 
 ### 自定義內容
 
-```SnackPlayer name=Grid
+:::demo
+
+```tsx
 import React from 'react'
 import { Grid, GridItem, Avatar } from '@nutui/nutui-react-native'
 
@@ -198,8 +228,10 @@ const App = () => {
     </Grid>
   )
 }
-export default App
+export default App;
 ```
+
+:::
 
 ## API
 
@@ -208,7 +240,7 @@ export default App
 | 參數      | 說明                                      | 類型             | 默認值     |
 | --------- | ----------------------------------------- | ---------------- | ---------- |
 | columnNum | 列數                                      | number \| string | `4`        |
-| iconSize  | 圖標大小，如 `20`           | number \| string | `28`     |
+| iconSize  | 圖標大小，如 `20`                         | number \| string | `28`       |
 | iconColor | 圖標顏色                                  | string           | -          |
 | border    | 是否顯示邊框                              | boolean          | `true`     |
 | gutter    | 格子之間的間距，默認單位為`px`            | number \| string | `0`        |
@@ -219,9 +251,9 @@ export default App
 
 ### GridItem Props
 
-| 參數      | 說明                             | 類型                | 默認值 |
-| --------- | -------------------------------- | ------------------- | ------ |
-| text      | 文字                             | string \| ReactNode | -      |
-| icon      | [圖標名稱](#/icon) 或圖片鏈接    | string \| ReactNode | -      |
-| iconSize  | 圖標大小，如 `20` | number \| string    | `28` |
-| iconColor | 圖標顏色                         | string              | -      |
+| 參數      | 說明                          | 類型                | 默認值 |
+| --------- | ----------------------------- | ------------------- | ------ |
+| text      | 文字                          | string \| ReactNode | -      |
+| icon      | [圖標名稱](#/icon) 或圖片鏈接 | string \| ReactNode | -      |
+| iconSize  | 圖標大小，如 `20`             | number \| string    | `28`   |
+| iconColor | 圖標顏色                      | string              | -      |

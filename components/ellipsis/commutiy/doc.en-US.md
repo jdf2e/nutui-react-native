@@ -1,4 +1,4 @@
-#  Ellipsis
+# Ellipsis
 
 ### Intro
 
@@ -6,18 +6,18 @@ isplay space is insufficient, hidden part of the content and "..." Alternative.
 
 ### Install
 
-```js
+```tsx
 // react
 import { Ellipsis } from '@nutui/nutui-react-native';
-
 ```
-
 
 ## Code
 
 ### Leading
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React from "react";
 import { Ellipsis, Cell } from '@nutui/nutui-react-native';
 
@@ -33,9 +33,13 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### Tailing
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React from "react";
 import { Ellipsis, Cell } from '@nutui/nutui-react-native';
 
@@ -51,9 +55,13 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### Middle
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React from "react";
 import { Ellipsis, Cell } from '@nutui/nutui-react-native';
 
@@ -69,9 +77,13 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### Multi-line
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React from "react";
 import { Ellipsis, Cell } from '@nutui/nutui-react';
 
@@ -87,14 +99,15 @@ const App = () => {
 export default App;
 ```
 
+:::
 
 ## API
 
 ### Props
 
-| Attribute         | Description                             | Type   | Default           |
-|--------------|----------------------------------|--------|------------------|
-| content         | Content               | String | -                |
-| direction         | Direction                | 'start' | 'end' | 'middle' | 'end'               |
-| rows         | Rows               | Number | 1              |
-| lineHeight         | the row height of the container     | String、Number | 20       |
+| Attribute  | Description                     | Type           | Default |
+| ---------- | ------------------------------- | -------------- | ------- | -------- | ----- |
+| content    | Content                         | String         | -       |
+| direction  | Direction                       | 'start'        | 'end'   | 'middle' | 'end' |
+| rows       | Rows                            | Number         | 1       |
+| lineHeight | the row height of the container | String、Number | 20      |

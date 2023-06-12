@@ -6,7 +6,7 @@ Label for labeling and classification.
 
 ### Install
 
-``` javascript
+```tsx
 import { Tag } from '@nutui/nutui-react-native';
 ```
 
@@ -14,7 +14,9 @@ import { Tag } from '@nutui/nutui-react-native';
 
 ### Basic usage
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React from "react";
 import { Tag } from '@nutui/nutui-react-native';
 
@@ -31,9 +33,13 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### Hollow style
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React from "react";
 import { Tag } from '@nutui/nutui-react-native';
 
@@ -47,9 +53,13 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### Rounded style
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React from "react";
 import { Tag } from '@nutui/nutui-react-native';
 
@@ -63,9 +73,13 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### Label style
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React from "react";
 import { Tag } from '@nutui/nutui-react-native';
 
@@ -79,9 +93,13 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### Can close label
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React from "react";
 import { Tag } from '@nutui/nutui-react-native';
 
@@ -95,9 +113,13 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### Custom color
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React from "react";
 import { Tag } from '@nutui/nutui-react-native';
 
@@ -113,9 +135,13 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### Click event
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React from "react";
 import { Tag } from '@nutui/nutui-react-native';
 
@@ -129,9 +155,13 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### Display control
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React, {useState} from "react";
 import { Tag,Button } from '@nutui/nutui-react-native';
 
@@ -152,23 +182,25 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ## API
 
 ### Props
 
-| Field       | illustrate                                      | type    | Defaults    |
-|------------|--------------------------------------------------|---------|-----------|
-| type       | Label type, the optional value is primary success danger warning | String  | `default` |
-| color      | Label color                                         | String  | -         |
-| texColor | Text color, priority is higher than the color attribute  | String  | `white`   |
-| plain      | Whether it is hollow                               | Boolean | `false`   |
-| round      | Whether it is a rounded style                      | Boolean | `false`   |
-| mark       | Whether it is a tag style                          | Boolean | `false`   |
-| closeable  | Whether it can be closed label                     | Boolean | `false`   |
+| Field     | illustrate                                                       | type    | Defaults  |
+| --------- | ---------------------------------------------------------------- | ------- | --------- |
+| type      | Label type, the optional value is primary success danger warning | String  | `default` |
+| color     | Label color                                                      | String  | -         |
+| texColor  | Text color, priority is higher than the color attribute          | String  | `white`   |
+| plain     | Whether it is hollow                                             | Boolean | `false`   |
+| round     | Whether it is a rounded style                                    | Boolean | `false`   |
+| mark      | Whether it is a tag style                                        | Boolean | `false`   |
+| closeable | Whether it can be closed label                                   | Boolean | `false`   |
 
 ### Event
 
 | Event name | illustrate  | Callback parameter |
-|----------|----------|----------|
-| onClick    | Click event | event    |
-| onClose    | Close event | event    |
+| ---------- | ----------- | ------------------ |
+| onClick    | Click event | event              |
+| onClose    | Close event | event              |

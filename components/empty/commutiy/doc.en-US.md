@@ -1,4 +1,4 @@
-#  Empty
+# Empty
 
 ### Introduce
 
@@ -6,15 +6,17 @@ Placeholder prompt when empty
 
 ### Install
 
-```javascript
-import { Empty } from '@nutui/nutui-react-native'
+```tsx
+import { Empty } from '@nutui/nutui-react-native';
 ```
-
 
 ## Demo
 
 ### Basic usage
-```SnackPlayer
+
+:::demo
+
+```tsx
 import  React from "react";
 import { Empty } from '@nutui/nutui-react-native';
 
@@ -26,8 +28,13 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### Custom content size
-```SnackPlayer
+
+:::demo
+
+```tsx
 import  React from "react";
 import { Empty } from '@nutui/nutui-react-native';
 
@@ -39,8 +46,13 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### Picture type, 3 built-in
-```SnackPlayer
+
+:::demo
+
+```tsx
 import  React from "react";
 import { Empty } from '@nutui/nutui-react-native';
 
@@ -56,8 +68,13 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### Custom image
-```SnackPlayer
+
+:::demo
+
+```tsx
 import  React from "react";
 import { Empty } from '@nutui/nutui-react-native';
 
@@ -72,9 +89,13 @@ const App = () => {
 export default App;
 ```
 
+:::
 
 ### Bottom content
-```SnackPlayer
+
+:::demo
+
+```tsx
 import  React from "react";
 import { Empty } from '@nutui/nutui-react-native';
 
@@ -89,14 +110,15 @@ const App = () => {
 };
 export default App;
 ```
+
+:::
+
 ## API
 
 ### Props
 
-| Props    | Description                             | Type   | Default           |
-|--------------|----------------------------------|--------|------------------|
-| image         | Image type, the optional value is `error` `network` `empty`, which supports incoming image URLs             | ReactNode       |
-| imageSize        | Image size, the unit of Number type is px                       | Number \| String | -       |
-| description         | Description text below the image | ReactNode | No Data                |
-
-
+| Props       | Description                                                                                     | Type             | Default |
+| ----------- | ----------------------------------------------------------------------------------------------- | ---------------- | ------- |
+| image       | Image type, the optional value is `error` `network` `empty`, which supports incoming image URLs | ReactNode        |
+| imageSize   | Image size, the unit of Number type is px                                                       | Number \| String | -       |
+| description | Description text below the image                                                                | ReactNode        | No Data |

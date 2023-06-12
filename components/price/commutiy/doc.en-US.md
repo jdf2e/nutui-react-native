@@ -6,15 +6,17 @@ It is used to apply different styles to the parts before and after the decimal p
 
 ### Install
 
-```javascript
-import { Price } from '@nutui/nutui-react-native'
+```tsx
+import { Price } from '@nutui/nutui-react-native';
 ```
 
 ## Demo
 
 ### Support three sizes：small、normal、large
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React from "react"
 import { Price, Cell } from '@nutui/nutui-react-native'
 
@@ -36,9 +38,13 @@ const App = () => {
 export default App;
 ```
 
+:::
 
 ### No decimals
-```SnackPlayer
+
+:::demo
+
+```tsx
 import  React from "react"
 import { Price, Cell } from '@nutui/nutui-react-native'
 
@@ -58,10 +64,13 @@ const App = () => {
 export default App;
 ```
 
+:::
 
 ### With RMB symbol, no thousands separator
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React from "react"
 import { Price, Cell } from '@nutui/nutui-react-native'
 
@@ -75,10 +84,13 @@ const App = () => {
 export default App;
 ```
 
+:::
 
 ### With RMB symbol, separated by thousands, keep three decimal places
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React from "react"
 import { Price, Cell } from '@nutui/nutui-react-native'
 
@@ -98,10 +110,13 @@ const App = () => {
 export default App;
 ```
 
+:::
 
 ### Adjust the symbol position
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React from "react"
 import { Price, Cell } from '@nutui/nutui-react-native'
 
@@ -122,10 +137,13 @@ const App = () => {
 export default App;
 ```
 
+:::
 
 ### Asynchronous random changes
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React, { useState, useEffect } from 'react'
 import { Price, Cell } from '@nutui/nutui-react-native'
 
@@ -155,17 +173,18 @@ const App = () => {
 export default App;
 ```
 
+:::
 
 ## API
 
 ### Props
 
-| Attribute      | Description                                                | Type            | Default |
-|----------------|------------------------------------------------------------|------------------|--------|
-| price          | Price                 | Number  | 0      |
-| needSymbol    | Add symbol | Boolean | true   |
-| symbol         | Symbol type                 | String  | &yen;  |
-| decimalDigits | Decimal digits               | Number  | 2      |
-| thousands      | Thousands separation   | Boolean | false  |
-| position   | The symbol appear before or after the price，`before`、`after` | String           | before |
-| size   | Size，`large`、`normal`、`small`                            | String           | large |
+| Attribute     | Description                                                    | Type    | Default |
+| ------------- | -------------------------------------------------------------- | ------- | ------- |
+| price         | Price                                                          | Number  | 0       |
+| needSymbol    | Add symbol                                                     | Boolean | true    |
+| symbol        | Symbol type                                                    | String  | &yen;   |
+| decimalDigits | Decimal digits                                                 | Number  | 2       |
+| thousands     | Thousands separation                                           | Boolean | false   |
+| position      | The symbol appear before or after the price，`before`、`after` | String  | before  |
+| size          | Size，`large`、`normal`、`small`                               | String  | large   |

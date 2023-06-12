@@ -6,15 +6,17 @@ Action menu panel that pops up from the bottom.
 
 ### Install
 
-```ts
-import { ActionSheet,Cell } from '@nutui/nutui-react-native';
+```tsx
+import { ActionSheet, Cell } from '@nutui/nutui-react-native';
 ```
 
 ## Demo
 
 ### Basic usage
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React, { useState } from "react";
 import { ActionSheet,Cell } from '@nutui/nutui-react-native';
 import { View, Text } from 'react-native';
@@ -63,12 +65,15 @@ const App = () => {
   );
 };
 export default App;
-
 ```
+
+:::
 
 ### Show Cancel Button
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React, { useState } from "react";
 import { ActionSheet,Cell } from '@nutui/nutui-react-native';
 import { View, Text } from 'react-native';
@@ -111,12 +116,15 @@ const App = () => {
   );
 };
 export default App;
-
 ```
+
+:::
 
 ### Display Description Information
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React, { useState } from "react";
 import { ActionSheet,Cell } from '@nutui/nutui-react-native';
 import { View, Text } from 'react-native';
@@ -161,12 +169,15 @@ const App = () => {
   );
 };
 export default App;
-
 ```
+
+:::
 
 ### Option Status
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React, { useState } from "react";
 import { ActionSheet,Cell } from '@nutui/nutui-react-native';
 import { View, Text } from 'react-native';
@@ -204,8 +215,9 @@ const App = () => {
   );
 };
 export default App;
-
 ```
+
+:::
 
 ## Prop
 
@@ -223,7 +235,7 @@ export default App;
 
 ## Event
 
-| Attribute        | Description                             | Arguments                                           |
-| ---------------- | --------------------------------------- | --------------------------------------------------- |
-| onChoose | Triggered after selection               | Selected list item item, selected index value index |
-| onCancel | Triggered when onCancel copy is clicked | none                                                |
+| Attribute | Description                             | Arguments                                           |
+| --------- | --------------------------------------- | --------------------------------------------------- |
+| onChoose  | Triggered after selection               | Selected list item item, selected index value index |
+| onCancel  | Triggered when onCancel copy is clicked | none                                                |

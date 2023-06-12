@@ -6,15 +6,17 @@
 
 ### 安装
 
-```javascript
-import { Price } from '@nutui/nutui-react-native'
+```tsx
+import { Price } from '@nutui/nutui-react-native';
 ```
 
 ## 代码演示
 
 ### 基础用法 small normal large
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React from "react"
 import { Price, Cell } from '@nutui/nutui-react-native'
 
@@ -36,10 +38,13 @@ const App = () => {
 export default App;
 ```
 
+:::
 
 ### 不保留小数
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React from "react"
 import { Price, Cell } from '@nutui/nutui-react-native'
 
@@ -59,10 +64,13 @@ const App = () => {
 export default App;
 ```
 
+:::
 
 ### 有人民币符号，无千位分隔
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React from "react"
 import { Price, Cell } from '@nutui/nutui-react-native'
 
@@ -76,10 +84,13 @@ const App = () => {
 export default App;
 ```
 
+:::
 
 ### 带人民币符号，有千位分隔，保留小数点后三位
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React from "react"
 import { Price, Cell } from '@nutui/nutui-react-native'
 
@@ -99,10 +110,13 @@ const App = () => {
 export default App;
 ```
 
+:::
 
 ### 调整 symbol 符号位置
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React from "react"
 import { Price, Cell } from '@nutui/nutui-react-native'
 
@@ -123,10 +137,13 @@ const App = () => {
 export default App;
 ```
 
+:::
 
 ### 异步随机变更
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React, { useState, useEffect } from 'react'
 import { Price, Cell } from '@nutui/nutui-react-native'
 
@@ -156,17 +173,18 @@ const App = () => {
 export default App;
 ```
 
+:::
 
 ## API
 
 ### Props
 
-| 参数           | 说明                     | 类型    | 默认值 |
-| -------------- | ------------------------ | ------- | ------ |
-| price          | 价格数量                 | Number  | 0      |
-| needSymbol    | 是否需要加上 symbol 符号 | Boolean | true   |
-| symbol         | 符号类型                 | String  | &yen;  |
-| decimalDigits | 小数位位数               | Number  | 2      |
-| thousands      | 是否按照千分号形式显示   | Boolean | false  |
-| position   | 符号显示在价格前或者后，`before`、`after`  | String           | before |
-| size   | 价格尺寸，`large`、`normal`、`small`     | String           | large |
+| 参数          | 说明                                      | 类型    | 默认值 |
+| ------------- | ----------------------------------------- | ------- | ------ |
+| price         | 价格数量                                  | Number  | 0      |
+| needSymbol    | 是否需要加上 symbol 符号                  | Boolean | true   |
+| symbol        | 符号类型                                  | String  | &yen;  |
+| decimalDigits | 小数位位数                                | Number  | 2      |
+| thousands     | 是否按照千分号形式显示                    | Boolean | false  |
+| position      | 符号显示在价格前或者后，`before`、`after` | String  | before |
+| size          | 价格尺寸，`large`、`normal`、`small`      | String  | large  |

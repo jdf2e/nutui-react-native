@@ -6,15 +6,17 @@ Implement draggable arbitrary elements.
 
 ### Install
 
-```javascript
-import { Drag } from '@nutui/nutui-react-native'
+```tsx
+import { Drag } from '@nutui/nutui-react-native';
 ```
 
 ## Demo
 
 ### Basic Usage
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React from "react";
 import { Drag } from '@nutui/nutui-react-native';
 
@@ -37,10 +39,13 @@ const App = () => {
 export default App;
 ```
 
+:::
 
-##  Limit Direction
+## Limit Direction
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React from "react";
 import { Drag } from '@nutui/nutui-react-native';
 
@@ -68,10 +73,13 @@ const App = () => {
 export default App;
 ```
 
+:::
 
 ## Attract
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React from "react";
 import { Drag } from '@nutui/nutui-react-native';
 
@@ -94,9 +102,13 @@ const App = () => {
 export default App;
 ```
 
+:::
 
 ## Limit Boundaries
-```SnackPlayer
+
+:::demo
+
+```tsx
 import  React from "react";
 import { Drag } from '@nutui/nutui-react-native';
 
@@ -142,14 +154,14 @@ const App = () => {
 export default App;
 ```
 
+:::
 
 ## API
 
 ### Props
 
-
-| Attribute            | Description               | Type   | Default  |
-| :-------- | :------------------------------------------------ | :------------- | :---------------------------------- |
-| attract   | Whether to enable automatic edge suction  | Boolean        | false                                |
-| direction | The drag direction limit of the dragged element **x**/**y**/**lock**| String   | 'lock'         |
-| boundary  | The drag boundary of the dragged element   | Object         | {top: 0,left: 0,right: 0,bottom: 0} |
+| Attribute | Description                                                          | Type    | Default                             |
+| :-------- | :------------------------------------------------------------------- | :------ | :---------------------------------- |
+| attract   | Whether to enable automatic edge suction                             | Boolean | false                               |
+| direction | The drag direction limit of the dragged element **x**/**y**/**lock** | String  | 'lock'                              |
+| boundary  | The drag boundary of the dragged element                             | Object  | {top: 0,left: 0,right: 0,bottom: 0} |

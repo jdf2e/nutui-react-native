@@ -6,16 +6,17 @@ Enter or edit text in the text box, and limit the number of entries is supported
 
 ### Install
 
-```javascript
+```tsx
 import { TextArea } from '@nutui/nutui-react-native';
-
 ```
 
 ## Demo
 
 ### Basic Usage
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React, {useState} from "react";
 import { TextArea } from '@nutui/nutui-react-native';
 
@@ -43,13 +44,16 @@ const App = () => {
         </>
     )
 };
-export default App
+export default App;
 ```
 
+:::
 
 ### Display word count
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React, {useState} from "react";
 import { TextArea } from '@nutui/nutui-react-native';
 
@@ -61,12 +65,16 @@ const App = () => {
         </>
     )
 };
-export default App
+export default App;
 ```
+
+:::
 
 ### Height customization, stretching
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React, {useState} from "react";
 import { TextArea } from '@nutui/nutui-react-native';
 
@@ -78,12 +86,16 @@ const App = () => {
         </>
     )
 };
-export default App
+export default App;
 ```
+
+:::
 
 ### read-only，disabled
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React, {useState} from "react";
 import { TextArea } from '@nutui/nutui-react-native';
 
@@ -95,12 +107,16 @@ const App = () => {
         </>
     )
 };
-export default App
+export default App;
 ```
+
+:::
 
 ### TextAlign
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React, {useState} from "react";
 import { TextArea } from '@nutui/nutui-react-native';
 
@@ -111,31 +127,31 @@ const App = () => {
         </>
     )
 };
-export default App
+export default App;
 ```
+
+:::
 
 ## API
 
 ### Props
 
-| Attribute     | Description            | Type   | Default       |
-| ------------ | ----------------------------------- | -------------- | -------------- |
-| defaultValue | input value, support two-way binding              | String         | -              |
-| placeholder  | set placeholder prompt text             | String         | ` 'please enter content' ` |
-| maxlength    | limit the maximum input characters              | String、Number | -              |
-| rows         | height of textarea, with priority higher than autosize attribute `Only H5 is supported`                                  | String、Number | `2`            |
-| limitshow    | whether textarea displays the input characters. Use | Boolean        | `false`        |
-| autosize     | whether to adapt the content height. You can also pass in objects, such as {maxheight: 200, minheight: 100}. The unit is PX          | Boolean        | `false`    |
-| textAlign    | text position, optional values ` left ,  center,  right `     | String         | `left`         |
-| readonly     | read only attribute          | Boolean        | `false`        |
-| disabled     | disable attribute           | Boolean        | `false`        |
+| Attribute    | Description                                                                                                                 | Type           | Default                  |
+| ------------ | --------------------------------------------------------------------------------------------------------------------------- | -------------- | ------------------------ |
+| defaultValue | input value, support two-way binding                                                                                        | String         | -                        |
+| placeholder  | set placeholder prompt text                                                                                                 | String         | `'please enter content'` |
+| maxlength    | limit the maximum input characters                                                                                          | String、Number | -                        |
+| rows         | height of textarea, with priority higher than autosize attribute `Only H5 is supported`                                     | String、Number | `2`                      |
+| limitshow    | whether textarea displays the input characters. Use                                                                         | Boolean        | `false`                  |
+| autosize     | whether to adapt the content height. You can also pass in objects, such as {maxheight: 200, minheight: 100}. The unit is PX | Boolean        | `false`                  |
+| textAlign    | text position, optional values `left ,  center,  right`                                                                     | String         | `left`                   |
+| readonly     | read only attribute                                                                                                         | Boolean        | `false`                  |
+| disabled     | disable attribute                                                                                                           | Boolean        | `false`                  |
 
 ### Events
 
-| Event   | Description           |Arguments  |
-| ------ | -------------- | -------- |
-| onChange | Triggered when the value of the input box changes | val      |
-| onFocus  | Triggered when focusing     | val      |
-| onBlur   | Triggered when out of focus     | val      |
-
-
+| Event    | Description                                       | Arguments |
+| -------- | ------------------------------------------------- | --------- |
+| onChange | Triggered when the value of the input box changes | val       |
+| onFocus  | Triggered when focusing                           | val       |
+| onBlur   | Triggered when out of focus                       | val       |

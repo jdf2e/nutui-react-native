@@ -6,7 +6,7 @@
 
 ### 安装
 
-```javascript
+```tsx
 import { Toast } from '@nutui/nutui-react-native';
 ```
 
@@ -16,7 +16,9 @@ import { Toast } from '@nutui/nutui-react-native';
 
 #### 文字提示
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React, {useState} from "react";
 import { Toast, Cell } from '@nutui/nutui-react-native';
 
@@ -36,12 +38,16 @@ const App = () => {
         </>
     )
 }
-export default App
+export default App;
 ```
+
+:::
 
 #### 标题提示
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React, {useState} from "react";
 import { Toast, Cell } from '@nutui/nutui-react-native';
 
@@ -61,11 +67,16 @@ const App = () => {
         </>
     )
 }
-export default App
+export default App;
 ```
+
+:::
+
 #### 成功提示
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React, {useState} from "react";
 import { Toast, Cell } from '@nutui/nutui-react-native';
 
@@ -85,13 +96,16 @@ const App = () => {
         </>
     )
 }
-export default App
+export default App;
 ```
 
+:::
 
 #### 失败提示
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React, {useState} from "react";
 import { Toast, Cell } from '@nutui/nutui-react-native';
 
@@ -111,13 +125,16 @@ const App = () => {
         </>
     )
 }
-export default App
+export default App;
 ```
 
+:::
 
 #### 警告提示
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React, {useState} from "react";
 import { Toast, Cell } from '@nutui/nutui-react-native';
 
@@ -137,13 +154,16 @@ const App = () => {
         </>
     )
 }
-export default App
+export default App;
 ```
 
+:::
 
 #### 加载提示
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React, {useState} from "react";
 import { Toast, Cell } from '@nutui/nutui-react-native';
 
@@ -163,14 +183,16 @@ const App = () => {
         </>
     )
 }
-export default App
+export default App;
 ```
 
-
+:::
 
 #### 展示时长设置
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React, {useState} from "react";
 import { Toast, Cell, Button } from '@nutui/nutui-react-native';
 
@@ -205,12 +227,16 @@ const App = () => {
         </>
     )
 }
-export default App
+export default App;
 ```
 
-#### Toast自定义底部高度
+:::
 
-```SnackPlayer
+#### Toast 自定义底部高度
+
+:::demo
+
+```tsx
 import  React, {useState} from "react";
 import { Toast, Cell } from '@nutui/nutui-react-native';
 
@@ -231,13 +257,16 @@ const App = () => {
         />
     )
 }
-export default App
+export default App;
 ```
 
+:::
 
-#### 加载Loading带透明罩
+#### 加载 Loading 带透明罩
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React, {useState} from "react";
 import { Toast, Cell } from '@nutui/nutui-react-native';
 
@@ -264,39 +293,38 @@ const App = () => {
         </>
     )
 }
-export default App
+export default App;
 ```
 
-
+:::
 
 ## API
 
-| 方法名        | 说明                       | 参数            | 返回值     |
-| ---------- | ------------------------ | --------------- | ---------- |
-| Toast.text                | 展示文字提示    |  message｜ options | toast 实例(message支持传入HTML) |
-| Toast.success             | 展示成功提示       | message｜ options| toast 实例 |
-| Toast.fail                | 展示失败提示     | message｜ options| toast 实例 |
-| Toast.warn                | 展示警告提示        | message｜ options | toast 实例 |
-| Toast.hide                | 关闭提示          | force:boolean   | void       |
-| Toast.loading             | 展示加载提示       | message｜ options | toast 实例 |
+| 方法名        | 说明         | 参数               | 返回值                            |
+| ------------- | ------------ | ------------------ | --------------------------------- |
+| Toast.text    | 展示文字提示 | message ｜ options | toast 实例(message 支持传入 HTML) |
+| Toast.success | 展示成功提示 | message ｜ options | toast 实例                        |
+| Toast.fail    | 展示失败提示 | message ｜ options | toast 实例                        |
+| Toast.warn    | 展示警告提示 | message ｜ options | toast 实例                        |
+| Toast.hide    | 关闭提示     | force:boolean      | void                              |
+| Toast.loading | 展示加载提示 | message ｜ options | toast 实例                        |
 
 ### Props
 
-| 字段                | 说明              | 类型          | 默认值                        |
-| ------------------- | -------------- | ------------- | ----------------------------- |
-| id                  | 标识符，相同者共用一个实例<br>loading类型默认使用一个实例，其他类型默认不共用 | String/Number | -                             |
-| duration            | 展示时长（毫秒）<br>值为 0 时，toast 不会自动消失      | Number        | 2000       |
-| title `v1.3.0`            | 标题      | string        | -            |
-| center              | 是否展示在页面中部（为false时展示在底部）                   | Boolean  | true   |
-| bottom              | 距页面底部的距离（像素），option.center为false时生效        | Number   | 30     |
-| textAlignCenter     | 多行文案是否居中                         | Boolean       | true          |
-| bgColor             | 背景颜色（透明度）                                   | String        | "rgba(0, 0, 0, 0.8)"    |
-| icon                | 自定义图标，**支持图片链接或base64格式**              | String        | ""           |
-| iconSize `v1.3.0`               | 自定义图标尺寸              | String        | 20          |
-| size                | 文案尺寸，**small**/**base**/**large**三选一           | String        | "base"         |
-| cover               | 是否显示遮罩层                                          | Boolean       | false |
-| coverColor          | 遮罩层颜色，默认透明                                   | String        | "rgba(0,0,0,0)"    |
-| loadingRotate       | loading图标是否旋转，仅对loading类型生效                   | Boolean       | true          |
-| onClose             | 关闭时触发的事件                                      | function      | null            |
-| closeOnClickOverlay | 是否在点击遮罩层后关闭提示                         | Boolean       | false     |
-
+| 字段                | 说明                                                                           | 类型          | 默认值               |
+| ------------------- | ------------------------------------------------------------------------------ | ------------- | -------------------- |
+| id                  | 标识符，相同者共用一个实例<br>loading 类型默认使用一个实例，其他类型默认不共用 | String/Number | -                    |
+| duration            | 展示时长（毫秒）<br>值为 0 时，toast 不会自动消失                              | Number        | 2000                 |
+| title `v1.3.0`      | 标题                                                                           | string        | -                    |
+| center              | 是否展示在页面中部（为 false 时展示在底部）                                    | Boolean       | true                 |
+| bottom              | 距页面底部的距离（像素），option.center 为 false 时生效                        | Number        | 30                   |
+| textAlignCenter     | 多行文案是否居中                                                               | Boolean       | true                 |
+| bgColor             | 背景颜色（透明度）                                                             | String        | "rgba(0, 0, 0, 0.8)" |
+| icon                | 自定义图标，**支持图片链接或 base64 格式**                                     | String        | ""                   |
+| iconSize `v1.3.0`   | 自定义图标尺寸                                                                 | String        | 20                   |
+| size                | 文案尺寸，**small**/**base**/**large**三选一                                   | String        | "base"               |
+| cover               | 是否显示遮罩层                                                                 | Boolean       | false                |
+| coverColor          | 遮罩层颜色，默认透明                                                           | String        | "rgba(0,0,0,0)"      |
+| loadingRotate       | loading 图标是否旋转，仅对 loading 类型生效                                    | Boolean       | true                 |
+| onClose             | 关闭时触发的事件                                                               | function      | null                 |
+| closeOnClickOverlay | 是否在点击遮罩层后关闭提示                                                     | Boolean       | false                |

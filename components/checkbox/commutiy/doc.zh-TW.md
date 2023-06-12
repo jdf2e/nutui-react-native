@@ -6,18 +6,19 @@
 
 ### 安裝
 
-``` ts
+```tsx
 import { Checkbox, CheckboxGroup } from '@nutui/nutui-react-native';
-
 ```
 
 ## 基本用法
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React, { useState } from "react";
 import { Checkbox, CheckboxGroup } from '@nutui/nutui-react-native';
 
-const CheckBoxDemo = () => {
+const App = () => {
   const [checked, setChecked] = useState(true)
   return (<>
       <Checkbox textPosition="left" label="複選框" checked={checked} />
@@ -25,16 +26,20 @@ const CheckBoxDemo = () => {
     </>
   )
 }
-export default CheckBoxDemo;
+export default App;
 ```
+
+:::
 
 ## 禁用狀態
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React from "react";
 import { Checkbox, CheckboxGroup } from '@nutui/nutui-react-native';
 
-const CheckBoxDemo = () => {
+const App = () => {
   return (<>
     <Checkbox
       textPosition="right"
@@ -50,48 +55,61 @@ const CheckBoxDemo = () => {
     />
   </>)
 }
-export default CheckBoxDemo;
+export default App;
 ```
+
+:::
 
 ## 自定義尺寸
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React from "react";
 import { Checkbox, CheckboxGroup } from '@nutui/nutui-react-native';
 
-const CheckBoxDemo = () => {
+const App = () => {
   return (<>
     <Checkbox label="自定義尺寸" iconSize={25} />
     <Checkbox label="自定義尺寸" iconSize={10} />
   </>)
 }
-export default CheckBoxDemo;
+export default App;
 ```
+
+:::
 
 ## 自定義圖標
 
 這裡建議同時設置 `iconName` 和 `iconActiveName` 屬性
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React from "react";
 import { Checkbox, CheckboxGroup } from '@nutui/nutui-react-native';
 
-const CheckBoxDemo = () => {
+const App = () => {
   return (<>
     <Checkbox iconName="checklist" iconActiveName="checklist">自定义图标</Checkbox>
   </>)
 }
-export default CheckBoxDemo;
+export default App;
 ```
-## change事件
 
-值發生變化時，將觸發change事件
+:::
 
-```SnackPlayer
+## change 事件
+
+值發生變化時，將觸發 change 事件
+
+:::demo
+
+```tsx
 import React from "react";
 import { Checkbox, CheckboxGroup, Toast } from '@nutui/nutui-react-native';
 
-const CheckBoxDemo = () => {
+const App = () => {
   return (<>
     <Checkbox
       checked={false}
@@ -103,16 +121,20 @@ const CheckBoxDemo = () => {
     </Checkbox>
   </>)
 }
-export default CheckBoxDemo;
+export default App;
 ```
+
+:::
 
 ## CheckBoxGroup
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React, { useState } from "react";
 import { Checkbox, CheckboxGroup } from '@nutui/nutui-react-native';
 
-const CheckBoxDemo = () => {
+const App = () => {
   const [checkboxgroup1, setCheckboxgroup1] = useState(['1'])
   return (
     <CheckboxGroup
@@ -137,16 +159,20 @@ const CheckBoxDemo = () => {
     </CheckboxGroup>
   )
 }
-export default CheckBoxDemo;
+export default App;
 ```
+
+:::
 
 ## CheckBoxGroup 禁用
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React, { useState } from "react";
 import { Checkbox, CheckboxGroup } from '@nutui/nutui-react-native';
 
-const CheckBoxDemo = () => {
+const App = () => {
   const [checkboxgroup1, setCheckboxgroup1] = useState(['1'])
   return (
     <CheckboxGroup checkedValue={checkboxgroup1} disabled>
@@ -165,16 +191,20 @@ const CheckBoxDemo = () => {
     </CheckboxGroup>
   )
 }
-export default CheckBoxDemo;
+export default App;
 ```
+
+:::
 
 ## CheckboxGroup 全選/取消
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React, { useState, useRef } from "react";
 import { Checkbox, CheckboxGroup, Button, Toast } from '@nutui/nutui-react-native';
 
-const CheckBoxDemo = () => {
+const App = () => {
   const [checkboxgroup2, setCheckboxgroup2] = useState(['1'])
   const checkboxgroup2Ref = useRef(null)
   return (<>
@@ -225,16 +255,20 @@ const CheckBoxDemo = () => {
     </Button>
   </>)
 }
-export default CheckBoxDemo;
+export default App;
 ```
 
-## checkboxGroup使用，限制最大可選數（2個）
+:::
 
-```SnackPlayer
+## checkboxGroup 使用，限制最大可選數（2 個）
+
+:::demo
+
+```tsx
 import React, { useState, useRef } from "react";
 import { Checkbox, CheckboxGroup, Button, Toast } from '@nutui/nutui-react-native';
 
-const CheckBoxDemo = () => {
+const App = () => {
   const [checkboxgroup2, setCheckboxgroup2] = useState(['1'])
   const checkboxgroup2Ref = useRef(null)
   return (<>
@@ -260,15 +294,20 @@ const CheckBoxDemo = () => {
     </CheckboxGroup>
   </>)
 }
-export default CheckBoxDemo;
+export default App;
 ```
 
+:::
+
 ## 全選/半選/取消
-```SnackPlayer
+
+:::demo
+
+```tsx
 import React, { useState, useRef } from "react";
 import { Checkbox, CheckboxGroup, Button, Toast } from '@nutui/nutui-react-native';
 
-const CheckBoxDemo = () => {
+const App = () => {
   const [checkboxgroup2, setCheckboxgroup2] = useState(['1'])
   const checkboxgroup2Ref = useRef(null)
   const [checkbox1, setCheckbox1] = useState(false)
@@ -316,44 +355,46 @@ const CheckBoxDemo = () => {
     </CheckboxGroup>
   </>)
 }
-export default CheckBoxDemo;
+export default App;
 ```
+
+:::
 
 ## Checkbox
 
-| 字段                            | 說明 | 類型 | 默認值 |
-|-------------------------------| ----- | ----- | -----|
-| checked                       | 是否處於選中狀態 | Boolean | `false`|
-| disabled                      | 是否禁用選擇 | Boolean | `false`|
-| textPosition                  | 文本所在的位置，可選值：`left`,`right` | String | `right`|
-| iconSize                      | [圖標尺寸](#/icon) | String、Number | `18`|
-| iconName                      | [圖標名稱](#/icon)，選中前(建議和`iconActiveName`一起修改) | String | `'check-normal'`|
-| iconActiveName                | [圖標名稱](#/icon)，選中後(建議和`iconName`一起修改) | String | `'checked'`|
-| label                         | 複選框的文本內容 | String | -|
+| 字段           | 說明                                                       | 類型           | 默認值           |
+| -------------- | ---------------------------------------------------------- | -------------- | ---------------- |
+| checked        | 是否處於選中狀態                                           | Boolean        | `false`          |
+| disabled       | 是否禁用選擇                                               | Boolean        | `false`          |
+| textPosition   | 文本所在的位置，可選值：`left`,`right`                     | String         | `right`          |
+| iconSize       | [圖標尺寸](#/icon)                                         | String、Number | `18`             |
+| iconName       | [圖標名稱](#/icon)，選中前(建議和`iconActiveName`一起修改) | String         | `'check-normal'` |
+| iconActiveName | [圖標名稱](#/icon)，選中後(建議和`iconName`一起修改)       | String         | `'checked'`      |
+| label          | 複選框的文本內容                                           | String         | -                |
 
 ## CheckboxGroup
 
-| 字段           | 說明 | 類型          | 默認值|
-|--------------| ----- |-------------| -- |
-| checkedValue | 當前選中項的標識符，和 `label` 相對應  | String      | -|
-| disabled     | 是否禁用選擇,將用於其下的全部複選框 | Boolean     | `false`|
-| max`v1.2.1`           | 限制最大可選數 | `undefined|number` | `undefined`|
+| 字段         | 說明                                  | 類型       | 默認值  |
+| ------------ | ------------------------------------- | ---------- | ------- | ----------- |
+| checkedValue | 當前選中項的標識符，和 `label` 相對應 | String     | -       |
+| disabled     | 是否禁用選擇,將用於其下的全部複選框   | Boolean    | `false` |
+| max`v1.2.1`  | 限制最大可選數                        | `undefined | number` | `undefined` |
 
 ## Checkbox Event
 
-| 字段 | 說明 | 回調參數|
-|----- | ----- | ----- |
-| onChange | 值變化時觸發 | (state, label),`state`代表當前狀態，`label`表示當前選中的值|
+| 字段     | 說明         | 回調參數                                                    |
+| -------- | ------------ | ----------------------------------------------------------- |
+| onChange | 值變化時觸發 | (state, label),`state`代表當前狀態，`label`表示當前選中的值 |
 
 ## CheckboxGroup Event
 
-| 字段 | 說明 | 回調參數|
-|----- | ----- | ----- |
-| onChange | 值變化時觸發 | label,`label`返回一個數組，表示當前選中項的集合|
+| 字段     | 說明         | 回調參數                                        |
+| -------- | ------------ | ----------------------------------------------- |
+| onChange | 值變化時觸發 | label,`label`返回一個數組，表示當前選中項的集合 |
 
 ## CheckboxGroup API
 
-| 方法名               | 說明 | 參數 |
-|-------------------| ----- | ----- |
-| toggleAll`v1.2.1` | 全選/取消 | `f`,傳 `true`,表示全選，傳 `false`,表示取消全選 |
-| toggleReverse`v1.2.1`   | 反選 | - |
+| 方法名                | 說明      | 參數                                            |
+| --------------------- | --------- | ----------------------------------------------- |
+| toggleAll`v1.2.1`     | 全選/取消 | `f`,傳 `true`,表示全選，傳 `false`,表示取消全選 |
+| toggleReverse`v1.2.1` | 反選      | -                                               |

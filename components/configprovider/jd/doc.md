@@ -4,7 +4,9 @@
 
 用于全局配置 NutUI-React 组件，提供国际化支持。
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React from 'react';
 import { ConfigProvider, Textarea } from "@nutui/nutui-react-native";
 import en from "@nutui/nutui-react-native/locales/en-US";
@@ -20,9 +22,11 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### 安装
 
-```javascript
+```tsx
 import { ConfigProvider } from '@nutui/nutui-react-native';
 ```
 
@@ -30,7 +34,9 @@ import { ConfigProvider } from '@nutui/nutui-react-native';
 
 ### 基础用法
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React from 'react';
 import { ConfigProvider, Textarea } from "@nutui/nutui-react-native";
 import en from "@nutui/nutui-react-native/locales/en-US";
@@ -45,6 +51,8 @@ const App = () => {
 
 export default App;
 ```
+
+:::
 
 ## API
 

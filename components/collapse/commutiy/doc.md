@@ -1,4 +1,4 @@
-#  Collapse 折叠面板
+# Collapse 折叠面板
 
 ### 介绍
 
@@ -6,16 +6,17 @@
 
 ### 安装
 
-```ts
-import { Collapse,CollapseItem } from '@nutui/nutui-react-native'
+```tsx
+import { Collapse, CollapseItem } from '@nutui/nutui-react-native';
 ```
-
 
 ## 代码演示
 
 ### 基础用法
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React from "react";
 import { Collapse,CollapseItem } from '@nutui/nutui-react-native';
 
@@ -38,9 +39,14 @@ const App = () => {
 };
 export default App;
 ```
-### 无icon样式，绑定点击事件
 
-```SnackPlayer
+:::
+
+### 无 icon 样式，绑定点击事件
+
+:::demo
+
+```tsx
 import React, { useState } from 'react'
 import { Collapse ,CollapseItem} from '@nutui/nutui-react-native'
 
@@ -65,9 +71,13 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### 手风琴模式
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React from 'react'
 import { Collapse ,CollapseItem} from '@nutui/nutui-react-native'
 
@@ -88,9 +98,14 @@ const App = () => {
 }
 export default App;
 ```
+
+:::
+
 ### 自定义折叠图标
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React from 'react'
 import { Collapse ,CollapseItem} from '@nutui/nutui-react-native'
 
@@ -111,9 +126,14 @@ const App = () => {
 }
 export default App;
 ```
-### 自定义title图标
 
-```SnackPlayer
+:::
+
+### 自定义 title 图标
+
+:::demo
+
+```tsx
 import React from 'react'
 import { Collapse ,CollapseItem, Button} from '@nutui/nutui-react-native'
 
@@ -147,9 +167,14 @@ const App = () => {
 }
 export default App;
 ```
+
+:::
+
 ### 动态改变数据
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React, { useState } from 'react'
 import { Collapse ,CollapseItem,Button} from '@nutui/nutui-react-native'
 
@@ -225,43 +250,41 @@ const App = () => {
   export default App;
 ```
 
+:::
 
 ## API
 
 ### Collapse Prop
 
-| 参数         | 说明                             | 类型   | 默认值           |
-|--------------|----------------------------------|--------|------------------|
-| activeName   | 当前展开面板的 name               | 手风琴模式：string/number 非手风琴模式：(string/number)[] | - |
-| accordion    | 是否开启手风琴模式                 | boolean | false  |
-| icon         | 图标链接/或使用 NutUI 的 icon      | String | -                |
-| iconSize     | 图标大小                          | number      | 16 |
-| iconColor    | 图标颜色                          | String | ''              |
-| rotate       | 点击折叠和展开的旋转角度,在自定义图标模式下生效| number | 180 |
-
+| 参数       | 说明                                            | 类型                                                      | 默认值 |
+| ---------- | ----------------------------------------------- | --------------------------------------------------------- | ------ |
+| activeName | 当前展开面板的 name                             | 手风琴模式：string/number 非手风琴模式：(string/number)[] | -      |
+| accordion  | 是否开启手风琴模式                              | boolean                                                   | false  |
+| icon       | 图标链接/或使用 NutUI 的 icon                   | String                                                    | -      |
+| iconSize   | 图标大小                                        | number                                                    | 16     |
+| iconColor  | 图标颜色                                        | String                                                    | ''     |
+| rotate     | 点击折叠和展开的旋转角度,在自定义图标模式下生效 | number                                                    | 180    |
 
 ### CollapseItem Prop
 
-| 参数         | 说明                             | 类型   | 默认值           |
-|--------------|----------------------------------|--------|------------------|
-| name   | 唯一标识符，必填                         |string | '' |
-| title    | 标题栏左侧内容                 | string | ''  |
-| isOpen    | 是否打开状态                 | boolean | false  |
-| icon    | 图标链接/或使用 NutUI 的 icon                 | string | ''  |
-| iconSize     | 图标大小                          | number      | '' |
-| iconColor    | 图标颜色                          | String | ''              |
-| disabled    | 标题栏是否禁用                 | boolean | false  |
-| rotate       | 点击折叠和展开的旋转角度,在自定义图标模式下生效| number | 180 |
-| subTitle    | 标题栏副标题             | string | ''  |
-| titleIcon    | 标题图标链接/或使用 NutUI 的 icon             | string | ''  |
-| titleIconColor    | 标题图标颜色        | string | ''  |
-| titleIconSize    | 标题图标大小        | string | ''  |
-| titleIconPosition    | 标题图标位置             | string | ''  |
-
-
+| 参数              | 说明                                            | 类型    | 默认值 |
+| ----------------- | ----------------------------------------------- | ------- | ------ |
+| name              | 唯一标识符，必填                                | string  | ''     |
+| title             | 标题栏左侧内容                                  | string  | ''     |
+| isOpen            | 是否打开状态                                    | boolean | false  |
+| icon              | 图标链接/或使用 NutUI 的 icon                   | string  | ''     |
+| iconSize          | 图标大小                                        | number  | ''     |
+| iconColor         | 图标颜色                                        | String  | ''     |
+| disabled          | 标题栏是否禁用                                  | boolean | false  |
+| rotate            | 点击折叠和展开的旋转角度,在自定义图标模式下生效 | number  | 180    |
+| subTitle          | 标题栏副标题                                    | string  | ''     |
+| titleIcon         | 标题图标链接/或使用 NutUI 的 icon               | string  | ''     |
+| titleIconColor    | 标题图标颜色                                    | string  | ''     |
+| titleIconSize     | 标题图标大小                                    | string  | ''     |
+| titleIconPosition | 标题图标位置                                    | string  | ''     |
 
 ### Events
 
-| 事件名 | 说明           | 回调参数     |
-|--------|----------------|--------------|
-| onToggle  | 切换面板时触发 | isOpen:是否打开状态；name：当前点击的name值 |
+| 事件名   | 说明           | 回调参数                                      |
+| -------- | -------------- | --------------------------------------------- |
+| onToggle | 切换面板时触发 | isOpen:是否打开状态；name：当前点击的 name 值 |

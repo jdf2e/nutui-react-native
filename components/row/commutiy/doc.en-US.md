@@ -6,7 +6,7 @@ for quick layout
 
 ### Install
 
-```javascript
+```tsx
 import { Row, Col } from '@nutui/nutui-react-native';
 ```
 
@@ -14,7 +14,9 @@ import { Row, Col } from '@nutui/nutui-react-native';
 
 ### Basic layout
 
-```SnackPlayer name=Layout
+:::demo
+
+```tsx
 import React from "react";
 import { Row, Col } from '@nutui/nutui-react-native';
 import { View, Text } from 'react-native';
@@ -38,7 +40,7 @@ const App = () => {
             <Col span="12">
                 <View style={styles.itemsPink}>
                     <Text style={styles.itemsTx}>span:12</Text>
-                </View> 
+                </View>
             </Col>
         </Row>
         <Row>
@@ -83,7 +85,6 @@ const App = () => {
     </>
   )
 };
-export default App;
 
 const styles = StyleSheet.create({
   items: {
@@ -114,11 +115,16 @@ const styles = StyleSheet.create({
   }
 });
 
+export default App;
 ```
+
+:::
 
 ### column interval
 
-```SnackPlayer name=Layout
+:::demo
+
+```tsx
 import React from "react";
 import { Layout, Row, Col } from '@nutui/nutui-react-native';
 import { View, Text } from 'react-native';
@@ -144,7 +150,6 @@ const App = () => {
     </Row>
   )
 };
-export default App;
 
 const styles = StyleSheet.create({
   items: {
@@ -174,11 +179,17 @@ const styles = StyleSheet.create({
       marginTop: 20
   }
 });
+
+export default App;
 ```
+
+:::
 
 ### Flex layout
 
-```SnackPlayer name=Layout
+:::demo
+
+```tsx
 import React from "react";
 import { Layout, Row, Col } from '@nutui/nutui-react-native';
 import { View, Text } from 'react-native';
@@ -274,7 +285,6 @@ const App = () => {
     </>
   )
 }
-export default App;
 
 const styles = StyleSheet.create({
   items: {
@@ -304,7 +314,11 @@ const styles = StyleSheet.create({
       marginTop: 20
   }
 });
+
+export default App;
 ```
+
+:::
 
 ## API
 

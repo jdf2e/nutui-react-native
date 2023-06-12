@@ -6,14 +6,15 @@
 
 ### 安裝
 
-``` javascript
+```tsx
 import { FixedNav } from '@nutui/nutui-react-native';
 ```
 
-
 ### 基礎用法
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React, { useState } from "react";
 import { FixedNav } from '@nutui/nutui-react-native';
 
@@ -65,9 +66,13 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### 左側效果
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React, { useState } from "react";
 import { FixedNav } from '@nutui/nutui-react-native';
 
@@ -120,11 +125,13 @@ const App = () => {
 export default App;
 ```
 
-
+:::
 
 ### 取消背景遮罩
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React, { useState } from "react";
 import { FixedNav } from '@nutui/nutui-react-native';
 
@@ -175,10 +182,13 @@ const App = () => {
 export default App;
 ```
 
+:::
 
 ### 自定義使用
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React, { useState } from "react";
 import { Icon, FixedNav } from '@nutui/nutui-react-native';
 
@@ -243,10 +253,13 @@ const App = () => {
 export default App;
 ```
 
+:::
 
 ### 支持拖拽
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React, { useState } from "react";
 import { Drag, FixedNav } from '@nutui/nutui-react-native';
 
@@ -297,26 +310,25 @@ const App = () => {
 export default App;
 ```
 
-
-
+:::
 
 ### Prop
-| 字段           | 說明                       | 類型    | 默認值                       |
-|:---------------|:---------------------------|:--------|:-----------------------------|
-| fixednavClass        | 自定義類名                   | String | fixednav                        |
-| visible        | 是否打開                   | Boolean | false                        |
-| navList       | 懸浮列表內容數據           | Array   | []                           |
-| activeText    | 收起列表按鈕文案           | String  | 收起導航                     |
-| unActiveText | 展開列表按鈕文案           | String  | 快速導航                     |
-| type           | 導航方向,可選值 left right | String  | right                        |
-| position       | fixed 垂直位置             | Object  | {top: 'auto',bottom: 'auto'} |
-| slotList       | 自定義展開列表內容             | HTMLElement  | - |
-| slotBtn       | 自定義按鈕            | HTMLElement  | - |
 
+| 字段          | 說明                       | 類型        | 默認值                       |
+| :------------ | :------------------------- | :---------- | :--------------------------- |
+| fixednavClass | 自定義類名                 | String      | fixednav                     |
+| visible       | 是否打開                   | Boolean     | false                        |
+| navList       | 懸浮列表內容數據           | Array       | []                           |
+| activeText    | 收起列表按鈕文案           | String      | 收起導航                     |
+| unActiveText  | 展開列表按鈕文案           | String      | 快速導航                     |
+| type          | 導航方向,可選值 left right | String      | right                        |
+| position      | fixed 垂直位置             | Object      | {top: 'auto',bottom: 'auto'} |
+| slotList      | 自定義展開列表內容         | HTMLElement | -                            |
+| slotBtn       | 自定義按鈕                 | HTMLElement | -                            |
 
 ### Event
 
-| 字段     | 說明         | 回調參數        |
-|:----------|:--------------|:------------|
-| onChange | 展開收起按鈕回調 | value:boolean |
-| onSelected | 選擇之後觸發 | item,event:MouseEvent |
+| 字段       | 說明             | 回調參數              |
+| :--------- | :--------------- | :-------------------- |
+| onChange   | 展開收起按鈕回調 | value:boolean         |
+| onSelected | 選擇之後觸發     | item,event:MouseEvent |

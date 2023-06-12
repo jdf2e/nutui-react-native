@@ -6,7 +6,7 @@ Calendar, tileable/pop-up display
 
 ### Install
 
-```javascript
+```tsx
 import { Calendar } from '@nutui/nutui-react-native';
 ```
 
@@ -14,7 +14,9 @@ import { Calendar } from '@nutui/nutui-react-native';
 
 ### Basic usage
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React, { useState } from "react";
 import { Cell, Calendar } from '@nutui/nutui-react-native';
 
@@ -50,12 +52,15 @@ const App = () => {
     );
 };
 export default App;
-
 ```
+
+:::
 
 ### interval selection
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React, { useState } from "react";
 import { Cell, Calendar } from '@nutui/nutui-react-native';
 
@@ -91,12 +96,15 @@ const App = () => {
     );
 };
 export default App;
-
 ```
+
+:::
 
 ### select multiple dates
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React, { useState } from "react";
 import { Cell, Calendar } from '@nutui/nutui-react-native';
 
@@ -132,12 +140,15 @@ const App = () => {
     );
 };
 export default App;
-
 ```
+
+:::
 
 ### quick selection
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React, { useState } from "react";
 import { Cell, Calendar } from '@nutui/nutui-react-native';
 
@@ -173,12 +184,15 @@ const App = () => {
     );
 };
 export default App;
-
 ```
+
+:::
 
 ### Custom Calendar - Custom Time Copy
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React, { useState } from "react";
 import { Cell, Calendar } from '@nutui/nutui-react-native';
 
@@ -239,12 +253,15 @@ const App = () => {
     );
 };
 export default App;
-
 ```
+
+:::
 
 ### Custom Calendar - Custom Button
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React, { useState, useRef } from "react";
 import { Cell, Calendar } from '@nutui/nutui-react-native';
 
@@ -374,12 +391,15 @@ const App = () => {
     );
 };
 export default App;
-
 ```
+
+:::
 
 ### Tiled display
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React, { useState } from "react";
 import { Calendar } from '@nutui/nutui-react-native';
 
@@ -404,45 +424,47 @@ const App = () => {
     );
 };
 export default App;
-
 ```
+
+:::
 
 ## API
 
 ### Props
 
-| Params              | Description                                              | Type            | Default          |
-|-------------------|---------------------------------------------------|-----------------|-----------------|
-| visible   | Is it visible                                          | Boolean         | false           |
-| type              | Type, select 'one' for date and 'range' for interval              | String          | 'one'           |
-| poppable          | Whether to display the pop-up window status                                  | Boolean         | true            |
-| isAutoBackFill | Automatic backfill                                          | Boolean         | false           |
-| title             | show title                                          | String          | ‘Date Pick’      |
-| defaultValue     | Default value, select String format for date, select Array format for interval | String 、 Array | null            |
-| startDate        | The start date, or null if the start date is not limited              | String          | Today            |
-| endDate          | The end date, or null if the end date is not limited               | String          | 365 days from today |
-| showToday          | Whether to show today's mark               | Boolean          | true |
-| startText         | Scope selection, start message copying               | String          | ’开始‘ |
-| endText         | Scope selection, closing message copy               | String          | ‘结束’ |
-| confirmText          | Bottom confirm button copy               | String          | ’确认‘ |
-| showTitle          | Whether to show the calendar title               | Boolean          | true |
-| showSubTitle          | Whether to display the date title              | Boolean          | true |
-| toDateAnimation          | Whether to start scroll animation              | Boolean          | true |
-| onBtn | Below the custom calendar header, you can add custom actions              |  (() => string \| JSX.Element) 、 undefined      | - |
-| onDay  | date information              |  ((date: Day) => string \| JSX.Element) 、 undefined                          | - |
-| onTopInfo  | Date Top Information             |  ((date: Day) => string \| JSX.Element) 、 undefined                          | - |
-| onBottomInfo  | date bottom information             |  ((date: Day) => string \| JSX.Element) 、 undefined                         | - |
+| Params          | Description                                                                    | Type                                                | Default             |
+| --------------- | ------------------------------------------------------------------------------ | --------------------------------------------------- | ------------------- |
+| visible         | Is it visible                                                                  | Boolean                                             | false               |
+| type            | Type, select 'one' for date and 'range' for interval                           | String                                              | 'one'               |
+| poppable        | Whether to display the pop-up window status                                    | Boolean                                             | true                |
+| isAutoBackFill  | Automatic backfill                                                             | Boolean                                             | false               |
+| title           | show title                                                                     | String                                              | ‘Date Pick’         |
+| defaultValue    | Default value, select String format for date, select Array format for interval | String 、 Array                                     | null                |
+| startDate       | The start date, or null if the start date is not limited                       | String                                              | Today               |
+| endDate         | The end date, or null if the end date is not limited                           | String                                              | 365 days from today |
+| showToday       | Whether to show today's mark                                                   | Boolean                                             | true                |
+| startText       | Scope selection, start message copying                                         | String                                              | ’开始‘              |
+| endText         | Scope selection, closing message copy                                          | String                                              | ‘结束’              |
+| confirmText     | Bottom confirm button copy                                                     | String                                              | ’确认‘              |
+| showTitle       | Whether to show the calendar title                                             | Boolean                                             | true                |
+| showSubTitle    | Whether to display the date title                                              | Boolean                                             | true                |
+| toDateAnimation | Whether to start scroll animation                                              | Boolean                                             | true                |
+| onBtn           | Below the custom calendar header, you can add custom actions                   | (() => string \| JSX.Element) 、 undefined          | -                   |
+| onDay           | date information                                                               | ((date: Day) => string \| JSX.Element) 、 undefined | -                   |
+| onTopInfo       | Date Top Information                                                           | ((date: Day) => string \| JSX.Element) 、 undefined | -                   |
+| onBottomInfo    | date bottom information                                                        | ((date: Day) => string \| JSX.Element) 、 undefined | -                   |
 
 ### Events
 
-| Events | Description                         | callback parameter                     |
-|--------|------------------------------|------------------------------|
-| onChoose | Triggered after selection or by clicking the confirm button | Array of dates (including year, month, day and week) |
-| onClose  | Triggered when closed                   | -                            |
-| onSelected  | Triggered after click/select              |  Day: Day                          |
+| Events     | Description                                                 | callback parameter                                   |
+| ---------- | ----------------------------------------------------------- | ---------------------------------------------------- |
+| onChoose   | Triggered after selection or by clicking the confirm button | Array of dates (including year, month, day and week) |
+| onClose    | Triggered when closed                                       | -                                                    |
+| onSelected | Triggered after click/select                                | Day: Day                                             |
 
 ### Day
-| Params              | Description            |
-|-------------------|-----------------|
-| day   | string、number           |
-| type   | string          |
+
+| Params | Description    |
+| ------ | -------------- |
+| day    | string、number |
+| type   | string         |

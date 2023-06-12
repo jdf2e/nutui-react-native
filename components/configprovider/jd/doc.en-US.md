@@ -4,7 +4,9 @@
 
 Used to configure NutUI-React components globally, providing internationalization support.
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React from 'react';
 import { ConfigProvider, Textarea } from "@nutui/nutui-react-native";
 import en from "@nutui/nutui-react-native/locales/en-US";
@@ -20,15 +22,19 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### Install
 
-```javascript
+```tsx
 import { ConfigProvider } from '@nutui/nutui-react-native';
 ```
 
 ## Demo
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React from 'react';
 import { ConfigProvider, Textarea } from "@nutui/nutui-react-native";
 import en from "@nutui/nutui-react-native/locales/en-US";
@@ -43,6 +49,8 @@ const App = () => {
 
 export default App;
 ```
+
+:::
 
 ## API
 

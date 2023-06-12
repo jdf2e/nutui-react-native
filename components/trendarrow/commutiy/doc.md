@@ -6,17 +6,18 @@
 
 ### 安装
 
-```javascript
+```tsx
 // React
 import { TrendArrow } from '@nutui/nutui-react-native';
-
 ```
 
 ## 代码演示
 
 ### 基础用法
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React from "react"
 import { TrendArrow, Cell } from '@nutui/nutui-react-native'
 
@@ -31,9 +32,13 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### 改变文字颜色
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React from "react"
 import { TrendArrow, Cell } from '@nutui/nutui-react-native'
 
@@ -48,9 +53,13 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### 指定小数位
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React from "react"
 import { TrendArrow, Cell } from '@nutui/nutui-react-native'
 
@@ -65,9 +74,13 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### 箭头在前面
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React from "react"
 import { TrendArrow, Cell } from '@nutui/nutui-react-native'
 
@@ -82,9 +95,13 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### 显示正负号
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React from "react"
 import { TrendArrow, Cell } from '@nutui/nutui-react-native'
 
@@ -99,9 +116,13 @@ const App = () => {
 export default App;
 ```
 
-### 是否展示0
+:::
 
-```SnackPlayer
+### 是否展示 0
+
+:::demo
+
+```tsx
 import  React from "react"
 import { TrendArrow, Cell } from '@nutui/nutui-react-native'
 
@@ -116,9 +137,13 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### 自定义颜色
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React from "react"
 import { TrendArrow, Cell } from '@nutui/nutui-react-native'
 
@@ -140,9 +165,13 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### 自定义图标
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React from "react"
 import { TrendArrow, Cell, Icon } from '@nutui/nutui-react-native'
 
@@ -160,28 +189,26 @@ const App = () => {
 export default App;
 ```
 
+:::
 
 ## API
 
 ### Props
 
-| 参数         | 说明                             | 类型   | 默认值           |
-|--------------|----------------------------------|--------|------------------|
-| rate         | 数值，大于0时箭头向上，小于0时箭头向下    | Number | -                |
-| digits         | 小数位精度               | Number | 2               |
-| showSign         | 是否显示加减号               | Boolean | false               |
-| showZero         | 是否显示 0               | Boolean | false               |
-| arrowLeft        | 是否在数字左侧显示箭头     | Boolean | false               |
-| syncTextColor   | 文字颜色是否与箭头同步               | Boolean | true   |
-| textColor        | 文字颜色               | String | '#333333'               |
-| riseColor         | 向上箭头颜色               | String | '#fa2c19'               |
-| dropColor         | 向下箭头颜色               | String | ‘#64b578’               |
-| iconSize         | 箭头大小               | String | '12px'               |
-| upIconName         | 自定义向上箭头icon               | String | 'triangle-up'               |
-| downIconName         | 自定义向下箭头icon               | String | 'triangle-down'               |
-
-
-
+| 参数          | 说明                                       | 类型    | 默认值          |
+| ------------- | ------------------------------------------ | ------- | --------------- |
+| rate          | 数值，大于 0 时箭头向上，小于 0 时箭头向下 | Number  | -               |
+| digits        | 小数位精度                                 | Number  | 2               |
+| showSign      | 是否显示加减号                             | Boolean | false           |
+| showZero      | 是否显示 0                                 | Boolean | false           |
+| arrowLeft     | 是否在数字左侧显示箭头                     | Boolean | false           |
+| syncTextColor | 文字颜色是否与箭头同步                     | Boolean | true            |
+| textColor     | 文字颜色                                   | String  | '#333333'       |
+| riseColor     | 向上箭头颜色                               | String  | '#fa2c19'       |
+| dropColor     | 向下箭头颜色                               | String  | ‘#64b578’       |
+| iconSize      | 箭头大小                                   | String  | '12px'          |
+| upIconName    | 自定义向上箭头 icon                        | String  | 'triangle-up'   |
+| downIconName  | 自定义向下箭头 icon                        | String  | 'triangle-down' |
 
 ## 主题定制
 
@@ -189,9 +216,9 @@ export default App;
 
 组件提供了下列 CSS 变量，可用于自定义样式，使用方法请参考 [ConfigProvider 组件](#/zh-CN/component/configprovider)。
 
-| 名称 | 默认值 |
-| --- | --- |
-| --nutui-trendarrow-font-size | ` 14` |
-| --nutui-trendarrow-before-icon-margin | `  4` |
-| --nutui-trendarrow-font-size | ` 14` |
-| --nutui-trendarrow-before-icon-margin | `  4` |
+| 名称                                  | 默认值 |
+| ------------------------------------- | ------ |
+| --nutui-trendarrow-font-size          | ` 14`  |
+| --nutui-trendarrow-before-icon-margin | `  4`  |
+| --nutui-trendarrow-font-size          | ` 14`  |
+| --nutui-trendarrow-before-icon-margin | `  4`  |

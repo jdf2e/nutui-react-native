@@ -1,11 +1,12 @@
-#  Pagination
+# Pagination
 
 ### Intro
 
 When the amount of data is too much, use pagination to separate the data.
 
 ### Install
-``` javascript
+
+```tsx
 import { Pagination } from '@nutui/nutui-react-native';
 ```
 
@@ -15,7 +16,8 @@ When the current page number is bound by modelValue, the component is in a contr
 When it does not need to be controlled, the current page number can be specified through defaultCurrentPage
 
 :::demo
-``` tsx
+
+```tsx
 import React, { useState } from 'react'
 import { Pagination } from '@nutui/nutui-react-native';
 
@@ -36,10 +38,16 @@ const App = () => {
 }
 export default App;
 ```
+
+:::
+
 ### Simple mode
+
 Pagination can be switched to simple mode with simple mode attribute, and pagination cann't display specific page buttons.
+
 :::demo
-``` tsx
+
+```tsx
 import React, { useState } from 'react'
 import { Pagination } from '@nutui/nutui-react-native';
 
@@ -61,10 +69,15 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### Show ellipses
+
 The ellipses button will display after with force-ellipses attribute, click it can jump quickly.
+
 :::demo
-``` tsx
+
+```tsx
 import React, { useState } from 'react'
 import { Pagination } from '@nutui/nutui-react-native';
 
@@ -86,10 +99,16 @@ const App = () => {
 }
 export default App;
 ```
+
+:::
+
 ### Custom Button
+
 Pass in a custom method through pageNodeRender, parameters: { number: "page number", text: "page text", active: "active page" }
+
 :::demo
-``` tsx
+
+```tsx
 import React, { useState } from 'react'
 import { Pagination,Icon } from '@nutui/nutui-react-native';
 import { View, Text } from 'react-native';
@@ -118,26 +137,28 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ## API
 
 ### Props
 
-| Attribute           | Description                             | Type                      | Default            |
-| -------------- | -------------------------------- | ------------------------- | ----------------- |
-| modelValue     | current page number                         | Number                    | -                 |
-| defaultValue   | default page number                         | Number                    | 1                 |
-| mode           | Display mode, optional values are: `multi`,`simple` | String                    | multi             |
-| prevText       | Customize previous page button content             | String \| React.ReactNode | Previous            |
-| nextText       | Customize next page button content             | String \| React.ReactNode | Next             |
-| pageCount      | total pages                           | String \| Number          | Incoming/calculating based on page count |
-| totalItems     | total                         | String \| Number          | 0                 |
-| itemsPerPage   | records per page                       | String \| Number          | 10                |
-| showPageSize   | number of pages displayed                   | String \| Number          | 5                 |
-| forceEllipses  | Whether to show ellipsis                   | Boolean                   | false             |
-| pageNodeRender | Used to customize page number content             | (page) => React.ReactNode | -                 |
+| Attribute      | Description                                         | Type                      | Default                                  |
+| -------------- | --------------------------------------------------- | ------------------------- | ---------------------------------------- |
+| modelValue     | current page number                                 | Number                    | -                                        |
+| defaultValue   | default page number                                 | Number                    | 1                                        |
+| mode           | Display mode, optional values are: `multi`,`simple` | String                    | multi                                    |
+| prevText       | Customize previous page button content              | String \| React.ReactNode | Previous                                 |
+| nextText       | Customize next page button content                  | String \| React.ReactNode | Next                                     |
+| pageCount      | total pages                                         | String \| Number          | Incoming/calculating based on page count |
+| totalItems     | total                                               | String \| Number          | 0                                        |
+| itemsPerPage   | records per page                                    | String \| Number          | 10                                       |
+| showPageSize   | number of pages displayed                           | String \| Number          | 5                                        |
+| forceEllipses  | Whether to show ellipsis                            | Boolean                   | false                                    |
+| pageNodeRender | Used to customize page number content               | (page) => React.ReactNode | -                                        |
 
 ### Events
 
-| Event | Description           | Arguments |
-| -------- | -------------- | -------- |
-| onChange |  when the page number changes | value    |
+| Event    | Description                  | Arguments |
+| -------- | ---------------------------- | --------- |
+| onChange | when the page number changes | value     |

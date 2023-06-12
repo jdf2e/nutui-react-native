@@ -1,4 +1,4 @@
-#  Switch 开关
+# Switch 开关
 
 ### 介绍
 
@@ -6,7 +6,7 @@
 
 ### 安装
 
-```ts
+```tsx
 import { Switch } from '@nutui/nutui-react-native';
 ```
 
@@ -14,7 +14,9 @@ import { Switch } from '@nutui/nutui-react-native';
 
 ### 基础用法
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React from "react";
 import { Switch } from '@nutui/nutui-react-native';
 
@@ -26,13 +28,15 @@ const App = () => {
   );
 };
 export default App;
-
 ```
 
+:::
 
 ### 禁用状态
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React from "react";
 import { Switch } from '@nutui/nutui-react-native';
 
@@ -44,12 +48,15 @@ const App = () => {
   );
 };
 export default App;
-
 ```
 
-### change事件
+:::
 
-```SnackPlayer
+### change 事件
+
+:::demo
+
+```tsx
 import  React from "react";
 import { Switch } from '@nutui/nutui-react-native';
 
@@ -64,11 +71,15 @@ const App = () => {
   );
 };
 export default App;
-
 ```
+
+:::
+
 ### 异步控制
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React, { useState } from "react";
 import { Switch } from '@nutui/nutui-react-native';
 
@@ -92,11 +103,15 @@ const App = () => {
   );
 };
 export default App;
-
 ```
+
+:::
+
 ### 自定义颜色
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React from "react";
 import { Switch } from '@nutui/nutui-react-native';
 
@@ -108,11 +123,15 @@ const App = () => {
   );
 };
 export default App;
-
 ```
+
+:::
+
 ### 支持文字
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React from "react";
 import { Switch } from '@nutui/nutui-react-native';
 
@@ -124,29 +143,26 @@ const App = () => {
   );
 };
 export default App;
-
 ```
 
-
-
+:::
 
 ## API
 
 ### Props
 
-| 参数           | 说明             | 类型    | 默认值                |
-|----------------|------------------|---------|-----------------------|
-| checked        | 开关状态         | Boolean | `false`               |
-| disable        | 禁用状态         | Boolean | `false`               |
-| activeColor   | 打开时的背景颜色 | String  | `#fa2c19`    |
-| inactiveColor | 关闭时的背景颜色 | String  | `#ebebeb` |
-| activeText    | 打开时文字描述   | String  | -                     |
-| inactiveText  | 关闭时文字描述   | String  | -                     |
-| isAsync  | 开关状态是否异步修改   | Boolean  | `false`                     |
-
+| 参数          | 说明                 | 类型    | 默认值    |
+| ------------- | -------------------- | ------- | --------- |
+| checked       | 开关状态             | Boolean | `false`   |
+| disable       | 禁用状态             | Boolean | `false`   |
+| activeColor   | 打开时的背景颜色     | String  | `#fa2c19` |
+| inactiveColor | 关闭时的背景颜色     | String  | `#ebebeb` |
+| activeText    | 打开时文字描述       | String  | -         |
+| inactiveText  | 关闭时文字描述       | String  | -         |
+| isAsync       | 开关状态是否异步修改 | Boolean | `false`   |
 
 ### Events
 
 | 事件名 | 说明           | 回调参数                      |
-|--------|----------------|-------------------------------|
+| ------ | -------------- | ----------------------------- |
 | change | 切换开关时触发 | (value: boolean,event: Event) |

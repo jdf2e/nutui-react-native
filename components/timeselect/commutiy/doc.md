@@ -6,18 +6,20 @@
 
 ### 安装
 
-``` javascript
+```tsx
 import { TimeSelect } from '@nutui/nutui-react-native';
 ```
 
 ### 基本用法
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React, { useState } from 'react'
 import { TimeSelect, Cell, Toast } from '@nutui/nutui-react-native'
 import { View } from 'react-native';
 
-const TimeSelectDemo = () => {
+const App = () => {
   const [visible1, SetVisible1] = useState(false)
   const currentKey = 0
 
@@ -74,44 +76,46 @@ const TimeSelectDemo = () => {
   )
 }
 
-export default TimeSelectDemo
+export default App;
 ```
+
+:::
 
 ## API
 
 ### TimeSelect Prop
 
-| 字段                   | 说明                                                | 是否必传             | 类型    | 默认值 |
-|------------------------|----------------------------------------------------|--------|------------|---------|
-| visible                 | 是否显示弹层                                      | 是       | Boolean  | `false`|
-| height                 | 弹层的高度                                         | 否     | String  | `20%`|
-| title                 | 弹层标题                                         | 否      | String  | `取件时间`|
-| multiple              | 是否选择多个日期时间                               | 否        | String  | `false`|
-| currentKey           | 唯一标识                                    | 否        | String、Number  | `0` |
-| dates            | 选择日期面板的数据                                 | 是       | []        | ``       |
-| times            | 选择时间面板的数据                                  | 是     | []        | ``       |
+| 字段       | 说明                 | 是否必传 | 类型           | 默认值     |
+| ---------- | -------------------- | -------- | -------------- | ---------- |
+| visible    | 是否显示弹层         | 是       | Boolean        | `false`    |
+| height     | 弹层的高度           | 否       | String         | `20%`      |
+| title      | 弹层标题             | 否       | String         | `取件时间` |
+| multiple   | 是否选择多个日期时间 | 否       | String         | `false`    |
+| currentKey | 唯一标识             | 否       | String、Number | `0`        |
+| dates      | 选择日期面板的数据   | 是       | []             | ``         |
+| times      | 选择时间面板的数据   | 是       | []             | ``         |
 
 ### dates
 
-| 字段                   | 说明                                                             | 类型    | 默认值 |
-|------------------------|----------------------------------------------------------------|---------|------|
-| date                 | 显示的名称                                            | String  | ``|
-| pannel-key           | 唯一标识，和 currentKey 一起标识当前选择的天            | Number、String  | `0`|
+| 字段       | 说明                                         | 类型           | 默认值 |
+| ---------- | -------------------------------------------- | -------------- | ------ |
+| date       | 显示的名称                                   | String         | ``     |
+| pannel-key | 唯一标识，和 currentKey 一起标识当前选择的天 | Number、String | `0`    |
 
 ### times
 
-| 字段                   | 说明                                                             | 类型    | 默认值 |
-|------------------------|----------------------------------------------------------------|---------|------|
-| key                 | 唯一标识，和 pannel-key、currentKey 一起标识当前选择的天              | Array  | `[]`|
-| list                 | 可选时间列表                                                        | Array  | `[]`|
+| 字段 | 说明                                                     | 类型  | 默认值 |
+| ---- | -------------------------------------------------------- | ----- | ------ |
+| key  | 唯一标识，和 pannel-key、currentKey 一起标识当前选择的天 | Array | `[]`   |
+| list | 可选时间列表                                             | Array | `[]`   |
 
 ### TimeSelect Event
 
-| 名称                     | 说明    | 是否必传       | 回调参数    |
-|------------------------|----------|--------|-------------|
-| select`废弃`                 | 关闭遮罩之后的回调 | 是 | `list: []` |
-| pannelChange`废弃`           | 点击左栏日期回调，内部通过 setCurrentKey、setCurrentTime 更新数据 | 否 | `pannelKey: string 、number, list: []` |
-| timeChange`废弃`         | 点击时间回调，内部通过 setCurrentKey、setCurrentTime 更新数据 | 否 | `time: string, list: []` |
-| onSelect`v1.3.8`       | 关闭遮罩之后的回调 | 是 | `list: []` |
-| onPannelChange`v1.3.8` | 点击左栏日期回调，内部通过 setCurrentKey、setCurrentTime 更新数据 | 否 | `pannelKey: string 、number, list: []` |
-| onTimeChange`v1.3.8`   | 点击时间回调，内部通过 setCurrentKey、setCurrentTime 更新数据 | 否 | `time: string, list: []` |
+| 名称                   | 说明                                                              | 是否必传 | 回调参数                               |
+| ---------------------- | ----------------------------------------------------------------- | -------- | -------------------------------------- |
+| select`废弃`           | 关闭遮罩之后的回调                                                | 是       | `list: []`                             |
+| pannelChange`废弃`     | 点击左栏日期回调，内部通过 setCurrentKey、setCurrentTime 更新数据 | 否       | `pannelKey: string 、number, list: []` |
+| timeChange`废弃`       | 点击时间回调，内部通过 setCurrentKey、setCurrentTime 更新数据     | 否       | `time: string, list: []`               |
+| onSelect`v1.3.8`       | 关闭遮罩之后的回调                                                | 是       | `list: []`                             |
+| onPannelChange`v1.3.8` | 点击左栏日期回调，内部通过 setCurrentKey、setCurrentTime 更新数据 | 否       | `pannelKey: string 、number, list: []` |
+| onTimeChange`v1.3.8`   | 点击时间回调，内部通过 setCurrentKey、setCurrentTime 更新数据     | 否       | `time: string, list: []`               |

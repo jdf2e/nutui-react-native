@@ -6,7 +6,7 @@
 
 ### 安裝
 
-```javascript
+```tsx
 import { Row, Col } from 'nutui-rn';
 ```
 
@@ -14,7 +14,9 @@ import { Row, Col } from 'nutui-rn';
 
 ### 基礎佈局
 
-```SnackPlayer name=Layout
+:::demo
+
+```tsx
 import React from "react";
 import { Row, Col } from '@nutui/nutui-react-native';
 import { View, Text } from 'react-native';
@@ -38,7 +40,7 @@ const App = () => {
             <Col span="12">
                 <View style={styles.itemsPink}>
                     <Text style={styles.itemsTx}>span:12</Text>
-                </View> 
+                </View>
             </Col>
         </Row>
         <Row>
@@ -83,7 +85,6 @@ const App = () => {
     </>
   )
 };
-export default App;
 
 const styles = StyleSheet.create({
   items: {
@@ -113,11 +114,17 @@ const styles = StyleSheet.create({
       marginTop: 20
   }
 });
+
+export default App;
 ```
+
+:::
 
 ### 分欄間隔
 
-```SnackPlayer name=Layout
+:::demo
+
+```tsx
 import React from "react";
 import { Layout, Row, Col } from '@nutui/nutui-react-native';
 import { View, Text } from 'react-native';
@@ -143,7 +150,6 @@ const App = () => {
     </Row>
   )
 };
-export default App;
 
 const styles = StyleSheet.create({
   items: {
@@ -173,11 +179,17 @@ const styles = StyleSheet.create({
       marginTop: 20
   }
 });
+
+export default App;
 ```
+
+:::
 
 ### Flex 佈局
 
-```SnackPlayer name=Layout
+:::demo
+
+```tsx
 import React from "react";
 import { Layout, Row, Col } from '@nutui/nutui-react-native';
 import { View, Text } from 'react-native';
@@ -273,7 +285,6 @@ const App = () => {
     </>
   )
 }
-export default App;
 
 const styles = StyleSheet.create({
   items: {
@@ -303,7 +314,11 @@ const styles = StyleSheet.create({
       marginTop: 20
   }
 });
+
+export default App;
 ```
+
+:::
 
 ## API
 
@@ -326,12 +341,12 @@ const styles = StyleSheet.create({
 
 ### row events
 
-| 字段            | 說明       | 回調參數                       |
-| --------------- | ---------- | ------------------------------ | ----- |
+| 字段    | 說明       | 回調參數                       |
+| ------- | ---------- | ------------------------------ | ----- |
 | onClick | 點擊時觸發 | event: MouseEvent, type: 'row' | 'col' |
 
 ### col events
 
-| 字段            | 說明       | 回調參數                       |
-| --------------- | ---------- | ------------------------------ | ----- |
+| 字段    | 說明       | 回調參數                       |
+| ------- | ---------- | ------------------------------ | ----- |
 | onClick | 點擊時觸發 | event: MouseEvent, type: 'row' | 'col' |

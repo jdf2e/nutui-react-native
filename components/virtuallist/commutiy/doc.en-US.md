@@ -1,20 +1,22 @@
-#  VirtualList
+# VirtualList
 
 ### Intro
 
 In normal list show and pull-up loading, we usually use the InfiniteLoading component provided by NutUI. If we load a large amount of data, serious performance problems may occur, resulting in the view unable to respond to the operation for a period of time. At this time, we use the virtual list component list, which can ensure that only the current visual area is rendered, Other parts are rendered after the user scrolls to the visible area. Ensure page flow and improve performance.
 
 ### Install
-```javascript
+
+```tsx
 import { Virtuallist } from '@nutui/nutui-react-native';
 ```
-## Demo
 
+## Demo
 
 ### 1、 vertical height、Vertical unequal height、horizontal width、Horizontal unequal width
 
 :::demo
-``` tsx
+
+```tsx
 import React, { useEffect, useState } from 'react'
 import {
     View,
@@ -27,7 +29,7 @@ import Radio from '../radio';
 import Virtuallist from '.';
 import { useTranslate } from '../utils';
 
-const ListDemo = () => {
+const App = () => {
     const [translated] = useTranslate<any>({
       'zh-CN': {
         text1: '垂直等高',
@@ -199,22 +201,24 @@ const styles = StyleSheet.create({
     }
 });
 
-export default ListDemo
+export default App;
 ```
+
+:::
+
 ## API
 
 ### Props
 
-| 参数           | 说明                               | 类型       | 默认值                                   |
-|---------------|----------------------------------|----------|---------------------------------------|
-| sourceData    | source data                      | Array    | -                                     |
-| containerSize | container height                      | Number   | Get the element offsetWidth or offsetHeight, which is given by CSS |
-| ItemRender    | virtual function rendered by the parent of the list               | React.FC | -                                     |
-| horizontal    |  horizontal or vertical                    | Boolean  | false                                 |
+| 参数          | 说明                                                | 类型     | 默认值                                                             |
+| ------------- | --------------------------------------------------- | -------- | ------------------------------------------------------------------ |
+| sourceData    | source data                                         | Array    | -                                                                  |
+| containerSize | container height                                    | Number   | Get the element offsetWidth or offsetHeight, which is given by CSS |
+| ItemRender    | virtual function rendered by the parent of the list | React.FC | -                                                                  |
+| horizontal    | horizontal or vertical                              | Boolean  | false                                                              |
+
 ## Events
-| 方法名            | 说明       | 参数            | 返回值     |
-|----------------|----------| --------------- | ---------- |
-| onScroll  | scroll event |        -        |      -    |
 
-
-
+| 方法名   | 说明         | 参数 | 返回值 |
+| -------- | ------------ | ---- | ------ |
+| onScroll | scroll event | -    | -      |

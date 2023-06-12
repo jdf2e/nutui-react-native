@@ -6,19 +6,21 @@
 
 ### 安裝
 
-``` ts
-import { Radio,RadioGroup } from '@nutui/nutui-react-native';
+```tsx
+import { Radio, RadioGroup } from '@nutui/nutui-react-native';
 ```
 
 ## 基本用法
 
 通過 **value** 綁定值當前選項的 **label** 。 並且必須 **RadioGroup** 和 **Radio** 相結合進行使用
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React, { useState } from 'react'
 import { Radio, RadioGroup } from '@nutui/nutui-react-native';
 
-const RadioGroupLast = () => {
+const App = () => {
   const [radioVal] = useState('1')
   return <>
     <RadioGroup value={radioVal}>
@@ -38,16 +40,20 @@ const RadioGroupLast = () => {
     </RadioGroup>
   </>
 }
-export default RadioGroupLast;
+export default App;
 ```
+
+:::
 
 ## 水準使用
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React, { useState } from 'react'
 import { Radio, RadioGroup } from '@nutui/nutui-react-native';
 
-const RadioGroupLast = () => {
+const App = () => {
   const [radioVal] = useState('1')
   return <>
     <RadioGroup value={radioVal} direction="horizontal">
@@ -67,16 +73,20 @@ const RadioGroupLast = () => {
     </RadioGroup>
   </>
 }
-export default RadioGroupLast;
+export default App;
 ```
+
+:::
 
 ## 自訂尺寸
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React, { useState } from 'react'
 import { Radio, RadioGroup } from '@nutui/nutui-react-native';
 
-const RadioGroupLast = () => {
+const App = () => {
   const [radioVal] = useState('1')
   return <>
     <RadioGroup value={radioVal}>
@@ -85,18 +95,22 @@ const RadioGroupLast = () => {
     </RadioGroup>
   </>
 }
-export default RadioGroupLast;
+export default App;
 ```
+
+:::
 
 ## 自訂圖示
 
 建議 『iconName』 'iconActiveName' 一起修改
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React, { useState } from 'react'
 import { Radio, RadioGroup } from '@nutui/nutui-react-native';
 
-const RadioGroupLast = () => {
+const App = () => {
   const [radioVal] = useState('1')
   return <>
     <RadioGroup value={radioVal}>
@@ -107,16 +121,20 @@ const RadioGroupLast = () => {
     </RadioGroup>
   </>
 }
-export default RadioGroupLast;
+export default App;
 ```
+
+:::
 
 ## 觸發 change 事件
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React, { useState } from 'react'
 import { Radio, RadioGroup } from '@nutui/nutui-react-native';
 
-const RadioGroupLast = () => {
+const App = () => {
   const [radioVal] = useState('1')
   const handleChange = (v) => {
     console.log(v)
@@ -128,32 +146,34 @@ const RadioGroupLast = () => {
     </RadioGroup>
   </>
 }
-export default RadioGroupLast;
+export default App;
 ```
+
+:::
 
 ## Prop
 
 ### Radio
 
-| 屬性         | 說明                             | 類型             | 預設值           |
-|------------------|--------------------------------------------------------------|-------------------------|-------------------|
-| disabled         | 是否禁用選擇                                                 | Boolean                 | `false`           |
-| iconSize        | [圖示尺寸](#/icon)                                           | String、Number          | `18`              |
-| iconName        | [圖示名稱](#/icon)，選中前（建議和'iconActiveName'一起修改） | String                  | `'check-normal'`  |
-| iconActiveName | [圖示名稱](#/icon)，選取後（建議和'iconName'一起修改）        | String                  | `'check-checked'` |
-| value            | 攜帶的標識值，用於 Group 模式                                                   | String、Number、Boolean | -                 |
-| shape            | 形狀，可選值為 button、round                                 | String                  | round             |
+| 屬性           | 說明                                                         | 類型                    | 預設值            |
+| -------------- | ------------------------------------------------------------ | ----------------------- | ----------------- |
+| disabled       | 是否禁用選擇                                                 | Boolean                 | `false`           |
+| iconSize       | [圖示尺寸](#/icon)                                           | String、Number          | `18`              |
+| iconName       | [圖示名稱](#/icon)，選中前（建議和'iconActiveName'一起修改） | String                  | `'check-normal'`  |
+| iconActiveName | [圖示名稱](#/icon)，選取後（建議和'iconName'一起修改）       | String                  | `'check-checked'` |
+| value          | 攜帶的標識值，用於 Group 模式                                | String、Number、Boolean | -                 |
+| shape          | 形狀，可選值為 button、round                                 | String                  | round             |
 
 ### RadioGroup
 
-| 屬性 | 說明 | 類型 | 預設值 |
-|---------------|-----------------------------------------------|-------------------------|------------|
-| value       | 當前選取的標識碼，與label值一致時呈選中狀態 | String、Number、Boolean | -          |
-| textPosition | 文本所在的位置，可選值：'left'，'right' | String                  | `right`    |
-| direction     | 使用橫縱方向 可選值 horizontal、vertical | String                  | `vertical` |
+| 屬性         | 說明                                          | 類型                    | 預設值     |
+| ------------ | --------------------------------------------- | ----------------------- | ---------- |
+| value        | 當前選取的標識碼，與 label 值一致時呈選中狀態 | String、Number、Boolean | -          |
+| textPosition | 文本所在的位置，可選值：'left'，'right'       | String                  | `right`    |
+| direction    | 使用橫縱方向 可選值 horizontal、vertical      | String                  | `vertical` |
 
 ## RadioGroup Event
 
-| 事件名稱     | 說明 | 回調參數 |
-|----------|--------------|----------------------------------------------------|
-| onChange | 值變化時觸發 | 當前選取的選項（label）【設置label後有值、預設為空】 |
+| 事件名稱 | 說明         | 回調參數                                               |
+| -------- | ------------ | ------------------------------------------------------ |
+| onChange | 值變化時觸發 | 當前選取的選項（label）【設置 label 後有值、預設為空】 |

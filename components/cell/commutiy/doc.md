@@ -6,16 +6,18 @@
 
 ### 安装
 
-```ts
+```tsx
 // react
-import { Cell, CellGroup } from '@nutui/nutui-react-native'
-
+import { Cell, CellGroup } from '@nutui/nutui-react-native';
 ```
 
 ## 代码演示
 
 ### 基本用法
-```SnackPlayer
+
+:::demo
+
+```tsx
 import  React from "react";
 import { Cell } from '@nutui/nutui-react-native';
 
@@ -38,9 +40,13 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### 尺寸设置 large
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React from "react";
 import { Cell } from '@nutui/nutui-react-native';
 
@@ -60,9 +66,13 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### 直接使用插槽
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React from "react";
 import { Text } from 'react-native';
 import { Cell } from '@nutui/nutui-react-native';
@@ -79,9 +89,13 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### 直接使用插槽(title slots)
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React from "react";
 import { Text } from 'react-native';
 import { Cell } from '@nutui/nutui-react-native';
@@ -101,9 +115,13 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### 链接 | 分组用法
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React from "react";
 import { CellGroup,Cell } from '@nutui/nutui-react-native';
 
@@ -128,9 +146,13 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### 自定义右侧箭头区域
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React from "react";
 import { CellGroup,Cell,Switch } from '@nutui/nutui-react-native';
 
@@ -144,9 +166,13 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### 自定义左侧 Icon 区域
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React from "react";
 import { CellGroup,Cell, Image } from '@nutui/nutui-react-native';
 
@@ -173,9 +199,13 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### 单元格展示图标
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React from "react";
 import { Cell } from '@nutui/nutui-react-native';
 
@@ -187,9 +217,13 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### 只展示 desc ，可通过 desc-text-align 调整内容位置
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React from "react";
 import { Cell } from '@nutui/nutui-react-native';
 
@@ -201,11 +235,15 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### 垂直居中
 
 通过 `center` 属性可以让 Cell 的左右内容都垂直居中。
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React from "react";
 import { Cell } from '@nutui/nutui-react-native';
 
@@ -217,46 +255,43 @@ const App = () => {
 export default App;
 ```
 
-## API
+:::
 
+## API
 
 ### CellGroup Prop
 
-| 字段  | 说明     | 类型   | 默认值 |
-|-------|----------|--------|--------|
-| title | 分组标题 | String | -      |
-| desc  | 分组描述 | String | -      |
-| titleSlot        | 自定义`title`标题区域                         | React.ReactNode          | -  |
-| descSlot        | 自定义`desc`描述区域                         | React.ReactNode          | -  |
+| 字段      | 说明                  | 类型            | 默认值 |
+| --------- | --------------------- | --------------- | ------ |
+| title     | 分组标题              | String          | -      |
+| desc      | 分组描述              | String          | -      |
+| titleSlot | 自定义`title`标题区域 | React.ReactNode | -      |
+| descSlot  | 自定义`desc`描述区域  | React.ReactNode | -      |
 
 ### Cell Prop
 
-| 字段                 | 说明                                                                                           | 类型             | 默认值 |
-|--------------------|------------------------------------------------------------------------------------------------|------------------|--------|
-| title              | 标题名称                      |  React.ReactNode           | -      |
-| subTitle           | 左侧副标题                           |  React.ReactNode           | -      |
-| desc               | 右侧描述                                     | String      | -      |
-| descTextAlign      | 右侧描述文本对齐方式 [text-align](https://www.w3school.com.cn/cssref/pr_text_text-align.asp)，只展示 desc 时可用 | String | right  |
-| isLink             | 是否展示右侧箭头并开启点击反馈            | Boolean          | false  |
-| to`v1.4.0 废弃`        | 点击后跳转的目标路由对象 | String  | -      |
-| replace            | 是否在跳转时替换当前页面历史                             | Boolean          | false  |
-| roundRadius`v1.2.0` | 圆角半径                                      | String            | 6px    |
-| url                | 点击后跳转的链接地址                                         | String           | -      |
-| icon               | 左侧 [图标名称](#/icon) 或图片链接              | String           | -      |
-| center`v1.2.0`     | 是否使内容垂直居中                                                                             | Boolean          | false  |
-| size`v1.2.0`       | 单元格大小，可选值为 `large`                           | String          | -  |
-| iconSlot`v1.2.0`   | 自定义左侧`icon`区域                          | React.ReactNode          | -  |
-| linkSlot`v1.2.0`   | 自定义右侧`link`区域                         | React.ReactNode          | -  |
-
-
-
+| 字段                | 说明                                                                                                             | 类型            | 默认值 |
+| ------------------- | ---------------------------------------------------------------------------------------------------------------- | --------------- | ------ |
+| title               | 标题名称                                                                                                         | React.ReactNode | -      |
+| subTitle            | 左侧副标题                                                                                                       | React.ReactNode | -      |
+| desc                | 右侧描述                                                                                                         | String          | -      |
+| descTextAlign       | 右侧描述文本对齐方式 [text-align](https://www.w3school.com.cn/cssref/pr_text_text-align.asp)，只展示 desc 时可用 | String          | right  |
+| isLink              | 是否展示右侧箭头并开启点击反馈                                                                                   | Boolean         | false  |
+| to`v1.4.0 废弃`     | 点击后跳转的目标路由对象                                                                                         | String          | -      |
+| replace             | 是否在跳转时替换当前页面历史                                                                                     | Boolean         | false  |
+| roundRadius`v1.2.0` | 圆角半径                                                                                                         | String          | 6px    |
+| url                 | 点击后跳转的链接地址                                                                                             | String          | -      |
+| icon                | 左侧 [图标名称](#/icon) 或图片链接                                                                               | String          | -      |
+| center`v1.2.0`      | 是否使内容垂直居中                                                                                               | Boolean         | false  |
+| size`v1.2.0`        | 单元格大小，可选值为 `large`                                                                                     | String          | -      |
+| iconSlot`v1.2.0`    | 自定义左侧`icon`区域                                                                                             | React.ReactNode | -      |
+| linkSlot`v1.2.0`    | 自定义右侧`link`区域                                                                                             | React.ReactNode | -      |
 
 ### Cell Event
 
-| 名称  | 说明     | 回调参数                                                       |
-| ----- | -------- | -------------------------------------------------------------- |
-| onClick`v1.3.8` | 点击事件 | event |
-
+| 名称            | 说明     | 回调参数 |
+| --------------- | -------- | -------- |
+| onClick`v1.3.8` | 点击事件 | event    |
 
 ## 主题定制
 
@@ -264,43 +299,43 @@ export default App;
 
 组件提供了下列 CSS 变量，可用于自定义样式，使用方法请参考 [ConfigProvider 组件](#/zh-CN/component/configprovider)。
 
-| 名称 | 默认值 |
-| --- | --- |
-| --nutui-cell-color | ` $gray1` |
-| --nutui-cell-title-font | ` $font-size-2` |
-| --nutui-cell-title-desc-font | ` $font-size-1` |
-| --nutui-cell-desc-font | ` $font-size-2` |
-| --nutui-cell-desc-color | ` $gray2` |
-| --nutui-cell-subtitle-color | ` $gray2` |
-| --nutui-cell-border-radius | ` 6` |
-| --nutui-cell-padding-top | ` 13` |
-| --nutui-cell-padding-bottom | ` 13` |
-| --nutui-cell-padding-left | ` 16` |
-| --nutui-cell-padding-right | ` 16` |
-| --nutui-cell-after-right | ` 16` |
-| --nutui-cell-after-border-bottom-width | `  2` |
-| --nutui-cell-after-border-bottom-color | ` #f5f6f7` |
-| --nutui-cell-default-icon-margin-top | `  0` |
-| --nutui-cell-default-icon-margin-right | `  4` |
-| --nutui-cell-default-icon-margin-bottom | `  0` |
-| --nutui-cell-default-icon-margin-left | `  0` |
-| --nutui-cell-large-title-font | `  $font-size-large` |
-| --nutui-cell-large-title-desc-font | `  $font-size-base` |
-| --nutui-cell-large-padding-top | ` 15` |
-| --nutui-cell-large-padding-bottom | ` 15` |
-| --nutui-cell-large-padding-left | ` 16` |
-| --nutui-cell-large-padding-right | ` 16` |
-| --nutui-cell-background | ` $gray6` |
-| --nutui-cell-group-title-padding-top | `  0` |
-| --nutui-cell-group-title-padding-bottom | `  0` |
-| --nutui-cell-group-title-padding-left | ` 10` |
-| --nutui-cell-group-title-padding-right | ` 10` |
-| --nutui-cell-group-title-color | ` #909ca4` |
-| --nutui-cell-group-title-font-size | `  $font-size-2` |
-| --nutui-cell-group-desc-padding-top | ` 0` |
-| --nutui-cell-group-desc-padding-bottom | ` 0` |
-| --nutui-cell-group-desc-padding-left | ` 10` |
-| --nutui-cell-group-desc-padding-right | ` 10` |
-| --nutui-cell-group-desc-color | ` #909ca4` |
-| --nutui-cell-group-desc-font-size | `  $font-size-1` |
-| --nutui-cell-group-background-color | `  $white` |
+| 名称                                    | 默认值               |
+| --------------------------------------- | -------------------- |
+| --nutui-cell-color                      | ` $gray1`            |
+| --nutui-cell-title-font                 | ` $font-size-2`      |
+| --nutui-cell-title-desc-font            | ` $font-size-1`      |
+| --nutui-cell-desc-font                  | ` $font-size-2`      |
+| --nutui-cell-desc-color                 | ` $gray2`            |
+| --nutui-cell-subtitle-color             | ` $gray2`            |
+| --nutui-cell-border-radius              | ` 6`                 |
+| --nutui-cell-padding-top                | ` 13`                |
+| --nutui-cell-padding-bottom             | ` 13`                |
+| --nutui-cell-padding-left               | ` 16`                |
+| --nutui-cell-padding-right              | ` 16`                |
+| --nutui-cell-after-right                | ` 16`                |
+| --nutui-cell-after-border-bottom-width  | `  2`                |
+| --nutui-cell-after-border-bottom-color  | ` #f5f6f7`           |
+| --nutui-cell-default-icon-margin-top    | `  0`                |
+| --nutui-cell-default-icon-margin-right  | `  4`                |
+| --nutui-cell-default-icon-margin-bottom | `  0`                |
+| --nutui-cell-default-icon-margin-left   | `  0`                |
+| --nutui-cell-large-title-font           | `  $font-size-large` |
+| --nutui-cell-large-title-desc-font      | `  $font-size-base`  |
+| --nutui-cell-large-padding-top          | ` 15`                |
+| --nutui-cell-large-padding-bottom       | ` 15`                |
+| --nutui-cell-large-padding-left         | ` 16`                |
+| --nutui-cell-large-padding-right        | ` 16`                |
+| --nutui-cell-background                 | ` $gray6`            |
+| --nutui-cell-group-title-padding-top    | `  0`                |
+| --nutui-cell-group-title-padding-bottom | `  0`                |
+| --nutui-cell-group-title-padding-left   | ` 10`                |
+| --nutui-cell-group-title-padding-right  | ` 10`                |
+| --nutui-cell-group-title-color          | ` #909ca4`           |
+| --nutui-cell-group-title-font-size      | `  $font-size-2`     |
+| --nutui-cell-group-desc-padding-top     | ` 0`                 |
+| --nutui-cell-group-desc-padding-bottom  | ` 0`                 |
+| --nutui-cell-group-desc-padding-left    | ` 10`                |
+| --nutui-cell-group-desc-padding-right   | ` 10`                |
+| --nutui-cell-group-desc-color           | ` #909ca4`           |
+| --nutui-cell-group-desc-font-size       | `  $font-size-1`     |
+| --nutui-cell-group-background-color     | `  $white`           |

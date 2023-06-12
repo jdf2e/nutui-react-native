@@ -6,13 +6,15 @@ Used to separate into equal-width blocks for page navigation.
 
 ### Install
 
-```javascript
+```tsx
 import { Grid, GridItem } from '@nutui/nutui-react-native';
 ```
 
 ### Basic Usage
 
-```SnackPlayer name=Grid
+:::demo
+
+```tsx
 import React from 'react'
 import { Grid,GridItem } from '@nutui/nutui-react-native'
 
@@ -30,12 +32,16 @@ const App = () => {
     </Grid>
   )
 }
-export default App
+export default App;
 ```
+
+:::
 
 ### Column Num
 
-```SnackPlayer name=Grid
+:::demo
+
+```tsx
 import React from 'react'
 import { Grid,GridItem } from '@nutui/nutui-react-native'
 
@@ -51,12 +57,16 @@ const App = () => {
     </Grid>
   )
 }
-export default App
+export default App;
 ```
+
+:::
 
 ### Square
 
-```SnackPlayer name=Grid
+:::demo
+
+```tsx
 import React from 'react'
 import { Grid,GridItem } from '@nutui/nutui-react-native'
 
@@ -69,12 +79,16 @@ const App = () => {
     </Grid>
   )
 }
-export default App
+export default App;
 ```
+
+:::
 
 ### Gutter
 
-```SnackPlayer name=Grid
+:::demo
+
+```tsx
 import React from 'react'
 import { Grid,GridItem } from '@nutui/nutui-react-native'
 
@@ -92,12 +106,16 @@ const App = () => {
     </Grid>
   )
 }
-export default App
+export default App;
 ```
+
+:::
 
 ### Reverse
 
-```SnackPlayer name=Grid
+:::demo
+
+```tsx
 import React from 'react'
 import { Grid,GridItem } from '@nutui/nutui-react-native'
 
@@ -111,12 +129,16 @@ const App = () => {
     </Grid>
   )
 }
-export default App
+export default App;
 ```
+
+:::
 
 ### Horizontal
 
-```SnackPlayer name=Grid
+:::demo
+
+```tsx
 import React from 'react'
 import { Grid,GridItem } from '@nutui/nutui-react-native'
 
@@ -130,12 +152,16 @@ const App = () => {
     </Grid>
   )
 }
-export default App
+export default App;
 ```
+
+:::
 
 ### Icon Style
 
-```SnackPlayer name=Grid
+:::demo
+
+```tsx
 import React from 'react'
 import { Grid,GridItem } from '@nutui/nutui-react-native'
 
@@ -153,12 +179,16 @@ const App = () => {
     </Grid>
   )
 }
-export default App
+export default App;
 ```
+
+:::
 
 ### Custom Content
 
-```SnackPlayer name=Grid
+:::demo
+
+```tsx
 import React from 'react'
 import { Grid, GridItem, Avatar } from '@nutui/nutui-react-native'
 
@@ -196,8 +226,10 @@ const App = () => {
     </Grid>
   )
 }
-export default App
+export default App;
 ```
+
+:::
 
 ## API
 
@@ -206,7 +238,7 @@ export default App
 | Attribute | Description                                               | Type             | Default    |
 | --------- | --------------------------------------------------------- | ---------------- | ---------- |
 | columnNum | Column Num                                                | number \| string | `4`        |
-| iconSize  | Icon size,for example `20`                | number \| string | `28`     |
+| iconSize  | Icon size,for example `20`                                | number \| string | `28`       |
 | iconColor | Icon color                                                | string           | -          |
 | border    | Whether to show border                                    | boolean          | `true`     |
 | gutter    | Gutter,The default unit is `px`                           | number \| string | `0`        |
@@ -217,9 +249,9 @@ export default App
 
 ### GridItem Props
 
-| Attribute | Description                               | Type                | Default |
-| --------- | ----------------------------------------- | ------------------- | ------- |
-| text      | text                                      | string\| ReactNode  | -       |
-| icon      | Icon name or URL                          | string \| ReactNode | -       |
-| iconSize  | Icon size,for example `20` | number \| string    | `28`  |
-| iconColor | Icon color                                | string              | -       |
+| Attribute | Description                | Type                | Default |
+| --------- | -------------------------- | ------------------- | ------- |
+| text      | text                       | string\| ReactNode  | -       |
+| icon      | Icon name or URL           | string \| ReactNode | -       |
+| iconSize  | Icon size,for example `20` | number \| string    | `28`    |
+| iconColor | Icon color                 | string              | -       |

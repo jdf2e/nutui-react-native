@@ -6,7 +6,7 @@
 
 ### 安裝
 
-```SnackPlayer
+```tsx
 import { ActionSheet } from '@nutui/nutui-react-native';
 ```
 
@@ -14,7 +14,9 @@ import { ActionSheet } from '@nutui/nutui-react-native';
 
 ### 基本用法
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React, { useState } from "react";
 import { ActionSheet,Cell } from '@nutui/nutui-react-native';
 import { View, Text } from 'react-native';
@@ -63,12 +65,15 @@ const App = () => {
   );
 };
 export default App;
-
 ```
+
+:::
 
 ### 展示取消按鈕
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React, { useState } from "react";
 import { ActionSheet,Cell } from '@nutui/nutui-react-native';
 import { View, Text } from 'react-native';
@@ -111,12 +116,15 @@ const App = () => {
   );
 };
 export default App;
-
 ```
+
+:::
 
 ### 展示描述資訊
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React, { useState } from "react";
 import { ActionSheet,Cell } from '@nutui/nutui-react-native';
 import { View, Text } from 'react-native';
@@ -161,12 +169,15 @@ const App = () => {
   );
 };
 export default App;
-
 ```
+
+:::
 
 ### 選項状态
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React, { useState } from "react";
 import { ActionSheet,Cell } from 'nutui-rn';
 
@@ -203,8 +214,9 @@ const App = () => {
   );
 };
 export default App;
-
 ```
+
+:::
 
 ## Prop
 
@@ -222,7 +234,7 @@ export default App;
 
 ## Event
 
-| 字段             | 說明               | 回調參數                            |
-| ---------------- | ------------------ | ----------------------------------- |
+| 字段     | 說明               | 回調參數                            |
+| -------- | ------------------ | ----------------------------------- |
 | onChoose | 選擇之後觸發       | 選中列表項 item, 選中的索引值 index |
 | onCancel | 點擊取消文案時觸發 | 無                                  |

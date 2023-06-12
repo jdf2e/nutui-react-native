@@ -6,18 +6,20 @@ For delivery time selection
 
 ### Install
 
-``` javascript
+```tsx
 import { TimeSelect } from '@nutui/nutui-react-native';
 ```
 
 ### Basic Usage
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React, { useState } from 'react'
 import { TimeSelect, Cell, Toast } from '@nutui/nutui-react-native'
 import { View } from 'react-native';
 
-const TimeSelectDemo = () => {
+const App = () => {
   const [visible1, SetVisible1] = useState(false)
   const currentKey = 0
 
@@ -74,41 +76,43 @@ const TimeSelectDemo = () => {
   )
 }
 
-export default TimeSelectDemo
+export default App;
 ```
+
+:::
 
 ## API
 
 ### TimeSelect Prop
 
-| Props                   | Description                 | required | Type    | Default |
-|------------------------|-----------------------------|----------|------------|---------|
-| visible                 | display the popup           | true     | Boolean  | `false`|
-| height                 | height of the popup         | false        | String  | `20%`|
-| title                 | popup title                 | false                | String  | `Pickup time`|
-| multiple              | Select multiple datetimes   | false                | String  | `false`|
-| currentKey           | Uniquely identifies         | false                | String、Number  | `0` |
-| dates            | Select data for date panel  | true     | []        | ``       |
-| times            | Select data for time panel  | true     | []        | ``       |
+| Props      | Description                | required | Type           | Default       |
+| ---------- | -------------------------- | -------- | -------------- | ------------- |
+| visible    | display the popup          | true     | Boolean        | `false`       |
+| height     | height of the popup        | false    | String         | `20%`         |
+| title      | popup title                | false    | String         | `Pickup time` |
+| multiple   | Select multiple datetimes  | false    | String         | `false`       |
+| currentKey | Uniquely identifies        | false    | String、Number | `0`           |
+| dates      | Select data for date panel | true     | []             | ``            |
+| times      | Select data for time panel | true     | []             | ``            |
 
 ### dates
 
-| Props                   | Description                                                             | Type    | Default |
-|------------------------|----------------------------------------------------------------|---------|------|
-| date                 | display name                                            | String  | ``|
-| pannel-key           | Unique identifier, together with currentKey to identify the currently selected day            | Number、String  | `0`|
+| Props      | Description                                                                        | Type           | Default |
+| ---------- | ---------------------------------------------------------------------------------- | -------------- | ------- |
+| date       | display name                                                                       | String         | ``      |
+| pannel-key | Unique identifier, together with currentKey to identify the currently selected day | Number、String | `0`     |
 
 ### times
 
-| Props                   | Description                                                                                       | Type    | Default |
-|------------------------|---------------------------------------------------------------------------------------------------|---------|------|
-| key                 | Unique identifier, together with pannel-key and currentKey to identify the currently selected day | Array  | `[]`|
-| list                 | Optional time list                                                                                | Array  | `[]`|
+| Props | Description                                                                                       | Type  | Default |
+| ----- | ------------------------------------------------------------------------------------------------- | ----- | ------- |
+| key   | Unique identifier, together with pannel-key and currentKey to identify the currently selected day | Array | `[]`    |
+| list  | Optional time list                                                                                | Array | `[]`    |
 
 ### TimeSelect Event
 
-| Event                  | Description                                                                                                       | required | callback args                         |
-|------------------------|-------------------------------------------------------------------------------------------------------------------|----------|---------------------------------------|
-| onSelect`v1.3.8`       | Callback after closing the mask                                                                                   | true     | `list: []`                            |
-| onPannelChange`v1.3.8` | Click the date callback in the left column, and internally update the data through setCurrentKey, setCurrentTime  | false    | `pannelKey: string 、number, list: []` |
-| onTimeChange`v1.3.8`         | Click the time callback, and internally update the data through setCurrentKey, setCurrentTime                                                                     | false                | `time: string, list: []`              |
+| Event                  | Description                                                                                                      | required | callback args                          |
+| ---------------------- | ---------------------------------------------------------------------------------------------------------------- | -------- | -------------------------------------- |
+| onSelect`v1.3.8`       | Callback after closing the mask                                                                                  | true     | `list: []`                             |
+| onPannelChange`v1.3.8` | Click the date callback in the left column, and internally update the data through setCurrentKey, setCurrentTime | false    | `pannelKey: string 、number, list: []` |
+| onTimeChange`v1.3.8`   | Click the time callback, and internally update the data through setCurrentKey, setCurrentTime                    | false    | `time: string, list: []`               |

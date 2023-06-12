@@ -6,7 +6,7 @@
 
 ### 安裝
 
-``` javascript
+```tsx
 import { Tag } from '@nutui/nutui-react-native';
 ```
 
@@ -14,7 +14,9 @@ import { Tag } from '@nutui/nutui-react-native';
 
 ### 基礎用法
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React from "react";
 import { Tag } from '@nutui/nutui-react-native';
 
@@ -26,14 +28,18 @@ const App = () => {
       <Tag type="danger">標籤</Tag>
       <Tag type="warning">標籤</Tag>
     </>
-  )
+  )Í
 }
 export default App;
 ```
 
+:::
+
 ### 空心樣式
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React from "react";
 import { Tag } from '@nutui/nutui-react-native';
 
@@ -47,9 +53,13 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### 圆角样式
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React from "react";
 import { Tag } from '@nutui/nutui-react-native';
 
@@ -63,9 +73,13 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### 標記樣式
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React from "react";
 import { Tag } from '@nutui/nutui-react-native';
 
@@ -79,9 +93,13 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### 可关闭標籤
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React from "react";
 import { Tag } from '@nutui/nutui-react-native';
 
@@ -95,9 +113,13 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### 自定義顏色
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React from "react";
 import { Tag } from '@nutui/nutui-react-native';
 
@@ -113,11 +135,13 @@ const App = () => {
 export default App;
 ```
 
-
+:::
 
 ### 點擊事件
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React from "react";
 import { Tag } from '@nutui/nutui-react-native';
 
@@ -131,9 +155,13 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### 展示控制
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React, {useState} from "react";
 import { Tag,Button } from '@nutui/nutui-react-native';
 
@@ -153,24 +181,26 @@ const App = () => {
 }
 export default App;
 ```
+
+:::
+
 ## API
 
 ### Props
 
-| 字段       | 說明                                             | 類型    | 默認值    |
-|------------|--------------------------------------------------|---------|-----------|
-| type       | 標籤类型，可选值为primary success danger warning | String  | `default` |
-| color      | 標籤颜色                                         | String  | -         |
-| textColor | 文本顏色，優先級高於color屬性                    | String  | `white`   |
-| plain      | 是否為空心樣式                                   | Boolean | `false`   |
-| round      | 是否為圓角樣式                                   | Boolean | `false`   |
-| mark       | 是否為標記樣式                                   | Boolean | `false`   |
-| closeable  | 是否为可关闭標籤                                 | Boolean | `false`   |
-
+| 字段      | 說明                                              | 類型    | 默認值    |
+| --------- | ------------------------------------------------- | ------- | --------- |
+| type      | 標籤类型，可选值为 primary success danger warning | String  | `default` |
+| color     | 標籤颜色                                          | String  | -         |
+| textColor | 文本顏色，優先級高於 color 屬性                   | String  | `white`   |
+| plain     | 是否為空心樣式                                    | Boolean | `false`   |
+| round     | 是否為圓角樣式                                    | Boolean | `false`   |
+| mark      | 是否為標記樣式                                    | Boolean | `false`   |
+| closeable | 是否为可关闭標籤                                  | Boolean | `false`   |
 
 ### Event
 
-| 事件名稱| 說明     | 回調參數 |
-|----------|----------|----------|
-| onClick    | 點擊事件 | event    |
-| onClose    | 關閉事件 | event    |
+| 事件名稱 | 說明     | 回調參數 |
+| -------- | -------- | -------- |
+| onClick  | 點擊事件 | event    |
+| onClose  | 關閉事件 | event    |

@@ -6,13 +6,15 @@
 
 ### 安装
 
-```ts
+```tsx
 import { Steps } from '@nutui/nutui-react-native';
 ```
 
 ### 基本用法
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React, { useState } from "react";
 import { Steps, Step, Button } from '@nutui/nutui-react-native';
 import { View, Text } from 'react-native';
@@ -45,7 +47,6 @@ const App = () => {
     </View>
   )
 }
-export default App;
 
 const styles = StyleSheet.create({
   items: {
@@ -55,11 +56,17 @@ const styles = StyleSheet.create({
     paddingVertical: 20
   }
 });
+
+export default App;
 ```
+
+:::
 
 ### 标题和描述信息
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React, { useState } from "react";
 import { Steps, Step, Button } from '@nutui/nutui-react-native';
 import { View, Text } from 'react-native';
@@ -94,7 +101,6 @@ const App = () => {
     </>
   )
 }
-export default App;
 
 const styles = StyleSheet.create({
   items: {
@@ -104,11 +110,17 @@ const styles = StyleSheet.create({
     paddingVertical: 20
   }
 });
+
+export default App;
 ```
+
+:::
 
 ### 自定义图标
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React, { useState } from "react";
 import { Steps, Step, Button } from '@nutui/nutui-react-native';
 import { View, Text } from 'react-native';
@@ -133,8 +145,13 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### 竖向步骤条
-```SnackPlayer
+
+:::demo
+
+```tsx
 import React, { useState } from "react";
 import { Steps, Step, Button } from '@nutui/nutui-react-native';
 import { View, Text } from 'react-native';
@@ -177,7 +194,6 @@ const App = () => {
     </View>
   )
 }
-export default App;
 
 const styles = StyleSheet.create({
   itemsHeight: {
@@ -188,10 +204,17 @@ const styles = StyleSheet.create({
       paddingVertical: 20
   }
 });
+
+export default App;
 ```
 
+:::
+
 ### 点状步骤和垂直方向
-```SnackPlayer
+
+:::demo
+
+```tsx
 import React, { useState } from "react";
 import { Steps, Step, Button } from '@nutui/nutui-react-native';
 import { View, Text } from 'react-native';
@@ -239,7 +262,6 @@ const App = () => {
     </View>
   )
 }
-export default App;
 
 const styles = StyleSheet.create({
   itemsHeight: {
@@ -250,8 +272,11 @@ const styles = StyleSheet.create({
       paddingVertical: 20
   }
 });
+
+export default App;
 ```
 
+:::
 
 ## API
 
@@ -259,29 +284,28 @@ const styles = StyleSheet.create({
 
 #### Steps
 
-| 参数                   | 说明                                                        | 类型           | 默认值      |
-| ---------------------- | ----------------------------------------------------------- | -------------- | ----------- |
-| direction	             | 	显示方向，`horizontal`,`vertical`  | String        | 'horizontal'  |
-| current	               | 	当前所在的步骤           | Number        | 0      |
-| progressDot            |  点状步骤条     | Boolean | false         |
-| isStart               |  开始步骤     | Boolean | true         |
-| isEnd               |  结束步骤     | Boolean | true         |
-
+| 参数        | 说明                              | 类型    | 默认值       |
+| ----------- | --------------------------------- | ------- | ------------ |
+| direction   | 显示方向，`horizontal`,`vertical` | String  | 'horizontal' |
+| current     | 当前所在的步骤                    | Number  | 0            |
+| progressDot | 点状步骤条                        | Boolean | false        |
+| isStart     | 开始步骤                          | Boolean | true         |
+| isEnd       | 结束步骤                          | Boolean | true         |
 
 #### nut-steps events
 
-| 事件名 | 说明           | 回调参数     |
-|--------|----------------|--------------|
-| onClickStep `v1.3.8`  | 点击步骤的标题或图标时触发 | index: number |
+| 事件名               | 说明                       | 回调参数      |
+| -------------------- | -------------------------- | ------------- |
+| onClickStep `v1.3.8` | 点击步骤的标题或图标时触发 | index: number |
 
 #### Step
 
-| 参数           | 说明                   | 类型     | 默认值      |
-| ---------------- | ---------------------- | ------------ | ----------- |
-| title            | 流程步骤的标题         | String | '' |
-| content          | 流程步骤的描述性文字       | String | '' |
-| icon          | 图标(来自Icon组件的name属性)       | String | '' |
-| iconColor          | 图标颜色       | String | null |
-| size          | 图标尺寸大小(来自Icon组件的size属性)       | String | '' |
-| activeIndex          | 流程步骤的索引       | Number | 0 |
-| renderContent         | 流程步骤的描述性文字的html结构      | React.ReactNode | - |
+| 参数          | 说明                                     | 类型            | 默认值 |
+| ------------- | ---------------------------------------- | --------------- | ------ |
+| title         | 流程步骤的标题                           | String          | ''     |
+| content       | 流程步骤的描述性文字                     | String          | ''     |
+| icon          | 图标(来自 Icon 组件的 name 属性)         | String          | ''     |
+| iconColor     | 图标颜色                                 | String          | null   |
+| size          | 图标尺寸大小(来自 Icon 组件的 size 属性) | String          | ''     |
+| activeIndex   | 流程步骤的索引                           | Number          | 0      |
+| renderContent | 流程步骤的描述性文字的 html 结构         | React.ReactNode | -      |

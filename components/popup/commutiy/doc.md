@@ -6,7 +6,7 @@
 
 ### 安装
 
-```javascript
+```tsx
 import { Popup } from '@nutui/nutui-react-native';
 ```
 
@@ -16,7 +16,9 @@ import { Popup } from '@nutui/nutui-react-native';
 
 `visible` 控制显示/隐藏
 
-```SnackPlayer name=Popup
+:::demo
+
+```tsx
 import React, { useState } from "react";
 import { Popup, Cell } from '@nutui/nutui-react-native';
 
@@ -30,12 +32,15 @@ const App = () => {
   );
 };
 export default App;
-
 ```
+
+:::
 
 ### 弹出位置
 
-```SnackPlayer name=Popup
+:::demo
+
+```tsx
 import React, { useState } from "react";
 import { Popup, Cell } from '@nutui/nutui-react-native';
 
@@ -59,12 +64,15 @@ const App = () => {
   );
 };
 export default App;
-
 ```
+
+:::
 
 ### 图标
 
-```SnackPlayer name=Popup
+:::demo
+
+```tsx
 import React, { useState } from "react";
 import { Popup, Cell } from '@nutui/nutui-react-native';
 
@@ -85,13 +93,15 @@ const App = () => {
   );
 };
 export default App;
-
-
 ```
+
+:::
 
 ### 圆角弹框
 
-```SnackPlayer name=Popup
+:::demo
+
+```tsx
 import React, { useState } from "react";
 import { Popup, Cell } from '@nutui/nutui-react-native';
 
@@ -108,25 +118,27 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ## API
 
 ### Props
 
-| 参数                | 说明                                                        | 类型                                    | 默认值        |
-| ------------------- | ----------------------------------------------------------- | --------------------------------------- | ------------- |
-| visible             | 当前组件是否显示                                            | Boolean                                 | `false`       |
-| zIndex              | 遮罩层级                                                    | String、Number                          | `2000`        |
-| duration            | 遮罩动画时长，单位秒                                        | Number                                  | `0.3`         |
-| overlayStyle        | 自定义遮罩样式                                              | CSSProperties                           | -             |
-| overlay             | 是否显示遮罩                                                | Boolean                                 | `true`        |
-| closeOnClickOverlay | 是否点击遮罩关闭                                            | Boolean                                 | `true`        |
-| position            | 弹出位置（top,bottom,left,right,center）                    | String                                  | `"center"`    |
-| style               | 自定义弹框样式                                              | CSSProperties                           | -             |
-| closeable           | 是否显示关闭按钮                                            | Boolean                                 | `false`       |
-| closeIconPosition   | 关闭按钮位置（top-left,top-right,bottom-left,bottom-right） | String                                  | `"top-right"` |
-| closeIcon           | 自定义 Icon                                                 | String                                  | `"close"`     |
-| destroyOnClose      | 组件销毁后是否关闭                                          | Boolean                                 | `true`        |
-| round               | 是否显示圆角                                                | Boolean                                 | `false`       |
+| 参数                | 说明                                                        | 类型           | 默认值        |
+| ------------------- | ----------------------------------------------------------- | -------------- | ------------- |
+| visible             | 当前组件是否显示                                            | Boolean        | `false`       |
+| zIndex              | 遮罩层级                                                    | String、Number | `2000`        |
+| duration            | 遮罩动画时长，单位秒                                        | Number         | `0.3`         |
+| overlayStyle        | 自定义遮罩样式                                              | CSSProperties  | -             |
+| overlay             | 是否显示遮罩                                                | Boolean        | `true`        |
+| closeOnClickOverlay | 是否点击遮罩关闭                                            | Boolean        | `true`        |
+| position            | 弹出位置（top,bottom,left,right,center）                    | String         | `"center"`    |
+| style               | 自定义弹框样式                                              | CSSProperties  | -             |
+| closeable           | 是否显示关闭按钮                                            | Boolean        | `false`       |
+| closeIconPosition   | 关闭按钮位置（top-left,top-right,bottom-left,bottom-right） | String         | `"top-right"` |
+| closeIcon           | 自定义 Icon                                                 | String         | `"close"`     |
+| destroyOnClose      | 组件销毁后是否关闭                                          | Boolean        | `true`        |
+| round               | 是否显示圆角                                                | Boolean        | `false`       |
 
 ### Events
 

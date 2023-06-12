@@ -6,16 +6,17 @@
 
 ### 安装
 
-```javascript
+```tsx
 import { TextArea } from '@nutui/nutui-react-native';
-
 ```
 
 ## 代码演示
 
 ### 基础用法
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React, {useState} from "react";
 import { TextArea } from '@nutui/nutui-react-native';
 
@@ -43,12 +44,16 @@ const App = () => {
         </>
     )
 };
-export default App
+export default App;
 ```
+
+:::
 
 ### 显示字数统计
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React, {useState} from "react";
 import { TextArea } from '@nutui/nutui-react-native';
 
@@ -60,12 +65,16 @@ const App = () => {
         </>
     )
 };
-export default App
+export default App;
 ```
+
+:::
 
 ### 高度自定义，拉伸
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React, {useState} from "react";
 import { TextArea } from '@nutui/nutui-react-native';
 
@@ -77,12 +86,16 @@ const App = () => {
         </>
     )
 };
-export default App
+export default App;
 ```
+
+:::
 
 ### 只读、禁用
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React, {useState} from "react";
 import { TextArea } from '@nutui/nutui-react-native';
 
@@ -94,12 +107,16 @@ const App = () => {
         </>
     )
 };
-export default App
+export default App;
 ```
+
+:::
 
 ### 文本位置
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React, {useState} from "react";
 import { TextArea } from '@nutui/nutui-react-native';
 
@@ -110,8 +127,10 @@ const App = () => {
         </>
     )
 };
-export default App
+export default App;
 ```
+
+:::
 
 ## API
 
@@ -131,8 +150,8 @@ export default App
 
 ### Events
 
-| 名称                 | 说明           | 回调参数 |
-|--------------------| -------------- | -------- |
-| onChange           | 输入内容时触发 | val      |
-| onFocus            | 聚焦时触发     | val      |
-| onBlur             | 失焦时触发     | val      |
+| 名称     | 说明           | 回调参数 |
+| -------- | -------------- | -------- |
+| onChange | 输入内容时触发 | val      |
+| onFocus  | 聚焦时触发     | val      |
+| onBlur   | 失焦时触发     | val      |

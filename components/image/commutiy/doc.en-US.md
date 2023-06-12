@@ -1,4 +1,4 @@
-#  Image
+# Image
 
 ### Intro
 
@@ -6,10 +6,9 @@ Enhanced img tag with multiple image fill modes, support for loading hint, loadi
 
 ### Install
 
-``` javascript
+```tsx
 // react
 import { Image } from '@nutui/nutui-react-native';
-
 ```
 
 ## Code
@@ -18,7 +17,9 @@ import { Image } from '@nutui/nutui-react-native';
 
 The basic usage is similar to the native img tag. You can set the source, width, height and other native attributes.
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React from "react";
 import { Image } from '@nutui/nutui-react-native';
 
@@ -34,14 +35,17 @@ const App = () => {
   </>
 }
 export default App;
-
 ```
+
+:::
 
 ### Object Fill
 
 The `resizeMode` attribute is used to set the image filling mode, which is equivalent to the original `Object-fit` attribute.
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React from "react";
 import { Image } from '@nutui/nutui-react-native';
 
@@ -56,14 +60,17 @@ const App = () => {
   </>
 }
 export default App;
-
 ```
+
+:::
 
 ### Round
 
 The round attribute allows you to set the image to be round.
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React from "react";
 import { Image } from '@nutui/nutui-react-native';
 
@@ -79,14 +86,17 @@ const App = () => {
   </>
 }
 export default App;
-
 ```
+
+:::
 
 ### Loading
 
 The Image component provides a default loading prompt and supports custom content through the loading slot.
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React from "react";
 import { Image, Icon } from '@nutui/nutui-react-native';
 
@@ -105,14 +115,17 @@ const App = () => {
   </>
 }
 export default App;
-
 ```
+
+:::
 
 ### Error
 
 The Image component provides a default loading failure warning and supports custom content through the error slot.
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React from "react";
 import { Image, Icon } from '@nutui/nutui-react-native';
 
@@ -129,49 +142,48 @@ const App = () => {
   </>
 }
 export default App;
-
 ```
+
+:::
 
 ## API
 
 ### Props
 
-| Attribute         | Description                             | Type   | Default          |
-|--------------|----------------------------------|--------|------------------|
-| source         | Src               | { uri: ''} or require('xx') | -                |
-| resizeMode         | Fit mode, same as object-fit    | ImageFit | 'contain'            |
-| width         | Width                  | number | -                |
-| height         | Height                | number | -                |
-| round         | Whether to be round               | Boolean | false              |
-| radius         | Border Raduis                | String \| Numer | -                |
-| showError         | Whether to show error placeholder| Boolean | true              |
-| showLoading         | Whether to show loading placeholder               | Boolean | true              |
-| loadingImg `v1.4.6`    | Set the prompt image during loading, which conflicts with `slotLoding` and has a higher priority than `slotLoding`     | String | -              |
-| errorImg   `v1.4.6`    | Set the error prompt image, which conflicts with `slotError` and has a higher priority than `slotError`         | String | -              |
+| Attribute           | Description                                                                                                        | Type                        | Default   |
+| ------------------- | ------------------------------------------------------------------------------------------------------------------ | --------------------------- | --------- |
+| source              | Src                                                                                                                | { uri: ''} or require('xx') | -         |
+| resizeMode          | Fit mode, same as object-fit                                                                                       | ImageFit                    | 'contain' |
+| width               | Width                                                                                                              | number                      | -         |
+| height              | Height                                                                                                             | number                      | -         |
+| round               | Whether to be round                                                                                                | Boolean                     | false     |
+| radius              | Border Raduis                                                                                                      | String \| Numer             | -         |
+| showError           | Whether to show error placeholder                                                                                  | Boolean                     | true      |
+| showLoading         | Whether to show loading placeholder                                                                                | Boolean                     | true      |
+| loadingImg `v1.4.6` | Set the prompt image during loading, which conflicts with `slotLoding` and has a higher priority than `slotLoding` | String                      | -         |
+| errorImg `v1.4.6`   | Set the error prompt image, which conflicts with `slotError` and has a higher priority than `slotError`            | String                      | -         |
 
 ### ImageFit
 
-| Attribute         | Description                             |
-|--------------|----------------------------------|
-| contain         | Keep aspect ratio, fully display the long side of the image    |
-| cover         | Keep aspect ratio, fully display the short side of the image, cutting the long side     |
-| stretch    | Stretch and resize image to fill the content box  |
-| center    | Center without stretching  |
-| repeat    | Repeat tiling the picture until the container is filled |
-
-
+| Attribute | Description                                                                         |
+| --------- | ----------------------------------------------------------------------------------- |
+| contain   | Keep aspect ratio, fully display the long side of the image                         |
+| cover     | Keep aspect ratio, fully display the short side of the image, cutting the long side |
+| stretch   | Stretch and resize image to fill the content box                                    |
+| center    | Center without stretching                                                           |
+| repeat    | Repeat tiling the picture until the container is filled                             |
 
 ### Slots
-| Attribute         | Description                             |
-|--------------|----------------------------------|
-| loading      | Custom loading placeholder     |
-| error    | Custom error placeholder  |
+
+| Attribute | Description                |
+| --------- | -------------------------- |
+| loading   | Custom loading placeholder |
+| error     | Custom error placeholder   |
 
 ### Events
 
-| Event | Description           | Arguments     |
-|--------|----------------|--------------|
-| onClick  | Emitted when image is clicked | event: Event |
-| onLoad  | Emitted when image loaded | - |
-| onError  | Emitted when image load failed | event: Event |
-
+| Event   | Description                    | Arguments    |
+| ------- | ------------------------------ | ------------ |
+| onClick | Emitted when image is clicked  | event: Event |
+| onLoad  | Emitted when image loaded      | -            |
+| onError | Emitted when image load failed | event: Event |

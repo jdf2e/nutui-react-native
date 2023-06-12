@@ -1,19 +1,22 @@
 # ActionSheet 动作面板
 
-
 ### 介绍
+
 从底部弹出的动作菜单面板。
 
 ### 安装
 
-```ts
+```tsx
 import { ActionSheet } from '@nutui/nutui-react-native';
 ```
+
 ## 代码示例
 
 ### 基本用法
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React, { useState } from "react";
 import { ActionSheet,Cell } from '@nutui/nutui-react-native';
 import { View, Text } from 'react-native';
@@ -62,11 +65,15 @@ const App = () => {
   );
 };
 export default App;
-
 ```
-<!-- ### 展示取消按钮
 
-```SnackPlayer
+:::
+
+### 展示取消按钮
+
+:::demo
+
+```tsx
 import  React, { useState } from "react";
 import { ActionSheet,Cell } from '@nutui/nutui-react-native';
 import { View, Text } from 'react-native';
@@ -109,11 +116,15 @@ const App = () => {
   );
 };
 export default App;
-
 ```
+
+:::
+
 ### 展示描述信息
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React, { useState } from "react";
 import { ActionSheet,Cell } from '@nutui/nutui-react-native';
 import { View, Text } from 'react-native';
@@ -158,11 +169,15 @@ const App = () => {
   );
 };
 export default App;
-
 ```
+
+:::
+
 ### 选项状态
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React, { useState } from "react";
 import { ActionSheet,Cell } from '@nutui/nutui-react-native';
 import { View, Text } from 'react-native';
@@ -199,27 +214,27 @@ const App = () => {
   );
 };
 export default App;
+```
 
-``` -->
+:::
 
 ## Prop
 
-| 字段             | 说明                                   | 类型    | 默认值    |
-|------------------|----------------------------------------|---------|-----------|
-| visible       | 遮罩层可见 | Boolean | false     |
-| cancelTxt       | 取消文案 | String  | '取消'    |
-| menuItems       | 列表项 | Array   | [ ]       |
-| optionTag       | 设置列表项展示使用参数 | String  | 'name'    |
-| optionSubTag   | 设置列表项描述展示使用参数 | String  | 'subname' |
-| title            | 设置列表面板标题 | String  | ''        |
-| description      | 设置列表面板副标题/描述 | String  | ''        |
+| 字段           | 说明                                   | 类型    | 默认值    |
+| -------------- | -------------------------------------- | ------- | --------- |
+| visible        | 遮罩层可见                             | Boolean | false     |
+| cancelTxt      | 取消文案                               | String  | '取消'    |
+| menuItems      | 列表项                                 | Array   | [ ]       |
+| optionTag      | 设置列表项展示使用参数                 | String  | 'name'    |
+| optionSubTag   | 设置列表项描述展示使用参数             | String  | 'subname' |
+| title          | 设置列表面板标题                       | String  | ''        |
+| description    | 设置列表面板副标题/描述                | String  | ''        |
 | chooseTagValue | 设置选中项的值，和'option-tag'的值对应 | String  | ''        |
-| color            | 高亮颜色 | String  | '#ee0a24' |
-
+| color          | 高亮颜色                               | String  | '#ee0a24' |
 
 ## Event
 
-| 字段   | 说明               | 回调参数                          |
-|--------|--------------------|-----------------------------------|
-| onChoose | 选择之后触发       | 选中列表项item, 选中的索引值index |
-| onCancel | 点击取消文案时触发 | 无                                |
+| 字段     | 说明               | 回调参数                            |
+| -------- | ------------------ | ----------------------------------- |
+| onChoose | 选择之后触发       | 选中列表项 item, 选中的索引值 index |
+| onCancel | 点击取消文案时触发 | 无                                  |

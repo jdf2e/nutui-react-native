@@ -6,7 +6,7 @@
 
 ### 安裝
 
-``` javascript
+```tsx
 import { Button } from '@nutui/nutui-react-native';
 ```
 
@@ -16,7 +16,9 @@ import { Button } from '@nutui/nutui-react-native';
 
 按鈕支援 'default'、'primary'、'info'、'warning'、'danger'、'success' 六種類型，預設為 'default'。
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React from "react";
 import { Button } from '@nutui/nutui-react-native';
 
@@ -35,12 +37,15 @@ const App = () => {
 export default App;
 ```
 
+:::
 
 ### 樸素按鈕
 
 通過 『plain』 屬性將按鈕設置為樸素按鈕，樸素按鈕的文字為按鈕顏色，背景為白色。
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React from "react";
 import { Button } from '@nutui/nutui-react-native';
 
@@ -55,11 +60,15 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### 禁用狀態
 
 通過 'disabled' 屬性來禁用按鈕，禁用狀態下按鈕不可點擊。
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React from "react";
 import { Button } from '@nutui/nutui-react-native';
 
@@ -75,12 +84,15 @@ const App = () => {
 export default App;
 ```
 
+:::
 
 ### 按鈕形狀
 
 通過 『shape』 屬性設置按鈕形狀，支援圓形、方形按鈕，預設為圓形。
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React from "react";
 import { Button } from '@nutui/nutui-react-native';
 
@@ -95,10 +107,13 @@ const App = () => {
 export default App;
 ```
 
+:::
 
 ### 載入狀態
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React ,{useState} from "react";
 import { Button } from '@nutui/nutui-react-native';
 
@@ -127,9 +142,13 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### 圖示按鈕
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React from "react";
 import { Button } from '@nutui/nutui-react-native';
 
@@ -144,11 +163,15 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### 按鈕尺寸
 
 支援 'large'、'normal'、'small' 三種尺寸，預設為 'normal'。
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React from "react";
 import { Button } from '@nutui/nutui-react-native';
 
@@ -164,12 +187,15 @@ const App = () => {
 export default App;
 ```
 
+:::
 
 ### 塊級元素
 
 按鈕在預設情況下為行內塊級元素，通過 'block' 屬性可以將按鈕的元素類型設置為塊級元素，常用來實現通欄按鈕。
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React from "react";
 import { Button } from '@nutui/nutui-react-native';
 
@@ -183,11 +209,15 @@ const App = () => {
 export default App;
 ```
 
+:::
 
 ### 自定義顏色
+
 通過 color 屬性可以自定義按鈕的顏色。
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React from "react";
 import { Button } from '@nutui/nutui-react-native';
 
@@ -205,25 +235,26 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ## API
 
 ### Props
 
-| 屬性 | 說明 | 類型 | 預設值           |
-|--------------|----------------------------------|--------|------------------|
-| type         | 類型，可選值為 `primary` `info` `warning` `danger` `success` | String |`default`         |
-| size        | 尺寸，可選值為 `large` `small`  | String | `normal`      |
-| shape         | 形狀，可選值為 `square` | String | `round`             |
-| color | 按鈕顏色，支持傳入linear-gradient漸變色     | String | - |
-| plain          | 	是否為樸素按鈕                       | Boolean | `false`             |
-| disabled          | 	是否禁用按鈕                       | Boolean | `false`              |
-| block          | 是否為塊級元素                        | Boolean | `false`               |
-| icon          | 按鈕圖示，同Icon元件name屬性                        | String | -     |
-| loading          | 按鈕loading狀態                        | Boolean | `false`               |
+| 屬性     | 說明                                                         | 類型    | 預設值    |
+| -------- | ------------------------------------------------------------ | ------- | --------- |
+| type     | 類型，可選值為 `primary` `info` `warning` `danger` `success` | String  | `default` |
+| size     | 尺寸，可選值為 `large` `small`                               | String  | `normal`  |
+| shape    | 形狀，可選值為 `square`                                      | String  | `round`   |
+| color    | 按鈕顏色，支持傳入 linear-gradient 漸變色                    | String  | -         |
+| plain    | 是否為樸素按鈕                                               | Boolean | `false`   |
+| disabled | 是否禁用按鈕                                                 | Boolean | `false`   |
+| block    | 是否為塊級元素                                               | Boolean | `false`   |
+| icon     | 按鈕圖示，同 Icon 元件 name 屬性                             | String  | -         |
+| loading  | 按鈕 loading 狀態                                            | Boolean | `false`   |
 
 ### Events
 
-| 事件名稱 | 說明 | 回調參數     |
-|--------|----------------|--------------|
-| click  | 点击按钮时触发 | event: MouseEvent |
-
+| 事件名稱 | 說明           | 回調參數          |
+| -------- | -------------- | ----------------- |
+| click    | 点击按钮时触发 | event: MouseEvent |

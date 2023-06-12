@@ -1,4 +1,4 @@
-#  Tabbar
+# Tabbar
 
 ### introduce
 
@@ -6,7 +6,7 @@ Bottom Navigation Common Scenarios
 
 ### Install
 
-```ts
+```tsx
 import { Tabbar, TabbarItem } from '@nutui/nutui-react';
 ```
 
@@ -14,7 +14,9 @@ import { Tabbar, TabbarItem } from '@nutui/nutui-react';
 
 ### Basic usage
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React from "react";
 import {  Tabbar, TabbarItem } from '@nutui/nutui-react';
 
@@ -34,9 +36,14 @@ const App = () =>(
 
 export default App;
 ```
+
+:::
+
 ### custom check
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React from "react";
 import {  Tabbar, TabbarItem } from '@nutui/nutui-react';
 
@@ -52,9 +59,14 @@ const App = () => (
 
 export default App;
 ```
+
+:::
+
 ### Logo Tips
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React from "react";
 import { Tabbar, TabbarItem } from '@nutui/nutui-react';
 
@@ -71,9 +83,13 @@ const App = () => (
 export default App;
 ```
 
+:::
+
 ### Red dot
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React from "react";
 import { Tabbar, TabbarItem } from '@nutui/nutui-react';
 
@@ -89,9 +105,14 @@ const App = () => (
 
 export default App;
 ```
+
+:::
+
 ### custom color
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React from "react";
 import {  Tabbar, TabbarItem } from '@nutui/nutui-react';
 
@@ -107,9 +128,14 @@ const App = () => (
 
 export default App;
 ```
+
+:::
+
 ### Tabbar with customizable number of icons
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React from "react";
 import {  Tabbar, TabbarItem } from '@nutui/nutui-react';
 
@@ -123,9 +149,14 @@ const App = () => (
 
 export default App;
 ```
+
+:::
+
 ### Fixed bottom, free to jump
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React from "react";
 import {  Tabbar, TabbarItem } from '@nutui/nutui-react';
 
@@ -142,38 +173,39 @@ const App = () => (
 export default App;
 ```
 
+:::
+
 ## API
 
 ### Prop
 
 ### nut-tabbar
 
-| Prop            | Description                | Type   | Default  |
-|-----------------|--------------------|--------|---------|
-| visible | The index value of the selected label   | Number | 0       |
-| bottom          | Whether it is fixed at the bottom of the page | Boolean | false   |
-| unactiveColor  | Icon inactive color   | String | #7d7e80 |
-| activeColor    | icon active color     | String | #1989fa |
-| size    | icon size     | String 、Boolean | 20 |
-| safeAreaInsetBottom    | Whether to enable the full screen bottom safety zone adaptation of the iphone series     | Boolean | false |
-| style    | component style     | React.CSSProperties | {} |
-| clsssName    | component class name     | String | - |
+| Prop                | Description                                                                          | Type                | Default |
+| ------------------- | ------------------------------------------------------------------------------------ | ------------------- | ------- |
+| visible             | The index value of the selected label                                                | Number              | 0       |
+| bottom              | Whether it is fixed at the bottom of the page                                        | Boolean             | false   |
+| unactiveColor       | Icon inactive color                                                                  | String              | #7d7e80 |
+| activeColor         | icon active color                                                                    | String              | #1989fa |
+| size                | icon size                                                                            | String 、Boolean    | 20      |
+| safeAreaInsetBottom | Whether to enable the full screen bottom safety zone adaptation of the iphone series | Boolean             | false   |
+| style               | component style                                                                      | React.CSSProperties | {}      |
+| clsssName           | component class name                                                                 | String              | -       |
 
 ### tabbar-item
 
-| Prop      | Description                                      | Type   | Default |
-|-----------|-------------------------------------------|--------|--------|
-| tabTitle | the title of the tab                              | String | --     |
-| icon      | [icon name](#/icon) or image link displayed on the tab page | String | --     |
-| href      | Jump link of tab page; if `to` exists at the same time, it takes precedence over to   | String | --     |
-| to       | 	The route object of the tab, equal to React Router's [to Prop](https://v5.reactrouter.com/web/api/Link/to-string) Prop | any | --     |
-| num       | The numerical corner mark in the upper right corner of the tab, if it exceeds 99, it will be 99+     | Number | --     |
-| classPrefix      | 自Custom icon class name prefix for using custom icons   | String | 'nut-icon'     |
-| dot      | Whether to display the little red dot in the upper right corner of the icon   | Boolean | false     |
-
+| Prop        | Description                                                                                                            | Type    | Default    |
+| ----------- | ---------------------------------------------------------------------------------------------------------------------- | ------- | ---------- |
+| tabTitle    | the title of the tab                                                                                                   | String  | --         |
+| icon        | [icon name](#/icon) or image link displayed on the tab page                                                            | String  | --         |
+| href        | Jump link of tab page; if `to` exists at the same time, it takes precedence over to                                    | String  | --         |
+| to          | The route object of the tab, equal to React Router's [to Prop](https://v5.reactrouter.com/web/api/Link/to-string) Prop | any     | --         |
+| num         | The numerical corner mark in the upper right corner of the tab, if it exceeds 99, it will be 99+                       | Number  | --         |
+| classPrefix | 自 Custom icon class name prefix for using custom icons                                                                | String  | 'nut-icon' |
+| dot         | Whether to display the little red dot in the upper right corner of the icon                                            | Boolean | false      |
 
 ### Event
 
-| Event   | Description               | callback parameter           |
-|------------|--------------------|--------------------|
+| Event     | Description                          | callback parameter           |
+| --------- | ------------------------------------ | ---------------------------- |
 | tabSwitch | Trigger an event when switching tabs | Clicked data and index value |

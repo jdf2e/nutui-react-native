@@ -2,12 +2,11 @@
 
 ### 介绍
 
-
 提供导航功能。
 
 ### 安装
 
-```ts
+```tsx
 import { NavBar } from '@nutui/nutui-react-native';
 ```
 
@@ -15,7 +14,9 @@ import { NavBar } from '@nutui/nutui-react-native';
 
 ### 基本用法
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React from "react";
 import { View } from 'react-native';
 import { NavBar, Icon, Toast } from '@nutui/nutui-react-native';
@@ -49,10 +50,13 @@ const App = () => {
   );
 };
 export default App;
-
 ```
 
-```SnackPlayer
+:::
+
+:::demo
+
+```tsx
 import  React from "react";
 import { NavBar, Toast } from '@nutui/nutui-react-native';
 
@@ -78,10 +82,13 @@ const App = () => {
   );
 };
 export default App;
-
 ```
 
-```SnackPlayer
+:::
+
+:::demo
+
+```tsx
 import  React from "react";
 import { View } from 'react-native';
 import { NavBar, Icon, Toast } from '@nutui/nutui-react-native';
@@ -116,10 +123,13 @@ const App = () => {
   );
 };
 export default App;
-
 ```
 
-```SnackPlayer
+:::
+
+:::demo
+
+```tsx
 import  React from "react";
 import { View } from 'react-native';
 import { NavBar, Icon, Toast } from '@nutui/nutui-react-native';
@@ -153,13 +163,15 @@ const App = () => {
   );
 };
 export default App;
-
 ```
 
+:::
 
 ### 自定义导航栏中间内容
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React from "react";
 import { View } from 'react-native';
 import { NavBar, Icon, Toast } from '@nutui/nutui-react-native';
@@ -207,31 +219,33 @@ const App = () => {
   );
 };
 export default App;
-
 ```
+
+:::
 
 ### Prop
 
-| 字段                       | 说明                                                                                           | 类型    | 默认值  |
-|--------------------------|------------------------------------------------------------------------------------------------|---------|---------|
-| title                    | 标题名称                                                                                       | String  | -       |
-| desc                     | 右侧描述                                                                                       | String  | -       |
-| leftShow                 | 是否展示左侧箭头                                                                              | Boolean | true   |
-| icon`v1.2.1(废弃)`         | 左侧 [图标名称](#/icon) 或图片链接                                                             | String  | -       |
-| titIcon                  | 标题带icon                                                         | String  | -       |
-| leftText`v1.2.1`         | 左侧文案                                                         | String  | -       |
-| fixed`v1.2.1`            | 是否固定                                                         | Boolean  | false       |
-| safeAreaInsetTop`v1.2.1` | 是否适配安全区                                                         | Boolean  | false       |
-| border`v1.2.1`           | 是否显示底部边框                                      | Boolean  | false    |
-| placeholder`v1.2.1`      | 固定在顶部时，是否在标签位置生成一个等高的占位元素           | Boolean  | false    |
-| zIndex`v1.2.1`           | 导航栏层级           | Number、String  | 10    |
-| style`v1.2.1`            | 容器样式           | React.CSSProperties  | {}    |
+| 字段                     | 说明                                               | 类型                | 默认值 |
+| ------------------------ | -------------------------------------------------- | ------------------- | ------ |
+| title                    | 标题名称                                           | String              | -      |
+| desc                     | 右侧描述                                           | String              | -      |
+| leftShow                 | 是否展示左侧箭头                                   | Boolean             | true   |
+| icon`v1.2.1(废弃)`       | 左侧 [图标名称](#/icon) 或图片链接                 | String              | -      |
+| titIcon                  | 标题带 icon                                        | String              | -      |
+| leftText`v1.2.1`         | 左侧文案                                           | String              | -      |
+| fixed`v1.2.1`            | 是否固定                                           | Boolean             | false  |
+| safeAreaInsetTop`v1.2.1` | 是否适配安全区                                     | Boolean             | false  |
+| border`v1.2.1`           | 是否显示底部边框                                   | Boolean             | false  |
+| placeholder`v1.2.1`      | 固定在顶部时，是否在标签位置生成一个等高的占位元素 | Boolean             | false  |
+| zIndex`v1.2.1`           | 导航栏层级                                         | Number、String      | 10     |
+| style`v1.2.1`            | 容器样式                                           | React.CSSProperties | {}     |
 
 ### Event
-| 名称                      | 说明     | 回调参数    |
-|-------------------------|----------|-------------|
-| onClickTitle            | 点击标题事件 | event:Event |
-| onClickClear`v1.2.1(废弃)` | 点击右侧文案事件 | event:Event |
-| onClickRight`v1.2.1`    | 点击右侧事件 | event:Event |
-| onClickBack`v1.2.1`             | 点击返回事件 | event:Event |
-| onClickIcon`v1.2.1`             | 点击标题右侧icon事件 | event:Event |
+
+| 名称                       | 说明                   | 回调参数    |
+| -------------------------- | ---------------------- | ----------- |
+| onClickTitle               | 点击标题事件           | event:Event |
+| onClickClear`v1.2.1(废弃)` | 点击右侧文案事件       | event:Event |
+| onClickRight`v1.2.1`       | 点击右侧事件           | event:Event |
+| onClickBack`v1.2.1`        | 点击返回事件           | event:Event |
+| onClickIcon`v1.2.1`        | 点击标题右侧 icon 事件 | event:Event |

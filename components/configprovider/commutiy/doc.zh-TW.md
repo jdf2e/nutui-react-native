@@ -6,7 +6,7 @@
 
 ### 安裝
 
-``` javascript
+```tsx
 import { ConfigProvider } from '@nutui/nutui-react-native';
 ```
 
@@ -14,7 +14,9 @@ import { ConfigProvider } from '@nutui/nutui-react-native';
 
 ### 基礎用法
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React from 'react';
 import { ConfigProvider, Textarea } from "@nutui/nutui-react";
 import en from "@nutui/nutui-react/dist/locales/en-US";
@@ -30,10 +32,12 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ## API
 
 ### Props
 
-| 屬性 | 說明 | 類型 | 預設值           |
-|--------------|----------------------------|--------|-----------------|
-| locale         | 設置多語言包                     | BaseLang | zhCN                |
+| 屬性   | 說明         | 類型     | 預設值 |
+| ------ | ------------ | -------- | ------ |
+| locale | 設置多語言包 | BaseLang | zhCN   |

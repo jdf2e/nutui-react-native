@@ -6,14 +6,15 @@
 
 ### 安装
 
-``` javascript
+```tsx
 import { FixedNav } from '@nutui/nutui-react-native';
 ```
 
-
 ### 基础用法
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React, { useState } from "react";
 import { FixedNav } from '@nutui/nutui-react-native';
 
@@ -65,9 +66,13 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### 左侧效果
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React, { useState } from "react";
 import { FixedNav } from '@nutui/nutui-react-native';
 
@@ -120,11 +125,13 @@ const App = () => {
 export default App;
 ```
 
-
+:::
 
 ### 取消背景遮罩
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React, { useState } from "react";
 import { FixedNav } from '@nutui/nutui-react-native';
 
@@ -175,10 +182,13 @@ const App = () => {
 export default App;
 ```
 
+:::
 
 ### 自定义使用
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React, { useState } from "react";
 import { Icon, FixedNav } from '@nutui/nutui-react-native';
 
@@ -243,10 +253,13 @@ const App = () => {
 export default App;
 ```
 
+:::
 
 ### 支持拖拽
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React, { useState } from "react";
 import { Drag, FixedNav } from '@nutui/nutui-react-native';
 
@@ -297,28 +310,25 @@ const App = () => {
 export default App;
 ```
 
-
-
+:::
 
 ### Prop
-| 字段           | 说明                       | 类型    | 默认值                       |
-|:---------------|:---------------------------|:--------|:-----------------------------|
-| fixednavClass        | 自定义类名                   | String | fixednav                        |
-| visible        | 是否打开                   | Boolean | false                        |
-| navList       | 悬浮列表内容数据           | Array   | []                           |
-| activeText    | 收起列表按钮文案           | String  | 收起导航                     |
-| unActiveText | 展开列表按钮文案           | String  | 快速导航                     |
-| type           | 导航方向,可选值 left right | String  | right                        |
-| position       | fixed 垂直位置             | Object  | {top: 'auto',bottom: 'auto'} |
-| slotList       | 自定义展开列表内容             | HTMLElement  | - |
-| slotBtn       | 自定义按钮            | HTMLElement  | - |
 
+| 字段          | 说明                       | 类型        | 默认值                       |
+| :------------ | :------------------------- | :---------- | :--------------------------- |
+| fixednavClass | 自定义类名                 | String      | fixednav                     |
+| visible       | 是否打开                   | Boolean     | false                        |
+| navList       | 悬浮列表内容数据           | Array       | []                           |
+| activeText    | 收起列表按钮文案           | String      | 收起导航                     |
+| unActiveText  | 展开列表按钮文案           | String      | 快速导航                     |
+| type          | 导航方向,可选值 left right | String      | right                        |
+| position      | fixed 垂直位置             | Object      | {top: 'auto',bottom: 'auto'} |
+| slotList      | 自定义展开列表内容         | HTMLElement | -                            |
+| slotBtn       | 自定义按钮                 | HTMLElement | -                            |
 
 ### Event
 
-| 字段     | 说明         | 回调参数        |
-|:----------|:--------------|:------------|
-| onChange | 展开收起按钮回调 | value:boolean |
-| onSelected | 选择之后触发 | item,event:MouseEvent |
-
-
+| 字段       | 说明             | 回调参数              |
+| :--------- | :--------------- | :-------------------- |
+| onChange   | 展开收起按钮回调 | value:boolean         |
+| onSelected | 选择之后触发     | item,event:MouseEvent |

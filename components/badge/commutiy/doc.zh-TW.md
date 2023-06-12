@@ -6,100 +6,164 @@
 
 ### 安裝
 
-``` javascript
+```tsx
 // react
 import { Badge } from '@nutui/nutui-react';
-
 ```
 
 ## 代碼實例
 
 ### 基本用法
 
-```SnackPlayer
-<Badge value={8}>
-  <Avatar icon="my" shape="square"></Avatar>
-</Badge>
-<Badge value={76}>
-  <Avatar icon="my" shape="square"></Avatar>
-</Badge>
-<Badge value="NEW">
-  <Avatar icon="my" shape="square"></Avatar>
-</Badge>
-<Badge dot>
-  <Avatar icon="my" shape="square"></Avatar>
-</Badge>
+:::demo
+
+```tsx
+import React from "react";
+import { Badge, Avatar } from '@nutui/nutui-react-native';
+
+const App = () => {
+  return (
+    <>
+      <Badge value={8}>
+        <Avatar icon="my" shape="square" />
+      </Badge>
+      <Badge value={76}>
+        <Avatar icon="my" shape="square" />
+      </Badge>
+      <Badge value="NEW">
+        <Avatar icon="my" shape="square" />
+      </Badge>
+      <Badge dot>
+        <Avatar icon="my" shape="square" />
+      </Badge>
+    </>
+  )
+}
+export default App;
 ```
+
+:::
 
 ### 最大值
 
-```SnackPlayer
-<Badge value={200} max={9}>
-  <Avatar icon="my" shape="square"></Avatar>
-</Badge>
-<Badge value={200} max={20}>
-  <Avatar icon="my" shape="square"></Avatar>
-</Badge>
-<Badge value={200} max={99}>>
-  <Avatar icon="my" shape="square"></Avatar>
-</Badge>
+:::demo
+
+```tsx
+import React from "react";
+import { Badge, Avatar } from '@nutui/nutui-react-native';
+
+const App = () => {
+  return (
+    <>
+      <Badge value={200} max={9}>
+        <Avatar icon="my" shape="square" />
+      </Badge>
+      <Badge value={200} max={20}>
+        <Avatar icon="my" shape="square" />
+      </Badge>
+      <Badge value={200} max={99}>
+        <Avatar icon="my" shape="square" />
+      </Badge>
+    </>
+  )
+}
+export default App;
 ```
 
+:::
 
 ### 自定義徽標內容
 
-```SnackPlayer
-<Badge icon="checklist">
-  <Avatar icon="my" shape="square"></Avatar>
-</Badge>
-<Badge icon="link">
-  <Avatar icon="my" shape="square"></Avatar>
-</Badge>
-<Badge icon="download">
-  <Avatar icon="my" shape="square"></Avatar>
-</Badge>
+:::demo
+
+```tsx
+import React from "react";
+import { Badge, Avatar } from '@nutui/nutui-react-native';
+
+const App = () => {
+  return (
+    <>
+      <Badge icon="checklist">
+        <Avatar icon="my" shape="square" />
+      </Badge>
+      <Badge icon="link">
+        <Avatar icon="my" shape="square" />
+      </Badge>
+      <Badge icon="download">
+        <Avatar icon="my" shape="square" />
+      </Badge>
+    </>
+  )
+}
+export default App;
 ```
+
+:::
 
 ### 自定義位置
 
-```SnackPlayer
-<Badge value={8} top="5" right="5">
-  <Avatar icon="my" shape="square"></Avatar>
-</Badge>
-<Badge value={76} top="10" right="10">
-  <Avatar icon="my" shape="square"></Avatar>
-</Badge>
-<Badge value="NEW">
-  <Avatar icon="my" shape="square"></Avatar>
-</Badge>
+:::demo
+
+```tsx
+import React from "react";
+import { Badge, Avatar } from '@nutui/nutui-react-native';
+
+const App = () => {
+  return (
+    <>
+      <Badge value={8} top="5" right="5">
+        <Avatar icon="my" shape="square" />
+      </Badge>
+      <Badge value={76} top="10" right="10">
+        <Avatar icon="my" shape="square" />
+      </Badge>
+      <Badge value="NEW">
+        <Avatar icon="my" shape="square" />
+      </Badge>
+    </>
+  )
+}
+export default App;
 ```
+
+:::
 
 ### 獨立展示
 
-```SnackPlayer
-<Badge value={8}> </Badge>
-<Badge value={76}> </Badge>
-<Badge value="NEW"> </Badge>
+:::demo
+
+```tsx
+import React from "react";
+import { Badge } from '@nutui/nutui-react-native';
+
+const App = () => {
+  return (
+    <>
+      <Badge value={8}> </Badge>
+      <Badge value={76}> </Badge>
+      <Badge value="NEW"> </Badge>
+    </>
+  )
+}
+export default App;
 ```
+
+:::
 
 ## API
 
 ### Props
 
-| 字段    | 說明                                       | 類型    | 默認值    |
-|---------|--------------------------------------------|---------|-----------|
-| value   | 顯示的內容                                 | String  | -         |
-| max     | value 為數值時，最大值 | Number  | `10000`   |
-| zIndex | 徽標的 z-index 值 | Number  | `10`      |
-| dot     | 是否為小點 | Boolean | `false`   |
-| top     | 上下偏移量，支持單位設置，可設置為：5 等 | Number  | `0`       |
-| right   | 左右偏移量，支持單位設置，可設置為：5 等 | Number  | `0`       |
-| color   | 徽標背景顏色                               | String  | `#fa2c19` |
-| icons   | 徽標自定義                               | String  | - |
-
-
-
-
+| 字段   | 說明                                     | 類型    | 默認值    |
+| ------ | ---------------------------------------- | ------- | --------- |
+| value  | 顯示的內容                               | String  | -         |
+| max    | value 為數值時，最大值                   | Number  | `10000`   |
+| zIndex | 徽標的 z-index 值                        | Number  | `10`      |
+| dot    | 是否為小點                               | Boolean | `false`   |
+| top    | 上下偏移量，支持單位設置，可設置為：5 等 | Number  | `0`       |
+| right  | 左右偏移量，支持單位設置，可設置為：5 等 | Number  | `0`       |
+| color  | 徽標背景顏色                             | String  | `#fa2c19` |
+| icons  | 徽標自定義                               | String  | -         |
 
 ## 主題定制
 
@@ -107,18 +171,18 @@ import { Badge } from '@nutui/nutui-react';
 
 組件提供了下列 CSS 變量，可用於自定義樣式，使用方法請參考 [ConfigProvider 組件](#/zh-CN/component/configprovider)。
 
-| 名稱 | 默認值 |
-| --- | --- |
-| --nutui-badge-color | ` #fff` |
-| --nutui-badge-font-size | ` $font-size-1` |
+| 名稱                                   | 默認值                     |
+| -------------------------------------- | -------------------------- |
+| --nutui-badge-color                    | ` #fff`                    |
+| --nutui-badge-font-size                | ` $font-size-1`            |
 | --nutui-badge-default-background-color | `  rgba(255, 255, 255, 1)` |
-| --nutui-badge-border-radius | ` 14` |
-| --nutui-badge-padding-top | ` 0` |
-| --nutui-badge-padding-bottom | ` 0` |
-| --nutui-badge-padding-left | ` 5` |
-| --nutui-badge-padding-right | ` 5` |
-| --nutui-badge-z-index | ` 1` |
-| --nutui-badge-dot-width | ` 7` |
-| --nutui-badge-dot-height | ` 7` |
-| --nutui-badge-dot-border-radius | ` 7` |
-| --nutui-badge-dot-padding | ` 0` |
+| --nutui-badge-border-radius            | ` 14`                      |
+| --nutui-badge-padding-top              | ` 0`                       |
+| --nutui-badge-padding-bottom           | ` 0`                       |
+| --nutui-badge-padding-left             | ` 5`                       |
+| --nutui-badge-padding-right            | ` 5`                       |
+| --nutui-badge-z-index                  | ` 1`                       |
+| --nutui-badge-dot-width                | ` 7`                       |
+| --nutui-badge-dot-height               | ` 7`                       |
+| --nutui-badge-dot-border-radius        | ` 7`                       |
+| --nutui-badge-dot-padding              | ` 0`                       |

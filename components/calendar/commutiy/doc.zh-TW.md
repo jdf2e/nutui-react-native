@@ -6,7 +6,7 @@
 
 ### 安裝
 
-```javascript
+```tsx
 import { Calendar } from '@nutui/nutui-react-native';
 ```
 
@@ -14,7 +14,9 @@ import { Calendar } from '@nutui/nutui-react-native';
 
 ### 基礎用法
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React, { useState } from "react";
 import { Cell, Calendar } from '@nutui/nutui-react-native';
 
@@ -50,12 +52,15 @@ const App = () => {
     );
 };
 export default App;
-
 ```
+
+:::
 
 ### 區間選擇
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React, { useState } from "react";
 import { Cell, Calendar } from '@nutui/nutui-react-native';
 
@@ -91,12 +96,15 @@ const App = () => {
     );
 };
 export default App;
-
 ```
+
+:::
 
 ### 選擇多個日期
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React, { useState } from "react";
 import { Cell, Calendar } from '@nutui/nutui-react-native';
 
@@ -132,12 +140,15 @@ const App = () => {
     );
 };
 export default App;
-
 ```
+
+:::
 
 ### 快捷選擇
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React, { useState } from "react";
 import { Cell, Calendar } from '@nutui/nutui-react-native';
 
@@ -173,12 +184,15 @@ const App = () => {
     );
 };
 export default App;
-
 ```
+
+:::
 
 ### 自定義日曆-自定義時間文案
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React, { useState } from "react";
 import { Cell, Calendar } from '@nutui/nutui-react-native';
 
@@ -239,12 +253,15 @@ const App = () => {
     );
 };
 export default App;
-
 ```
+
+:::
 
 ### 自定義日曆-自定義按鈕
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React, { useState, useRef } from "react";
 import { Cell, Calendar } from '@nutui/nutui-react-native';
 
@@ -374,12 +391,15 @@ const App = () => {
     );
 };
 export default App;
-
 ```
+
+:::
 
 ### 平鋪展示
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React, { useState } from "react";
 import { Calendar } from '@nutui/nutui-react-native';
 
@@ -404,45 +424,47 @@ const App = () => {
     );
 };
 export default App;
-
 ```
+
+:::
 
 ## API
 
 ### Props
 
-| 字段              | 說明                                              | 類型            | 默認值          |
-|-------------------|---------------------------------------------------|-----------------|-----------------|
-| visible   | 是否可見                                          | Boolean         | false           |
-| type              | 類型，日期選擇'one'，區間選擇'range'              | String          | 'one'           |
-| poppable          | 是否彈窗狀態展示                                  | Boolean         | true            |
-| isAutoBackFill | 自動回填                                          | Boolean         | false           |
-| title             | 顯示標題                                          | String          | ‘日期選擇’      |
-| defaultValue     | 默認值，日期選擇 String 格式，區間選擇 Array 格式 | String 、 Array | null            |
-| startDate        | 開始日期， 如果不限制開始日期傳 null              | String          | 今天            |
-| endDate          | 結束日期，如果不限制結束日期傳 null               | String          | 距離今天 365 天 |
-| showToday          | 是否展示今天標記               | Boolean          | true |
-| startText         | 範圍選擇，開始信息文案               | String          | ’开始‘ |
-| endText         | 範圍選擇，結束信息文案               | String          | ‘结束’ |
-| confirmText          | 底部確認按鈕文案               | String          | ’确认‘ |
-| showTitle          | 是否在展示日曆標題               | Boolean          | true |
-| showSubTitle          | 是否展示日期標題              | Boolean          | true |
-| toDateAnimation          | 是否啟動滾動動畫              | Boolean          | true |
-| onBtn | 自定義日曆標題下部，可用以添加自定義操作              |  (() => string \| JSX.Element) 、 undefined      | - |
-| onDay  | 日期信息              |  ((date: Day) => string \| JSX.Element) 、 undefined                          | - |
-| onTopInfo  | 日期頂部信息             |  ((date: Day) => string \| JSX.Element) 、 undefined                          | - |
-| onBottomInfo  | 日期底部信息             |  ((date: Day) => string \| JSX.Element) 、 undefined                         | - |
+| 字段            | 說明                                              | 類型                                                | 默認值          |
+| --------------- | ------------------------------------------------- | --------------------------------------------------- | --------------- |
+| visible         | 是否可見                                          | Boolean                                             | false           |
+| type            | 類型，日期選擇'one'，區間選擇'range'              | String                                              | 'one'           |
+| poppable        | 是否彈窗狀態展示                                  | Boolean                                             | true            |
+| isAutoBackFill  | 自動回填                                          | Boolean                                             | false           |
+| title           | 顯示標題                                          | String                                              | ‘日期選擇’      |
+| defaultValue    | 默認值，日期選擇 String 格式，區間選擇 Array 格式 | String 、 Array                                     | null            |
+| startDate       | 開始日期， 如果不限制開始日期傳 null              | String                                              | 今天            |
+| endDate         | 結束日期，如果不限制結束日期傳 null               | String                                              | 距離今天 365 天 |
+| showToday       | 是否展示今天標記                                  | Boolean                                             | true            |
+| startText       | 範圍選擇，開始信息文案                            | String                                              | ’开始‘          |
+| endText         | 範圍選擇，結束信息文案                            | String                                              | ‘结束’          |
+| confirmText     | 底部確認按鈕文案                                  | String                                              | ’确认‘          |
+| showTitle       | 是否在展示日曆標題                                | Boolean                                             | true            |
+| showSubTitle    | 是否展示日期標題                                  | Boolean                                             | true            |
+| toDateAnimation | 是否啟動滾動動畫                                  | Boolean                                             | true            |
+| onBtn           | 自定義日曆標題下部，可用以添加自定義操作          | (() => string \| JSX.Element) 、 undefined          | -               |
+| onDay           | 日期信息                                          | ((date: Day) => string \| JSX.Element) 、 undefined | -               |
+| onTopInfo       | 日期頂部信息                                      | ((date: Day) => string \| JSX.Element) 、 undefined | -               |
+| onBottomInfo    | 日期底部信息                                      | ((date: Day) => string \| JSX.Element) 、 undefined | -               |
 
 ### Events
 
-| 事件名 | 说明                         | 回调参数                     |
-|--------|------------------------------|------------------------------|
-| onChoose | 選擇之後或是點擊確認按鈕觸發 | 日期數組（包含年月日和星期） |
-| onClose  | 關閉時觸發                   | -                            |
-| onSelected  | 點擊/選擇後觸發              |  Day: Day                          |
+| 事件名     | 说明                         | 回调参数                     |
+| ---------- | ---------------------------- | ---------------------------- |
+| onChoose   | 選擇之後或是點擊確認按鈕觸發 | 日期數組（包含年月日和星期） |
+| onClose    | 關閉時觸發                   | -                            |
+| onSelected | 點擊/選擇後觸發              | Day: Day                     |
 
 ### Day
-| 字段              | 類型            |
-|-------------------|-----------------|
-| day   | string、number           |
-| type   | string          |
+
+| 字段 | 類型           |
+| ---- | -------------- |
+| day  | string、number |
+| type | string         |

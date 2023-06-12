@@ -6,13 +6,15 @@
 
 ### 安裝
 
-```SnackPlayer
+```tsx
 import { Steps } from '@nutui/nutui-react-native';
 ```
 
 ### 基本用法
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React, { useState } from "react";
 import { Steps, Step, Button } from '@nutui/nutui-react-native';
 import { View, Text } from 'react-native';
@@ -45,7 +47,6 @@ const App = () => {
     </View>
   )
 }
-export default App;
 
 const styles = StyleSheet.create({
   items: {
@@ -55,11 +56,17 @@ const styles = StyleSheet.create({
     paddingVertical: 20
   }
 });
+
+export default App;
 ```
+
+:::
 
 ### 標題和描述信息
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React, { useState } from "react";
 import { Steps, Step, Button } from '@nutui/nutui-react-native';
 import { View, Text } from 'react-native';
@@ -94,7 +101,6 @@ const App = () => {
     </>
   )
 }
-export default App;
 
 const styles = StyleSheet.create({
   items: {
@@ -104,11 +110,17 @@ const styles = StyleSheet.create({
     paddingVertical: 20
   }
 });
+
+export default App;
 ```
+
+:::
 
 ### 自定義圖標
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React, { useState } from "react";
 import { Steps, Step, Button } from '@nutui/nutui-react-native';
 import { View, Text } from 'react-native';
@@ -133,8 +145,13 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### 豎向步驟條
-```SnackPlayer
+
+:::demo
+
+```tsx
 import React, { useState } from "react";
 import { Steps, Step, Button } from '@nutui/nutui-react-native';
 import { View, Text } from 'react-native';
@@ -177,7 +194,6 @@ const App = () => {
     </View>
   )
 }
-export default App;
 
 const styles = StyleSheet.create({
   itemsHeight: {
@@ -188,10 +204,17 @@ const styles = StyleSheet.create({
       paddingVertical: 20
   }
 });
+
+export default App;
 ```
 
+:::
+
 ### 點狀步驟和垂直方向
-```SnackPlayer
+
+:::demo
+
+```tsx
 import React, { useState } from "react";
 import { Steps, Step, Button } from '@nutui/nutui-react-native';
 import { View, Text } from 'react-native';
@@ -239,7 +262,6 @@ const App = () => {
     </View>
   )
 }
-export default App;
 
 const styles = StyleSheet.create({
   itemsHeight: {
@@ -250,8 +272,11 @@ const styles = StyleSheet.create({
       paddingVertical: 20
   }
 });
+
+export default App;
 ```
 
+:::
 
 ## API
 
@@ -259,23 +284,21 @@ const styles = StyleSheet.create({
 
 #### Steps
 
-| 參數                   | 說明                                                        | 類型           | 默認值      |
-| ---------------------- | ----------------------------------------------------------- | -------------- | ----------- |
-| direction	             | 	顯示方向，`horizontal`,`vertical`  | String        | 'horizontal'  |
-| current	               | 	當前所在的步驟           | Number        | 0      |
-| progressDot            |  點狀步驟條     | Boolean | false         |
-| isStart               |  开始步驟     | Boolean | true         |
-| isEnd               |  结束步驟     | Boolean | true         |
-
-
+| 參數        | 說明                              | 類型    | 默認值       |
+| ----------- | --------------------------------- | ------- | ------------ |
+| direction   | 顯示方向，`horizontal`,`vertical` | String  | 'horizontal' |
+| current     | 當前所在的步驟                    | Number  | 0            |
+| progressDot | 點狀步驟條                        | Boolean | false        |
+| isStart     | 开始步驟                          | Boolean | true         |
+| isEnd       | 结束步驟                          | Boolean | true         |
 
 #### Step
 
-| 參數           | 說明                   | 類型     | 默認值      |
-| ---------------- | ---------------------- | ------------ | ----------- |
-| title            | 流程步驟的標題         | String | '' |
-| content          | 流程步驟的描述性文字       | String | '' |
-| icon          | 圖標       | String | '' |
-| size          | 圖標尺寸大小       | String | '' |
-| activeIndex          | 流程步驟的索引       | Number | 0 |
-| renderContent         | 流程步驟的描述性文字的html結構      | React.ReactNode | - |
+| 參數          | 說明                             | 類型            | 默認值 |
+| ------------- | -------------------------------- | --------------- | ------ |
+| title         | 流程步驟的標題                   | String          | ''     |
+| content       | 流程步驟的描述性文字             | String          | ''     |
+| icon          | 圖標                             | String          | ''     |
+| size          | 圖標尺寸大小                     | String          | ''     |
+| activeIndex   | 流程步驟的索引                   | Number          | 0      |
+| renderContent | 流程步驟的描述性文字的 html 結構 | React.ReactNode | -      |

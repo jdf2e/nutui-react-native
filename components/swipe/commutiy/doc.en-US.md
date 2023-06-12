@@ -1,11 +1,12 @@
 # Swipe
 
 ### introduce
+
 It is often used for gesture operations such as sliding left and right to delete cells
 
 ### Install
 
-```javascript
+```tsx
 import { Swipe } from '@nutui/nutui-react-native';
 ```
 
@@ -13,8 +14,9 @@ import { Swipe } from '@nutui/nutui-react-native';
 
 ### Basic usage
 
-```SnackPlayer
+:::demo
 
+```tsx
 import React from "react";
 import {
   View,
@@ -55,10 +57,13 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### Disable sliding
 
-```SnackPlayer
+:::demo
 
+```tsx
 import React from "react";
 import {
   View,
@@ -90,10 +95,13 @@ const App = () => {
 export default App;
 ```
 
+:::
 
 ### Event monitoring
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React from "react";
 import {
   View,
@@ -160,10 +168,13 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### Asynchronous control
 
-```SnackPlayer
+:::demo
 
+```tsx
 import React, { useRef } from "react";
 import {
   View,
@@ -214,10 +225,13 @@ const App = () => {
 export default App;
 ```
 
+:::
 
 ### Custom content
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React from "react";
 import { View, Text } from 'react-native'
 import { Swipe, Button, InputNumber } from '@nutui/nutui-react-native';
@@ -256,25 +270,26 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ## API
 
 ### Props
 
-
-|Parameter | description | type | default value|
-|--------------|----------------------------------|--------|------------------|
-|name | identifier, which can be obtained in the event parameters |_number \| string_ | `''` |
-|leftwidth | specifies the width of the left sliding area, in 'PX'|_number \| string_ | `0` |
-|rightwidth | specifies the width of the sliding area on the right, in 'PX'|_number \| string_ | `0` |
-|leftaction | contents of the left sliding area |_ReactNode_ | - |
-|rightaction | content of right sliding area |_ReactNode_ | - |
-|beforeclose | the callback function before closing returns `position` | _string_ | `left`|
-|disabled | disable sliding |_boolean_ | `false` |
+| Parameter   | description                                                   | type               | default value |
+| ----------- | ------------------------------------------------------------- | ------------------ | ------------- |
+| name        | identifier, which can be obtained in the event parameters     | _number \| string_ | `''`          |
+| leftwidth   | specifies the width of the left sliding area, in 'PX'         | _number \| string_ | `0`           |
+| rightwidth  | specifies the width of the sliding area on the right, in 'PX' | _number \| string_ | `0`           |
+| leftaction  | contents of the left sliding area                             | _ReactNode_        | -             |
+| rightaction | content of right sliding area                                 | _ReactNode_        | -             |
+| beforeclose | the callback function before closing returns `position`       | _string_           | `left`        |
+| disabled    | disable sliding                                               | _boolean_          | `false`       |
 
 ### Events
 
-|Event name | description | callback parameters|
-|--------|----------------|--------------|
-|onOpen | open the cell sidebar |_name: string , position: `left \| right`_ |
-|onClose | collapse the cell sidebar |_name: string , position: `left \| right`_ |
-|onActionClick | triggered when clicking on the left or right |_event: Event , position: `left \| right`_ |
+| Event name    | description                                  | callback parameters                        |
+| ------------- | -------------------------------------------- | ------------------------------------------ |
+| onOpen        | open the cell sidebar                        | _name: string , position: `left \| right`_ |
+| onClose       | collapse the cell sidebar                    | _name: string , position: `left \| right`_ |
+| onActionClick | triggered when clicking on the left or right | _event: Event , position: `left \| right`_ |

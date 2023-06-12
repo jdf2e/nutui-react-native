@@ -2,12 +2,11 @@
 
 ### 介紹
 
-
 提供導航功能。
 
 ### 安裝
 
-```SnackPlayer
+```tsx
 import { NavBar } from '@nutui/nutui-react-native';
 ```
 
@@ -15,7 +14,9 @@ import { NavBar } from '@nutui/nutui-react-native';
 
 ### 基本用法
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React from "react";
 import { View } from 'react-native';
 import { NavBar, Icon, Toast } from '@nutui/nutui-react-native';
@@ -50,10 +51,13 @@ const App = () => {
   );
 };
 export default App;
-
 ```
 
-```SnackPlayer
+:::
+
+:::demo
+
+```tsx
 import  React from "react";
 import { NavBar, Toast } from '@nutui/nutui-react-native';
 
@@ -80,10 +84,13 @@ const App = () => {
   );
 };
 export default App;
-
 ```
 
-```SnackPlayer
+:::
+
+:::demo
+
+```tsx
 import  React from "react";
 import { View } from 'react-native';
 import { NavBar, Icon } from '@nutui/nutui-react-native';
@@ -119,10 +126,13 @@ const App = () => {
   );
 };
 export default App;
-
 ```
 
-```SnackPlayer
+:::
+
+:::demo
+
+```tsx
 import  React from "react";
 import { View } from 'react-native';
 import { NavBar, Icon, Toast } from '@nutui/nutui-react-native';
@@ -156,13 +166,15 @@ const App = () => {
   );
 };
 export default App;
-
 ```
 
+:::
 
 ### 自定義導航欄中間內容
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React from "react";
 import { View } from 'react-native';
 import { NavBar, Icon, Toast } from '@nutui/nutui-react-native';
@@ -210,29 +222,31 @@ const App = () => {
   );
 };
 export default App;
-
 ```
+
+:::
 
 ### Prop
 
-| 字段            | 說明                                                                                           | 類型    | 默認值  |
-|-----------------|------------------------------------------------------------------------------------------------|---------|---------|
-| title           | 標題名稱                                                                                       | String  | -       |
-| desc            | 右側描述                                                                                       | String  | -       |
-| leftShow        | 是否展示左側箭頭                                                                              | Boolean | true   |
-| titIcon         | 標題帶icon                                                         | String  | -       |
-| leftText         | 左側文案                                                         | String  | -       |
-| fixed         | 是否固定                                                         | Boolean  | false       |
-| safeAreaInsetTop         | 是否適配安全區                                                         | Boolean  | false       |
-| border         | 是否顯示底部邊框                                      | Boolean  | false    |
-| placeholder         | 固定在頂部時，是否在標籤位置生成一個等高的佔位元素           | Boolean  | false    |
-| zIndex         | 導航欄層級           | Number、String  | 10    |
-| style         | 容器樣式           | React.CSSProperties  | {}    |
+| 字段             | 說明                                               | 類型                | 默認值 |
+| ---------------- | -------------------------------------------------- | ------------------- | ------ |
+| title            | 標題名稱                                           | String              | -      |
+| desc             | 右側描述                                           | String              | -      |
+| leftShow         | 是否展示左側箭頭                                   | Boolean             | true   |
+| titIcon          | 標題帶 icon                                        | String              | -      |
+| leftText         | 左側文案                                           | String              | -      |
+| fixed            | 是否固定                                           | Boolean             | false  |
+| safeAreaInsetTop | 是否適配安全區                                     | Boolean             | false  |
+| border           | 是否顯示底部邊框                                   | Boolean             | false  |
+| placeholder      | 固定在頂部時，是否在標籤位置生成一個等高的佔位元素 | Boolean             | false  |
+| zIndex           | 導航欄層級                                         | Number、String      | 10     |
+| style            | 容器樣式                                           | React.CSSProperties | {}     |
 
 ### Event
-| 名稱  | 說明     | 回調參數    |
-|-------|----------|-------------|
-| onClickTitle | 點擊標題事件 | event:Event |
-| onClickRight | 點擊右側事件 | event:Event |
-| onClickBack | 點擊返回事件 | event:Event |
-| onClickIcon | 點擊標題右側icon事件 | event:Event |
+
+| 名稱         | 說明                   | 回調參數    |
+| ------------ | ---------------------- | ----------- |
+| onClickTitle | 點擊標題事件           | event:Event |
+| onClickRight | 點擊右側事件           | event:Event |
+| onClickBack  | 點擊返回事件           | event:Event |
+| onClickIcon  | 點擊標題右側 icon 事件 | event:Event |

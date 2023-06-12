@@ -6,16 +6,17 @@
 
 ### 安裝
 
-```javascript
-import { Drag } from '@nutui/nutui-react-native'
+```tsx
+import { Drag } from '@nutui/nutui-react-native';
 ```
 
 ## 代碼演示
 
-
 ## 基本用法
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React from "react";
 import { Drag } from '@nutui/nutui-react-native';
 
@@ -38,10 +39,13 @@ const App = () => {
 export default App;
 ```
 
+:::
 
 ## 限製拖拽方向
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React from "react";
 import { Drag } from '@nutui/nutui-react-native';
 
@@ -69,10 +73,13 @@ const App = () => {
 export default App;
 ```
 
+:::
 
 ## 自動吸邊
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React from "react";
 import { Drag } from '@nutui/nutui-react-native';
 
@@ -95,9 +102,13 @@ const App = () => {
 export default App;
 ```
 
+:::
 
 ## 限製拖拽邊界
-```SnackPlayer
+
+:::demo
+
+```tsx
 import  React from "react";
 import { Drag } from '@nutui/nutui-react-native';
 
@@ -143,13 +154,14 @@ const App = () => {
 export default App;
 ```
 
+:::
 
 ## API
 
 ### Props
 
-| 參數 | 說明 | 類型 | 默認值 |
-| --------------- | ----------------------------- | ------- | ------ |
-| attract | 是否開啟自動吸邊 | Boolean | false |
-| direction | 拖拽元素的拖拽方向限製，x、y、lock三選一 | String |'lock' |
-| boundary | 拖拽元素的拖拽邊界 | Object | {top: 0,left: 0,right: 0,bottom: 0} |
+| 參數      | 說明                                      | 類型    | 默認值                              |
+| --------- | ----------------------------------------- | ------- | ----------------------------------- |
+| attract   | 是否開啟自動吸邊                          | Boolean | false                               |
+| direction | 拖拽元素的拖拽方向限製，x、y、lock 三選一 | String  | 'lock'                              |
+| boundary  | 拖拽元素的拖拽邊界                        | Object  | {top: 0,left: 0,right: 0,bottom: 0} |

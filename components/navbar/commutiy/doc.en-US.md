@@ -2,12 +2,11 @@
 
 ### introduce
 
-
 Provides navigation capabilities.
 
 ### Install
 
-```ts
+```tsx
 import { NavBar } from '@nutui/nutui-react-native';
 ```
 
@@ -15,7 +14,9 @@ import { NavBar } from '@nutui/nutui-react-native';
 
 ### Basic usage
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React from "react";
 import { View } from 'react-native';
 import { NavBar, Icon, Toast } from '@nutui/nutui-react-native';
@@ -49,10 +50,13 @@ const App = () => {
   );
 };
 export default App;
-
 ```
 
-```SnackPlayer
+:::
+
+:::demo
+
+```tsx
 import  React from "react";
 import { NavBar } from '@nutui/nutui-react-native';
 
@@ -78,10 +82,13 @@ const App = () => {
   );
 };
 export default App;
-
 ```
 
-```SnackPlayer
+:::
+
+:::demo
+
+```tsx
 import  React from "react";
 import { NavBar, Icon } from '@nutui/nutui-react-native';
 
@@ -115,10 +122,13 @@ const App = () => {
   );
 };
 export default App;
-
 ```
 
-```SnackPlayer
+:::
+
+:::demo
+
+```tsx
 import  React from "react";
 import { NavBar, Icon } from '@nutui/nutui-react-native';
 
@@ -151,13 +161,15 @@ const App = () => {
   );
 };
 export default App;
-
 ```
 
+:::
 
 ### Customize the middle content of the navigation bar
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React, { useState } from "react";
 import { View } from 'react-native';
 import { NavBar, Icon, Toast } from '@nutui/nutui-react-native';
@@ -205,30 +217,31 @@ const App = () => {
   );
 };
 export default App;
-
 ```
+
+:::
 
 ### Prop
 
-| Prop            | Description                                                                                           | Type    | Default  |
-|-----------------|------------------------------------------------------------------------------------------------|---------|---------|
-| title           | title name                                                                                       | String  | -       |
-| desc            | Description on the right                                                                                       | String  | -       |
-| leftShow        | Whether to show the left arrow                                                                              | Boolean | true   |
-| titIcon         | title with icon                                                         | String  | -       |
-| leftText         | copy on the left                                                         | String  | -       |
-| fixed         | Is it fixed                                                         | Boolean  | false       |
-| safeAreaInsetTop         | Whether it is suitable for the safe area                                                         | Boolean  | false       |
-| border         | whether to show the bottom border                                      | Boolean  | false    |
-| placeholder         | When fixed to the top, whether to generate a placeholder element of equal height at the label position           | Boolean  | false    |
-| zIndex         | Navigation Bar Hierarchy           | Number、String  | 10    |
-| style         | container style           | React.CSSProperties  | {}    |
+| Prop             | Description                                                                                            | Type                | Default |
+| ---------------- | ------------------------------------------------------------------------------------------------------ | ------------------- | ------- |
+| title            | title name                                                                                             | String              | -       |
+| desc             | Description on the right                                                                               | String              | -       |
+| leftShow         | Whether to show the left arrow                                                                         | Boolean             | true    |
+| titIcon          | title with icon                                                                                        | String              | -       |
+| leftText         | copy on the left                                                                                       | String              | -       |
+| fixed            | Is it fixed                                                                                            | Boolean             | false   |
+| safeAreaInsetTop | Whether it is suitable for the safe area                                                               | Boolean             | false   |
+| border           | whether to show the bottom border                                                                      | Boolean             | false   |
+| placeholder      | When fixed to the top, whether to generate a placeholder element of equal height at the label position | Boolean             | false   |
+| zIndex           | Navigation Bar Hierarchy                                                                               | Number、String      | 10      |
+| style            | container style                                                                                        | React.CSSProperties | {}      |
 
 ### Event
 
-| Event  | Description     | callback parameter    |
-|-------|----------|-------------|
-| onClickTitle | click title event | event:Event |
-| onClickRight | Click on the event on the right | event:Event |
-| onClickBack | click back event | event:Event |
-| onClickIcon | Click the icon event on the right side of the title | event:Event |
+| Event        | Description                                         | callback parameter |
+| ------------ | --------------------------------------------------- | ------------------ |
+| onClickTitle | click title event                                   | event:Event        |
+| onClickRight | Click on the event on the right                     | event:Event        |
+| onClickBack  | click back event                                    | event:Event        |
+| onClickIcon  | Click the icon event on the right side of the title | event:Event        |

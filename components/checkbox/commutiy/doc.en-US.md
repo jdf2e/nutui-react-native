@@ -6,18 +6,19 @@ Multi-select buttons are used for selection.
 
 ### Install
 
-``` ts
+```tsx
 import { Checkbox, CheckboxGroup } from '@nutui/nutui-react-native';
-
 ```
 
 ## Basic Usage
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React, {useState} from "react";
 import { Checkbox, CheckboxGroup } from '@nutui/nutui-react-native';
 
-const CheckBoxDemo = () => {
+const App = () => {
   const [checked, setChecked] = useState(true)
   return (<>
       <Checkbox textPosition="left" label="check box"
@@ -27,16 +28,20 @@ const CheckBoxDemo = () => {
     </>
   )
 }
-export default CheckBoxDemo;
+export default App;
 ```
+
+:::
 
 ## Disabled state
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React from "react";
 import { Checkbox, CheckboxGroup } from '@nutui/nutui-react-native';
 
-const CheckBoxDemo = () => {
+const App = () => {
   return (<>
     <Checkbox
       textPosition="right"
@@ -52,51 +57,63 @@ const CheckBoxDemo = () => {
      />
   </>)
 }
-export default CheckBoxDemo;
+export default App;
 ```
+
+:::
 
 ## Custom dimensions
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React from "react";
 import { Checkbox, CheckboxGroup } from '@nutui/nutui-react-native';
 
-const CheckBoxDemo = () => {
+const App = () => {
   return (<>
     <Checkbox label="size 25" iconSize={25} />
     <Checkbox label="size 10" iconSize={10} />
   </>)
 }
-export default CheckBoxDemo;
+export default App;
 ```
+
+:::
 
 ## Customize the icon
 
 It is recommended to set both the 'iconName' and 'iconActiveName' properties
 here
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React from "react";
 import { Checkbox, CheckboxGroup } from '@nutui/nutui-react-native';
 
-const CheckBoxDemo = () => {
+const App = () => {
   return (<>
     <Checkbox iconName="checklist" iconActiveName="checklist">Custom
       icons</Checkbox>
   </>)
 }
-export default CheckBoxDemo;
+export default App;
 ```
+
+:::
 
 ## Change event
 
 When the value changes, the change event is triggered
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React from "react";
 import { Checkbox, CheckboxGroup } from '@nutui/nutui-react-native';
 
-const CheckBoxDemo = () => {
+const App = () => {
   return (<>
     <Checkbox
       checked={false}
@@ -108,16 +125,20 @@ const CheckBoxDemo = () => {
     </Checkbox>
   </>)
 }
-export default CheckBoxDemo;
+export default App;
 ```
+
+:::
 
 ## CheckboxGroup
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React from "react";
 import { Checkbox, CheckboxGroup } from '@nutui/nutui-react-native';
 
-const CheckBoxDemo = () => {
+const App = () => {
   const [checkboxgroup1, setCheckboxgroup1] = useState(['1'])
   return (
     <CheckboxGroup
@@ -142,16 +163,20 @@ const CheckBoxDemo = () => {
     </CheckboxGroup>
   )
 }
-export default CheckBoxDemo;
+export default App;
 ```
+
+:::
 
 ## CheckBoxGroup Disabled
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React, { useState } from "react";
 import { Checkbox, CheckboxGroup } from '@nutui/nutui-react-native';
 
-const CheckBoxDemo = () => {
+const App = () => {
   const [checkboxgroup1, setCheckboxgroup1] = useState(['1'])
   return (
     <CheckboxGroup checkedValue={checkboxgroup1} disabled>
@@ -170,16 +195,20 @@ const CheckBoxDemo = () => {
     </CheckboxGroup>
   )
 }
-export default CheckBoxDemo;
+export default App;
 ```
+
+:::
 
 ## CheckboxGroup Select All/Cancel
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React from "react";
 import { Checkbox, CheckboxGroup, Button } from '@nutui/nutui-react-native';
 
-const CheckBoxDemo = () => {
+const App = () => {
   const [checkboxgroup2, setCheckboxgroup2] = useState(['1'])
   const checkboxgroup2Ref = useRef(null)
   return (<>
@@ -230,16 +259,20 @@ const CheckBoxDemo = () => {
     </Button>
   </>)
 }
-export default CheckBoxDemo;
+export default App;
 ```
+
+:::
 
 ## use checkboxGroup, Limit the maximum number of options (2)
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React, { useState, useRef } from "react";
 import { Checkbox, CheckboxGroup, Button, Toast } from '@nutui/nutui-react-native';
 
-const CheckBoxDemo = () => {
+const App = () => {
   const [checkboxgroup2, setCheckboxgroup2] = useState(['1'])
   const checkboxgroup2Ref = useRef(null)
   return (<>
@@ -265,15 +298,20 @@ const CheckBoxDemo = () => {
     </CheckboxGroup>
   </>)
 }
-export default CheckBoxDemo;
+export default App;
 ```
 
+:::
+
 ## Select all / half / cancel
-```SnackPlayer
+
+:::demo
+
+```tsx
 import React, { useState, useRef } from "react";
 import { Checkbox, CheckboxGroup, Button, Toast } from '@nutui/nutui-react-native';
 
-const CheckBoxDemo = () => {
+const App = () => {
   const [checkboxgroup2, setCheckboxgroup2] = useState(['1'])
   const checkboxgroup2Ref = useRef(null)
   const [checkbox1, setCheckbox1] = useState(false)
@@ -321,45 +359,46 @@ const CheckBoxDemo = () => {
     </CheckboxGroup>
   </>)
 }
-export default CheckBoxDemo;
+export default App;
 ```
 
+:::
 
 ## Checkbox
 
-| Props          | Description | Type | Default          |
-|----------------| ----- | ----- |------------------|
-| checked        | Whether it is selected | Boolean | `false`          |
-| disabled       | Whether to disable the selection | Boolean | `false`          |
-| textPosition   | The location of the text, optionally：`left`,`right` | String | `right`          |
-| iconSize       | [Icon size](#/icon) | String、Number | `18`             |
-| iconName       | [Icon name](#/icon)，Before selecting (it is recommended to modify it with 'iconActiveName') | String | `'check-normal'` |
-| iconActiveName | [Icon name](#/icon)，Once selected (it is recommended to modify it together with 'iconName') | String | `'checked'`      |
-| label          | The text content of the check box | String | -                |
+| Props          | Description                                                                                  | Type           | Default          |
+| -------------- | -------------------------------------------------------------------------------------------- | -------------- | ---------------- |
+| checked        | Whether it is selected                                                                       | Boolean        | `false`          |
+| disabled       | Whether to disable the selection                                                             | Boolean        | `false`          |
+| textPosition   | The location of the text, optionally：`left`,`right`                                         | String         | `right`          |
+| iconSize       | [Icon size](#/icon)                                                                          | String、Number | `18`             |
+| iconName       | [Icon name](#/icon)，Before selecting (it is recommended to modify it with 'iconActiveName') | String         | `'check-normal'` |
+| iconActiveName | [Icon name](#/icon)，Once selected (it is recommended to modify it together with 'iconName') | String         | `'checked'`      |
+| label          | The text content of the check box                                                            | String         | -                |
 
 ## CheckboxGroup
 
-| Props          | Description | Type | Default|
-|----- | ----- | ----- | ----- |
-| checkedValue | The identifier of the currently selected item, corresponding to 'label'  | String | -|
-| disabled | Whether to disable the selection will be used for all check boxes under it | Boolean | `false`|
-| max           | Limit the maximum number of options | `undefined|number` | `undefined`|
+| Props        | Description                                                                | Type       | Default |
+| ------------ | -------------------------------------------------------------------------- | ---------- | ------- | ----------- |
+| checkedValue | The identifier of the currently selected item, corresponding to 'label'    | String     | -       |
+| disabled     | Whether to disable the selection will be used for all check boxes under it | Boolean    | `false` |
+| max          | Limit the maximum number of options                                        | `undefined | number` | `undefined` |
 
 ## Checkbox Event
 
-| Props          | Description | Callback parameters|
-|----- | ----- | ----- |
-| onChange | Triggers | when the value changes (state, label), 'state' represents the current state, and 'label' represents the currently selected value|
+| Props    | Description | Callback parameters                                                                                                              |
+| -------- | ----------- | -------------------------------------------------------------------------------------------------------------------------------- |
+| onChange | Triggers    | when the value changes (state, label), 'state' represents the current state, and 'label' represents the currently selected value |
 
 ## CheckboxGroup Event
 
-| Props          | Description | Callback parameters|
-|----- | ----- | ----- |
-| onChange | Triggered when the value changes | label, 'label' returns an array representing the collection of the currently selected items|
+| Props    | Description                      | Callback parameters                                                                         |
+| -------- | -------------------------------- | ------------------------------------------------------------------------------------------- |
+| onChange | Triggered when the value changes | label, 'label' returns an array representing the collection of the currently selected items |
 
 ## CheckboxGroup API
 
-| 方法名 | 说明 | 参数 |
-|----- | ----- | ----- |
-| toggleAll | Select all / cancel | `f`,`true`,to select all，`false`,cancel the selection |
-| toggleReverse | Reverse selection | - |
+| 方法名        | 说明                | 参数                                                   |
+| ------------- | ------------------- | ------------------------------------------------------ |
+| toggleAll     | Select all / cancel | `f`,`true`,to select all，`false`,cancel the selection |
+| toggleReverse | Reverse selection   | -                                                      |

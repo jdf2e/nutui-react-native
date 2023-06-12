@@ -6,8 +6,8 @@ Used to single select in a set of alternatives
 
 ### Install
 
-``` ts
-import { Radio,RadioGroup } from '@nutui/nutui-react-native';
+```tsx
+import { Radio, RadioGroup } from '@nutui/nutui-react-native';
 ```
 
 ## Basic Usage
@@ -15,11 +15,13 @@ import { Radio,RadioGroup } from '@nutui/nutui-react-native';
 Tie the value of the current option by the label. And must be used in
 conjunction with RadioGroup and Radio
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React, { useState } from 'react';
 import { Radio, RadioGroup } from '@nutui/nutui-react-native';
 
-const RadioGroupLast = () => {
+const App = () => {
   const [radioVal] = useState('1')
   return <>
     <RadioGroup value={radioVal}>
@@ -39,16 +41,20 @@ const RadioGroupLast = () => {
     </RadioGroup>
   </>
 }
-export default RadioGroupLast;
+export default App;
 ```
+
+:::
 
 ## Horizontal use
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React, { useState } from 'react';
 import { Radio, RadioGroup } from '@nutui/nutui-react-native';
 
-const RadioGroupLast = () => {
+const App = () => {
   const [radioVal] = useState('1')
   return <>
     <RadioGroup value={radioVal} direction="horizontal">
@@ -68,16 +74,20 @@ const RadioGroupLast = () => {
     </RadioGroup>
   </>
 }
-export default RadioGroupLast;
+export default App;
 ```
+
+:::
 
 ## Custom sizes
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React, { useState } from 'react';
 import { Radio, RadioGroup } from '@nutui/nutui-react-native';
 
-const RadioGroupLast = () => {
+const App = () => {
   const [radioVal] = useState('1')
   return <>
     <RadioGroup value={radioVal}>
@@ -86,18 +96,22 @@ const RadioGroupLast = () => {
     </RadioGroup>
   </>
 }
-export default RadioGroupLast;
+export default App;
 ```
+
+:::
 
 ## Customize the icon
 
 It is recommended that 'iconName' and 'iconActiveName' be modified together
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React, { useState } from 'react';
 import { Radio, RadioGroup } from '@nutui/nutui-react-native';
 
-const RadioGroupLast = () => {
+const App = () => {
   const [radioVal] = useState('1')
   return <>
     <RadioGroup value={radioVal}>
@@ -108,16 +122,20 @@ const RadioGroupLast = () => {
     </RadioGroup>
   </>
 }
-export default RadioGroupLast;
+export default App;
 ```
+
+:::
 
 ## Trigger the change event
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React, { useState } from 'react';
 import { Radio, RadioGroup } from '@nutui/nutui-react-native';
 
-const RadioGroupLast = () => {
+const App = () => {
   const [radioVal] = useState('1')
   const handleChange = (v) => {
     console.log(v)
@@ -129,32 +147,34 @@ const RadioGroupLast = () => {
     </RadioGroup>
   </>
 }
-export default RadioGroupLast;
+export default App;
 ```
+
+:::
 
 ## Prop
 
 ### Radio
 
-| Props          | Description | Type | Default          |
-|----------------| ----- | ----- |------------------|
-| disabled         | Disable the selection | Boolean                 | `false`           |
-| iconSize        | [Icon size] (#/icon)                                           | String、Number          | `18`              |
-| iconName        | [Icon Name] (#/icon), before selecting (it is recommended to modify it with 'iconActiveName') | String                  | `'check-normal'`  |
-| iconActiveName | [Icon Name] (#/icon), selected (it is recommended to modify it with 'iconName') | String                  | `'check-checked'` |
-| value            | Value is carrying identification, used in Group mode | String、Number、Boolean | -                 |
-| shape            | Shape, with optional values of button, round, | String                  | round             |
+| Props          | Description                                                                                   | Type                    | Default           |
+| -------------- | --------------------------------------------------------------------------------------------- | ----------------------- | ----------------- |
+| disabled       | Disable the selection                                                                         | Boolean                 | `false`           |
+| iconSize       | [Icon size] (#/icon)                                                                          | String、Number          | `18`              |
+| iconName       | [Icon Name] (#/icon), before selecting (it is recommended to modify it with 'iconActiveName') | String                  | `'check-normal'`  |
+| iconActiveName | [Icon Name] (#/icon), selected (it is recommended to modify it with 'iconName')               | String                  | `'check-checked'` |
+| value          | Value is carrying identification, used in Group mode                                          | String、Number、Boolean | -                 |
+| shape          | Shape, with optional values of button, round,                                                 | String                  | round             |
 
 ### RadioGroup
 
-| Props          | Description | Type | Default          |
-|----------------| ----- | ----- |------------------|
-| value       | The identifier of the currently selected item, which is selected when the label value is consistent with the | String、Number、Boolean | -          |
-| textPosition | Where the text is located, optional values: 'left', 'right' | String                  | `right`    |
-| direction     | Use horizontal and vertical directions The optional values horizontal, vertical, | String                  | `vertical` |
+| Props        | Description                                                                                                  | Type                    | Default    |
+| ------------ | ------------------------------------------------------------------------------------------------------------ | ----------------------- | ---------- |
+| value        | The identifier of the currently selected item, which is selected when the label value is consistent with the | String、Number、Boolean | -          |
+| textPosition | Where the text is located, optional values: 'left', 'right'                                                  | String                  | `right`    |
+| direction    | Use horizontal and vertical directions The optional values horizontal, vertical,                             | String                  | `vertical` |
 
 ## RadioGroup Event
 
-| Props    | Description | Callback parameters|
-|----------| ----- | ----- |
-| onChange | Triggers | when the value changes The currently selected label value (label) [there is a value after setting the label, the default is empty] |
+| Props    | Description | Callback parameters                                                                                                                |
+| -------- | ----------- | ---------------------------------------------------------------------------------------------------------------------------------- |
+| onChange | Triggers    | when the value changes The currently selected label value (label) [there is a value after setting the label, the default is empty] |

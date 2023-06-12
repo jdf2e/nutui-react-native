@@ -6,7 +6,7 @@
 
 ### 安装
 
-```ts
+```tsx
 import { OverLay } from '@nutui/nutui-react-native';
 ```
 
@@ -14,7 +14,9 @@ import { OverLay } from '@nutui/nutui-react-native';
 
 ### 基础用法
 
-```SnackPlayer name=Overlay
+:::demo
+
+```tsx
 import React, { useState } from "react";
 import { Button, Overlay } from '@nutui/nutui-react-native';
 
@@ -38,9 +40,13 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### 嵌套内容
 
-```SnackPlayer name=Overlay
+:::demo
+
+```tsx
 import React, { useState } from "react";
 import { Button, Overlay } from 'nutui-rn';
 import { View, Text } from 'react-native';
@@ -84,6 +90,8 @@ const App = () => {
 }
 export default App;
 ```
+
+:::
 
 ## API
 

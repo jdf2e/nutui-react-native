@@ -6,7 +6,7 @@ Popup layer container, used to display pop-up windows, information prompts, etc.
 
 ### Install
 
-```javascript
+```tsx
 import { Popup } from '@nutui/nutui-react-native';
 ```
 
@@ -16,7 +16,9 @@ import { Popup } from '@nutui/nutui-react-native';
 
 `visible` Control show/hide
 
-```SnackPlayer name=Popup
+:::demo
+
+```tsx
 import React, { useState } from "react";
 import { Popup, Cell } from '@nutui/nutui-react-native'';
 
@@ -30,12 +32,15 @@ const App = () => {
   );
 };
 export default App;
-
 ```
+
+:::
 
 ### popup location
 
-```SnackPlayer name=Popup
+:::demo
+
+```tsx
 import React, { useState } from "react";
 import { Popup, Cell } from '@nutui/nutui-react-native';
 
@@ -59,12 +64,15 @@ const App = () => {
   );
 };
 export default App;
-
 ```
+
+:::
 
 ### Icon
 
-```SnackPlayer name=Popup
+:::demo
+
+```tsx
 import React, { useState } from "react";
 import { Popup, Cell } from '@nutui/nutui-react-native';
 
@@ -85,13 +93,15 @@ const App = () => {
   );
 };
 export default App;
-
-
 ```
+
+:::
 
 ### Rounded popup
 
-```SnackPlayer name=Popup
+:::demo
+
+```tsx
 import React, { useState } from "react";
 import { Popup, Cell } from '@nutui/nutui-react-native';
 
@@ -108,27 +118,27 @@ const App = () => {
 export default App;
 ```
 
-
+:::
 
 ## API
 
 ### Props
 
-| Props               | Description                                                          | Type                                    | Default       |
-| ------------------- | -------------------------------------------------------------------- | --------------------------------------- | ------------- |
-| visible             | Whether the current component is displayed                           | Boolean                                 | `false`       |
-| zIndex              | mask level                                                           | String、Number                          | `2000`        |
-| duration            | Mask animation duration, in seconds                                  | Number                                  | `0.3`         |
-| overlayStyle        | custom mask style                                                    | CSSProperties                           | -             |
-| overlay             | Whether to show the mask                                             | Boolean                                 | `true`        |
-| closeOnClickOverlay | Whether to click the mask to close                                   | Boolean                                 | `true`        |
-| position            | popup location（top,bottom,left,right,center）                       | String                                  | `"center"`    |
-| style               | Custom popup style                                                   | CSSProperties                           | -             |
-| closeable           | whether to show the close button                                     | Boolean                                 | `false`       |
-| closeIconPosition   | close button position（top-left,top-right,bottom-left,bottom-right） | String                                  | `"top-right"` |
-| closeIcon           | Custom Icon                                                          | String                                  | `"close"`     |
-| destroyOnClose      | Whether to close after the component is destroyed                    | Boolean                                 | `true`        |
-| round               | Whether to show rounded corners                                      | Boolean                                 | `false`       |
+| Props               | Description                                                          | Type           | Default       |
+| ------------------- | -------------------------------------------------------------------- | -------------- | ------------- |
+| visible             | Whether the current component is displayed                           | Boolean        | `false`       |
+| zIndex              | mask level                                                           | String、Number | `2000`        |
+| duration            | Mask animation duration, in seconds                                  | Number         | `0.3`         |
+| overlayStyle        | custom mask style                                                    | CSSProperties  | -             |
+| overlay             | Whether to show the mask                                             | Boolean        | `true`        |
+| closeOnClickOverlay | Whether to click the mask to close                                   | Boolean        | `true`        |
+| position            | popup location（top,bottom,left,right,center）                       | String         | `"center"`    |
+| style               | Custom popup style                                                   | CSSProperties  | -             |
+| closeable           | whether to show the close button                                     | Boolean        | `false`       |
+| closeIconPosition   | close button position（top-left,top-right,bottom-left,bottom-right） | String         | `"top-right"` |
+| closeIcon           | Custom Icon                                                          | String         | `"close"`     |
+| destroyOnClose      | Whether to close after the component is destroyed                    | Boolean        | `true`        |
+| round               | Whether to show rounded corners                                      | Boolean        | `false`       |
 
 ### Events
 

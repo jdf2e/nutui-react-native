@@ -6,12 +6,15 @@
 
 ### 安装
 
-```javascript
-import { Indicator } from '@nutui/nutui-react-native'
+```tsx
+import { Indicator } from '@nutui/nutui-react-native';
 ```
+
 ### 基礎用法
 
-```SnackPlayer name=Indicator
+:::demo
+
+```tsx
 import  React from "react";
 import { Indicator, Cell, Button, Row, Col } from '@nutui/nutui-react-native';
 
@@ -39,10 +42,15 @@ const App = () => {
 export default App;
 ```
 
-### block用法
-在`block`為true時，將表現為塊級元素，可通過`align`，設置對齊方式
+:::
 
-```SnackPlayer name=Indicator
+### block 用法
+
+在`block`為 true 時，將表現為塊級元素，可通過`align`，設置對齊方式
+
+:::demo
+
+```tsx
 import  React from "react";
 import { Indicator, Cell } from '@nutui/nutui-react-native';
 
@@ -64,9 +72,13 @@ const App = () => {
 export default App;
 ```
 
-### 不補0
+:::
 
-```SnackPlayer name=Indicator
+### 不補 0
+
+:::demo
+
+```tsx
 import  React from "react";
 import { Indicator, Cell } from '@nutui/nutui-react-native';
 
@@ -80,22 +92,26 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### 豎向展示
 
-```SnackPlayer name=Indicator
+:::demo
+
+```tsx
 import  React from "react";
 import { Indicator, Cell } from '@nutui/nutui-react-native';
 
 const App = () => {
   return (
     <Cell>
-      <view 
-        style={{ height: '100px', width: '50%' }} 
+      <view
+        style={{ height: '100px', width: '50%' }}
       >
         <Indicator fillZero={false} size={6} current={5} vertical />
       </view>
-      <view 
-        style={{ height: '100px', width: '50%' }} 
+      <view
+        style={{ height: '100px', width: '50%' }}
       >
         <Indicator size={6} current={2} vertical />
       </view>
@@ -105,16 +121,17 @@ const App = () => {
 export default App;
 ```
 
+:::
 
 ## API
 
 ### Props
 
-| 屬性 | 說明 | 類型 | 預設值           |
-|--------------|----------------------------------|--------|------------------|
-| current  | 當前步驟               | Number | 1              |
-| size       | 步驟長度                         | Number | 3               |
-| block | 是否啟用塊級佈局     | Boolean | false |
-| align | 對齊方式，僅在block為true時生效, 可選值 'left', 'right', 'center'| String | left |
-| fillZero     | 單數前面是否補0       | Boolean | true        |
-| vertical | 是否豎向展示     | Boolean | false |
+| 屬性     | 說明                                                                  | 類型    | 預設值 |
+| -------- | --------------------------------------------------------------------- | ------- | ------ |
+| current  | 當前步驟                                                              | Number  | 1      |
+| size     | 步驟長度                                                              | Number  | 3      |
+| block    | 是否啟用塊級佈局                                                      | Boolean | false  |
+| align    | 對齊方式，僅在 block 為 true 時生效, 可選值 'left', 'right', 'center' | String  | left   |
+| fillZero | 單數前面是否補 0                                                      | Boolean | true   |
+| vertical | 是否豎向展示                                                          | Boolean | false  |

@@ -1,19 +1,23 @@
-#  Pagination 分页
+# Pagination 分页
 
 ### 介绍
 
 当数据量较多时，采用分页的形式分隔长列表。
 
 ### 安装
-``` javascript
+
+```tsx
 import { Pagination } from '@nutui/nutui-react-native';
 ```
 
 ### 基础用法
-通过modelValue来绑定当前页码时，组件为受控状态，分页显示取决于传入的modelValue，一般搭配onChange使用。
-不需要受控时，可通过defaultCurrentPage指定当前页码
+
+通过 modelValue 来绑定当前页码时，组件为受控状态，分页显示取决于传入的 modelValue，一般搭配 onChange 使用。
+不需要受控时，可通过 defaultCurrentPage 指定当前页码
+
 :::demo
-``` tsx
+
+```tsx
 import React, { useState } from 'react'
 import { Pagination } from '@nutui/nutui-react-native';
 
@@ -34,10 +38,16 @@ const App = () => {
 }
 export default App;
 ```
+
+:::
+
 ### 简单模式
+
 将 mode 设置为 "simple" 来切换到简单模式，此时分页器不会展示具体的页码按钮。
+
 :::demo
-``` tsx
+
+```tsx
 import React, { useState } from 'react'
 import { Pagination } from '@nutui/nutui-react-native';
 
@@ -59,10 +69,15 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### 显示省略号
+
 设置 force-ellipses 后会展示省略号按钮，点击后可以快速跳转。
+
 :::demo
-``` tsx
+
+```tsx
 import React, { useState } from 'react'
 import { Pagination } from '@nutui/nutui-react-native';
 
@@ -84,10 +99,16 @@ const App = () => {
 }
 export default App;
 ```
+
+:::
+
 ### 自定义按钮
-通过pageNodeRender传入自定义方法，入参数为page:{ number:页数, text:"文本", active:"选中状态" }
+
+通过 pageNodeRender 传入自定义方法，入参数为 page:{ number:页数, text:"文本", active:"选中状态" }
+
 :::demo
-``` tsx
+
+```tsx
 import React, { useState } from 'react'
 import { Pagination,Icon } from '@nutui/nutui-react-native';
 import { View, Text } from 'react-native';
@@ -116,6 +137,8 @@ const App = () => {
 }
 export default App;
 ```
+
+:::
 
 ## API
 

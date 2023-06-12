@@ -6,15 +6,17 @@
 
 ### 安装
 
-```javascript
-import { Elevator } from '@nutui/nutui-react-native'
+```tsx
+import { Elevator } from '@nutui/nutui-react-native';
 ```
 
 ## 代码演示
 
 ### 基本用法
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React from 'react'
 import { Elevator } from '@nutui/nutui-react-native'
 
@@ -85,14 +87,16 @@ const App = () => {
     />
   )
 }
-export default App
+export default App;
 ```
 
+:::
 
 ### 自定义索引
 
+:::demo
 
-```SnackPlayer
+```tsx
 import React from 'react'
 import { Elevator } from '@nutui/nutui-react-native'
 
@@ -215,14 +219,16 @@ const App = () => {
     />
   )
 }
-export default App
+export default App;
 ```
 
+:::
 
 ### 吸顶索引
 
+:::demo
 
-```SnackPlayer
+```tsx
 import React from 'react'
 import { Elevator } from '@nutui/nutui-react-native'
 
@@ -358,14 +364,16 @@ const App = () => {
     />
   )
 }
-export default App
+export default App;
 ```
 
-
+:::
 
 ### 自定义内容
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React from 'react'
 import { Elevator, elevatorContext, Icon } from '@nutui/nutui-react-native'
 
@@ -447,27 +455,27 @@ const App = () => {
     </Elevator>
   )
 }
-export default App
+export default App;
 ```
 
+:::
 
 ## API
 
 ### Props
 
-| 字段                  | 说明           | 类型                                                        | 默认值                |
-|---------------------| -------------- | ----------------------------------------------------------- | --------------------- |
-| height              | 电梯区域的高度 | Number                                              | `200`               |
-| acceptKey           | 索引 key 值    | String                                                      | `title`               |
-| indexList           | 索引列表       | Array（item 需包含 id、name 属性） | `[{id: 0, name: ''}]` |
-| isSticky    | 索引是否吸顶                                                    | Boolean  | `false` |
-| spaceHeight | 右侧锚点的上下间距                                                   | Number  | `23` |
-| titleHeight   | 左侧索引的高度                                                     | Number  | `35` |
+| 字段        | 说明               | 类型                               | 默认值                |
+| ----------- | ------------------ | ---------------------------------- | --------------------- |
+| height      | 电梯区域的高度     | Number                             | `200`                 |
+| acceptKey   | 索引 key 值        | String                             | `title`               |
+| indexList   | 索引列表           | Array（item 需包含 id、name 属性） | `[{id: 0, name: ''}]` |
+| isSticky    | 索引是否吸顶       | Boolean                            | `false`               |
+| spaceHeight | 右侧锚点的上下间距 | Number                             | `23`                  |
+| titleHeight | 左侧索引的高度     | Number                             | `35`                  |
 
 ### Event
 
-| 名称       | 说明     | 回调参数                               |
-| ---------- | -------- | -------------------------------------- |
+| 名称         | 说明     | 回调参数                               |
+| ------------ | -------- | -------------------------------------- |
 | onClickItem  | 点击内容 | key: string, item: { id: 0, name: '' } |
 | onClickIndex | 点击索引 | key: string                            |
-

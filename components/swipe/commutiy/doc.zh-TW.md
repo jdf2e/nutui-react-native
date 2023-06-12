@@ -1,4 +1,4 @@
-# Swipe組件
+# Swipe 組件
 
 ### 介紹
 
@@ -6,7 +6,7 @@
 
 ### 安裝
 
-```javascript
+```tsx
 import { Swipe } from '@nutui/nutui-react-native';
 ```
 
@@ -14,7 +14,9 @@ import { Swipe } from '@nutui/nutui-react-native';
 
 ### 基礎用法
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React from "react";
 import { View, Text } from 'react-native'
 import { Swipe,  Button } from '@nutui/nutui-react-native';
@@ -52,9 +54,13 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### 禁用滑動
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React from "react";
 import { View, Text } from 'react-native';
 import { Swipe, Button } from '@nutui/nutui-react-native';
@@ -82,9 +88,13 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### 事件監聽
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React from "react";
 import { View, Text } from 'react-native'
 import { Swipe, Button, Toast } from '@nutui/nutui-react-native';
@@ -148,9 +158,13 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### 非同步控制
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React, { useRef } from "react";
 import { View, Text } from 'react-native';
 import { Swipe, Button } from '@nutui/nutui-react-native';
@@ -198,9 +212,13 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### 自定義內容
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React from "react";
 import { View,Text } from 'react-native';
 import { Swipe, Cell, Button, InputNumber } from '@nutui/nutui-react-native';
@@ -239,19 +257,21 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ## API
 
 ### Props
 
-|參數|說明|類型|預設值|
-|--------------|----------------------------------|--------|------------------|
-| name |識別字，可以在事件參數中獲取到| _number \| string_ | `''` |
-| leftWidth |指定左側滑動區域寬度，組織為`px` | _number \| string_ | ` 0` |
-| rightWidth |指定右側滑動區域寬度，組織為`px` | _number \| string_ | ` 0` |
-| leftAction |左側滑動區域的內容| _ReactNode_ | - |
-| rightAction |右側滑動區域的內容| _ReactNode_ | - |
-| beforeClose |關閉前的回呼函數，返回`position` | _string_ | `left` |
-| disabled |是否禁用滑動| _boolean_ | ` false` |
+| 參數        | 說明                             | 類型               | 預設值   |
+| ----------- | -------------------------------- | ------------------ | -------- |
+| name        | 識別字，可以在事件參數中獲取到   | _number \| string_ | `''`     |
+| leftWidth   | 指定左側滑動區域寬度，組織為`px` | _number \| string_ | ` 0`     |
+| rightWidth  | 指定右側滑動區域寬度，組織為`px` | _number \| string_ | ` 0`     |
+| leftAction  | 左側滑動區域的內容               | _ReactNode_        | -        |
+| rightAction | 右側滑動區域的內容               | _ReactNode_        | -        |
+| beforeClose | 關閉前的回呼函數，返回`position` | _string_           | `left`   |
+| disabled    | 是否禁用滑動                     | _boolean_          | ` false` |
 
 ### Events
 

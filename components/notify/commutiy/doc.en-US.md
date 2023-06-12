@@ -1,11 +1,12 @@
-#  Notify
+# Notify
 
 ### Intro
 
 Show message tips at the top of the page
 
 ### Install
-```javascript
+
+```tsx
 import { Notify } from '@nutui/nutui-react-native';
 ```
 
@@ -13,7 +14,9 @@ import { Notify } from '@nutui/nutui-react-native';
 
 ### Basic Usage
 
-```SnackPlayer name=Notify
+:::demo
+
+```tsx
 import  React, {useState} from "react";
 import { Notify, Cell } from '@nutui/nutui-react-native';
 
@@ -39,13 +42,16 @@ const App = () => {
         </>
     )
 }
-export default App
+export default App;
 ```
+
+:::
 
 ## Notify Type
 
+:::demo
 
-```SnackPlayer name=Notify
+```tsx
 import  React, {useState} from "react";
 import { Notify, Cell } from '@nutui/nutui-react-native';
 
@@ -91,14 +97,18 @@ const App = () => {
         </>
     )
 }
-export default App
+export default App;
 ```
 
+:::
 
 ## Custom
+
 ### Custom Style
 
-```SnackPlayer name=Notify
+:::demo
+
+```tsx
 import  React, {useState} from "react";
 import { Notify, Cell } from '@nutui/nutui-react-native';
 
@@ -117,14 +127,16 @@ const App = () => {
         </>
     )
 }
-export default App
+export default App;
 ```
 
-
+:::
 
 ### Custom Duration
 
-```SnackPlayer name=Notify
+:::demo
+
+```tsx
 import  React, {useState} from "react";
 import { Notify, Cell } from '@nutui/nutui-react-native';
 
@@ -152,29 +164,28 @@ const App = () => {
         </>
     )
 }
-export default App
+export default App;
 ```
 
-
-
+:::
 
 ## API
-    
+
 ### Props
-    
-| Attribute      | Description                                    | Type          | Default   |
-|------------|-------------------------------------------------------|---------------|----------|
-| type       | Display Type（primary,success ,danger,warning）      | String        | 'danger' |
-| message    | Display copy, support line feed through \n              | Boolean       | false    |
-| duration   | Display duration (ms),value is 0 ,notify not disappear | String        | 3000     |
-| color      | Font Color                                               | String        | -        |
-| backgroundColor | Background color                                         | String        | -        |
-| style | style                                        | Object | 1        |
-| position | Custom Position (top, bottom)                               | String | 'top'        |
+
+| Attribute       | Description                                            | Type    | Default  |
+| --------------- | ------------------------------------------------------ | ------- | -------- |
+| type            | Display Type（primary,success ,danger,warning）        | String  | 'danger' |
+| message         | Display copy, support line feed through \n             | Boolean | false    |
+| duration        | Display duration (ms),value is 0 ,notify not disappear | String  | 3000     |
+| color           | Font Color                                             | String  | -        |
+| backgroundColor | Background color                                       | String  | -        |
+| style           | style                                                  | Object  | 1        |
+| position        | Custom Position (top, bottom)                          | String  | 'top'    |
 
 ### Events
 
-| Event | Description         | Arguments |
-|--------|--------------|----------|
-| onPress  | Emitted when notify is clicked | -       |
-| onClosed | Emitted when notify is closed | -       |
+| Event    | Description                    | Arguments |
+| -------- | ------------------------------ | --------- |
+| onPress  | Emitted when notify is clicked | -         |
+| onClosed | Emitted when notify is closed  | -         |

@@ -1,18 +1,26 @@
-
-#  SideNavBar組件
+# SideNavBar 組件
 
 ### 介紹
 
 用於內容選擇和切換
 
 ### 安裝
-```SnackPlayer
-import { SideNavBar,SubSideNavBar,SideNavBarItem } from '@nutui/nutui-react-native';
+
+```tsx
+import {
+  SideNavBar,
+  SubSideNavBar,
+  SideNavBarItem,
+} from '@nutui/nutui-react-native';
 ```
+
 ## 代碼演示
+
 ### 基礎用法
 
-```SnackPlayer name=SideNavBar
+:::demo
+
+```tsx
 import  React,{useState} from "react";
 import {Cell, SideNavBar,SubSideNavBar,SideNavBarItem } from '@nutui/nutui-react-native';
 
@@ -65,12 +73,15 @@ const App = () => {
   );
 };
 export default App;
-
 ```
+
+:::
 
 ### 嵌套及回調
 
-```SnackPlayer name=SideNavBar
+:::demo
+
+```tsx
 import  React,{useState} from "react";
 import {Cell,SideNavBar,SubSideNavBar,SideNavBarItem } from '@nutui/nutui-react-native';
 
@@ -119,52 +130,53 @@ const App = () => {
   );
 };
 export default App;
-
 ```
 
-
+:::
 
 ## API
 
 ### 1、SideNavBar
 
-| 參數         | 說明                             | 類型   | 默認值           |
-|--------------|----------------------------------|--------|------------------|
-| visible      | 組件是否顯示                       | boolean | false           |
-| title        | 整體標題                           | String  | -               |
-| width        | 遮罩寬度百分比                      | String   | '80%'          |
-| position     | 彈出位置                           | 'left'、'right' | 'left'  |
-| offset       | 縮進寬度                           | number  | 20              |
+| 參數     | 說明           | 類型            | 默認值 |
+| -------- | -------------- | --------------- | ------ |
+| visible  | 組件是否顯示   | boolean         | false  |
+| title    | 整體標題       | String          | -      |
+| width    | 遮罩寬度百分比 | String          | '80%'  |
+| position | 彈出位置       | 'left'、'right' | 'left' |
+| offset   | 縮進寬度       | number          | 20     |
 
 ### 2、SubSideNavBar
 
-| 參數         | 說明                             | 類型   | 默認值           |
-|--------------|----------------------------------|--------|------------------|
-| ikey         | 導航唯一標識                       | String、Number |          |
-| title        | 整體標題                           | String  | -              |
-| open         | 導航是否默認展開                     | Boolean  | true         |
+| 參數  | 說明             | 類型           | 默認值 |
+| ----- | ---------------- | -------------- | ------ |
+| ikey  | 導航唯一標識     | String、Number |        |
+| title | 整體標題         | String         | -      |
+| open  | 導航是否默認展開 | Boolean        | true   |
+
 ### 3、SideNavBarItem
 
-| 參數         | 說明                             | 類型   | 默認值           |
-|--------------|----------------------------------|--------|------------------|
-| ikey         | 導航唯一標識                       | String、Number |          |
-| title        | 整體標題                           | String  | -               |
+| 參數  | 說明         | 類型           | 默認值 |
+| ----- | ------------ | -------------- | ------ |
+| ikey  | 導航唯一標識 | String、Number |        |
+| title | 整體標題     | String         | -      |
 
 ## Events
+
 ### 1、SideNavBar Events
 
-| 事件名                       | 說明                                          | 回調參數     |
-|---------------------------|---------------------------------------------|--------------|
-| onClose | 關閉遮罩時觸發 | -           |
+| 事件名  | 說明           | 回調參數 |
+| ------- | -------------- | -------- |
+| onClose | 關閉遮罩時觸發 | -        |
 
 ### 2、SubSideNavBar Events
 
-| 事件名           | 說明                                                             | 回調參數     |
-|---------------|----------------------------------------------------------------|--------------|
-| onPress | 導航點擊,對象形式返回點擊{ title,ikey,isShow} | -           |
+| 事件名  | 說明                                          | 回調參數 |
+| ------- | --------------------------------------------- | -------- |
+| onPress | 導航點擊,對象形式返回點擊{ title,ikey,isShow} | -        |
 
 ### 3、SideNavBarItem Events
 
-| 事件名    | 說明                                                  | 回调参数     |
-|--------|-----------------------------------------------------|--------------|
-| onPress | 導航點擊,對象形式返回點擊{ title,ikey} | -           |
+| 事件名  | 說明                                   | 回调参数 |
+| ------- | -------------------------------------- | -------- |
+| onPress | 導航點擊,對象形式返回點擊{ title,ikey} | -        |

@@ -1,4 +1,4 @@
-#  Card 商品卡片
+# Card 商品卡片
 
 ### 介紹
 
@@ -6,14 +6,17 @@
 
 ### 安裝
 
+```tsx
 import { Card,Price, Tag} from '@nutui/nutui-react-native';
-
+```
 
 ## 代碼演示
 
 ### 基本用法
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React from "react";
 import { Card,Price, Tag } from '@nutui/nutui-react-native';
 
@@ -43,9 +46,13 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### 自定義商品標簽
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React from "react";
 import { Card,Price, Tag } from '@nutui/nutui-react-native';
 
@@ -94,12 +101,15 @@ const App = () => {
   );
 };
 export default App;
-
 ```
+
+:::
 
 ### 價格後自定義標簽
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React from "react";
 import { Card,Price, Tag } from '@nutui/nutui-react-native';
 
@@ -138,9 +148,13 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### 自定義店鋪介紹
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React from "react";
 import { Card,Price, Tag } from '@nutui/nutui-react-native';
 
@@ -177,9 +191,13 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### 自定義右下角內容
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React from "react";
 import { Card,Price, Tag } from '@nutui/nutui-react-native';
 
@@ -217,25 +235,22 @@ const App = () => {
 export default App;
 ```
 
+:::
 
 ## API
 
 ### Props
 
-
-| 字段    | 說明                                       | 類型    | 默認值    |
-|---------|--------------------------------------------|---------|-----------|
-| imgUrl   | 左側圖片Url                                 | String  | -         |
-| title     | 標題                   | String  | -    |
-| price | 商品價格                         | String  | -      |
-| vipPrice     | 會員價格                               | String | -    |
-| shopDesc  | 店鋪介紹                                  | String | -    |
-| delivery     | 配送方式 | String  | -      |
-| shopName   | 店鋪名稱| String  | -      |
-| prolistTpl   | 自定義商品介紹| React.ReactNode  | -      |
-| originTpl   | 價格後方自定義內容| React.ReactNode  | -      |
-| shopTagTpl   | 店鋪介紹自定義| React.ReactNode  | -      |
-| footerTpl   | 右下角內容自定義| React.ReactNode  | -      |
-
-
-
+| 字段       | 說明               | 類型            | 默認值 |
+| ---------- | ------------------ | --------------- | ------ |
+| imgUrl     | 左側圖片 Url       | String          | -      |
+| title      | 標題               | String          | -      |
+| price      | 商品價格           | String          | -      |
+| vipPrice   | 會員價格           | String          | -      |
+| shopDesc   | 店鋪介紹           | String          | -      |
+| delivery   | 配送方式           | String          | -      |
+| shopName   | 店鋪名稱           | String          | -      |
+| prolistTpl | 自定義商品介紹     | React.ReactNode | -      |
+| originTpl  | 價格後方自定義內容 | React.ReactNode | -      |
+| shopTagTpl | 店鋪介紹自定義     | React.ReactNode | -      |
+| footerTpl  | 右下角內容自定義   | React.ReactNode | -      |

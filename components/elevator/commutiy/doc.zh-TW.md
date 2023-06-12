@@ -6,15 +6,17 @@
 
 ### 安裝
 
-```javascript
-import { Elevator } from '@nutui/nutui-react-native'
+```tsx
+import { Elevator } from '@nutui/nutui-react-native';
 ```
 
 ## 代碼演示
 
 ### 基本用法
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React from 'react'
 import { Elevator } from '@nutui/nutui-react-native'
 
@@ -85,14 +87,16 @@ const App = () => {
     />
   )
 }
-export default App
+export default App;
 ```
 
+:::
 
 ### 自定義索引
 
+:::demo
 
-```SnackPlayer
+```tsx
 import React from 'react'
 import { Elevator } from '@nutui/nutui-react-native'
 
@@ -215,13 +219,16 @@ const App = () => {
     />
   )
 }
-export default App
+export default App;
 ```
 
+:::
 
 ### 吸頂索引
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React from 'react'
 import { Elevator } from '@nutui/nutui-react-native'
 
@@ -357,14 +364,16 @@ const App = () => {
     />
   )
 }
-export default App
+export default App;
 ```
 
-
+:::
 
 ### 自定義內容
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React from 'react'
 import { Elevator, elevatorContext, Icon } from '@nutui/nutui-react-native'
 
@@ -446,26 +455,27 @@ const App = () => {
     </Elevator>
   )
 }
-export default App
+export default App;
 ```
 
+:::
 
 ## API
 
 ### Props
 
-| 字段      | 說明           | 類型                                                        | 默認值                |
-| --------- | -------------- | ----------------------------------------------------------- | --------------------- |
-| height    | 電梯區域的高度 | Number                                              | `200`               |
-| acceptKey | 索引 key 值    | String                                                      | `title`               |
-| indexList | 索引列表       | Array（item 需包含 id、name 屬性） | `[{id: 0, name: ''}]` |
-| isSticky    | 索引是否吸頂                                                    | Boolean  | `false` |
-| spaceHeight | 右側錨點的上下間距                                                   | Number  | `23` |
-| titleHeight   | 左側索引的高度                                                     | Number  | `35` |
+| 字段        | 說明               | 類型                               | 默認值                |
+| ----------- | ------------------ | ---------------------------------- | --------------------- |
+| height      | 電梯區域的高度     | Number                             | `200`                 |
+| acceptKey   | 索引 key 值        | String                             | `title`               |
+| indexList   | 索引列表           | Array（item 需包含 id、name 屬性） | `[{id: 0, name: ''}]` |
+| isSticky    | 索引是否吸頂       | Boolean                            | `false`               |
+| spaceHeight | 右側錨點的上下間距 | Number                             | `23`                  |
+| titleHeight | 左側索引的高度     | Number                             | `35`                  |
 
 ### Event
 
-| 名稱       | 說明     | 回調參數                               |
-| ---------- | -------- | -------------------------------------- |
+| 名稱         | 說明     | 回調參數                               |
+| ------------ | -------- | -------------------------------------- |
 | onClickItem  | 點擊內容 | key: string, item: { id: 0, name: '' } |
 | onClickIndex | 點擊索引 | key: string                            |

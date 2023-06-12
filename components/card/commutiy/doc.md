@@ -1,4 +1,4 @@
-#  Card 商品卡片
+# Card 商品卡片
 
 ### 介绍
 
@@ -6,14 +6,17 @@
 
 ### 安装
 
+```tsx
 import { Card,Price, Tag} from '@nutui/nutui-react-native';
-
+```
 
 ## 代码演示
 
 ### 基本用法
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React from "react";
 import { Card,Price, Tag } from '@nutui/nutui-react-native';
 
@@ -43,9 +46,13 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### 自定义商品标签
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React from "react";
 import { View, Text } from 'react-native';
 import { Card,Price, Tag } from '@nutui/nutui-react-native';
@@ -94,12 +101,15 @@ const App = () => {
   );
 };
 export default App;
-
 ```
+
+:::
 
 ### 价格后自定义标签
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React from "react";
 import { Card,Price, Tag, Image } from '@nutui/nutui-react-native';
 
@@ -138,9 +148,13 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### 自定义店铺介绍
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React from "react";
 import { Text } from 'react-native';
 import { Card,Price, Tag } from '@nutui/nutui-react-native';
@@ -177,9 +191,13 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### 自定义右下角内容
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React from "react";
 import { Text } from 'react-native';
 import { Card,Price, Tag } from '@nutui/nutui-react-native';
@@ -218,25 +236,22 @@ const App = () => {
 export default App;
 ```
 
+:::
 
 ## API
 
 ### Props
 
-
-| 字段    | 说明                                       | 类型    | 默认值    |
-|---------|--------------------------------------------|---------|-----------|
-| imgUrl   | 左侧图片Url                                 | String  | -         |
-| title     | 标题                   | String  | -    |
-| price | 商品价格                         | String  | -      |
-| vipPrice     | 会员价格                               | String | -    |
-| shopDesc  | 店铺介绍                                  | String | -    |
-| delivery     | 配送方式 | String  | -      |
-| shopName   | 店铺名称| String  | -      |
-| prolistTpl   | 自定义商品介绍| React.ReactNode  | -      |
-| originTpl   | 价格后方自定义内容| React.ReactNode  | -      |
-| shopTagTpl   | 店铺介绍自定义| React.ReactNode  | -      |
-| footerTpl   | 右下角内容自定义| React.ReactNode  | -      |
-
-
-
+| 字段       | 说明               | 类型            | 默认值 |
+| ---------- | ------------------ | --------------- | ------ |
+| imgUrl     | 左侧图片 Url       | String          | -      |
+| title      | 标题               | String          | -      |
+| price      | 商品价格           | String          | -      |
+| vipPrice   | 会员价格           | String          | -      |
+| shopDesc   | 店铺介绍           | String          | -      |
+| delivery   | 配送方式           | String          | -      |
+| shopName   | 店铺名称           | String          | -      |
+| prolistTpl | 自定义商品介绍     | React.ReactNode | -      |
+| originTpl  | 价格后方自定义内容 | React.ReactNode | -      |
+| shopTagTpl | 店铺介绍自定义     | React.ReactNode | -      |
+| footerTpl  | 右下角内容自定义   | React.ReactNode | -      |

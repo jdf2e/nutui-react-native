@@ -6,17 +6,18 @@ A percentage number with an arrow indicating the trend of the indicator
 
 ### Install
 
-```javascript
+```tsx
 // React
 import { TrendArrow } from '@nutui/nutui-react-native';
-
 ```
 
 ## Demo
 
 ### Basic Usage
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React from "react"
 import { TrendArrow, Cell } from '@nutui/nutui-react-native'
 
@@ -31,9 +32,13 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### Change text color
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React from "react"
 import { TrendArrow, Cell } from '@nutui/nutui-react-native'
 
@@ -48,9 +53,13 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### Specify decimal places
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React from "react"
 import { TrendArrow, Cell } from '@nutui/nutui-react-native'
 
@@ -65,9 +74,13 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### Arrow ahead
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React from "react"
 import { TrendArrow, Cell } from '@nutui/nutui-react-native'
 
@@ -82,9 +95,13 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### Show sign
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React from "react"
 import { TrendArrow, Cell } from '@nutui/nutui-react-native'
 
@@ -99,9 +116,13 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### Whether to show 0
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React from "react"
 import { TrendArrow, Cell } from '@nutui/nutui-react-native'
 
@@ -116,9 +137,13 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### Custom color
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React from "react"
 import { TrendArrow, Cell } from '@nutui/nutui-react-native'
 
@@ -140,9 +165,13 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### Custom icon
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React from "react"
 import { TrendArrow, Cell, Icon } from '@nutui/nutui-react-native'
 
@@ -160,26 +189,26 @@ const App = () => {
 export default App;
 ```
 
+:::
 
 ## API
 
 ### Props
 
-| Attribute         | Description                             | Type   | Default           |
-|--------------|----------------------------------|--------|------------------|
-| rate         | Value, the arrow is up when it is greater than 0, and the arrow is down when it is less than 0    | Number | -                |
-| digits         | decimal precision               | Number | 2               |
-| showSign         | Whether to display plus and minus signs               | Boolean | false               |
-| showZero         |whether to show 0               | Boolean | false               |
-| arrowLeft        | whether to show an arrow to the left of the number     | Boolean | false               |
-| syncTextColor   | Whether the text color is in sync with the arrow               | Boolean | true   |
-| textColor        | text color               | String | '#333333'               |
-| riseColor         | up arrow color               | String | '#fa2c19'               |
-| dropColor         | down arrow color               | String | ‘#64b578’               |
-| iconSize         | arrow size               | String | '12px'               |
-| upIconName         | custom up arrow icon               | String | 'triangle-up'               |
-| downIconName           | custom down arrow icon               | String | 'triangle-down'               |
-
+| Attribute     | Description                                                                                    | Type    | Default         |
+| ------------- | ---------------------------------------------------------------------------------------------- | ------- | --------------- |
+| rate          | Value, the arrow is up when it is greater than 0, and the arrow is down when it is less than 0 | Number  | -               |
+| digits        | decimal precision                                                                              | Number  | 2               |
+| showSign      | Whether to display plus and minus signs                                                        | Boolean | false           |
+| showZero      | whether to show 0                                                                              | Boolean | false           |
+| arrowLeft     | whether to show an arrow to the left of the number                                             | Boolean | false           |
+| syncTextColor | Whether the text color is in sync with the arrow                                               | Boolean | true            |
+| textColor     | text color                                                                                     | String  | '#333333'       |
+| riseColor     | up arrow color                                                                                 | String  | '#fa2c19'       |
+| dropColor     | down arrow color                                                                               | String  | ‘#64b578’       |
+| iconSize      | arrow size                                                                                     | String  | '12px'          |
+| upIconName    | custom up arrow icon                                                                           | String  | 'triangle-up'   |
+| downIconName  | custom down arrow icon                                                                         | String  | 'triangle-down' |
 
 ## Theming
 
@@ -187,9 +216,9 @@ export default App;
 
 The component provides the following CSS variables, which can be used to customize styles. Please refer to [ConfigProvider component](#/en-US/component/configprovider).
 
-| Name | Default Value |
-| --- | --- |
-| --nutui-trendarrow-font-size | ` 14` |
-| --nutui-trendarrow-before-icon-margin | `  4` |
-| --nutui-trendarrow-font-size | ` 14` |
-| --nutui-trendarrow-before-icon-margin | `  4` |
+| Name                                  | Default Value |
+| ------------------------------------- | ------------- |
+| --nutui-trendarrow-font-size          | ` 14`         |
+| --nutui-trendarrow-before-icon-margin | `  4`         |
+| --nutui-trendarrow-font-size          | ` 14`         |
+| --nutui-trendarrow-before-icon-margin | `  4`         |

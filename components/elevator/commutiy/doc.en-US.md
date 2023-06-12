@@ -2,20 +2,21 @@
 
 ### Intro
 
-
 It is used to quickly locate the list and display the index
 
 ### Install
 
-```javascript
-import { Elevator } from '@nutui/nutui-react-native'
+```tsx
+import { Elevator } from '@nutui/nutui-react-native';
 ```
 
 ## Demo
 
 ### Basic Usage
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React from 'react'
 import { Elevator } from '@nutui/nutui-react-native'
 
@@ -86,13 +87,16 @@ const App = () => {
     />
   )
 }
-export default App
+export default App;
 ```
 
+:::
 
 ### Custom index
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React from 'react'
 import { Elevator } from '@nutui/nutui-react-native'
 
@@ -215,13 +219,16 @@ const App = () => {
     />
   )
 }
-export default App
+export default App;
 ```
 
+:::
 
 ### Index ceiling
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React from 'react'
 import { Elevator } from '@nutui/nutui-react-native'
 
@@ -357,14 +364,16 @@ const App = () => {
     />
   )
 }
-export default App
+export default App;
 ```
 
-
+:::
 
 ### Custom Content
 
-```SnackPlayer
+:::demo
+
+```tsx
 import React from 'react'
 import { Elevator, elevatorContext, Icon } from '@nutui/nutui-react-native'
 
@@ -446,27 +455,27 @@ const App = () => {
     </Elevator>
   )
 }
-export default App
+export default App;
 ```
 
+:::
 
 ## API
 
 ### Props
 
-| Attribute                   | Description                                                             | Type    | Default |
-|------------------------|----------------------------------------------------------------|---------|------|
-| height                 | Height of elevator area                                                    | Number  | `200`
-| acceptKey             | Index key value                                                      | String  | `title` |
-| indexList             | Index list                                                         | Array（`item` needs to contain `id` and `name` attributes）  | `[{id: 0, name: ''}]` |
-| isSticky            | Whether the index is ceiling                                                    | Boolean  | `false` |
-| spaceHeight             | Up and down spacing of right anchor point              | Number  | `23` |
-| titleHeight             | Height of left index                                                     | Number  | `35` |
+| Attribute   | Description                               | Type                                                        | Default               |
+| ----------- | ----------------------------------------- | ----------------------------------------------------------- | --------------------- |
+| height      | Height of elevator area                   | Number                                                      | `200`                 |
+| acceptKey   | Index key value                           | String                                                      | `title`               |
+| indexList   | Index list                                | Array（`item` needs to contain `id` and `name` attributes） | `[{id: 0, name: ''}]` |
+| isSticky    | Whether the index is ceiling              | Boolean                                                     | `false`               |
+| spaceHeight | Up and down spacing of right anchor point | Number                                                      | `23`                  |
+| titleHeight | Height of left index                      | Number                                                      | `35`                  |
 
 ### Event
 
-| Event  | Description     | Arguments    |
-|-------|----------|-------------|
-| onClickItem | Click content | key: string, item: { id: 0, name: '' } |
-| onClickIndex | Click index | key: string |
-
+| Event        | Description   | Arguments                              |
+| ------------ | ------------- | -------------------------------------- |
+| onClickItem  | Click content | key: string, item: { id: 0, name: '' } |
+| onClickIndex | Click index   | key: string                            |

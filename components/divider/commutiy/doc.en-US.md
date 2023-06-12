@@ -6,15 +6,19 @@ Separate content into multiple areas.
 
 ### Install
 
-```js
+```tsx
 import { Divider } from '@nutui/nutui-react-native';
 ```
+
 ### code demo
+
 ### Basic Usage
 
 Default render one horizontal divider line.
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React from "react";
 import { Divider } from '@nutui/nutui-react-native';
 
@@ -28,12 +32,15 @@ const App = () => {
 export default App;
 ```
 
+:::
 
 ### With Text
 
 Insert text into divider with default slot.
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React from "react";
 import { Divider } from '@nutui/nutui-react-native';
 
@@ -47,12 +54,15 @@ const App = () => {
 export default App;
 ```
 
+:::
 
 ### Content Position
 
 Set Content Position with `contentPosition` attribute.
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React from "react";
 import { Divider } from '@nutui/nutui-react-native';
 
@@ -67,12 +77,15 @@ const App = () => {
 export default App;
 ```
 
+:::
 
 ### Dashed
 
 Render dashed divider line with `dashed` attribute.
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React from "react";
 import { Divider } from '@nutui/nutui-react-native';
 
@@ -86,12 +99,15 @@ const App = () => {
 export default App;
 ```
 
+:::
 
 ### Custom Style
 
 User can custom divider style with `styles` attribute.
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React from "react";
 import { Divider } from '@nutui/nutui-react-native';
 
@@ -115,9 +131,13 @@ const App = () => {
 export default App;
 ```
 
+:::
+
 ### Vertical Divider
 
-```SnackPlayer
+:::demo
+
+```tsx
 import  React from "react";
 import { View, Text } from 'react-native';
 import { Divider } from '@nutui/nutui-react-native';
@@ -140,21 +160,22 @@ const App = () => {
 export default App;
 ```
 
+:::
 
 ## API
 
 ### Props
 
-| Attribute            | Description                       | Type    | Default |
-| --------------- | ----------------------------- | ------- | ------ |
-| dashed          | Whether to use dashed border                  | Boolean | false  |
-| hairline        | Whether to use hairline             | Boolean | true   |
-| contentPosition | Content position, can be set to left or right   | String  | center |
-| styles          | Modify custom styles                | CSS     | -      |
-| direction           | The direction of divider, can be set to horizontal or vertical            | String     | 'horizontal'      |
+| Attribute       | Description                                                    | Type    | Default      |
+| --------------- | -------------------------------------------------------------- | ------- | ------------ |
+| dashed          | Whether to use dashed border                                   | Boolean | false        |
+| hairline        | Whether to use hairline                                        | Boolean | true         |
+| contentPosition | Content position, can be set to left or right                  | String  | center       |
+| styles          | Modify custom styles                                           | CSS     | -            |
+| direction       | The direction of divider, can be set to horizontal or vertical | String  | 'horizontal' |
 
 ### Slots
 
-| Name    | Description |
-| ------- | ---- |
+| Name    | Description  |
+| ------- | ------------ |
 | default | Default slot |

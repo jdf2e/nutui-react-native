@@ -1,19 +1,22 @@
-#  VirtualList 虚拟列表
+# VirtualList 虚拟列表
 
 ### 介绍
 
 在正常的列表展示以及上拉加载中，我们通常使用 NutUI-React 提供的 滚动加载 组件，那如果我们加载的数据量非常大时，则可能会产生严重的性能问题，导致视图无法响应操作一段时间，这时候我们就用到了虚拟列表组件 List，它可以保证只渲染当前可视区域，其他部分在用户滚动到可视区域内之后再渲染。保证了页面流程度，提升性能。
 
 ### 安装
-```javascript
+
+```tsx
 import { Virtuallist } from '@nutui/nutui-react-native';
 ```
+
 ## 代码演示
 
+### 1、垂直等高,垂直不等高,水平等宽,水平不等宽 均通过 item 样式控制
 
-### 1、垂直等高,垂直不等高,水平等宽,水平不等宽 均通过item样式控制
 :::demo
-``` tsx
+
+```tsx
 import React, { useEffect, useState } from 'react'
 import {
     View,
@@ -26,7 +29,7 @@ import Radio from '../radio';
 import Virtuallist from '.';
 import { useTranslate } from '../utils';
 
-const ListDemo = () => {
+const App = () => {
     const [translated] = useTranslate<any>({
       'zh-CN': {
         text1: '垂直等高',
@@ -198,22 +201,24 @@ const styles = StyleSheet.create({
     }
 });
 
-export default ListDemo
+export default App;
 ```
+
+:::
+
 ## API
 
 ### Props
 
-| 参数           | 说明                               | 类型       | 默认值                                   |
-|---------------|----------------------------------|----------|---------------------------------------|
-| sourceData    | 获取数据                             | Array    | -                                     |
-| containerSize | 容器高度                             | Number   | 获取元素的offsetWidth或offsetHeight，需要css给出 |
-| ItemRender    | virtual 列表父节点渲染的函数               | React.FC | -                                     |
-| horizontal    | 决定列表是横向的还是纵向的                    | Boolean  | false                                 |
+| 参数          | 说明                         | 类型     | 默认值                                                |
+| ------------- | ---------------------------- | -------- | ----------------------------------------------------- |
+| sourceData    | 获取数据                     | Array    | -                                                     |
+| containerSize | 容器高度                     | Number   | 获取元素的 offsetWidth 或 offsetHeight，需要 css 给出 |
+| ItemRender    | virtual 列表父节点渲染的函数 | React.FC | -                                                     |
+| horizontal    | 决定列表是横向的还是纵向的   | Boolean  | false                                                 |
+
 ## Events
-| 方法名              | 说明                  | 参数            | 返回值     |
-|------------------|---------------------| --------------- | ---------- |
-| onScroll`v1.3.8`  | 滑动到底(右)的事件，可以实现无限滚动 |        -        |      -    |
 
-
-
+| 方法名           | 说明                                 | 参数 | 返回值 |
+| ---------------- | ------------------------------------ | ---- | ------ |
+| onScroll`v1.3.8` | 滑动到底(右)的事件，可以实现无限滚动 | -    | -      |
