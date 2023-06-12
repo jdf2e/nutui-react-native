@@ -56,7 +56,6 @@
         {
           "name": "Image",
           "type": "component",
-          "tarodoc": true,
           "cName": "图片",
           "desc": "增强版的 img 标签，提供多种图片填充模式，支持图片加载中提示、加载失败提示。",
           "sort": 8,
@@ -70,6 +69,15 @@
           "desc": "创建一个遮罩层，通常用于阻止用户进行其他操作",
           "sort": 5,
           "show": true,
+          "author": ""
+        },
+        {
+          "name": "Popup",
+          "sort": 9,
+          "cName": "弹出层",
+          "type": "component",
+          "show": true,
+          "desc": "弹出层容器，用于展示弹窗、信息提示等内容，支持多个弹出层叠加展示",
           "author": ""
         }
       ]
@@ -151,15 +159,6 @@
       "enName": "nav",
       "packages": [
         {
-          "name": "BackTop",
-          "type": "component",
-          "cName": "返回顶部",
-          "desc": "提供较长的页面快捷返回顶部功能。",
-          "sort": 2,
-          "show": false,
-          "author": ""
-        },
-        {
           "name": "Elevator",
           "type": "component",
           "cName": "电梯楼层",
@@ -178,20 +177,11 @@
           "author": ""
         },
         {
-          "name": "NavBar",
+          "name": "Indicator",
           "type": "component",
-          "cName": "头部导航",
-          "desc": "提供导航功能。",
-          "sort": 1,
-          "show": false,
-          "author": ""
-        },
-        {
-          "name": "SideNavBar",
-          "type": "component",
-          "cName": "侧边栏导航",
-          "desc": "用于内容选择和切换",
-          "sort": 9,
+          "cName": "指示器",
+          "desc": "显示一个任务或流程的进度，常用于开通流程。",
+          "sort": 16,
           "show": true,
           "author": ""
         },
@@ -200,7 +190,25 @@
           "type": "component",
           "cName": "头部导航",
           "desc": "提供导航功能。",
-          "sort": 5,
+          "sort": 1,
+          "show": true,
+          "author": ""
+        },
+        {
+          "name": "Pagination",
+          "type": "component",
+          "cName": "分页",
+          "desc": "当数据量较多时，采用分页的形式分隔长列表。",
+          "sort": 6,
+          "show": true,
+          "author": ""
+        },
+        {
+          "name": "SideNavBar",
+          "type": "component",
+          "cName": "侧边栏导航",
+          "desc": "用于内容选择和切换",
+          "sort": 9,
           "show": true,
           "author": ""
         },
@@ -275,7 +283,6 @@
           "desc": "地址组件",
           "sort": 3,
           "show": false,
-          "taro": true,
           "author": ""
         },
         {
@@ -451,7 +458,7 @@
           "cName": "搜索栏",
           "desc": "用于搜索场景的输入框组件",
           "sort": 16,
-          "show": false,
+          "show": true,
           "author": ""
         },
         {
@@ -473,21 +480,12 @@
           "author": ""
         },
         {
-          "name": "Switch",
-          "type": "component",
-          "cName": "开关",
-          "desc": "用来打开或关闭选项。",
-          "sort": 11,
-          "show": false,
-          "author": ""
-        },
-        {
           "name": "TextArea",
           "type": "component",
           "cName": "文本域",
           "desc": "文本框内输入或编辑文字，支持限制输入数量。",
           "sort": 2,
-          "show": true,
+          "show": false,
           "author": ""
         },
         {
@@ -524,21 +522,12 @@
           "author": ""
         },
         {
-          "name": "Badge",
-          "type": "component",
-          "cName": "徽标",
-          "desc": "在图标或文字右上角的红色圆点、数字或者文字，表示有新内容或者待处理的信息。",
-          "sort": 4,
-          "show": false,
-          "author": ""
-        },
-        {
           "name": "Dialog",
           "type": "component",
           "cName": "对话框",
           "desc": "模态对话框",
           "sort": 12,
-          "show": false,
+          "show": true,
           "author": ""
         },
         {
@@ -551,29 +540,11 @@
           "author": ""
         },
         {
-          "name": "Empty",
-          "type": "component",
-          "cName": "空状态",
-          "desc": "空状态时的占位提示",
-          "sort": 16,
-          "show": false,
-          "author": ""
-        },
-        {
           "name": "InfiniteLoading",
           "type": "component",
           "cName": "滚动加载",
           "desc": "列表滚动到底部自动加载更多数据。",
           "sort": 5,
-          "show": false,
-          "author": ""
-        },
-        {
-          "name": "NoticeBar",
-          "type": "component",
-          "cName": "公告栏",
-          "desc": "用于循环播放展示一组消息通知。",
-          "sort": 11,
           "show": false,
           "author": ""
         },
@@ -605,15 +576,6 @@
           "author": ""
         },
         {
-          "name": "Skeleton",
-          "type": "component",
-          "cName": "骨架屏",
-          "desc": "在页面上待加载区域填充灰色的占位图，本质上是界面加载过程中的过渡效果。",
-          "sort": 15,
-          "show": true,
-          "author": ""
-        },
-        {
           "name": "Swipe",
           "type": "component",
           "cName": "滑动手势",
@@ -623,18 +585,17 @@
           "author": ""
         },
         {
-          "name": "Popup",
-          "sort": 9,
-          "cName": "弹出层",
+          "name": "Switch",
           "type": "component",
+          "cName": "开关",
+          "desc": "用来打开或关闭选项。",
+          "sort": 11,
           "show": true,
-          "desc": "弹出层容器，用于展示弹窗、信息提示等内容，支持多个弹出层叠加展示",
           "author": ""
         },
         {
           "name": "Toast",
           "type": "component",
-          "tarodoc": true,
           "cName": "吐司",
           "desc": "轻提示",
           "sort": 1,
@@ -694,6 +655,15 @@
           "author": ""
         },
         {
+          "name": "Badge",
+          "type": "component",
+          "cName": "徽标",
+          "desc": "在图标或文字右上角的红色圆点、数字或者文字，表示有新内容或者待处理的信息。",
+          "sort": 4,
+          "show": true,
+          "author": ""
+        },
+        {
           "name": "CircleProgress",
           "type": "component",
           "cName": "环形进度条",
@@ -740,6 +710,15 @@
           "author": ""
         },
         {
+          "name": "Empty",
+          "type": "component",
+          "cName": "空状态",
+          "desc": "空状态时的占位提示",
+          "sort": 16,
+          "show": true,
+          "author": ""
+        },
+        {
           "name": "ImagePreview",
           "type": "component",
           "cName": "图片预览",
@@ -749,11 +728,11 @@
           "author": ""
         },
         {
-          "name": "Indicator",
+          "name": "NoticeBar",
           "type": "component",
-          "cName": "指示器",
-          "desc": "显示一个任务或流程的进度，常用于开通流程。",
-          "sort": 16,
+          "cName": "公告栏",
+          "desc": "用于循环播放展示一组消息通知。",
+          "sort": 11,
           "show": true,
           "author": ""
         },
@@ -763,15 +742,6 @@
           "cName": "虚拟列表",
           "desc": "长列表渲染",
           "sort": 20,
-          "show": true,
-          "author": ""
-        },
-        {
-          "name": "Pagination",
-          "type": "component",
-          "cName": "分页",
-          "desc": "当数据量较多时，采用分页的形式分隔长列表。",
-          "sort": 6,
           "show": true,
           "author": ""
         },
@@ -790,6 +760,15 @@
           "cName": "进度条",
           "desc": "用来展示进度",
           "sort": 20,
+          "show": true,
+          "author": ""
+        },
+        {
+          "name": "Skeleton",
+          "type": "component",
+          "cName": "骨架屏",
+          "desc": "在页面上待加载区域填充灰色的占位图，本质上是界面加载过程中的过渡效果。",
+          "sort": 15,
           "show": true,
           "author": ""
         },
@@ -850,6 +829,15 @@
           "author": ""
         },
         {
+          "name": "TrendArrow",
+          "type": "component",
+          "cName": "趋势箭头",
+          "desc": "带有箭头指示的百分比数字,用以展示指标趋势",
+          "sort": 25,
+          "show": true,
+          "author": ""
+        },
+        {
           "name": "Video",
           "type": "component",
           "cName": "视频播放器",
@@ -898,15 +886,6 @@
           "cName": "配送时间",
           "desc": "用于配送时间选择",
           "sort": 20,
-          "show": true,
-          "author": ""
-        },
-        {
-          "name": "TrendArrow",
-          "type": "component",
-          "cName": "趋势箭头",
-          "desc": "带有箭头指示的百分比数字,用以展示指标趋势",
-          "sort": 25,
           "show": true,
           "author": ""
         },
