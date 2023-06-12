@@ -6,7 +6,8 @@ on:
       - main # default branch
     paths:
       - '.github/workflows/**'
-      - 'src/**'
+      - 'components/**'
+      - 'sites/config.json'
       - 'package.json'
 
 jobs:
