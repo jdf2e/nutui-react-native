@@ -37,7 +37,6 @@ const copy = async () => {
     packages.forEach((item) => {
       if (item.show) {
         let cmpName = item.name.toLowerCase();
-        console.log(cmpName);
         // 拷贝文档
         let docpath = `${process.cwd()}/components/${cmpName}/commutiy/doc.md`;
         let docENpath = `${process.cwd()}/components/${cmpName}/commutiy/doc.en-US.md`;
@@ -45,7 +44,6 @@ const copy = async () => {
           if (!err) {
             copyFile(docpath, `${targetBaseUrl}/docs/${cmpName}/doc.md`);
           }
-          console.log(err);
         });
         fse.readFile(docENpath, (err, data) => {
           if (!err) {
