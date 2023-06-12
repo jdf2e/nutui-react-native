@@ -2,6 +2,7 @@ yarn.lock
 package-lock.json
 sites/docs.ts
 dist
+site_docs
 
 # OSX
 #

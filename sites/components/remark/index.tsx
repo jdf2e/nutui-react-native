@@ -21,9 +21,10 @@ const Remark = ({ ru }: { ru: any }) => {
     }
   };
   useEffect(() => {
+    console.log('_______________________');
     window.ExpoSnack?.initialize();
     window.scrollTo(0, 0);
-  }, [])
+  }, [ru]);
   return (
     <ReactMarkdown
       children={getMarkdownByLang(ru)}
