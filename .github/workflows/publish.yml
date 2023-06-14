@@ -14,7 +14,6 @@ jobs:
         with:
           node-version: '16.x'
           registry-url: 'https://registry.npmjs.org'
-          cache: npm
       - name: Git Identity
         run: |
           git config --global user.name 'github-actions[bot]'
