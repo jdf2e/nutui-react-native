@@ -6,7 +6,7 @@ on:
       - main # default branch
 
 env:
-  GITHUB_TOKEN: ${{ secrets.GIT_TOKEN }}
+  GITHUB_TOKEN: ${{ secrets.GIT_ACTION }}
 
 jobs:
   release-on-push:
