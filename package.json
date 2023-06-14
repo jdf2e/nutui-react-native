@@ -1,6 +1,6 @@
 {
   "name": "@nutui/nutui-react-native",
-  "version": "0.0.7",
+  "version": "0.0.6",
   "scripts": {
     "bootstrap": "yarn --cwd demo && yarn",
     "dev:ios": "yarn --cwd demo ios",
@@ -142,6 +142,8 @@
     },
     "plugins": {
       "@release-it/conventional-changelog": {
+        "infile": "CHANGELOG.md",
+        "header": "# Changelog",
         "preset": "angular"
       }
     }

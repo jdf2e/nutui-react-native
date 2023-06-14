@@ -1,6 +1,28 @@
 name: Publish to NPM
 on:
   workflow_dispatch:
+    inputs:
+      type:
+        type: choice
+        description: Choose release type
+        options:
+          - auto
+          - patch
+          - minor
+          - major
+        default: auto
+      beta:
+        type: boolean
+        description: Prerelease
+        default: false
+      npm:
+        type: boolean
+        description: NPM release
+        default: true
+      dry:
+        type: boolean
+        description: Dry release
+        default: false
 
 env:
   GITHUB_TOKEN: ${{ secrets.GIT_ACTION }}
@@ -21,4 +43,8 @@ jobs:
           git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}
       - run: yarn
       - name: release
-        run: yarn release
+        env:
+          TYPE_ARG: ${{ fromJSON('{"auto":"", "patch":"--patch", "minor":"--minor", "major":"--major"}')[github.event.inputs.type] }}
+          BETA_ARG: ${{ github.event.inputs.beta == 'true' && '--preRelease=beta' || '' }}
+          DRY_ARG: ${{ github.event.inputs.dry == 'true' && '--dry-run' || '' }}
+        run: yarn release $TYPE_ARG $BETA_ARG $DRY_ARG
