@@ -5,11 +5,13 @@ on:
     branches:
       - main # default branch
 
+env:
+  GITHUB_TOKEN: ${{ secrets.GIT_TOKEN }}
+
 jobs:
   release-on-push:
     runs-on: ubuntu-latest
-    env:
-      GITHUB_TOKEN: ${{ secrets.GIT_TOKEN }}
+
     steps:
       - id: release
         uses: rymndhng/release-on-push-action@master
