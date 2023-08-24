@@ -10,7 +10,7 @@ import React, {
   forwardRef,
   useImperativeHandle,
 } from 'react';
-import { TextInput, View, Text, TouchableOpacity } from 'react-native';
+import { TextInput, View, Text, TouchableOpacity, Platform } from 'react-native';
 
 import { formatNumber, BasicComponent, ComponentDefaults } from '../utils';
 import Icon from '../icon';
@@ -114,7 +114,7 @@ const defaultProps = {
   rules: [],
   rows: null,
   errorMessage: '',
-  errorMessageAlign: '',
+  errorMessageAlign: undefined,
   showWordLimit: false,
   autofocus: false,
   slotButton: null,
@@ -287,7 +287,7 @@ export const Input: FunctionComponent<
       SetActive(false);
     }, 200);
     let val = event.nativeEvent?.text;
-    if (maxlength && val.length > Number(maxlength)) {
+    if (maxlength && val && val.length > Number(maxlength)) {
       val = val.slice(0, Number(maxlength));
     }
     updateValue(getModelValue(), 'onBlur');
@@ -420,10 +420,10 @@ export const Input: FunctionComponent<
                       disabled && styles.nutInputText_disabled,
                       error && styles.nutInputText_error,
                     ]}
-                    maxLength={maxlength || undefined}
+                    maxLength={maxlength ? Number(maxlength) : undefined}
                     placeholder={placeholder || locale.placeholder}
                     placeholderTextColor={
-                      error ? theme['$input-required-color'] : ''
+                      error ? theme['$input-required-color'] : undefined
                     }
                     editable={!readonly && !disabled}
                     value={inputValue}
@@ -448,10 +448,10 @@ export const Input: FunctionComponent<
                       error && styles.nutInputText_error,
                     ]}
                     // type={inputType(type)}
-                    maxLength={maxlength || undefined}
+                    maxLength={maxlength ? Number(maxlength) : undefined}
                     placeholder={placeholder || locale.placeholder}
                     placeholderTextColor={
-                      error ? theme['$input-required-color'] : ''
+                      error ? theme['$input-required-color'] : undefined
                     }
                     editable={!readonly && !disabled}
                     value={

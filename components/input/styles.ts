@@ -1,4 +1,4 @@
-import { StyleSheet } from 'react-native';
+import { Platform, StyleSheet } from 'react-native';
 import pt from '../utils/pt';
 import px from '../utils/px';
 
@@ -64,14 +64,22 @@ export default (theme: any) =>
       height: pt(48),
       textAlign: 'left',
       borderWidth: 0,
-      outlineWidh: 0,
+      ...Platform.select({
+        web: {
+          outlineWidth: 0,
+        }
+      }),
       backgroundColor: 'transparent',
       color: theme['$gray1'],
     },
     nutInputText_disabled: {
       color: theme['$input-disabled-color'],
-      backgroundColor: 'none',
-      cursor: 'not-allowed',
+      backgroundColor: undefined,
+      ...Platform.select({
+        web: {
+          cursor: 'not-allowed',
+        },
+      }),
       opacity: 1,
     },
     nutInputText_error: {
